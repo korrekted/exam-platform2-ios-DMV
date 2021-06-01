@@ -20,9 +20,9 @@
 "Course.Tab.Study" = "Study";
 
 // MARK: Splash
-"Splash.Title.Part1" = "Created by\n";
-"Splash.Title.Part2" = "CERTIFIED\n";
-"Splash.Title.Part3" = "experts";
+"Splash.Title.Part1" = "Trusted by over\n";
+"Splash.Title.Part2" = "20 THOUSANDS\n";
+"Splash.Title.Part3" = "first time passers";
 
 // MARK: Onboarding
 "Onboarding.Skip" = "Skip";
@@ -31,18 +31,18 @@
 "Onboarding.No" = "No";
 "Onboarding.Skip" = "skip";
 "Onboarding.SlideStarted.Text1" = "Personal study plan. 98% pass rate.";
-"Onboarding.SlideStarted.Text2" = "A special AI-supported study plan to help you ace your CDL exam.";
+"Onboarding.SlideStarted.Text2" = "А speciаl АI- supported study plаn to help you аce your DMV exаm ";
 "Onboarding.SlideStarted.Button" = "Get started";
-"Onboarding.SlideTopics.Title" = "Select all\nrequired topics";
 "Onboarding.SlideCountry.Title" = "Choose\nyour country";
-"Onboarding.SlideState.Title" = "Select your state,\nprovince or district";
+"Onboarding.SlideState.Title" = "Select your state";
 "Onboarding.SlideLanguage.Title" = "Select your language";
 "Onboarding.SlideLocale.Error" = "Failed to save";
 "Onboarding.Goals.Title" = "What’s your goal?";
-"Onboarding.Goals.Cell1" = "I’m getting my first CDL";
-"Onboarding.Goals.Cell2" = "I’m adding new endorsement";
-"Onboarding.Goals.Cell3" = "I’m renewing existing endorsement";
-"Onboarding.Goals.Cell4" = "Want to know more about driving";
+"Onboarding.Goals.Cell1" = "Pass the exam";
+"Onboarding.Goals.Cell2" = "Become a better driver";
+"Onboarding.Goals.Cell3" = "Try something new";
+"Onboarding.Goals.Cell4" = "Refresh the basics";
+"Onboarding.Goals.Cell5" = "Extend my knowledge";
 "Onboarding.SlideWhenTaking.Title" = "When are you\ntaking your exam?";
 "Onboarding.SlideTime.Title" = "How much time can\nyou spend on\na single test?";
 "Onboarding.SlideTime.Min" = "min";
@@ -53,14 +53,14 @@
 "Onboarding.SlideExperience.Cell3" = "5+ years";
 "Onboarding.Question.Title" = "Do you agree with the statement?";
 "Onboarding.Question1" = "A driver should always remember about the blind spots of commercial vehicles.";
-"Onboarding.Question2" = "Only after 2 years of accident-free driving one can claim they really know how to drive";
-"Onboarding.Question3" = "A technical condition of a vehicle is less important than the driver’s skill.";
-"Onboarding.Question4" = "A good truck driver cares for everyone on the road, even the small passenger cars";
-"Onboarding.Preloader.Title" = "Preparing your\nindividual study\nplan";
+"Onboarding.Question2" = "A driver should always remember about the blind spots of commercial vehicles.";
+"Onboarding.Question3" = "A driver should always remember about the blind spots of commercial vehicles.";
+"Onboarding.Question4" = "A driver should always remember about the blind spots of commercial vehicles.";
+"Onboarding.Preloader.Title" = "Preparing your\nindividual study plan";
 "Onboarding.Preloader.Cell1" = "Analyzing your skill level";
 "Onboarding.Preloader.Cell2" = "Analyzing your goals";
 "Onboarding.Preloader.Cell3" = "Processing required exams";
-"Onboarding.SlidePlan.Title" = "Your personal 98%\npass rate study plan is\nready!";
+"Onboarding.SlidePlan.Title" = "Your personal 98% pass rate\nstudy plan is ready!";
 "Onboarding.SlidePlan.Cell1" = "1000+ individual questions";
 "Onboarding.SlidePlan.Cell2" = "different topics";
 "Onboarding.SlidePlan.Cell3" = "reminders and notifications";
@@ -75,14 +75,13 @@
 "Study.TakeTest" = "Take a test";
 "Study.TakeFreeTest" = "Take a free test";
 "Study.UnlockQuestions" = "Unlock all";
-"Study.QuizModes" = "Quiz Modes";
 "Study.Mode.TodaysQuestion" = "Today’s\nquestion";
 "Study.Mode.TenQuestions" = "10 questions\nquick exam";
 "Study.Mode.MissedQuestions" = "Missed\nquestions set";
 "Study.Mode.RandomSet" = "Random exam\nset";
 "Study.Mode.TimedQuizz" = "Timed\nQuizz";
-"Study.Mode.TryMe" = "TRY ME!";
-"Study.Course.CourseCount" = "%d tests";
+"Study.Mode.TryMe" = "TRY ME";
+"Study.Course.CourseCount" = "%d topics";
 "Study.Course.Title" = " exam modes";
 
 // MARK: Settings
@@ -90,12 +89,10 @@
 "Settings.Unlock" = "Unlock";
 "Settings.Premium" = "Premium";
 "Settings.ChangeLocale" = "Change locale";
-"Settings.SelectedExam" = "Selected Exam";
 "Settings.RateUs" = "Rate us";
 "Settings.ContactUs" = "Contact us";
 "Settings.TermsOfUse" = "Terms of use";
 "Settings.PrivacyPolicy" = "Privacy Policy";
-"Settings.Topics" = "Change topics";
 "Settings.YourLocale" = "Your locale";
 "Settings.YourLanguage" = "Your language";
 
@@ -150,8 +147,7 @@
 
 // MARK: Trophy
 "Trophy.LearnMore" = "Learn more";
-"Trophy.Title" = "Pass your CDL exam with 100%";
-
+"Trophy.Title" = "Pass your DMV exam with 100%";
 
 // MARK: Course Details
 "CourseDetails.Questions" = "questions";
