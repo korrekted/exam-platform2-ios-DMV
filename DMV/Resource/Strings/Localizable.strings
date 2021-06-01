@@ -1,0 +1,160 @@
+/* 
+  Localizable.strings
+  CDL
+
+  Created by Andrey Chernyshev on 27.03.2021.
+  
+*/
+
+// MARK: General
+"Cancel" = "Cancel";
+"Continue" = "Continue";
+
+// MARK: ImagePicker
+"ImagePicker.TakePhoto" = "Take photo";
+"ImagePicker.CameraRoll" = "Camera roll";
+"ImagePicker.PhotoLibrary" = "Photo library";
+
+// MARK: Course
+"Course.Tab.Stats" = "Stats";
+"Course.Tab.Study" = "Study";
+
+// MARK: Splash
+"Splash.Title.Part1" = "Created by\n";
+"Splash.Title.Part2" = "CERTIFIED\n";
+"Splash.Title.Part3" = "experts";
+
+// MARK: Onboarding
+"Onboarding.Skip" = "Skip";
+"Onboarding.Next" = "Next";
+"Onboarding.Yes" = "Yes";
+"Onboarding.No" = "No";
+"Onboarding.Skip" = "skip";
+"Onboarding.SlideStarted.Text1" = "Personal study plan. 98% pass rate.";
+"Onboarding.SlideStarted.Text2" = "A special AI-supported study plan to help you ace your CDL exam.";
+"Onboarding.SlideStarted.Button" = "Get started";
+"Onboarding.SlideTopics.Title" = "Select all\nrequired topics";
+"Onboarding.SlideCountry.Title" = "Choose\nyour country";
+"Onboarding.SlideState.Title" = "Select your state,\nprovince or district";
+"Onboarding.SlideLanguage.Title" = "Select your language";
+"Onboarding.SlideLocale.Error" = "Failed to save";
+"Onboarding.Goals.Title" = "What’s your goal?";
+"Onboarding.Goals.Cell1" = "I’m getting my first CDL";
+"Onboarding.Goals.Cell2" = "I’m adding new endorsement";
+"Onboarding.Goals.Cell3" = "I’m renewing existing endorsement";
+"Onboarding.Goals.Cell4" = "Want to know more about driving";
+"Onboarding.SlideWhenTaking.Title" = "When are you\ntaking your exam?";
+"Onboarding.SlideTime.Title" = "How much time can\nyou spend on\na single test?";
+"Onboarding.SlideTime.Min" = "min";
+"Onboarding.SlideCount.Title" = "How many tests\nwould you like to\ntake daily?";
+"Onboarding.SlideExperience.Title" = "Describe your\ndriving\nexperience";
+"Onboarding.SlideExperience.Cell1" = "0-3 years";
+"Onboarding.SlideExperience.Cell2" = "3-5 years";
+"Onboarding.SlideExperience.Cell3" = "5+ years";
+"Onboarding.Question.Title" = "Do you agree with the statement?";
+"Onboarding.Question1" = "A driver should always remember about the blind spots of commercial vehicles.";
+"Onboarding.Question2" = "Only after 2 years of accident-free driving one can claim they really know how to drive";
+"Onboarding.Question3" = "A technical condition of a vehicle is less important than the driver’s skill.";
+"Onboarding.Question4" = "A good truck driver cares for everyone on the road, even the small passenger cars";
+"Onboarding.Preloader.Title" = "Preparing your\nindividual study\nplan";
+"Onboarding.Preloader.Cell1" = "Analyzing your skill level";
+"Onboarding.Preloader.Cell2" = "Analyzing your goals";
+"Onboarding.Preloader.Cell3" = "Processing required exams";
+"Onboarding.SlidePlan.Title" = "Your personal 98%\npass rate study plan is\nready!";
+"Onboarding.SlidePlan.Cell1" = "1000+ individual questions";
+"Onboarding.SlidePlan.Cell2" = "different topics";
+"Onboarding.SlidePlan.Cell3" = "reminders and notifications";
+"Onboarding.SlidePlan.Button" = "Get my plan";
+
+// MARK: Study
+"Study.Title" = "Study";
+"Study.Day.One" = "day";
+"Study.Day.Two" = "days";
+"Study.Day.Many" = "days";
+"Study.Streak" = "streak";
+"Study.TakeTest" = "Take a test";
+"Study.TakeFreeTest" = "Take a free test";
+"Study.UnlockQuestions" = "Unlock all";
+"Study.QuizModes" = "Quiz Modes";
+"Study.Mode.TodaysQuestion" = "Today’s\nquestion";
+"Study.Mode.TenQuestions" = "10 questions\nquick exam";
+"Study.Mode.MissedQuestions" = "Missed\nquestions set";
+"Study.Mode.RandomSet" = "Random exam\nset";
+"Study.Mode.TimedQuizz" = "Timed\nQuizz";
+"Study.Mode.TryMe" = "TRY ME!";
+"Study.Course.CourseCount" = "%d tests";
+"Study.Course.Title" = " exam modes";
+
+// MARK: Settings
+"Settings.Title" = "Settings";
+"Settings.Unlock" = "Unlock";
+"Settings.Premium" = "Premium";
+"Settings.ChangeLocale" = "Change locale";
+"Settings.SelectedExam" = "Selected Exam";
+"Settings.RateUs" = "Rate us";
+"Settings.ContactUs" = "Contact us";
+"Settings.TermsOfUse" = "Terms of use";
+"Settings.PrivacyPolicy" = "Privacy Policy";
+"Settings.Topics" = "Change topics";
+"Settings.YourLocale" = "Your locale";
+"Settings.YourLanguage" = "Your language";
+
+// MARK: Stats
+"Stats.PassRate.Title" = "Current pass rate";
+"Stats.MainRate.TestsTake" = "Tests taken";
+"Stats.MainRate.CorrectAnswers" = "Correct answers";
+"Stats.MainRate.QuestionsTaken" = "Questions taken";
+"Stats.MainRate.LongestStreak" = "Longest streak";
+"Stats.MainRate.AnsweredQuestions" = "Answered questions";
+"Stats.Title" = "Stats";
+"Stats.Day.One" = "day";
+"Stats.Day.Two" = "days";
+"Stats.Day.Many" = "days";
+
+// MARK: Paygate
+"Paygate.Main.Title" = "KNOW THE QUESTIONS\nBEFOREHAND";
+"Paygate.Main.Cell1" = "Don’t spend hours learning";
+"Paygate.Main.Cell2" = "Train yourself with 5000+ questions";
+"Paygate.Main.Cell3" = "98% pass rate on the first attempt!";
+"Paygate.Main.Info" = "Secured with iTunes. Cancel anytime.";
+"Paygate.Main.TermsOfUse" = "Terms of use";
+"Paygate.Main.And" = " and ";
+"Paygate.Main.PrivacyPolicy" = "Privacy Policy";
+"Paygate.Main.RestorePurchases" = "Restore purchases";
+"Paygate.Purchase.Failed" = "Failed to make purchase";
+"Paygate.Continue" = "Continue →";
+
+// MARK: Question
+"Question.Explanation" = "Explanation";
+"Question.Continue" = "Continue";
+"Question.Submit" = "Submit test";
+"Question.Finish" = "Finish";
+"Question.BackToStudying" = "Back to studying";
+"Question.Counter.Score" = "Score";
+"Question.Counter.Question" = "Question";
+"Question.Counter.RemainingTime" = "Remaining time";
+
+// MARK: Test Stats
+"TestStats.TestTime" = "your time";
+"TestStats.ComunityAverage" = "comunity average";
+"TestStats.ComunityScore" = "comunity score";
+"TestStats.Attempted" = "Attempted";
+"TestStats.Correct" = "Correct";
+"TestStats.Incorrect" = "Incorrect";
+"TestStats.Filter.Incorrect" = "Incorrect";
+"TestStats.Filter.Correct" = "Correct";
+"TestStats.Filter.All" = "All";
+"TestStats.NextTest" = "Next test";
+"TestStats.TryAgain" = "Try аgаin";
+"TestStats.PassingScore" = "Passing score";
+
+// MARK: Trophy
+"Trophy.LearnMore" = "Learn more";
+"Trophy.Title" = "Pass your CDL exam with 100%";
+
+
+// MARK: Course Details
+"CourseDetails.Questions" = "questions";
+"CourseDetails.Saved" = "Saved";
+"CourseDetails.Incorrect" = "Incorrect";
+"CourseDetails.PassRate" = "Pass rate";
