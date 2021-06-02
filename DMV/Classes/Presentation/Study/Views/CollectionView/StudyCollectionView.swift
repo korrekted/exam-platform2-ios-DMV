@@ -11,7 +11,6 @@ import RxCocoa
 final class StudyCollectionView: UICollectionView {
     lazy var selectedCourse = BehaviorRelay<Course?>(value: nil)
     lazy var didTapSelectedCourse = PublishRelay<Course>()
-    lazy var didTapAdd = PublishRelay<Void>()
     lazy var didTapTrophy = PublishRelay<Void>()
     lazy var selectedMode = PublishRelay<SCEMode.Mode>()
     
@@ -65,7 +64,6 @@ extension StudyCollectionView: UICollectionViewDataSource {
             cell.setup(
                 elements: elements,
                 selectedCourse: { [weak self] in self?.selectedCourse.accept($0) },
-                didTapAdd: { [weak self] in self?.didTapAdd.accept(()) },
                 didTapCell: { [weak self] in self?.didTapSelectedCourse.accept($0) }
             )
             return cell

@@ -145,7 +145,6 @@
 		96781BEB266664020033134D /* SCModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781ABF266664000033134D /* SCModeView.swift */; };
 		96781BEC266664020033134D /* CourseCellProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AC0266664000033134D /* CourseCellProgressView.swift */; };
 		96781BED266664020033134D /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AC3266664000033134D /* CourseCell.swift */; };
-		96781BEE266664020033134D /* CourseHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AC4266664000033134D /* CourseHeader.swift */; };
 		96781BEF266664020033134D /* CourseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AC5266664000033134D /* CourseCollectionView.swift */; };
 		96781BF0266664020033134D /* CourseFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AC6266664000033134D /* CourseFlowLayout.swift */; };
 		96781BF1266664020033134D /* StudyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AC7266664000033134D /* StudyView.swift */; };
@@ -418,7 +417,6 @@
 		96781ABF266664000033134D /* SCModeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCModeView.swift; sourceTree = "<group>"; };
 		96781AC0266664000033134D /* CourseCellProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCellProgressView.swift; sourceTree = "<group>"; };
 		96781AC3266664000033134D /* CourseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
-		96781AC4266664000033134D /* CourseHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseHeader.swift; sourceTree = "<group>"; };
 		96781AC5266664000033134D /* CourseCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCollectionView.swift; sourceTree = "<group>"; };
 		96781AC6266664000033134D /* CourseFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseFlowLayout.swift; sourceTree = "<group>"; };
 		96781AC7266664000033134D /* StudyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudyView.swift; sourceTree = "<group>"; };
@@ -1219,7 +1217,6 @@
 			isa = PBXGroup;
 			children = (
 				96781AC3266664000033134D /* CourseCell.swift */,
-				96781AC4266664000033134D /* CourseHeader.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -1891,7 +1888,6 @@
 				865FEC5F2667A4E3009D7A4E /* BottomSheetAnimation.swift in Sources */,
 				96781BCF266664020033134D /* SessionManagerCore.swift in Sources */,
 				96781B67266664010033134D /* UITapGestureRecognizerExtension.swift in Sources */,
-				96781BEE266664020033134D /* CourseHeader.swift in Sources */,
 				96781C46266664030033134D /* MainProgressView.swift in Sources */,
 				96781C6A266664040033134D /* OnboardingViewModel.swift in Sources */,
 				96781BF5266664020033134D /* TabItemView.swift in Sources */,

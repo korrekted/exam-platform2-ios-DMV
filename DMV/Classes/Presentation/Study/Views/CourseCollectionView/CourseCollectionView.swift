@@ -13,13 +13,6 @@ class CourseCollectionView: UICollectionView {
     
     private var elements = [CourseElement]()
     
-    private lazy var tapRecognizer: UITapGestureRecognizer = {
-        let gesture = UITapGestureRecognizer()
-        gesture.addTarget(self, action: #selector(didTapHeader))
-        return gesture
-    }()
-    
-    var didTapAdd: (() -> Void)?
     var selectedCourse: ((Course?) -> Void)?
     var didTapCell: ((Course) -> Void)?
 
@@ -97,11 +90,5 @@ private extension CourseCollectionView {
         showsHorizontalScrollIndicator = false
         dataSource = self
         delegate = self
-    }
-}
-
-private extension CourseCollectionView {
-    @objc func didTapHeader() {
-        didTapAdd?()
     }
 }
