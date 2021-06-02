@@ -37,7 +37,7 @@ extension TestStatsView {
         }
         
         let attr = TextAttributes()
-            .font(Fonts.SFProRounded.regular(size: 18.scale))
+            .font(Fonts.SFProRounded.semiBold(size: 20.scale))
             .textAlignment(.center)
         
         nextTestButton.setAttributedTitle("TestStats.NextTest".localized.attributed(with: attr.textColor(TestStatsPalette.primaryText)), for: .normal)

@@ -64,8 +64,8 @@ private extension OSlideQuestionView {
     func makeTitleLabel() -> UILabel {
         let attrs = TextAttributes()
             .textColor(Onboarding.primaryText)
-            .font(Fonts.SFProRounded.bold(size: 36.scale))
-            .lineHeight(43.scale)
+            .font(Fonts.SFProRounded.bold(size: 32.scale))
+            .lineHeight(38.scale)
             .textAlignment(.center)
         
         let view = UILabel()
@@ -79,7 +79,7 @@ private extension OSlideQuestionView {
     func makeQuestionLabel() -> OQuestionFormView {
         let attrs = TextAttributes()
             .textColor(Onboarding.Question.text)
-            .font(Fonts.SFProRounded.regular(size: 24.scale))
+            .font(Fonts.SFProRounded.regular(size: 20.scale))
             .lineHeight(28.scale)
             .textAlignment(.center)
         
@@ -92,7 +92,7 @@ private extension OSlideQuestionView {
     
     func makeYesButton() -> UIButton {
         let attrs = TextAttributes()
-            .font(Fonts.SFProRounded.regular(size: 18.scale))
+            .font(Fonts.SFProRounded.semiBold(size: 20.scale))
             .textColor(Onboarding.primaryButtonTint)
         
         let view = UIButton()
@@ -107,7 +107,7 @@ private extension OSlideQuestionView {
     
     func makeNoButton() -> UIButton {
         let attrs = TextAttributes()
-            .font(Fonts.SFProRounded.regular(size: 18.scale))
+            .font(Fonts.SFProRounded.semiBold(size: 20.scale))
             .textColor(Onboarding.secondaryButtonTint)
         
         let view = UIButton()

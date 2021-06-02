@@ -79,8 +79,8 @@ private extension OSlidePlanView {
     func makeTitleLabel() -> UILabel {
         let attrs = TextAttributes()
             .textColor(Onboarding.primaryText)
-            .font(Fonts.SFProRounded.bold(size: 32.scale))
-            .lineHeight(38.scale)
+            .font(Fonts.SFProRounded.bold(size: 24.scale))
+            .lineHeight(28.scale)
             .textAlignment(.center)
         
         let view = UILabel()
@@ -114,7 +114,7 @@ private extension OSlidePlanView {
     func makeButton() -> UIButton {
         let attrs = TextAttributes()
             .textColor(Onboarding.primaryButtonTint)
-            .font(Fonts.SFProRounded.regular(size: 18.scale))
+            .font(Fonts.SFProRounded.semiBold(size: 20.scale))
             .textAlignment(.center)
         
         let view = UIButton()

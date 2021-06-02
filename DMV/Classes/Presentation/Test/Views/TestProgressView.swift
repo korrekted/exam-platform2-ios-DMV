@@ -39,8 +39,8 @@ extension TestProgressView {
     
     func setup(leftTitle: String, rightTitle: String) {
         let attr = TextAttributes()
-            .font(Fonts.Lato.regular(size: 14.scale))
-            .lineHeight(19.6.scale)
+            .font(Fonts.SFProRounded.regular(size: 16.scale))
+            .lineHeight(22.scale)
             .textColor(ScorePalette.title)
             .textAlignment(.center)
         
@@ -55,7 +55,7 @@ private extension TestProgressView {
         leftContentView.addSubview(leftContent)
         rightContentView.addSubview(rightContent)
         backgroundColor = ScorePalette.background
-        layer.cornerRadius = 12.scale
+        layer.cornerRadius = 20.scale
     }
 }
 
@@ -137,8 +137,8 @@ private extension TextAttributes {
             : ScorePalette.progress
         
         return TextAttributes()
-            .font(Fonts.SFProRounded.bold(size: 18.scale))
-            .lineHeight(25.2.scale)
+            .font(Fonts.SFProRounded.semiBold(size: 20.scale))
+            .lineHeight(28.scale)
             .textColor(color)
             .textAlignment(.center)
     }

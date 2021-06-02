@@ -106,14 +106,14 @@ private extension TestView {
         ])
         
         NSLayoutConstraint.activate([
-            bottomButton.heightAnchor.constraint(equalToConstant: 53.scale),
+            bottomButton.heightAnchor.constraint(equalToConstant: 60.scale),
             bottomButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
             bottomButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
             bottomButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -59.scale)
         ])
         
         NSLayoutConstraint.activate([
-            nextButton.heightAnchor.constraint(equalToConstant: 40.scale),
+            nextButton.heightAnchor.constraint(equalToConstant: 44.scale),
             nextButton.widthAnchor.constraint(equalTo: nextButton.heightAnchor),
             nextButton.rightAnchor.constraint(equalTo: rightAnchor, constant: -16.scale),
             nextButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -59.scale)
@@ -137,7 +137,7 @@ private extension TestView {
     func makeBottomButton() -> UIButton {
         let view = UIButton()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.layer.cornerRadius = 12.scale
+        view.layer.cornerRadius = 30.scale
         view.backgroundColor = TestPalette.primaryButton
         addSubview(view)
         return view
@@ -148,7 +148,7 @@ private extension TestView {
         view.setImage(UIImage(named: "Question.Next"), for: .normal)
         view.tintColor = TestPalette.secondaryTint
         view.backgroundColor = TestPalette.secondaryButton
-        view.layer.cornerRadius = 7.scale
+        view.layer.cornerRadius = 22.scale
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view

@@ -119,7 +119,7 @@ private extension SCModeView {
         view.layer.cornerRadius = 7.scale
         view.layer.masksToBounds = true
         view.backgroundColor = StudyPalette.Mode.markBackground
-        view.font = Fonts.SFProRounded.bold(size: 10.scale)
+        view.font = Fonts.SFProRounded.bold(size: 12.scale)
         view.textColor = StudyPalette.Mode.markText
         view.text = message
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -131,6 +131,6 @@ private extension SCModeView {
 private extension TextAttributes {
     static let nameAttrs = TextAttributes()
         .textColor(StudyPalette.Mode.title)
-        .font(Fonts.SFProRounded.semiBold(size: 18.scale))
-        .lineHeight(25.scale)
+        .font(Fonts.SFProRounded.semiBold(size: 20.scale))
+        .lineHeight(28.scale)
 }

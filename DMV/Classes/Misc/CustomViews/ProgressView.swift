@@ -102,7 +102,7 @@ private extension ProgressView {
 
 private extension TextAttributes {
     static let attr = TextAttributes()
-        .font(Fonts.SFProRounded.regular(size: 14.scale))
-        .lineHeight(19.6.scale)
+        .font(Fonts.SFProRounded.regular(size: 16.scale))
+        .lineHeight(22.scale)
         .textColor(NavigationPalette.navigationTint)
 }

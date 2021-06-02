@@ -27,11 +27,11 @@ extension SCTitleCell {
     func setup(title: String) {
         let attrs = TextAttributes()
             .textColor(StudyPalette.title)
-            .font(Fonts.SFProRounded.regular(size: 18.scale))
+            .font(Fonts.SFProRounded.regular(size: 20.scale))
         
         let nameAttr = TextAttributes()
             .textColor(StudyPalette.title)
-            .font(Fonts.SFProRounded.bold(size: 18.scale))
+            .font(Fonts.SFProRounded.bold(size: 20.scale))
         
         let attributes = NSMutableAttributedString()
         attributes.append(title.attributed(with: nameAttr))

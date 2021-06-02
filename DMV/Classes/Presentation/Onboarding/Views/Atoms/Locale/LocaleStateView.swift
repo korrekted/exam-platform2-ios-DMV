@@ -132,8 +132,8 @@ private extension LocaleStateView {
     func makeTitleLabel() -> UILabel {
         let attrs = TextAttributes()
             .textColor(Onboarding.primaryText)
-            .font(Fonts.SFProRounded.bold(size: 36.scale))
-            .lineHeight(43.scale)
+            .font(Fonts.SFProRounded.bold(size: 32.scale))
+            .lineHeight(38.scale)
             .textAlignment(.center)
         
         let view = UILabel()
@@ -168,7 +168,7 @@ private extension LocaleStateView {
     func makeButton() -> UIButton {
         let attrs = TextAttributes()
             .textColor(Onboarding.primaryButtonTint)
-            .font(Fonts.SFProRounded.semiBold(size: 18.scale))
+            .font(Fonts.SFProRounded.semiBold(size: 20.scale))
             .textAlignment(.center)
         
         let view = UIButton()

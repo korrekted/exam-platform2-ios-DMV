@@ -136,6 +136,6 @@ private extension TextAttributes {
         .textAlignment(.center)
     
     static let titleAttr = TextAttributes()
-        .font(Fonts.SFProRounded.bold(size: 18.scale))
+        .font(Fonts.SFProRounded.bold(size: 16.scale))
         .textColor(TrophyPalette.title)
 }

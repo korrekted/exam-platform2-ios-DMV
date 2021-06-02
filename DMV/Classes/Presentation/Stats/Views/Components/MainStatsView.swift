@@ -29,8 +29,8 @@ extension MainStatsView {
     func setup(title: String, color: UIColor) {
         let titleAttibutes = TextAttributes()
             .textColor(StatsPalette.MainStats.title)
-            .font(Fonts.SFProRounded.bold(size: 14.scale))
-            .lineHeight(19.6.scale)
+            .font(Fonts.SFProRounded.bold(size: 16.scale))
+            .lineHeight(22.scale)
             .textAlignment(.center)
         
         titleLabel.attributedText = title.attributed(with: titleAttibutes)

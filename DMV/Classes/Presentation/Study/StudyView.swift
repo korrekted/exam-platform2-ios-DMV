@@ -157,7 +157,7 @@ private extension StudyView {
     
     func makeButton() -> UIButton {
         let view = UIButton()
-        view.layer.cornerRadius = 12.scale
+        view.layer.cornerRadius = 25.scale
         stackView.addArrangedSubview(view)
         return view
     }

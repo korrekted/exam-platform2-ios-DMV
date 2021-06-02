@@ -61,7 +61,7 @@ extension SIProgressCollectionView: UICollectionViewDataSource {
 extension SIProgressCollectionView: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 35.scale, height: 35.scale)
+        return CGSize(width: 36.scale, height: 36.scale)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

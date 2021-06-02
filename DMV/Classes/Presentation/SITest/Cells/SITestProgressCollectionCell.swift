@@ -43,7 +43,7 @@ extension SITestProgressCollectionCell {
 // MARK: Private
 private extension SITestProgressCollectionCell {
     func initialize() {
-        layer.cornerRadius = 4.scale
+        layer.cornerRadius = 18.scale
         layer.masksToBounds = true
     }
 }
@@ -71,7 +71,7 @@ private extension SITestProgressCollectionCell {
 
 private extension TextAttributes {
     static let attr = TextAttributes()
-        .font(Fonts.SFProRounded.regular(size: 18.scale))
-        .lineHeight(25.scale)
+        .font(Fonts.SFProRounded.regular(size: 16.scale))
+        .lineHeight(22.scale)
         .textAlignment(.center)
 }

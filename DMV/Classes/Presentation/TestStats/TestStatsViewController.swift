@@ -49,6 +49,7 @@ class TestStatsViewController: UIViewController {
         
         mainView.navigationView.rightAction.rx.tap
             .bind(to: Binder(self) { base, _ in
+                (base.presentingViewController as? UINavigationController)?.popViewController(animated: false)
                 base.dismiss(animated: true)
             })
             .disposed(by: disposeBag)

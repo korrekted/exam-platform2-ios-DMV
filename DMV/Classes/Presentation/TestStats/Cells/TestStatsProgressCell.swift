@@ -34,7 +34,7 @@ extension TestStatsProgressCell {
         percentLabel.text = "\(element.percent) %"
         
         let attr = TextAttributes()
-            .font(Fonts.SFProRounded.regular(size: 14.scale))
+            .font(Fonts.SFProRounded.regular(size: 16.scale))
             .textColor(TestStatsPalette.Progress.text)
         
         passingScoreLabel.attributedText = "\("TestStats.PassingScore".localized) \(element.passingScore)%".attributed(with: attr)

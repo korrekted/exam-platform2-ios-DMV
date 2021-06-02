@@ -194,7 +194,7 @@ private extension PaygateMainView {
     func makeRestoreButton() -> UIButton {
         let attrs = TextAttributes()
             .textColor(PaygatePalette.secondaryText)
-            .font(Fonts.SFProRounded.regular(size: 13.scale))
+            .font(Fonts.SFProRounded.regular(size: 16.scale))
             .letterSpacing(-0.6.scale)
         
         let view = UIButton()
@@ -217,8 +217,8 @@ private extension PaygateMainView {
     func makeTitleLabel() -> UILabel {
         let attrs = TextAttributes()
             .textColor(PaygatePalette.primaryText)
-            .font(Fonts.SFProRounded.bold(size: 28.scale))
-            .lineHeight(ScreenSize.isIphoneXFamily ? 41.scale : 30.scale)
+            .font(Fonts.SFProRounded.bold(size: 24.scale))
+            .lineHeight(28.scale)
             .textAlignment(.center)
         
         let view = UILabel()
@@ -262,8 +262,8 @@ private extension PaygateMainView {
     func makeSecuredLabel() -> UILabel {
         let attrs = TextAttributes()
             .textColor(PaygatePalette.secondaryText)
-            .font(Fonts.SFProRounded.semiBold(size: 13.scale))
-            .lineHeight(19.5.scale)
+            .font(Fonts.SFProRounded.regular(size: 14.scale))
+            .lineHeight(16.scale)
             .letterSpacing(-0.6.scale)
         
         let view = UILabel()
@@ -277,7 +277,7 @@ private extension PaygateMainView {
     func makeContinueButton() -> UIButton {
         let attrs = TextAttributes()
             .textColor(PaygatePalette.continueTint)
-            .font(Fonts.SFProRounded.semiBold(size: 18.scale))
+            .font(Fonts.SFProRounded.semiBold(size: 20.scale))
         
         let view = UIButton()
         view.setAttributedTitle("Paygate.Continue".localized.attributed(with: attrs), for: .normal)
@@ -291,8 +291,8 @@ private extension PaygateMainView {
     
     func makeTermsAndPolicyLabel() -> UILabel {
         let attrs = TextAttributes()
-            .font(Fonts.SFProRounded.regular(size: 13.scale))
-            .lineHeight(19.5.scale)
+            .font(Fonts.SFProRounded.regular(size: 14.scale))
+            .lineHeight(16.scale)
             .letterSpacing(-0.6.scale)
             .textColor(PaygatePalette.primaryText)
             .textAlignment(.center)
