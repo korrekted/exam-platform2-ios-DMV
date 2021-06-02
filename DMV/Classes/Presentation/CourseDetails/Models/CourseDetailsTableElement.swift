@@ -14,7 +14,7 @@ enum CourseDetailsTableElement {
 
 struct CourseDetailsTestConfig {
     let id: Int
-    let number: String
+    let name: String
     let correctProgress: Int
     let incorrectProgress: Int
     let questionCounts: Int
@@ -26,6 +26,6 @@ extension CourseDetailsTestConfig {
         correctProgress = config.correctProgress
         incorrectProgress = config.incorrectProgress
         questionCounts = config.count
-        number = config.index >= 10 ? "\(config.index)" : "0\(config.index)"
+        name = config.name
     }
 }

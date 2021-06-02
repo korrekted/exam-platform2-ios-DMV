@@ -195,7 +195,7 @@ private extension StudyViewController {
     }
     
     func openTest(types: [TestType], activeSubscription: Bool, courseId: Int) {
-        let controller = TestViewController.make(testTypes: types, activeSubscription: activeSubscription, courseId: courseId)
+        let controller = TestViewController.make(testTypes: types, activeSubscription: activeSubscription, courseId: courseId, isTopicTest: false)
         parent?.navigationController?.pushViewController(controller, animated: true)
     }
     

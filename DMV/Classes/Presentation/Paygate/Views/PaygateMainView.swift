@@ -252,6 +252,7 @@ private extension PaygateMainView {
         let view = UIImageView()
         view.isHidden = !ScreenSize.isIphoneXFamily
         view.contentMode = .scaleAspectFit
+        view.tintColor = PaygatePalette.secondaryText
         view.image = UIImage(named: "Paygate.Main.Lock")
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
@@ -282,7 +283,7 @@ private extension PaygateMainView {
         view.setAttributedTitle("Paygate.Continue".localized.attributed(with: attrs), for: .normal)
         view.isHidden = true
         view.backgroundColor = PaygatePalette.continueButton
-        view.layer.cornerRadius = 12.scale
+        view.layer.cornerRadius = 30.scale
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view

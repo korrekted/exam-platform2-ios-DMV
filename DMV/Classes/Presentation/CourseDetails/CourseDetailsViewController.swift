@@ -63,7 +63,7 @@ class CourseDetailsViewController: UIViewController {
                     types = [.get(testId: testId)]
                 }
                 
-                let controller = TestViewController.make(testTypes: types, activeSubscription: activeSubscription, courseId: courseId)
+                let controller = TestViewController.make(testTypes: types, activeSubscription: activeSubscription, courseId: courseId, isTopicTest: true)
                 base.parent?.navigationController?.pushViewController(controller, animated: true)
             })
             .disposed(by: disposeBag)

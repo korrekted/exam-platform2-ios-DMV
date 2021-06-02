@@ -10,11 +10,9 @@ import UIKit
 class CourseDetailsTestCell: UITableViewCell {
     
     private lazy var container = makeContainer()
-    private lazy var progressContainer = makeProgressContainer()
-    private lazy var numberLabel = makeNumberLabel()
+    private lazy var nameLabel = makeNameLabel()
     private lazy var questionsCountLabel = makeQuestionsLabel()
     private lazy var progressView = makeProgressView()
-    private lazy var iconView = makeImageView()
     let gradientLayer = CAGradientLayer()
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -35,7 +33,7 @@ class CourseDetailsTestCell: UITableViewCell {
 
 extension CourseDetailsTestCell {
     func setup(config: CourseDetailsTestConfig) {
-        numberLabel.attributedText = config.number.attributed(with: .numberAttrs)
+        nameLabel.attributedText = config.name.attributed(with: .nameAttrs)
         questionsCountLabel.attributedText = "\(config.questionCounts) \("CourseDetails.Questions".localized)".attributed(with: .questionCountAttrs)
         progressView.setGradientLocation(correctPercent: config.correctProgress, incorrectPercent: config.incorrectProgress)
     }
@@ -58,37 +56,23 @@ private extension CourseDetailsTestCell {
         ])
         
         NSLayoutConstraint.activate([
-            numberLabel.topAnchor.constraint(equalTo: container.topAnchor),
-            numberLabel.bottomAnchor.constraint(equalTo: container.bottomAnchor),
-            numberLabel.leadingAnchor.constraint(equalTo: container.leadingAnchor, constant: 16.scale),
-            numberLabel.widthAnchor.constraint(equalToConstant: 81.scale)
+            nameLabel.topAnchor.constraint(equalTo: container.topAnchor, constant: 16.scale),
+            nameLabel.leadingAnchor.constraint(equalTo: container.leadingAnchor, constant: 20.scale),
+            nameLabel.trailingAnchor.constraint(equalTo: container.trailingAnchor, constant: -20.scale)
         ])
         
         NSLayoutConstraint.activate([
-            progressContainer.leadingAnchor.constraint(equalTo: numberLabel.trailingAnchor, constant: 24.scale),
-            progressContainer.trailingAnchor.constraint(equalTo: iconView.leadingAnchor, constant: -18.scale),
-            progressContainer.centerYAnchor.constraint(equalTo: container.centerYAnchor)
-        ])
-        
-        NSLayoutConstraint.activate([
-            questionsCountLabel.topAnchor.constraint(equalTo: progressContainer.topAnchor),
-            questionsCountLabel.leadingAnchor.constraint(equalTo: progressContainer.leadingAnchor),
-            questionsCountLabel.trailingAnchor.constraint(equalTo: progressContainer.trailingAnchor)
+            questionsCountLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 4.scale),
+            questionsCountLabel.leadingAnchor.constraint(equalTo: nameLabel.leadingAnchor),
+            questionsCountLabel.trailingAnchor.constraint(equalTo: nameLabel.trailingAnchor)
         ])
         
         NSLayoutConstraint.activate([
             progressView.topAnchor.constraint(equalTo: questionsCountLabel.bottomAnchor, constant: 9.scale),
-            progressView.leadingAnchor.constraint(equalTo: progressContainer.leadingAnchor),
-            progressView.trailingAnchor.constraint(equalTo: progressContainer.trailingAnchor),
+            progressView.leadingAnchor.constraint(equalTo: nameLabel.leadingAnchor),
+            progressView.trailingAnchor.constraint(equalTo: nameLabel.trailingAnchor),
             progressView.heightAnchor.constraint(equalToConstant: 8.scale),
-            progressView.bottomAnchor.constraint(equalTo: progressContainer.bottomAnchor)
-        ])
-        
-        NSLayoutConstraint.activate([
-            iconView.heightAnchor.constraint(equalToConstant: 32.scale),
-            iconView.widthAnchor.constraint(equalTo: iconView.heightAnchor),
-            iconView.centerYAnchor.constraint(equalTo: container.centerYAnchor),
-            iconView.trailingAnchor.constraint(equalTo: container.trailingAnchor, constant: -12.scale)
+            progressView.bottomAnchor.constraint(equalTo: container.bottomAnchor, constant: -22.scale)
         ])
     }
 }
@@ -97,13 +81,13 @@ private extension CourseDetailsTestCell {
     func makeContainer() -> UIView {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.layer.cornerRadius = 12.scale
+        view.layer.cornerRadius = 30.scale
         view.backgroundColor = CourseDetailsPalette.itemBackground
         contentView.addSubview(view)
         return view
     }
     
-    func makeNumberLabel() -> UILabel {
+    func makeNameLabel() -> UILabel {
         let view = UILabel()
         view.translatesAutoresizingMaskIntoConstraints = false
         container.addSubview(view)
@@ -113,14 +97,6 @@ private extension CourseDetailsTestCell {
     func makeQuestionsLabel() -> UILabel {
         let view = UILabel()
         view.translatesAutoresizingMaskIntoConstraints = false
-        progressContainer.addSubview(view)
-        return view
-    }
-    
-    func makeProgressContainer() -> UIView {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .clear
         container.addSubview(view)
         return view
     }
@@ -130,29 +106,17 @@ private extension CourseDetailsTestCell {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.layer.cornerRadius = 4.scale
         view.backgroundColor = CourseDetailsPalette.emptyGradient
-        progressContainer.addSubview(view)
-        return view
-    }
-    
-    func makeImageView() -> UIImageView {
-        let view = UIImageView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.layer.cornerRadius = 4.scale
-        view.image = UIImage(named: "CourseDetails.ArrowForward")
-        view.contentMode = .center
-        view.tintColor = CourseDetailsPalette.secondaryTint
-        view.backgroundColor = CourseDetailsPalette.secondaryButton
         container.addSubview(view)
         return view
     }
 }
 
 private extension TextAttributes {
-    static let numberAttrs = TextAttributes()
-        .font(Fonts.Lato.regular(size: 64.scale))
+    static let nameAttrs = TextAttributes()
+        .font(Fonts.SFProRounded.regular(size: 20.scale))
         .textColor(CourseDetailsPalette.title)
     
     static let questionCountAttrs = TextAttributes()
-        .font(Fonts.Lato.regular(size: 14.scale))
+        .font(Fonts.SFProRounded.regular(size: 16.scale))
         .textColor(CourseDetailsPalette.subtitle)
 }

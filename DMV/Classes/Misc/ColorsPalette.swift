@@ -168,7 +168,7 @@ enum TestStatsPalette {
     static let incorrect = UIColor(integralRed: 241, green: 104, blue: 91)
     static let passingScore = UIColor(integralRed: 19, green: 24, blue: 42)
     static let answerText = UIColor.white
-    static let separator = UIColor(integralRed: 75, green: 81, blue: 102)
+    static let separator = UIColor(integralRed: 241, green: 246, blue: 254)
     static let loader = UIColor(integralRed: 73, green: 132, blue: 241)
     
     enum Filter {
@@ -179,7 +179,7 @@ enum TestStatsPalette {
     enum CommunityResult {
         static let value = UIColor(integralRed: 19, green: 24, blue: 42)
         static let subtitle = UIColor(integralRed: 75, green: 81, blue: 102)
-        static let separator = UIColor(integralRed: 241, green: 246, blue: 254)
+        static let separator = UIColor(integralRed: 75, green: 81, blue: 102)
     }
     
     enum Progress {

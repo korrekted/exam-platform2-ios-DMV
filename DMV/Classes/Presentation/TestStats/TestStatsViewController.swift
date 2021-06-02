@@ -80,10 +80,11 @@ extension TestStatsViewController {
     static func make(element: TestStatsElement) -> TestStatsViewController {
         let controller = TestStatsViewController()
         controller.modalPresentationStyle = .fullScreen
+        controller.viewModel.isTopicTest = element.isTopicTest
         controller.viewModel.userTestId.accept(element.userTestId)
         controller.viewModel.testType.accept(element.testType)
         if case .get = element.testType {
-            controller.mainView.configureAddingButtons(isNextEnabled: element.isEnableNext)
+            controller.mainView.configureAddingButtons(isNextEnabled: element.isEnableNext, isTopicTest: element.isTopicTest)
         }
         return controller
     }
