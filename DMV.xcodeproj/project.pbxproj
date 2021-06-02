@@ -1143,9 +1143,9 @@
 		96781AAE266664000033134D /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				96781AB1266664000033134D /* Views */,
 				96781AAF266664000033134D /* StudyViewModel.swift */,
 				96781AB0266664000033134D /* StudyViewController.swift */,
-				96781AB1266664000033134D /* Views */,
 				96781AC7266664000033134D /* StudyView.swift */,
 			);
 			path = Study;

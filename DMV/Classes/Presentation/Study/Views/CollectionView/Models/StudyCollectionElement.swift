@@ -13,7 +13,7 @@ enum StudyCollectionElement {
     case courses([CourseElement])
     case trophy
     case title(String)
-    case mode(activeSubscription: Bool)
+    case mode
 }
 
 struct SCEBrief {

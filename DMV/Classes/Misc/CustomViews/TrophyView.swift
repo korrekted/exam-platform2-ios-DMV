@@ -19,6 +19,21 @@ class TrophyView: UIView {
         makeConstraints()
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [
+            UIColor(integralRed: 242, green: 78, blue: 78).cgColor,
+            UIColor(integralRed: 110, green: 78, blue: 242).cgColor
+        ]
+        gradientLayer.locations = [0, 1]
+        gradientLayer.startPoint = CGPoint(x: 0.25, y: 0.5)
+        gradientLayer.endPoint = CGPoint(x: 0.75, y: 0.5)
+        gradientLayer.frame = containerView.bounds
+        containerView.layer.insertSublayer(gradientLayer, at: 0)
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -76,7 +91,9 @@ private extension TrophyView {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = TrophyPalette.buttonBackground
         view.setAttributedTitle("Trophy.LearnMore".localized.attributed(with: .buttonAttr), for: .normal)
-        view.layer.cornerRadius = 7.scale
+        view.layer.cornerRadius = 17.scale
+        view.layer.borderWidth = 1.scale
+        view.layer.borderColor = UIColor.white.cgColor
         view.isUserInteractionEnabled = false
         containerView.addSubview(view)
         return view
@@ -103,8 +120,8 @@ private extension TrophyView {
     func makeContainerView() -> UIView {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.layer.cornerRadius = 20.scale
-        view.backgroundColor = TrophyPalette.background
+        view.layer.cornerRadius = 30.scale
+        view.layer.masksToBounds = true
         addSubview(view)
         return view
     }

@@ -121,7 +121,7 @@ private extension LocaleStateView {
         NSLayoutConstraint.activate([
             button.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
             button.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
-            button.heightAnchor.constraint(equalToConstant: 53.scale),
+            button.heightAnchor.constraint(equalToConstant: 60.scale),
             button.bottomAnchor.constraint(equalTo: bottomAnchor, constant: ScreenSize.isIphoneXFamily ? -60.scale : -30.scale)
         ])
     }
@@ -159,6 +159,7 @@ private extension LocaleStateView {
         let view = UIImageView()
         view.contentMode = .scaleAspectFit
         view.image = UIImage(named: "Onboarding.Cursor")
+        view.tintColor = Onboarding.pickerText
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view
@@ -172,7 +173,7 @@ private extension LocaleStateView {
         
         let view = UIButton()
         view.backgroundColor = Onboarding.primaryButton
-        view.layer.cornerRadius = 12.scale
+        view.layer.cornerRadius = 30.scale
         view.setAttributedTitle("Onboarding.Next".localized.attributed(with: attrs), for: .normal)
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)

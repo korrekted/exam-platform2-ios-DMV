@@ -69,7 +69,7 @@ private extension TestStatsComunityResultCell {
     
     func makeSeparatorView() -> UIView {
         let view = UIView()
-        view.backgroundColor = TestStatsPalette.separator
+        view.backgroundColor = TestStatsPalette.CommunityResult.separator
         view.translatesAutoresizingMaskIntoConstraints = false
         view.widthAnchor.constraint(equalToConstant: 1.scale).isActive = true
         return view

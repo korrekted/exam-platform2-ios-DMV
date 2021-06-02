@@ -18,6 +18,11 @@ final class LocaleTableViewCell: UITableViewCell {
         initialize()
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        container.layer.cornerRadius = contentView.frame.height / 2
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -26,11 +31,11 @@ final class LocaleTableViewCell: UITableViewCell {
 // MARK: Public
 extension LocaleTableViewCell {
     func setup(element: LocaleTableViewElement) {
-        container.backgroundColor = element.isSelected ? UIColor(integralRed: 249, green: 205, blue: 106) : UIColor(integralRed: 60, green: 75, blue: 159)
+        container.backgroundColor = element.isSelected ? Onboarding.Locale.selectedBackground : Onboarding.Locale.background
         
         let attrs = TextAttributes()
             .font(Fonts.SFProRounded.bold(size: 18.scale))
-            .textColor(element.isSelected ? UIColor(integralRed: 31, green: 31, blue: 31) : UIColor(integralRed: 245, green: 245, blue: 245))
+            .textColor(element.isSelected ? Onboarding.Locale.selectedText : Onboarding.Locale.text)
             .lineHeight(25.scale)
         label.attributedText = element.name.attributed(with: attrs)
     }

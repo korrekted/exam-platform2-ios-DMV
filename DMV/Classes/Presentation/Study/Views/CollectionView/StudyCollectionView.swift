@@ -53,9 +53,9 @@ extension StudyCollectionView: UICollectionViewDataSource {
             let cell = dequeueReusableCell(withReuseIdentifier: String(describing: SCTitleCell.self), for: indexPath) as! SCTitleCell
             cell.setup(title: title)
             return cell
-        case .mode(let activeSubscription):
+        case .mode:
             let cell = dequeueReusableCell(withReuseIdentifier: String(describing: SCModesCell.self), for: indexPath) as! SCModesCell
-            cell.setup(activeSubscription: activeSubscription)
+            cell.setup()
             cell.selectedMode = { [weak self] in
                 self?.selectedMode.accept($0)
             }

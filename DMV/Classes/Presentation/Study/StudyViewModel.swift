@@ -148,8 +148,7 @@ private extension StudyViewModel {
     }
     
     func makeModes() -> Driver<StudyCollectionSection> {
-        activeSubscription
-            .map { StudyCollectionSection(elements: [.mode(activeSubscription: $0)]) }
+        Driver.just(StudyCollectionSection(elements: [.mode]))
     }
     
     func makeTrophy() -> Driver<StudyCollectionSection?> {

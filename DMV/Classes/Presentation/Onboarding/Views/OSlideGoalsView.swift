@@ -92,7 +92,7 @@ private extension OSlideGoalsView {
         NSLayoutConstraint.activate([
             button.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
             button.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
-            button.heightAnchor.constraint(equalToConstant: 53.scale),
+            button.heightAnchor.constraint(equalToConstant: 60.scale),
             button.bottomAnchor.constraint(equalTo: bottomAnchor, constant: ScreenSize.isIphoneXFamily ? -60.scale : -30.scale)
         ])
     }
@@ -102,7 +102,7 @@ private extension OSlideGoalsView {
 private extension OSlideGoalsView {
     func makeTitleLabel() -> UILabel {
         let attrs = TextAttributes()
-            .textColor(Onboarding.pickerText)
+            .textColor(Onboarding.primaryText)
             .font(Fonts.SFProRounded.bold(size: 36.scale))
             .lineHeight(43.scale)
             .textAlignment(.center)
@@ -137,7 +137,7 @@ private extension OSlideGoalsView {
         
         let view = UIButton()
         view.backgroundColor = Onboarding.primaryButton
-        view.layer.cornerRadius = 12.scale
+        view.layer.cornerRadius = 30.scale
         view.setAttributedTitle("Onboarding.Next".localized.attributed(with: attrs), for: .normal)
         view.addTarget(self, action: #selector(onNext), for: .touchUpInside)
         view.translatesAutoresizingMaskIntoConstraints = false
