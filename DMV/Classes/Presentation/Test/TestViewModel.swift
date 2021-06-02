@@ -113,9 +113,15 @@ private extension TestViewModel {
                 let test: Single<Test?>
                 
                 switch type {
-                case let .get(testId), let .timedQuizz(testId):
+                case let .get(testId):
                     test = self.questionManager.retrieve(courseId: courseId,
                                                          testId: testId,
+                                                         time: nil,
+                                                         activeSubscription: self.activeSubscription)
+                case let .timedQuizz(minutes):
+                    test = self.questionManager.retrieve(courseId: courseId,
+                                                         testId: nil,
+                                                         time: minutes,
                                                          activeSubscription: self.activeSubscription)
                 case .tenSet:
                     test = self.questionManager.retrieveTenSet(courseId: courseId,
@@ -253,12 +259,11 @@ private extension TestViewModel {
     
     func makeTimer() -> Observable<Int> {
         currentTestElement
-            .compactMap { $0.element }
-            .withLatestFrom(currentTestType) { ($0.timeLeft, $1) }
-            .flatMapLatest { seconds, testType -> Observable<Int> in
-                guard let seconds = seconds, case .timedQuizz = testType else { return .empty() }
+            .withLatestFrom(currentTestType)
+            .flatMapLatest {testType -> Observable<Int> in
+                guard case let .timedQuizz(minutes) = testType else { return .empty() }
                 let startTime = CFAbsoluteTimeGetCurrent()
-                
+                let seconds = minutes * 60
                 return Observable<Int>
                     .timer(.seconds(0), period: .seconds(1), scheduler: MainScheduler.instance)
                     .map { _ in Int(CFAbsoluteTimeGetCurrent() - startTime) }

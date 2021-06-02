@@ -185,7 +185,12 @@ private extension StudyViewController {
                 .amplitudeManager
                 .logEvent(name: "Study Tap", parameters: ["what": "question of the day"])
         case .time:
-            openTest(types: [.timedQuizz(testId: nil)], activeSubscription: activeSubscription, courseId: courseId)
+            let controller = TimedExamViewController.make() { [weak self] minutes in
+                self?.openTest(types: [.timedQuizz(minutes: minutes)], activeSubscription: activeSubscription, courseId: courseId)
+            }
+            controller.modalPresentationStyle = .custom
+            controller.transitioningDelegate = self
+            UIApplication.shared.keyWindow?.rootViewController?.present(controller, animated: true)
         }
     }
     
@@ -201,5 +206,16 @@ private extension StudyViewController {
     
     func openPaygate() {
         UIApplication.shared.keyWindow?.rootViewController?.present(PaygateViewController.make(), animated: true)
+    }
+}
+
+extension StudyViewController: UIViewControllerTransitioningDelegate {
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return BottomSheetAnimation(duration: 0.5, animationType: .present)
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return BottomSheetAnimation(duration: 0.5, animationType: .dismiss)
     }
 }

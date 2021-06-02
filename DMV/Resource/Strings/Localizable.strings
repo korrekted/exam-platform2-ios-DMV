@@ -154,3 +154,9 @@
 "CourseDetails.Saved" = "Saved";
 "CourseDetails.Incorrect" = "Incorrect";
 "CourseDetails.PassRate" = "Pass rate";
+
+// MARK: Timed Exam
+"TimedExam.Title" = "Timed exаm";
+"TimedExam.Subtitle" = "How mаny minutes?";
+"TimedExam.Button" = "Start";
+

@@ -9,7 +9,7 @@ import RxSwift
 
 protocol QuestionManager: class {
     // MARK: API(Rx)
-    func retrieve(courseId: Int, testId: Int?, activeSubscription: Bool) -> Single<Test?>
+    func retrieve(courseId: Int, testId: Int?, time: Int?, activeSubscription: Bool) -> Single<Test?>
     func retrieveTenSet(courseId: Int, activeSubscription: Bool) -> Single<Test?>
     func retrieveFailedSet(courseId: Int, activeSubscription: Bool) -> Single<Test?>
     func retrieveQotd(courseId: Int, activeSubscription: Bool) -> Single<Test?>

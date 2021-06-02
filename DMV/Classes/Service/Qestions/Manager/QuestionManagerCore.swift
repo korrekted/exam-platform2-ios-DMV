@@ -10,7 +10,7 @@ import RxSwift
 final class QuestionManagerCore: QuestionManager {}
 
 extension QuestionManagerCore {
-    func retrieve(courseId: Int, testId: Int?, activeSubscription: Bool) -> Single<Test?> {
+    func retrieve(courseId: Int, testId: Int?, time: Int?, activeSubscription: Bool) -> Single<Test?> {
         guard let userToken = SessionManagerCore().getSession()?.userToken else {
             return .deferred { .just(nil) }
         }
@@ -18,7 +18,8 @@ extension QuestionManagerCore {
         let request = GetTestRequest(
             userToken: userToken,
             courseId: courseId,
-            testid: testId,
+            testId: testId,
+            time: time,
             activeSubscription: activeSubscription
         )
         

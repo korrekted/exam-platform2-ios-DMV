@@ -59,6 +59,15 @@ enum StudyPalette {
     }
 }
 
+enum TimedExamPalette {
+    static let background = UIColor.white
+    static let title = UIColor(integralRed: 75, green: 81, blue: 102)
+    static let subtitle = UIColor(integralRed: 19, green: 24, blue: 42)
+    static let closeTint = UIColor(integralRed: 19, green: 24, blue: 42)
+    static let startButton = UIColor(integralRed: 73, green: 132, blue: 241)
+    static let startButtonTint = UIColor.white
+}
+
 enum ScorePalette {
     static let background = UIColor(integralRed: 73, green: 132, blue: 241)
     static let containerBackground = UIColor.white
@@ -200,7 +209,7 @@ enum StatsPalette {
     }
 }
 
-enum Splash {
+enum SplashPalette {
     static let background = UIColor(integralRed: 73, green: 132, blue: 241)
     static let primaryText = UIColor.white
     static let secondaryText = UIColor(integralRed: 254, green: 241, blue: 129)

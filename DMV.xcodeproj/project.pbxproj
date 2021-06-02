@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		865FEC5A26679C1C009D7A4E /* TimedExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865FEC5726679C1C009D7A4E /* TimedExamViewController.swift */; };
+		865FEC5B26679C1C009D7A4E /* TimedExamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865FEC5826679C1C009D7A4E /* TimedExamView.swift */; };
+		865FEC5F2667A4E3009D7A4E /* BottomSheetAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865FEC5E2667A4E3009D7A4E /* BottomSheetAnimation.swift */; };
 		967819D7266661E30033134D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967819D6266661E30033134D /* Assets.xcassets */; };
 		96781B65266664010033134D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A05266663FF0033134D /* UIColorExtension.swift */; };
 		96781B66266664010033134D /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A06266663FF0033134D /* Collection+Extension.swift */; };
@@ -284,6 +287,9 @@
 
 /* Begin PBXFileReference section */
 		1BE88FE02E19BE5A88EEF939 /* Pods-DMV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMV.debug.xcconfig"; path = "Target Support Files/Pods-DMV/Pods-DMV.debug.xcconfig"; sourceTree = "<group>"; };
+		865FEC5726679C1C009D7A4E /* TimedExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimedExamViewController.swift; sourceTree = "<group>"; };
+		865FEC5826679C1C009D7A4E /* TimedExamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimedExamView.swift; sourceTree = "<group>"; };
+		865FEC5E2667A4E3009D7A4E /* BottomSheetAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetAnimation.swift; sourceTree = "<group>"; };
 		967819CA266661DF0033134D /* DMV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967819D6266661E30033134D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		967819DB266661E30033134D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -581,6 +587,24 @@
 				C6B862032F73539581F73AEB /* Pods_DMV.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		865FEC5626679BF3009D7A4E /* TimedExam */ = {
+			isa = PBXGroup;
+			children = (
+				865FEC5D2667A4C9009D7A4E /* Animation */,
+				865FEC5726679C1C009D7A4E /* TimedExamViewController.swift */,
+				865FEC5826679C1C009D7A4E /* TimedExamView.swift */,
+			);
+			path = TimedExam;
+			sourceTree = "<group>";
+		};
+		865FEC5D2667A4C9009D7A4E /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				865FEC5E2667A4E3009D7A4E /* BottomSheetAnimation.swift */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 		967819C1266661DF0033134D = {
@@ -1071,6 +1095,7 @@
 		96781A98266664000033134D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				865FEC5626679BF3009D7A4E /* TimedExam */,
 				96781A99266664000033134D /* Settings */,
 				96781AAA266664000033134D /* Splash */,
 				96781AAE266664000033134D /* Study */,
@@ -1251,12 +1276,12 @@
 		96781ACF266664000033134D /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				96781AD0266664000033134D /* Cells */,
-				96781AD6266664000033134D /* TestViewModel.swift */,
 				96781AD7266664000033134D /* Models */,
+				96781AD0266664000033134D /* Cells */,
+				96781AE1266664000033134D /* Views */,
+				96781AD6266664000033134D /* TestViewModel.swift */,
 				96781ADF266664000033134D /* TestView.swift */,
 				96781AE0266664000033134D /* TestViewController.swift */,
-				96781AE1266664000033134D /* Views */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -1908,6 +1933,7 @@
 				96781C5D266664040033134D /* OGoalCell.swift in Sources */,
 				96781BF8266664020033134D /* QuestionCollectionCell.swift in Sources */,
 				96781B88266664020033134D /* PaygateMapper.swift in Sources */,
+				865FEC5F2667A4E3009D7A4E /* BottomSheetAnimation.swift in Sources */,
 				96781BCF266664020033134D /* SessionManagerCore.swift in Sources */,
 				96781B67266664010033134D /* UITapGestureRecognizerExtension.swift in Sources */,
 				96781BEE266664020033134D /* CourseHeader.swift in Sources */,
@@ -1976,6 +2002,7 @@
 				96781BE1266664020033134D /* StudyViewModel.swift in Sources */,
 				96781BE7266664020033134D /* SCBriefDayView.swift in Sources */,
 				96781C53266664030033134D /* LocaleStateView.swift in Sources */,
+				865FEC5A26679C1C009D7A4E /* TimedExamViewController.swift in Sources */,
 				96781C23266664030033134D /* TestStatsTableView.swift in Sources */,
 				96781C24266664030033134D /* TestStatsResultView.swift in Sources */,
 				96781BCA266664020033134D /* GetStatsResponseMapper.swift in Sources */,
@@ -2046,6 +2073,7 @@
 				96781B96266664020033134D /* GetTestStatsResponseMapper.swift in Sources */,
 				96781BA3266664020033134D /* GetQotdRequest.swift in Sources */,
 				96781B78266664010033134D /* ProgressView.swift in Sources */,
+				865FEC5B26679C1C009D7A4E /* TimedExamView.swift in Sources */,
 				96781BBF266664020033134D /* GetLocaleResponseMapper.swift in Sources */,
 				96781C0C266664030033134D /* PaygateViewModel.swift in Sources */,
 				96781C2E266664030033134D /* SITestView.swift in Sources */,
