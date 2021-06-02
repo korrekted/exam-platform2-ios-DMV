@@ -30,10 +30,8 @@ class SCModesCell: UICollectionViewCell {
 }
 
 extension SCModesCell {
-    func setup(activeSubscription: Bool) {
-        let message = activeSubscription ? nil : "Study.Mode.TryMe".localized
-        
-        todayView.setup(name: "Study.Mode.TodaysQuestion".localized, image: UIImage(named: "Study.Mode.Todays"), markMessage: message)
+    func setup() {
+        todayView.setup(name: "Study.Mode.TodaysQuestion".localized, image: UIImage(named: "Study.Mode.Todays"), markMessage: "Study.Mode.TryMe".localized)
         randomView.setup(name: "Study.Mode.RandomSet".localized, image: UIImage(named: "Study.Mode.Random"))
         tenView.setup(name: "Study.Mode.TenQuestions".localized, image: UIImage(named: "Study.Mode.Ten"))
         missedView.setup(name: "Study.Mode.MissedQuestions".localized, image: UIImage(named: "Study.Mode.Missed"))
@@ -117,7 +115,7 @@ private extension SCModesCell {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didSelectMode))
         view.addGestureRecognizer(tapGesture)
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.layer.cornerRadius = 12.scale
+        view.layer.cornerRadius = 30.scale
         view.backgroundColor = StudyPalette.Mode.background
         contentView.addSubview(view)
         return view

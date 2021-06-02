@@ -185,6 +185,7 @@ private extension PaygateMainView {
     func makeCloseButton() -> UIButton {
         let view = UIButton()
         view.setImage(UIImage(named: "Paygate.MainOffer.Close"), for: .normal)
+        view.tintColor = NavigationPalette.navigationTint
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view

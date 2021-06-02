@@ -59,14 +59,6 @@ extension CourseCollectionView: UICollectionViewDelegateFlowLayout {
         return CGSize(width: flowLayout.itemSize.width, height: height)
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        guard let flowLayout = collectionViewLayout as? UICollectionViewFlowLayout else {
-            return .zero
-        }
-        let height = collectionView.bounds.height - flowLayout.sectionInset.top - flowLayout.sectionInset.bottom
-        return CGSize(width: 60.scale, height: height)
-    }
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let element = elements[indexPath.row]
         didTapCell?(element.course)
@@ -96,19 +88,12 @@ extension CourseCollectionView: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
-    
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let addHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: String(describing: CourseHeader.self), for: indexPath)
-        addHeader.addGestureRecognizer(tapRecognizer)
-        return addHeader
-    }
 }
 
 // MARK: Private
 private extension CourseCollectionView {
     func initialize() {
         register(CourseCell.self, forCellWithReuseIdentifier: String(describing: CourseCell.self))
-        register(CourseHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: String(describing: CourseHeader.self))
         showsHorizontalScrollIndicator = false
         dataSource = self
         delegate = self

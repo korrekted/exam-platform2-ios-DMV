@@ -80,7 +80,7 @@ private extension OSlideCountView {
         NSLayoutConstraint.activate([
             button.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
             button.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
-            button.heightAnchor.constraint(equalToConstant: 53.scale),
+            button.heightAnchor.constraint(equalToConstant: 60.scale),
             button.bottomAnchor.constraint(equalTo: bottomAnchor, constant: ScreenSize.isIphoneXFamily ? -60.scale : -30.scale)
         ])
     }
@@ -140,7 +140,7 @@ private extension OSlideCountView {
         
         let view = UIButton()
         view.backgroundColor = Onboarding.primaryButton
-        view.layer.cornerRadius = 12.scale
+        view.layer.cornerRadius = 30.scale
         view.setAttributedTitle("Onboarding.Next".localized.attributed(with: attrs), for: .normal)
         view.addTarget(self, action: #selector(onNext), for: .touchUpInside)
         view.translatesAutoresizingMaskIntoConstraints = false

@@ -45,14 +45,14 @@ private extension OSlideQuestionView {
         
         NSLayoutConstraint.activate([
             noButton.widthAnchor.constraint(equalToConstant: 165.scale),
-            noButton.heightAnchor.constraint(equalToConstant: 53.scale),
+            noButton.heightAnchor.constraint(equalToConstant: 60.scale),
             noButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
             noButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: ScreenSize.isIphoneXFamily ? -60.scale : -30.scale)
         ])
         
         NSLayoutConstraint.activate([
             yesButton.widthAnchor.constraint(equalToConstant: 165.scale),
-            yesButton.heightAnchor.constraint(equalToConstant: 53.scale),
+            yesButton.heightAnchor.constraint(equalToConstant: 60.scale),
             yesButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
             yesButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: ScreenSize.isIphoneXFamily ? -60.scale : -30.scale)
         ])
@@ -96,7 +96,7 @@ private extension OSlideQuestionView {
             .textColor(Onboarding.primaryButtonTint)
         
         let view = UIButton()
-        view.layer.cornerRadius = 12.scale
+        view.layer.cornerRadius = 30.scale
         view.setAttributedTitle("Onboarding.Yes".localized.attributed(with: attrs), for: .normal)
         view.backgroundColor = Onboarding.primaryButton
         view.addTarget(self, action: #selector(onNext), for: .touchUpInside)
@@ -111,7 +111,7 @@ private extension OSlideQuestionView {
             .textColor(Onboarding.secondaryButtonTint)
         
         let view = UIButton()
-        view.layer.cornerRadius = 12.scale
+        view.layer.cornerRadius = 30.scale
         view.layer.borderWidth = 1.scale
         view.layer.borderColor = Onboarding.secondaryButtonBorder.cgColor
         view.setAttributedTitle("Onboarding.No".localized.attributed(with: attrs), for: .normal)

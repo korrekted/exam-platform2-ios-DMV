@@ -159,7 +159,7 @@ private extension TestView {
         let gradientLayer = CAGradientLayer()
         
         gradientLayer.colors = TestPalette.bottomGradients
-        gradientLayer.locations = [0, 0.65]
+        gradientLayer.locations = [0, 0.36]
         gradientLayer.startPoint = CGPoint(x: 0.5, y: 0)
         gradientLayer.endPoint = CGPoint(x: 0.5, y: 1)
         gradientLayer.frame = CGRect(origin: .zero, size: CGSize(width: UIScreen.main.bounds.width, height: 195.scale))

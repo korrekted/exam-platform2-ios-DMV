@@ -13,7 +13,7 @@ enum TestType {
     case failedSet
     case qotd
     case randomSet
-    case timedQuizz(testId: Int?)
+    case timedQuizz(minutes: Int)
 }
 
 extension TestType {

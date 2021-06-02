@@ -105,6 +105,7 @@ private extension OSlidePlanView {
         let view = OSlidePlanCell()
         view.label.text = title.localized
         view.imageView.image = UIImage(named: image)
+        view.imageView.tintColor = Onboarding.Plan.icon
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view
@@ -118,7 +119,7 @@ private extension OSlidePlanView {
         
         let view = UIButton()
         view.backgroundColor = Onboarding.primaryButton
-        view.layer.cornerRadius = 12.scale
+        view.layer.cornerRadius = 30.scale
         view.setAttributedTitle("Onboarding.SlidePlan.Button".localized.attributed(with: attrs), for: .normal)
         view.addTarget(self, action: #selector(onNext), for: .touchUpInside)
         view.translatesAutoresizingMaskIntoConstraints = false

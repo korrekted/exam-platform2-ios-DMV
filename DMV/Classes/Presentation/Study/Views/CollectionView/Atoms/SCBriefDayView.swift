@@ -38,7 +38,7 @@ extension SCBriefDayView {
         formatter.dateFormat = "dd"
         dayLabel.text = formatter.string(from: day.date)
         
-        dayLabel.textColor = day.activity ? StudyPalette.Brief.text : StudyPalette.Brief.selectedText
+        dayLabel.textColor = day.activity ? StudyPalette.Brief.selectedText : StudyPalette.Brief.text
         
 //        weekdayLabel.alpha = day.activity ? 1 : 0.3
         dayLabel.backgroundColor = day.activity ? StudyPalette.Brief.selected : .clear
