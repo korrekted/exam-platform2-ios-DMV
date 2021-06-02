@@ -35,8 +35,6 @@ extension STSettingLinksCell {
         switch change {
         case .locale:
             string = "Settings.ChangeLocale".localized
-        case .topics:
-            string = "Settings.Topics".localized
         }
         
         let attrs = TextAttributes()
@@ -64,8 +62,6 @@ private extension STSettingLinksCell {
         switch change {
         case .locale:
             tapped?(.locale)
-        case .topics:
-            tapped?(.topic)
         }
     }
 }

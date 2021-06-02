@@ -1112,10 +1112,10 @@
 		96781A99266664000033134D /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				96781A9F266664000033134D /* Views */,
+				96781A9C266664000033134D /* Utils */,
 				96781A9A266664000033134D /* SettingsView.swift */,
 				96781A9B266664000033134D /* SettingsViewModel.swift */,
-				96781A9C266664000033134D /* Utils */,
-				96781A9F266664000033134D /* Views */,
 				96781AA9266664000033134D /* SettingsViewController.swift */,
 			);
 			path = Settings;

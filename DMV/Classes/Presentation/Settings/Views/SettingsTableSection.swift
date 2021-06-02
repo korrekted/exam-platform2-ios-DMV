@@ -7,7 +7,7 @@
 
 enum SettingsTableSection {
     enum Change {
-        case topics, locale
+        case locale
     }
     
     case unlockPremium

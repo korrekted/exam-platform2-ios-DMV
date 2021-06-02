@@ -10,7 +10,7 @@ import RxCocoa
 
 final class SettingsTableView: UITableView {
     enum Tapped {
-        case unlock, rateUs, contactUs, termsOfUse, privacyPoliicy, locale, topic
+        case unlock, rateUs, contactUs, termsOfUse, privacyPoliicy, locale
     }
     
     lazy var tapped = PublishRelay<Tapped>()

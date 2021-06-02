@@ -40,8 +40,9 @@ private extension SettingsViewModel {
                     sections.append(.unlockPremium)
                 }
                 
-                let settingsSection = self.makeSettingsSection(countries: countries)
-                sections.append(settingsSection)
+                if let settingsSection = self.makeSettingsSection(countries: countries) {
+                    sections.append(settingsSection)
+                }
                 
                 sections.append(.links)
                 
@@ -97,13 +98,13 @@ private extension SettingsViewModel {
             .asDriver(onErrorDriveWith: .empty())
     }
     
-    func makeSettingsSection(countries: [Country]) -> SettingsTableSection {
+    func makeSettingsSection(countries: [Country]) -> SettingsTableSection? {
         if countries.isEmpty {
-            return .settings([.topics])
+            return nil
         }
         
         if countries.count > 1 {
-            return .settings([.locale, .topics])
+            return .settings([.locale])
         }
         
         // если одна страна
@@ -111,11 +112,11 @@ private extension SettingsViewModel {
         let languages = countries.first?.languages ?? []
         
         if languages.isEmpty {
-            return .settings([.topics])
+            return nil
         }
         
         if languages.count > 1 {
-            return .settings([.locale, .topics])
+            return .settings([.locale])
         }
         
         // если одна страна с одним языком
@@ -123,10 +124,10 @@ private extension SettingsViewModel {
         let states = languages.first?.states ?? []
         
         if states.isEmpty || states.count == 1 {
-            return .settings([.topics])
+            return nil
         }
         
-        return .settings([.locale, .topics])
+        return .settings([.locale])
     }
     
     func makeLocaleSection(locale: ProfileLocale?, countries: [Country]) -> SettingsTableSection? {

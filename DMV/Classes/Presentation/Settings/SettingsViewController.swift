@@ -84,8 +84,6 @@ private extension SettingsViewController {
                 .logEvent(name: "Settings Tap", parameters: ["what": "privacy policy"])
         case .locale:
             screenOpener.open(screen: .locale, from: self)
-        case .topic:
-            screenOpener.open(screen: .topics, from: self)
         }
     }
     

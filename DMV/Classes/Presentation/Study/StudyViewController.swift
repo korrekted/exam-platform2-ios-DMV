@@ -130,12 +130,6 @@ final class StudyViewController: UIViewController {
                 $0.openCourseDetails(course: $1)
             })
             .disposed(by: disposeBag)
-        
-        mainView.collectionView
-            .didTapAdd.bind(to: Binder(self) { a1, a2 in
-                a1.opener.open(screen: .topics, from: a1)
-            })
-            .disposed(by: disposeBag)
     }
 }
 
