@@ -32,14 +32,14 @@ private extension OGoalCell {
         backgroundColor = Onboarding.Goal.background
         
         layer.masksToBounds = true
-        layer.cornerRadius = 12.scale
+        layer.cornerRadius = 20.scale
         
-        topInset = 16.scale
-        bottomInset = 16.scale
-        leftInset = 16.scale
-        rightInset = 16.scale
+        topInset = 10.scale
+        bottomInset = 10.scale
+        leftInset = 20.scale
+        rightInset = 20.scale
         
-        font = Fonts.SFProRounded.regular(size: 18.scale)
+        font = Fonts.SFProRounded.regular(size: 16.scale)
     }
     
     func update() {

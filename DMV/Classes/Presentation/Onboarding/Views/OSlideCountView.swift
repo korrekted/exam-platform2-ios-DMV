@@ -65,10 +65,10 @@ private extension OSlideCountView {
         ])
         
         NSLayoutConstraint.activate([
-            imageView.centerXAnchor.constraint(equalTo: centerXAnchor),
-            imageView.widthAnchor.constraint(equalToConstant: 300.scale),
-            imageView.heightAnchor.constraint(equalToConstant: 245.scale),
-            imageView.bottomAnchor.constraint(equalTo: slider.topAnchor, constant: -87.scale)
+            imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            imageView.heightAnchor.constraint(equalToConstant: ScreenSize.isIphoneXFamily ? 250.scale : 230.scale),
+            imageView.bottomAnchor.constraint(equalTo: slider.topAnchor, constant: ScreenSize.isIphoneXFamily ? -87.scale : -40.scale)
         ])
         
         NSLayoutConstraint.activate([

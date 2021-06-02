@@ -38,8 +38,8 @@ private extension OSlideQuestionView {
         ])
         
         NSLayoutConstraint.activate([
-            questionLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
-            questionLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
+            questionLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
+            questionLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
             questionLabel.bottomAnchor.constraint(equalTo: yesButton.topAnchor, constant: -48.scale)
         ])
         

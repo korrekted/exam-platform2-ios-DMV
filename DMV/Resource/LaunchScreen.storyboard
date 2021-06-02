@@ -16,14 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash.Image" translatesAutoresizingMaskIntoConstraints="NO" id="GMv-Gg-UEa">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash.Image" translatesAutoresizingMaskIntoConstraints="NO" id="GMv-Gg-UEa">
+                                <rect key="frame" x="0.0" y="410" width="414" height="486"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="486" id="NSg-yx-37w"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.16078431372549018" green="0.21568627450980393" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.28627450980392155" green="0.51764705882352935" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="GMv-Gg-UEa" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="0pd-0S-gSf"/>
                             <constraint firstAttribute="bottom" secondItem="GMv-Gg-UEa" secondAttribute="bottom" id="3s6-n2-JAW"/>
                             <constraint firstItem="GMv-Gg-UEa" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="4Uh-P5-Ohl"/>
                             <constraint firstAttribute="trailing" secondItem="GMv-Gg-UEa" secondAttribute="trailing" id="Bj0-Sf-2Wx"/>
@@ -36,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Splash.Image" width="374" height="812"/>
+        <image name="Splash.Image" width="375" height="486"/>
     </resources>
 </document>

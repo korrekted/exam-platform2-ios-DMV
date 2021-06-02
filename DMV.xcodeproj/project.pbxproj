@@ -251,7 +251,6 @@
 		96781C52266664030033134D /* LocaleLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B48266664010033134D /* LocaleLanguageView.swift */; };
 		96781C53266664030033134D /* LocaleStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B49266664010033134D /* LocaleStateView.swift */; };
 		96781C54266664030033134D /* LocaleCountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B4A266664010033134D /* LocaleCountryView.swift */; };
-		96781C55266664030033134D /* Onboarding.Chart.json in Resources */ = {isa = PBXBuildFile; fileRef = 96781B4C266664010033134D /* Onboarding.Chart.json */; };
 		96781C56266664030033134D /* ODatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B4D266664010033134D /* ODatePicker.swift */; };
 		96781C57266664030033134D /* OPreloaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B4E266664010033134D /* OPreloaderCell.swift */; };
 		96781C58266664030033134D /* TopicsCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B50266664010033134D /* TopicsCollectionLayout.swift */; };
@@ -267,7 +266,6 @@
 		96781C62266664040033134D /* OSlidePreloaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B5A266664010033134D /* OSlidePreloaderView.swift */; };
 		96781C63266664040033134D /* OSlidePlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B5B266664010033134D /* OSlidePlanView.swift */; };
 		96781C64266664040033134D /* OSlideCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B5C266664010033134D /* OSlideCountView.swift */; };
-		96781C65266664040033134D /* OSlideExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B5D266664010033134D /* OSlideExperienceView.swift */; };
 		96781C66266664040033134D /* OSlideWhenTakingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B5E266664010033134D /* OSlideWhenTakingView.swift */; };
 		96781C67266664040033134D /* OSlideLocaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B5F266664010033134D /* OSlideLocaleView.swift */; };
 		96781C68266664040033134D /* OSlideTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B60266664010033134D /* OSlideTimeView.swift */; };
@@ -282,6 +280,7 @@
 		96781C7E2666646E0033134D /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96781C792666646E0033134D /* SF-Pro-Rounded-Regular.otf */; };
 		96781C7F2666646E0033134D /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96781C7A2666646E0033134D /* SF-Pro-Rounded-Bold.otf */; };
 		96781C83266665190033134D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96781C82266665190033134D /* GoogleService-Info.plist */; };
+		96781C922667D4100033134D /* Onboarding.Chart.json in Resources */ = {isa = PBXBuildFile; fileRef = 96781C912667D4100033134D /* Onboarding.Chart.json */; };
 		E2D80A444A086C4FC0564B36 /* Pods_DMV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B862032F73539581F73AEB /* Pods_DMV.framework */; };
 /* End PBXBuildFile section */
 
@@ -533,7 +532,6 @@
 		96781B48266664010033134D /* LocaleLanguageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocaleLanguageView.swift; sourceTree = "<group>"; };
 		96781B49266664010033134D /* LocaleStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocaleStateView.swift; sourceTree = "<group>"; };
 		96781B4A266664010033134D /* LocaleCountryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocaleCountryView.swift; sourceTree = "<group>"; };
-		96781B4C266664010033134D /* Onboarding.Chart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Onboarding.Chart.json; sourceTree = "<group>"; };
 		96781B4D266664010033134D /* ODatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODatePicker.swift; sourceTree = "<group>"; };
 		96781B4E266664010033134D /* OPreloaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPreloaderCell.swift; sourceTree = "<group>"; };
 		96781B50266664010033134D /* TopicsCollectionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicsCollectionLayout.swift; sourceTree = "<group>"; };
@@ -549,7 +547,6 @@
 		96781B5A266664010033134D /* OSlidePreloaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSlidePreloaderView.swift; sourceTree = "<group>"; };
 		96781B5B266664010033134D /* OSlidePlanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSlidePlanView.swift; sourceTree = "<group>"; };
 		96781B5C266664010033134D /* OSlideCountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSlideCountView.swift; sourceTree = "<group>"; };
-		96781B5D266664010033134D /* OSlideExperienceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSlideExperienceView.swift; sourceTree = "<group>"; };
 		96781B5E266664010033134D /* OSlideWhenTakingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSlideWhenTakingView.swift; sourceTree = "<group>"; };
 		96781B5F266664010033134D /* OSlideLocaleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSlideLocaleView.swift; sourceTree = "<group>"; };
 		96781B60266664010033134D /* OSlideTimeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSlideTimeView.swift; sourceTree = "<group>"; };
@@ -565,6 +562,7 @@
 		96781C7A2666646E0033134D /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
 		96781C80266664740033134D /* DMV-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMV-Bridging-Header.h"; sourceTree = "<group>"; };
 		96781C82266665190033134D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		96781C912667D4100033134D /* Onboarding.Chart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Onboarding.Chart.json; sourceTree = "<group>"; };
 		C6B862032F73539581F73AEB /* Pods_DMV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DMV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DEFC12D47EC10AA48AB676 /* Pods-DMV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMV.release.xcconfig"; path = "Target Support Files/Pods-DMV/Pods-DMV.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1553,11 +1551,11 @@
 		96781B3B266664010033134D /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				96781B3C266664010033134D /* OnboardingViewController.swift */,
+				96781B63266664010033134D /* Analytics */,
 				96781B3D266664010033134D /* Views */,
+				96781B3C266664010033134D /* OnboardingViewController.swift */,
 				96781B61266664010033134D /* OnboardingView.swift */,
 				96781B62266664010033134D /* OnboardingViewModel.swift */,
-				96781B63266664010033134D /* Analytics */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -1565,8 +1563,8 @@
 		96781B3D266664010033134D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				96781B3E266664010033134D /* OSlideStartedView.swift */,
 				96781B3F266664010033134D /* Atoms */,
+				96781B3E266664010033134D /* OSlideStartedView.swift */,
 				96781B56266664010033134D /* OSlideTopicsView.swift */,
 				96781B57266664010033134D /* OSlideView.swift */,
 				96781B58266664010033134D /* OSlideGoalsView.swift */,
@@ -1574,7 +1572,6 @@
 				96781B5A266664010033134D /* OSlidePreloaderView.swift */,
 				96781B5B266664010033134D /* OSlidePlanView.swift */,
 				96781B5C266664010033134D /* OSlideCountView.swift */,
-				96781B5D266664010033134D /* OSlideExperienceView.swift */,
 				96781B5E266664010033134D /* OSlideWhenTakingView.swift */,
 				96781B5F266664010033134D /* OSlideLocaleView.swift */,
 				96781B60266664010033134D /* OSlideTimeView.swift */,
@@ -1585,14 +1582,14 @@
 		96781B3F266664010033134D /* Atoms */ = {
 			isa = PBXGroup;
 			children = (
+				96781B4F266664010033134D /* TopicsCollection */,
+				96781B4B266664010033134D /* Source */,
+				96781B43266664010033134D /* Locale */,
 				96781B40266664010033134D /* OQuestionFormView.swift */,
 				96781B41266664010033134D /* OProgressView.swift */,
 				96781B42266664010033134D /* OSlider.swift */,
-				96781B43266664010033134D /* Locale */,
-				96781B4B266664010033134D /* Source */,
 				96781B4D266664010033134D /* ODatePicker.swift */,
 				96781B4E266664010033134D /* OPreloaderCell.swift */,
-				96781B4F266664010033134D /* TopicsCollection */,
 				96781B54266664010033134D /* OSlidePlanCell.swift */,
 				96781B55266664010033134D /* OGoalCell.swift */,
 			);
@@ -1623,7 +1620,7 @@
 		96781B4B266664010033134D /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				96781B4C266664010033134D /* Onboarding.Chart.json */,
+				96781C912667D4100033134D /* Onboarding.Chart.json */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -1752,13 +1749,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96781C55266664030033134D /* Onboarding.Chart.json in Resources */,
 				96781C71266664600033134D /* LaunchScreen.storyboard in Resources */,
 				96781C6E266664190033134D /* Localizable.strings in Resources */,
 				96781C7B2666646E0033134D /* lato-regular.otf in Resources */,
 				96781C7C2666646E0033134D /* lato-bold.otf in Resources */,
 				96781C7E2666646E0033134D /* SF-Pro-Rounded-Regular.otf in Resources */,
 				96781C7F2666646E0033134D /* SF-Pro-Rounded-Bold.otf in Resources */,
+				96781C922667D4100033134D /* Onboarding.Chart.json in Resources */,
 				96781C83266665190033134D /* GoogleService-Info.plist in Resources */,
 				96781C7D2666646E0033134D /* SF-Pro-Rounded-Semibold.otf in Resources */,
 				967819D7266661E30033134D /* Assets.xcassets in Resources */,
@@ -1922,7 +1919,6 @@
 				96781C22266664030033134D /* TestStatsProgressView.swift in Sources */,
 				96781BFC266664030033134D /* TestViewModel.swift in Sources */,
 				96781BEF266664020033134D /* CourseCollectionView.swift in Sources */,
-				96781C65266664040033134D /* OSlideExperienceView.swift in Sources */,
 				96781BD0266664020033134D /* SessionManager.swift in Sources */,
 				96781C01266664030033134D /* TestAnalytics.swift in Sources */,
 				96781BED266664020033134D /* CourseCell.swift in Sources */,

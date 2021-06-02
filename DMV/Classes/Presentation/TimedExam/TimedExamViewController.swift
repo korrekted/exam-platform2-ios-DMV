@@ -30,9 +30,9 @@ final class TimedExamViewController: UIViewController {
         mainView.startButton.rx.tap
             .withLatestFrom(mainView.slider.rx.value)
             .map { Int($0) }
-            .bind(to: Binder(self) { base, value in
-                base.dismiss(animated: true) { [weak base] in
-                    base?.didTapStart?(value)
+            .subscribe(onNext: { [weak self] value in
+                self?.dismiss(animated: true) {
+                    self?.didTapStart?(value)
                 }
             })
             .disposed(by: disposeBag)

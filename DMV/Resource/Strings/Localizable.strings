@@ -47,10 +47,6 @@
 "Onboarding.SlideTime.Title" = "How much time can\nyou spend on\na single test?";
 "Onboarding.SlideTime.Min" = "min";
 "Onboarding.SlideCount.Title" = "How many tests\nwould you like to\ntake daily?";
-"Onboarding.SlideExperience.Title" = "Describe your\ndriving\nexperience";
-"Onboarding.SlideExperience.Cell1" = "0-3 years";
-"Onboarding.SlideExperience.Cell2" = "3-5 years";
-"Onboarding.SlideExperience.Cell3" = "5+ years";
 "Onboarding.Question.Title" = "Do you agree with the statement?";
 "Onboarding.Question1" = "A driver should always remember about the blind spots of commercial vehicles.";
 "Onboarding.Question2" = "A driver should always remember about the blind spots of commercial vehicles.";
