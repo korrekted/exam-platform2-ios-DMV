@@ -33,10 +33,9 @@ private extension StudyViewModel {
             .compactMap { $0 }
         
         let defaultCourse = courseManager
-            .rxGetSelectedCourse()
-            .compactMap { $0 }
+            .retrieveCourses()
             .asObservable()
-            .concat(courseManager.retrieveCourses().compactMap { $0.first })
+            .compactMap { $0.first}
             .take(1)
         
         return defaultCourse
@@ -74,17 +73,13 @@ private extension StudyViewModel {
     }
     
     func makeCoursesElements() -> Driver<StudyCollectionSection> {
-        let courses = Observable.merge(
-            ProfileMediator.shared.rxSelectedTopics.asObservable().map { _ in () },
-            ProfileMediator.shared.rxUpdatedProfileLocale.asObservable().map { _ in () }
-        )
+        let courses = ProfileMediator.shared.rxUpdatedProfileLocale.asObservable().map { _ in () }
         .startWith(())
         .flatMapLatest { [weak self] _ -> Single<[Course]> in
             guard let self = self else { return .never() }
             return self.courseManager
                 .retrieveCourses()
         }
-        .map { $0.filter { $0.selected } }
         
         return Observable
             .combineLatest(courses, currentCourse)

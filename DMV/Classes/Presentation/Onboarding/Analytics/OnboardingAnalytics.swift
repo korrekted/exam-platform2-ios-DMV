@@ -12,8 +12,6 @@ final class OnboardingAnalytics {
         switch step {
         case .started:
             name = "Welcome Screen"
-        case .topics:
-            name = "Topics Screen"
         case .locale:
             name = "Locale Screen"
         case .goals:

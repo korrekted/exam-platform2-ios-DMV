@@ -14,69 +14,6 @@ final class ProfileManagerCore {
     }
 }
 
-// MARK: Specific Topic
-extension ProfileManagerCore {
-    func obtainSpecificTopics() -> Single<[SpecificTopic]> {
-        guard let userToken = SessionManagerCore().getSession()?.userToken else {
-            return .deferred { .just([]) }
-        }
-        
-        let request = GetTopicsRequest(userToken: userToken)
-        
-        return SDKStorage.shared
-            .restApiTransport
-            .callServerApi(requestBody: request)
-            .map(GetTopicsResponseMapper.map(from:))
-    }
-    
-    func obtainSelectedSpecificTopics() -> Single<[SpecificTopic]> {
-        Single<[SpecificTopic]>.create { event in
-            guard let data = UserDefaults.standard.data(forKey: Constants.cachedSelectedSpecificTopicsKey) else {
-                event(.success([]))
-                return Disposables.create()
-            }
-            
-            let array = try? JSONDecoder().decode([SpecificTopic].self, from: data)
-            
-            event(.success(array ?? []))
-            
-            return Disposables.create()
-        }
-        .subscribe(on: ConcurrentDispatchQueueScheduler(qos: .background))
-        .observe(on: MainScheduler.asyncInstance)
-    }
-    
-    func saveSelected(specificTopics: [SpecificTopic]) -> Single<Void> {
-        Single<Void>.create { event in
-            guard let data = try? JSONEncoder().encode(specificTopics) else {
-                return Disposables.create()
-            }
-            
-            UserDefaults.standard.setValue(data, forKey: Constants.cachedSelectedSpecificTopicsKey)
-            
-            event(.success(Void()))
-            
-            ProfileMediator.shared.notifyAboutSaveSelected(specificTopics: specificTopics)
-            
-            return Disposables.create()
-        }
-    }
-    
-    func set(topicsIds: [Int]? = nil) -> Single<Void> {
-        guard let userToken = SessionManagerCore().getSession()?.userToken else {
-            return .error(SignError.tokenNotFound)
-        }
-
-        let request = SetRequest(userToken: userToken,
-                                 topicsIds: topicsIds)
-
-        return SDKStorage.shared
-            .restApiTransport
-            .callServerApi(requestBody: request)
-            .map { _ in Void() }
-    }
-}
-
 // MARK: Counties
 extension ProfileManagerCore {
     func retrieveCountries(forceUpdate: Bool) -> Single<[Country]> {

@@ -8,12 +8,6 @@
 import RxSwift
 
 protocol ProfileManager {
-    // MARK: Specific Topic
-    func obtainSpecificTopics() -> Single<[SpecificTopic]>
-    func obtainSelectedSpecificTopics() -> Single<[SpecificTopic]>
-    func saveSelected(specificTopics: [SpecificTopic]) -> Single<Void>
-    func set(topicsIds: [Int]?) -> Single<Void>
-    
     // MARK: Counties
     func retrieveCountries(forceUpdate: Bool) -> Single<[Country]>
     

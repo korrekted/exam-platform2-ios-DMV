@@ -9,7 +9,7 @@ import UIKit
 
 final class OnboardingView: UIView {
     enum Step: Int {
-        case started, locale, topics, goals, whenTaking, time, count, question1, question2, question3, question4, preloader, plan
+        case started, locale, goals, whenTaking, time, count, question1, question2, question3, question4, preloader, plan
     }
     
     var didFinish: (() -> Void)?
@@ -30,7 +30,6 @@ final class OnboardingView: UIView {
         [
             OSlideStartedView(step: .started),
             OSlideLocaleView(step: .locale),
-            OSlideTopicsView(step: .topics),
             OSlideGoalsView(step: .goals),
             OSlideWhenTakingView(step: .whenTaking),
             OSlideTimeView(step: .time),
@@ -114,7 +113,7 @@ private extension OnboardingView {
     
     func headerUpdate() {
         switch step {
-        case .started, .topics, .locale, .preloader, .plan:
+        case .started, .locale, .preloader, .plan:
             skipButton.isHidden = true
             progressView.isHidden = true
         default:

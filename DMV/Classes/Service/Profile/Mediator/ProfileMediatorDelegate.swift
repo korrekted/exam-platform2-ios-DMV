@@ -6,6 +6,5 @@
 //
 
 protocol ProfileMediatorDelegate: class {
-    func didSaveSelected(specificTopics: [SpecificTopic])
     func didUpdated(profileLocale: ProfileLocale)
 }

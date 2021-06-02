@@ -12,18 +12,15 @@ struct SetRequest: APIRequestBody {
     private let country: String?
     private let state: String?
     private let language: String?
-    private let topicsIds: [Int]?
     
     init(userToken: String,
          country: String? = nil,
          state: String? = nil,
-         language: String? = nil,
-         topicsIds: [Int]? = nil) {
+         language: String? = nil) {
         self.userToken = userToken
         self.country = country
         self.state = state
         self.language = language
-        self.topicsIds = topicsIds
     }
     
     var url: String {
@@ -50,10 +47,6 @@ struct SetRequest: APIRequestBody {
         
         if let language = self.language {
             params["language"] = language
-        }
-        
-        if let topicsIds = self.topicsIds {
-            params["course_ids"] = topicsIds
         }
         
         return params
