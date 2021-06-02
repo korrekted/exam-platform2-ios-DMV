@@ -8,7 +8,7 @@
 struct TestConfig {
     let id: Int
     let paid: Bool
-    let index: Int
+    let name: String
     let count: Int
     let correctProgress: Int
     let incorrectProgress: Int

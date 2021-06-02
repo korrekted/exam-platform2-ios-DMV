@@ -21,6 +21,8 @@ final class TestStatsViewModel {
     private lazy var testStatsManager = TestStatsManagerCore()
     private lazy var courseManager = CoursesManagerCore()
     private lazy var tryAgainIsHiddenRelay = BehaviorRelay<Bool>(value: true)
+    
+    var isTopicTest = false
 }
 
 // MARK: Private
@@ -47,20 +49,23 @@ private extension TestStatsViewModel {
         
         return Observable
             .combineLatest(stats, filterRelay.asObservable())
-            .map { [tryAgainIsHiddenRelay] element, filter -> [TestStatsCellType] in
+            .map { [tryAgainIsHiddenRelay, isTopicTest] element, filter -> [TestStatsCellType] in
                 guard let stats = element else { return [] }
                 
                 tryAgainIsHiddenRelay.accept(stats.passed)
                 
-                let initial: [TestStatsCellType] = [
+                let main: [TestStatsCellType] = [
                     .progress(.init(stats: stats)),
                     .comunityResult(.init(stats: stats)),
-                    .description(.init(stats: stats)),
-                    .filter(filter)
+                    .description(.init(stats: stats))
                 ]
                 
+                guard !isTopicTest else {
+                    return main
+                }
+                
                 return stats.questions
-                    .reduce(into: initial) { old, question in
+                    .reduce(into: main + [.filter(filter)]) { old, question in
                         switch filter {
                         case .all:
                             old.append(.answer(.init(answer: question)))

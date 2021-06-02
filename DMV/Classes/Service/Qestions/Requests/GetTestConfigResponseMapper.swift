@@ -20,7 +20,6 @@ final class GetTestConfigResponseMapper {
                 guard
                     let id = testJSON["id"] as? Int,
                     let paid = testJSON["paid"] as? Bool,
-                    let index = testJSON["index"] as? Int,
                     let count = testJSON["count"] as? Int,
                     let correctProgress = testJSON["correct_progress"] as? Int,
                     let incorrectProgress = testJSON["incorrect_progress"] as? Int
@@ -28,10 +27,12 @@ final class GetTestConfigResponseMapper {
                     return nil
                 }
                 
+                let name = testJSON["name"] as? String ?? ""
+                
                 return TestConfig(
                     id: id,
                     paid: paid,
-                    index: index,
+                    name: name,
                     count: count,
                     correctProgress: correctProgress,
                     incorrectProgress: incorrectProgress

@@ -11,4 +11,5 @@ struct TestStatsElement {
     let userTestId: Int
     let testType: TestType
     let isEnableNext: Bool
+    let isTopicTest: Bool
 }

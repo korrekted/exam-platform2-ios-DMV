@@ -47,6 +47,8 @@ final class TestViewModel {
     
     private lazy var questionProgress = makeQuestionProgress().share(replay: 1, scope: .forever)
     private lazy var timer = makeTimer().share(replay: 1, scope: .forever)
+    
+    var isTopicTest = false
 }
 
 // MARK: Private
@@ -192,7 +194,7 @@ private extension TestViewModel {
             .withLatestFrom(currentTestType) { ($0, $1) }
             .compactMap { [weak self] userTestId, testType -> TestStatsElement? in
                 guard let self = self else { return nil }
-                return TestStatsElement(userTestId: userTestId, testType: testType, isEnableNext: !self.testTypes.isEmpty)
+                return TestStatsElement(userTestId: userTestId, testType: testType, isEnableNext: !self.testTypes.isEmpty, isTopicTest: self.isTopicTest)
             }
     }
     

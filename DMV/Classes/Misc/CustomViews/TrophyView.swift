@@ -28,8 +28,8 @@ class TrophyView: UIView {
             UIColor(integralRed: 110, green: 78, blue: 242).cgColor
         ]
         gradientLayer.locations = [0, 1]
-        gradientLayer.startPoint = CGPoint(x: 0.25, y: 0.5)
-        gradientLayer.endPoint = CGPoint(x: 0.75, y: 0.5)
+        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+        gradientLayer.endPoint = CGPoint(x: 1, y: 1)
         gradientLayer.frame = containerView.bounds
         containerView.layer.insertSublayer(gradientLayer, at: 0)
     }

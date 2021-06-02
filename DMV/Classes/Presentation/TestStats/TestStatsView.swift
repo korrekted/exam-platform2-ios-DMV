@@ -30,7 +30,7 @@ class TestStatsView: UIView {
 
 // MARK: Public
 extension TestStatsView {
-    func configureAddingButtons(isNextEnabled: Bool) {
+    func configureAddingButtons(isNextEnabled: Bool, isTopicTest: Bool) {
         stackView.arrangedSubviews.forEach {
             stackView.removeArrangedSubview($0)
             $0.removeFromSuperview()
@@ -40,9 +40,8 @@ extension TestStatsView {
             .font(Fonts.SFProRounded.regular(size: 18.scale))
             .textAlignment(.center)
         
-        
-        tryAgainButton.setAttributedTitle("TestStats.TryAgain".localized.attributed(with: attr.textColor(TestStatsPalette.secondaryText)), for: .normal)
         nextTestButton.setAttributedTitle("TestStats.NextTest".localized.attributed(with: attr.textColor(TestStatsPalette.primaryText)), for: .normal)
+        tryAgainButton.setAttributedTitle("TestStats.TryAgain".localized.attributed(with: attr.textColor(TestStatsPalette.secondaryText)), for: .normal)
         
         tryAgainButton.backgroundColor = TestStatsPalette.secondaryButton
         nextTestButton.backgroundColor = TestStatsPalette.primaryButton
@@ -50,9 +49,15 @@ extension TestStatsView {
         stackView.addArrangedSubview(tryAgainButton)
         stackView.addArrangedSubview(nextTestButton)
         
-        nextTestButton.isHidden = !isNextEnabled
+        let bottomOffset: CGFloat
         
-        let bottomOffset = ScreenSize.isIphoneXFamily ? 170.scale : 140.scale
+        if isTopicTest {
+            nextTestButton.isHidden = !isNextEnabled
+            bottomOffset = ScreenSize.isIphoneXFamily ? 170.scale : 140.scale
+        } else {
+            stackView.isHidden = true
+            bottomOffset = 0
+        }
         
         tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: bottomOffset, right: 0)
     }
