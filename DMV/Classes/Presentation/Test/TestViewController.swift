@@ -161,7 +161,7 @@ final class TestViewController: UIViewController {
                         if let image = try? UIImage(data: Data(contentsOf: url)) {
                             DispatchQueue.main.async {
                                 let controller = ZoomImageViewController(image: image)
-                                controller.view.backgroundColor = .black.withAlphaComponent(0.8)
+                                controller.view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
                                 base?.present(controller, animated: true)
                             }
                             
