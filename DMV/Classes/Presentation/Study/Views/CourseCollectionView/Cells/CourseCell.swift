@@ -121,10 +121,10 @@ private extension CourseCell {
 
 private extension TextAttributes {
     static let titleAttrs = TextAttributes()
-        .font(Fonts.SFProRounded.bold(size: 18.scale))
-        .lineHeight(25.scale)
+        .font(Fonts.SFProRounded.bold(size: 20.scale))
+        .lineHeight(28.scale)
     
     static let subtitleAttrs = TextAttributes()
-        .font(Fonts.SFProRounded.regular(size: 18.scale))
-        .lineHeight(25.scale)
+        .font(Fonts.SFProRounded.regular(size: 16.scale))
+        .lineHeight(22.scale)
 }

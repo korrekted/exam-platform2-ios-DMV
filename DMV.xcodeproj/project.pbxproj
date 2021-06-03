@@ -1319,11 +1319,11 @@
 		96781AF2266664000033134D /* TestStats */ = {
 			isa = PBXGroup;
 			children = (
-				96781AF3266664000033134D /* TestStatsViewController.swift */,
-				96781AF4266664000033134D /* Cells */,
 				96781AFA266664000033134D /* Models */,
-				96781B01266664000033134D /* TestStatsViewModel.swift */,
 				96781B02266664010033134D /* Views */,
+				96781AF4266664000033134D /* Cells */,
+				96781AF3266664000033134D /* TestStatsViewController.swift */,
+				96781B01266664000033134D /* TestStatsViewModel.swift */,
 				96781B08266664010033134D /* TestStatsView.swift */,
 			);
 			path = TestStats;
@@ -1369,11 +1369,11 @@
 		96781B09266664010033134D /* CourseDetails */ = {
 			isa = PBXGroup;
 			children = (
+				96781B0C266664010033134D /* Models */,
+				96781B0F266664010033134D /* Views */,
 				96781B0A266664010033134D /* CourseDetailsViewController.swift */,
 				96781B0B266664010033134D /* CourseDetailsView.swift */,
-				96781B0C266664010033134D /* Models */,
 				96781B0E266664010033134D /* CourseDetailsViewModel.swift */,
-				96781B0F266664010033134D /* Views */,
 			);
 			path = CourseDetails;
 			sourceTree = "<group>";
@@ -1415,11 +1415,11 @@
 		96781B15266664010033134D /* SITest */ = {
 			isa = PBXGroup;
 			children = (
-				96781B16266664010033134D /* SITestView.swift */,
-				96781B17266664010033134D /* Cells */,
 				96781B1B266664010033134D /* Models */,
-				96781B21266664010033134D /* SITestViewController.swift */,
 				96781B22266664010033134D /* Views */,
+				96781B17266664010033134D /* Cells */,
+				96781B16266664010033134D /* SITestView.swift */,
+				96781B21266664010033134D /* SITestViewController.swift */,
 				96781B25266664010033134D /* SITestViewModel.swift */,
 			);
 			path = SITest;
@@ -1459,11 +1459,11 @@
 		96781B26266664010033134D /* Stats */ = {
 			isa = PBXGroup;
 			children = (
+				96781B29266664010033134D /* Models */,
+				96781B2E266664010033134D /* Views */,
 				96781B27266664010033134D /* StatsViewModel.swift */,
 				96781B28266664010033134D /* StatsViewController.swift */,
-				96781B29266664010033134D /* Models */,
 				96781B2D266664010033134D /* StatsView.swift */,
-				96781B2E266664010033134D /* Views */,
 			);
 			path = Stats;
 			sourceTree = "<group>";

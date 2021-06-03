@@ -53,14 +53,14 @@ private extension SplashView {
     func makeTitleLabel() -> UILabel {
         let attrs1 = TextAttributes()
             .textColor(SplashPalette.primaryText)
-            .font(Fonts.SFProRounded.bold(size: 40.scale))
-            .lineHeight(48.scale)
+            .font(Fonts.SFProRounded.bold(size: 36.scale))
+            .lineHeight(43.scale)
             .textAlignment(.center)
         
         let attrs2 = TextAttributes()
             .textColor(SplashPalette.secondaryText)
-            .font(Fonts.SFProRounded.bold(size: 45.scale))
-            .lineHeight(53.scale)
+            .font(Fonts.SFProRounded.bold(size: 36.scale))
+            .lineHeight(43.scale)
             .textAlignment(.center)
         
         let string = NSMutableAttributedString()

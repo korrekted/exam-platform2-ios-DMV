@@ -104,7 +104,7 @@ private extension CourseDetailsView {
     func makeButton(title: String, icon: UIImage?) -> UIButton {
         let view = UIButton()
         let attr = TextAttributes()
-            .font(Fonts.SFProRounded.regular(size: 18.scale))
+            .font(Fonts.SFProRounded.semiBold(size: 20.scale))
             .textColor(CourseDetailsPalette.primaryTint)
         
         view.setImage(icon, for: .normal)

@@ -144,7 +144,8 @@ private extension OnboardingView {
         NSLayoutConstraint.activate([
             progressView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
             progressView.trailingAnchor.constraint(equalTo: skipButton.leadingAnchor, constant: -24.scale),
-            progressView.centerYAnchor.constraint(equalTo: skipButton.centerYAnchor)
+            progressView.centerYAnchor.constraint(equalTo: skipButton.centerYAnchor),
+            progressView.heightAnchor.constraint(equalToConstant: 7.scale)
         ])
         
         NSLayoutConstraint.activate([

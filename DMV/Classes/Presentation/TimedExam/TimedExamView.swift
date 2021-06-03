@@ -155,7 +155,7 @@ private extension TimedExamView {
     func makeStartButton() -> UIButton {
         let view = UIButton()
         let attr = TextAttributes()
-            .font(Fonts.SFProRounded.regular(size: 20.scale))
+            .font(Fonts.SFProRounded.semiBold(size: 20.scale))
             .textColor(TimedExamPalette.startButtonTint)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.layer.cornerRadius = 30.scale

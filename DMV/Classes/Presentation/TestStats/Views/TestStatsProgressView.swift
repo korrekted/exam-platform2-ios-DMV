@@ -53,6 +53,7 @@ private extension TestStatsProgressView {
         progressLayer.lineWidth = 15.scale
         progressLayer.strokeColor = TestStatsPalette.correct.cgColor
         progressLayer.position = circleCenter
+        progressLayer.lineCap = .round
         
         passingScoreLayer.path = UIBezierPath(roundedRect: CGRect(x: -5.scale, y: -circleRadius - 5.scale, width: 2 * 5.scale, height: 2 * 5.scale), cornerRadius: 5.scale).cgPath
         passingScoreLayer.backgroundColor = TestStatsPalette.passingScore.cgColor

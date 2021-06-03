@@ -28,8 +28,8 @@ class TestStatsAnswerCell: UITableViewCell {
 extension TestStatsAnswerCell {
     func setup(element: TestStatsAnswerElement) {
         let attr = TextAttributes()
-            .font(Fonts.SFProRounded.regular(size: 17.scale))
-            .lineHeight(23.8)
+            .font(Fonts.SFProRounded.regular(size: 18.scale))
+            .lineHeight(24)
             .textColor(TestStatsPalette.answerText)
         
         answerLabel.attributedText = element.question.attributed(with: attr)

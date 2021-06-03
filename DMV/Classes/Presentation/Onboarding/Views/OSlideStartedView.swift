@@ -84,8 +84,8 @@ private extension OSlideStartedView {
     func makeText2Label() -> UILabel {
         let attrs = TextAttributes()
             .textColor(Onboarding.secondaryText)
-            .font(Fonts.SFProRounded.semiBold(size: 18.scale))
-            .lineHeight(25.scale)
+            .font(Fonts.SFProRounded.regular(size: 20.scale))
+            .lineHeight(28.scale)
             .textAlignment(.center)
         
         let view = UILabel()

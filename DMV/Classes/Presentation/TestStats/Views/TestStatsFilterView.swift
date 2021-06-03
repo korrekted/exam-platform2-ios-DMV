@@ -64,14 +64,14 @@ private extension TestStatsFilterView {
     }
     
     static let selectedAttr = TextAttributes()
-        .font(Fonts.SFProRounded.bold(size: 18.scale))
+        .font(Fonts.SFProRounded.bold(size: 20.scale))
         .textColor(TestStatsPalette.Filter.selected)
-        .lineHeight(25.2.scale)
+        .lineHeight(28.scale)
     
     static let initialAttr = TextAttributes()
-        .font(Fonts.SFProRounded.regular(size: 18.scale))
+        .font(Fonts.SFProRounded.regular(size: 20.scale))
         .textColor(TestStatsPalette.Filter.deselected)
-        .lineHeight(25.2.scale)
+        .lineHeight(28.scale)
 }
 
 // MARK: Make constraints

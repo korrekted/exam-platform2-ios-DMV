@@ -16,8 +16,8 @@ final class PaygateMainInfoCell: UIView {
             label.attributedText = title
                 .attributed(with: TextAttributes()
                                 .textColor(PaygatePalette.secondaryText)
-                                .font(Fonts.SFProRounded.semiBold(size: 17.scale))
-                                .lineHeight(20.scale))
+                                .font(Fonts.SFProRounded.regular(size: 16.scale))
+                                .lineHeight(22.scale))
         }
     }
     

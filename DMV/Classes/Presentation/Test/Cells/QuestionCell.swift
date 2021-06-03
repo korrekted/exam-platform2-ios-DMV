@@ -26,9 +26,9 @@ class QuestionCell: UITableViewCell {
 extension QuestionCell {
     func configure(question: String, questionHtml: String) {
         let attr = TextAttributes()
-            .font(Fonts.SFProRounded.bold(size: 18.scale))
+            .font(Fonts.SFProRounded.semiBold(size: 20.scale))
             .textColor(TestPalette.questionText)
-            .lineHeight(25.2.scale)
+            .lineHeight(28.scale)
         
         questionLabel.attributedText = attributedString(for: questionHtml) ?? question.attributed(with: attr)
     }
@@ -36,8 +36,8 @@ extension QuestionCell {
     func attributedString(for htmlString: String) -> NSAttributedString? {
         guard !htmlString.isEmpty else { return nil }
         
-        let font = Fonts.Lato.bold(size: 18.scale)
-        let htmlWithStyle = "<span style=\"font-family: \(font.fontName); font-style: bold; font-size: \(font.pointSize); line-height: 30px;\">\(htmlString)</span>"
+        let font = Fonts.SFProRounded.semiBold(size: 20.scale)
+        let htmlWithStyle = "<span style=\"font-family: \(font.fontName); font-style: 600; font-size: \(font.pointSize); line-height: 30px;\">\(htmlString)</span>"
         let data = Data(htmlWithStyle.utf8)
         
         let attributedString = try? NSAttributedString(

@@ -37,8 +37,8 @@ extension AnswerView {
     
     func setAnswer(answer: String, image: URL?) {
         let attrs = TextAttributes()
-            .font(Fonts.SFProRounded.regular(size: 17.scale))
-            .lineHeight(20.scale)
+            .font(Fonts.SFProRounded.regular(size: 18.scale))
+            .lineHeight(25.scale)
         
         if let imageUrl = image {
             do {
@@ -56,7 +56,7 @@ extension AnswerView {
 // MARK: Private
 private extension AnswerView {
     func initialize() {
-        layer.cornerRadius = 12.scale
+        layer.cornerRadius = 20.scale
         state = .initial
     }
     
@@ -66,12 +66,12 @@ private extension AnswerView {
             layer.borderColor = TestPalette.Answer.initialBorder.cgColor
             backgroundColor = TestPalette.Answer.initialBackground
             answerLabel.textColor = TestPalette.Answer.text
-            layer.borderWidth = 2.scale
+            layer.borderWidth = 3.scale
         case .selected:
             layer.borderColor = TestPalette.Answer.selectedBorder.cgColor
             backgroundColor = TestPalette.Answer.initialBackground
             answerLabel.textColor = TestPalette.Answer.text
-            layer.borderWidth = 2.scale
+            layer.borderWidth = 3.scale
         case .correct:
             backgroundColor = TestPalette.Answer.correctBackground
             answerLabel.textColor = TestPalette.Answer.selectedText
@@ -83,7 +83,7 @@ private extension AnswerView {
         case .warning:
             backgroundColor = TestPalette.Answer.warningBackground
             answerLabel.textColor = TestPalette.Answer.text
-            layer.borderWidth = 2.scale
+            layer.borderWidth = 3.scale
             layer.borderColor = TestPalette.Answer.warningBorder.cgColor
         }
     }
