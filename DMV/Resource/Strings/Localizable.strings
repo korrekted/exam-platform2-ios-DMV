@@ -20,9 +20,9 @@
 "Course.Tab.Study" = "Study";
 
 // MARK: Splash
-"Splash.Title.Part1" = "Trusted by over\n";
-"Splash.Title.Part2" = "20 THOUSANDS\n";
-"Splash.Title.Part3" = "first time passers";
+"Splash.Title.Part1" = "Prepared by\n";
+"Splash.Title.Part2" = "CERTIFIED\n";
+"Splash.Title.Part3" = "experts";
 
 // MARK: Onboarding
 "Onboarding.Skip" = "Skip";
@@ -30,11 +30,11 @@
 "Onboarding.Yes" = "Yes";
 "Onboarding.No" = "No";
 "Onboarding.Skip" = "skip";
-"Onboarding.SlideStarted.Text1" = "Personal study plan. 98% pass rate.";
-"Onboarding.SlideStarted.Text2" = "А speciаl АI- supported study plаn to help you аce your DMV exаm ";
+"Onboarding.SlideStarted.Text1" = "Personal study\nplan to pass on the\nfirst take";
+"Onboarding.SlideStarted.Text2" = "Your study plan is prepared by the algorithms which rely on thousands of similar cases";
 "Onboarding.SlideStarted.Button" = "Get started";
 "Onboarding.SlideCountry.Title" = "Choose\nyour country";
-"Onboarding.SlideState.Title" = "Select your state";
+"Onboarding.SlideState.Title" = "Select your\nstаte, province\nor district";
 "Onboarding.SlideLanguage.Title" = "Select your language";
 "Onboarding.SlideLocale.Error" = "Failed to save";
 "Onboarding.Goals.Title" = "What’s your goal?";
@@ -48,17 +48,17 @@
 "Onboarding.SlideTime.Min" = "min";
 "Onboarding.SlideCount.Title" = "How many tests\nwould you like to\ntake daily?";
 "Onboarding.Question.Title" = "Do you agree with the statement?";
-"Onboarding.Question1" = "A driver should always remember about the blind spots of commercial vehicles.";
-"Onboarding.Question2" = "A driver should always remember about the blind spots of commercial vehicles.";
-"Onboarding.Question3" = "A driver should always remember about the blind spots of commercial vehicles.";
-"Onboarding.Question4" = "A driver should always remember about the blind spots of commercial vehicles.";
+"Onboarding.Question1" = "A driver should always remember about the blind spots of long and commercial vehicles.";
+"Onboarding.Question2" = "Take care of your car in garage, and the car will take care of you in the road.";
+"Onboarding.Question3" = "Driving safely is the trick. Getting home is the treat. Buckle up. Celebrate without alcohol.";
+"Onboarding.Question4" = "A driver on the highway is safe not when they read the signs, but when they obey them.";
 "Onboarding.Preloader.Title" = "Preparing your\nindividual study plan";
 "Onboarding.Preloader.Cell1" = "Analyzing your skill level";
 "Onboarding.Preloader.Cell2" = "Analyzing your goals";
 "Onboarding.Preloader.Cell3" = "Processing required exams";
 "Onboarding.SlidePlan.Title" = "Your personal 98% pass rate\nstudy plan is ready!";
-"Onboarding.SlidePlan.Cell1" = "1000+ individual questions";
-"Onboarding.SlidePlan.Cell2" = "different topics";
+"Onboarding.SlidePlan.Cell1" = "4000+ individual questions";
+"Onboarding.SlidePlan.Cell2" = "20+ different topics";
 "Onboarding.SlidePlan.Cell3" = "reminders and notifications";
 "Onboarding.SlidePlan.Button" = "Get my plan";
 
@@ -107,7 +107,7 @@
 // MARK: Paygate
 "Paygate.Main.Title" = "KNOW THE QUESTIONS\nBEFOREHAND";
 "Paygate.Main.Cell1" = "Don’t spend hours learning";
-"Paygate.Main.Cell2" = "Train yourself with 5000+ questions";
+"Paygate.Main.Cell2" = "Train yourself with 4000+ questions";
 "Paygate.Main.Cell3" = "98% pass rate on the first attempt!";
 "Paygate.Main.Info" = "Secured with iTunes. Cancel anytime.";
 "Paygate.Main.TermsOfUse" = "Terms of use";

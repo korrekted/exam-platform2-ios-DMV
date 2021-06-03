@@ -30,8 +30,8 @@ private extension OSlideStartedView {
         NSLayoutConstraint.activate([
             imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
             imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            imageView.topAnchor.constraint(equalTo: topAnchor, constant: 84.scale),
-            imageView.heightAnchor.constraint(equalToConstant: ScreenSize.isIphoneXFamily ? 393.scale : 280.scale)
+            imageView.topAnchor.constraint(equalTo: topAnchor, constant: ScreenSize.isIphoneXFamily ? 68.scale : 38.scale),
+            imageView.heightAnchor.constraint(equalToConstant: ScreenSize.isIphoneXFamily ? 338.scale : 260.scale)
         ])
         
         NSLayoutConstraint.activate([
@@ -43,7 +43,7 @@ private extension OSlideStartedView {
         NSLayoutConstraint.activate([
             text2Label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24.scale),
             text2Label.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24.scale),
-            text2Label.bottomAnchor.constraint(equalTo: button.topAnchor, constant: -48.scale)
+            text2Label.bottomAnchor.constraint(equalTo: button.topAnchor, constant: -31.scale)
         ])
         
         NSLayoutConstraint.activate([

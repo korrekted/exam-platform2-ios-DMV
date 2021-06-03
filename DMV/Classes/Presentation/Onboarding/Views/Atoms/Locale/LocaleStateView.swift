@@ -108,7 +108,7 @@ private extension LocaleStateView {
             pickerView.centerXAnchor.constraint(equalTo: centerXAnchor),
             pickerView.bottomAnchor.constraint(equalTo: button.topAnchor, constant: -24.scale),
             pickerView.widthAnchor.constraint(equalToConstant: 375.scale),
-            pickerView.heightAnchor.constraint(equalToConstant: 417.scale)
+            pickerView.heightAnchor.constraint(equalToConstant: 360.scale)
         ])
         
         NSLayoutConstraint.activate([
