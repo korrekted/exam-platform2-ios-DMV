@@ -82,7 +82,7 @@ private extension OSlideWhenTakingView {
         view.backgroundColor = UIColor.clear
         view.minimumDate = minimumDate
         view.setDate(startDate, animated: true)
-        view.locale = Locale.current
+        view.locale = Locale(identifier: "en_EN")
         view.textColor = Onboarding.pickerText
         view.font = Fonts.SFProRounded.bold(size: 24.scale)
         view.translatesAutoresizingMaskIntoConstraints = false

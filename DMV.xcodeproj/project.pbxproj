@@ -263,7 +263,6 @@
 		96781C69266664040033134D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B61266664010033134D /* OnboardingView.swift */; };
 		96781C6A266664040033134D /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B62266664010033134D /* OnboardingViewModel.swift */; };
 		96781C6B266664040033134D /* OnboardingAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B64266664010033134D /* OnboardingAnalytics.swift */; };
-		96781C6E266664190033134D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96781C6D266664190033134D /* Localizable.strings */; };
 		96781C71266664600033134D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96781C70266664600033134D /* LaunchScreen.storyboard */; };
 		96781C7B2666646E0033134D /* lato-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96781C752666646E0033134D /* lato-regular.otf */; };
 		96781C7C2666646E0033134D /* lato-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96781C762666646E0033134D /* lato-bold.otf */; };
@@ -272,6 +271,7 @@
 		96781C7F2666646E0033134D /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96781C7A2666646E0033134D /* SF-Pro-Rounded-Bold.otf */; };
 		96781C83266665190033134D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96781C82266665190033134D /* GoogleService-Info.plist */; };
 		96781C922667D4100033134D /* Onboarding.Chart.json in Resources */ = {isa = PBXBuildFile; fileRef = 96781C912667D4100033134D /* Onboarding.Chart.json */; };
+		96781C9F266963CA0033134D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96781CA1266963CA0033134D /* Localizable.strings */; };
 		E2D80A444A086C4FC0564B36 /* Pods_DMV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B862032F73539581F73AEB /* Pods_DMV.framework */; };
 /* End PBXBuildFile section */
 
@@ -535,7 +535,6 @@
 		96781B61266664010033134D /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		96781B62266664010033134D /* OnboardingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		96781B64266664010033134D /* OnboardingAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingAnalytics.swift; sourceTree = "<group>"; };
-		96781C6D266664190033134D /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		96781C70266664600033134D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96781C752666646E0033134D /* lato-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lato-regular.otf"; sourceTree = "<group>"; };
 		96781C762666646E0033134D /* lato-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lato-bold.otf"; sourceTree = "<group>"; };
@@ -545,6 +544,8 @@
 		96781C80266664740033134D /* DMV-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMV-Bridging-Header.h"; sourceTree = "<group>"; };
 		96781C82266665190033134D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		96781C912667D4100033134D /* Onboarding.Chart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Onboarding.Chart.json; sourceTree = "<group>"; };
+		96781CA0266963CA0033134D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		96781CA3266963CF0033134D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C6B862032F73539581F73AEB /* Pods_DMV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DMV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DEFC12D47EC10AA48AB676 /* Pods-DMV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMV.release.xcconfig"; path = "Target Support Files/Pods-DMV/Pods-DMV.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1604,7 +1605,7 @@
 		96781C6C266664190033134D /* Strings */ = {
 			isa = PBXGroup;
 			children = (
-				96781C6D266664190033134D /* Localizable.strings */,
+				96781CA1266963CA0033134D /* Localizable.strings */,
 			);
 			path = Strings;
 			sourceTree = "<group>";
@@ -1690,6 +1691,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 967819C1266661DF0033134D;
 			productRefGroup = 967819CB266661DF0033134D /* Products */;
@@ -1707,7 +1709,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96781C71266664600033134D /* LaunchScreen.storyboard in Resources */,
-				96781C6E266664190033134D /* Localizable.strings in Resources */,
+				96781C9F266963CA0033134D /* Localizable.strings in Resources */,
 				96781C7B2666646E0033134D /* lato-regular.otf in Resources */,
 				96781C7C2666646E0033134D /* lato-bold.otf in Resources */,
 				96781C7E2666646E0033134D /* SF-Pro-Rounded-Regular.otf in Resources */,
@@ -2046,6 +2048,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		96781CA1266963CA0033134D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96781CA0266963CA0033134D /* en */,
+				96781CA3266963CF0033134D /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		967819DC266661E30033134D /* Debug */ = {

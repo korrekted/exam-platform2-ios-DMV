@@ -47,7 +47,7 @@ private extension OSlideGoalsView {
     
     func changeEnabled() {
         let isEmpty = [
-            cell1, cell2, cell3, cell4
+            cell1, cell2, cell3, cell4, cell5
         ]
         .filter { $0.isSelected }
         .isEmpty
@@ -68,27 +68,32 @@ private extension OSlideGoalsView {
         
         NSLayoutConstraint.activate([
             cell1.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
-            cell1.bottomAnchor.constraint(equalTo: cell4.topAnchor, constant: -16.scale)
+            cell1.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
+            cell1.bottomAnchor.constraint(equalTo: cell2.topAnchor, constant: -16.scale)
         ])
         
         NSLayoutConstraint.activate([
+            cell2.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
             cell2.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
-            cell2.bottomAnchor.constraint(equalTo: cell4.topAnchor, constant: -16.scale)
+            cell2.bottomAnchor.constraint(equalTo: cell3.topAnchor, constant: -16.scale)
         ])
         
         NSLayoutConstraint.activate([
             cell3.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
-            cell3.bottomAnchor.constraint(equalTo: cell5.topAnchor, constant: -16.scale)
+            cell3.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
+            cell3.bottomAnchor.constraint(equalTo: cell4.topAnchor, constant: -16.scale)
         ])
         
         NSLayoutConstraint.activate([
+            cell4.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
             cell4.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
-            cell4.bottomAnchor.constraint(equalTo: cell5.topAnchor, constant: -16.scale)
+            cell4.bottomAnchor.constraint(equalTo: cell5.topAnchor, constant: -12.scale)
         ])
         
         NSLayoutConstraint.activate([
-            cell5.centerXAnchor.constraint(equalTo: centerXAnchor),
-            cell5.bottomAnchor.constraint(equalTo: button.topAnchor, constant: -54.scale)
+            cell5.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
+            cell5.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
+            cell5.bottomAnchor.constraint(equalTo: button.topAnchor, constant: -48.scale)
         ])
         
         NSLayoutConstraint.activate([

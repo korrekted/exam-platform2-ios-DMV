@@ -1,4 +1,4 @@
-/* 
+/*
   Localizable.strings
   CDL
 
@@ -143,7 +143,7 @@
 
 // MARK: Trophy
 "Trophy.LearnMore" = "Learn more";
-"Trophy.Title" = "Pass your DMV exam with 100%";
+"Trophy.Title" = "Pass your exam with 100% assurance";
 
 // MARK: Course Details
 "CourseDetails.Questions" = "questions";

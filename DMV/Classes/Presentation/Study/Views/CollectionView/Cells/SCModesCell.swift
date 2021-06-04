@@ -80,7 +80,7 @@ private extension SCModesCell {
             randomView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16.scale),
             randomView.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor),
             randomView.trailingAnchor.constraint(equalTo: todayView.trailingAnchor),
-            randomView.heightAnchor.constraint(equalToConstant: 126)
+            randomView.heightAnchor.constraint(equalToConstant: 148)
         ])
         
         NSLayoutConstraint.activate([

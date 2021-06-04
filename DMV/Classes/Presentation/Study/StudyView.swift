@@ -68,7 +68,7 @@ private extension StudyView {
             navigationView.topAnchor.constraint(equalTo: topAnchor),
             navigationView.leadingAnchor.constraint(equalTo: leadingAnchor),
             navigationView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            navigationView.heightAnchor.constraint(equalToConstant: ScreenSize.isIphoneXFamily ? 291.scale : 275.scale)
+            navigationView.heightAnchor.constraint(equalToConstant: ScreenSize.isIphoneXFamily ? 351.scale : 335.scale)
         ])
         
         NSLayoutConstraint.activate([
@@ -87,7 +87,7 @@ private extension StudyView {
             stackView.topAnchor.constraint(equalTo: streakLabel.bottomAnchor, constant: 16.scale),
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
-            stackView.heightAnchor.constraint(equalToConstant: 50.scale),
+            stackView.heightAnchor.constraint(equalToConstant: 110.scale),
             stackView.bottomAnchor.constraint(equalTo: navigationView.bottomAnchor, constant: -32.scale)
         ])
         
@@ -148,9 +148,9 @@ private extension StudyView {
     func makeStackView() -> UIStackView {
         let view = UIStackView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.axis = .horizontal
+        view.axis = .vertical
         view.distribution = .fillEqually
-        view.spacing = 10.scale
+        view.spacing = 12.scale
         addSubview(view)
         return view
     }
