@@ -73,11 +73,12 @@ final class StudyViewController: UIViewController {
                 let types: [TestType]
                 
                 if activeSubscription {
-                    types = config.reduce(into: []) { old, new in
+                    types = config.testsConfigs.reduce(into: []) { old, new in
                         old.append(.get(testId: new.id))
                     }
                 } else {
                     let type = config
+                        .testsConfigs
                         .filter { !$0.paid }
                         .randomElement()
                         .map { TestType.get(testId: $0.id) } ?? .get(testId: nil)
@@ -110,6 +111,14 @@ final class StudyViewController: UIViewController {
             .bind(to: Binder(self) { base, tuple in
                 let (mode, activeSubscription, course) = tuple
                 base.tapped(mode: mode, activeSubscription: activeSubscription, courseId: course.id)
+            })
+            .disposed(by: disposeBag)
+        
+        mainView.collectionView.didTapFlashcards
+            .withLatestFrom(viewModel.course)
+            .asSignal(onErrorSignalWith: .never())
+            .emit(onNext: { [weak self] course in
+                self?.navigationController?.pushViewController(FlashcardsTopicsViewController.make(courseId: course.id), animated: true)
             })
             .disposed(by: disposeBag)
         

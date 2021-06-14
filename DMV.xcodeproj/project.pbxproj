@@ -10,6 +10,30 @@
 		865FEC5A26679C1C009D7A4E /* TimedExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865FEC5726679C1C009D7A4E /* TimedExamViewController.swift */; };
 		865FEC5B26679C1C009D7A4E /* TimedExamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865FEC5826679C1C009D7A4E /* TimedExamView.swift */; };
 		865FEC5F2667A4E3009D7A4E /* BottomSheetAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865FEC5E2667A4E3009D7A4E /* BottomSheetAnimation.swift */; };
+		9673807F26778AF200230FB6 /* SCFlashcardsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9673807E26778AF200230FB6 /* SCFlashcardsCell.swift */; };
+		967380812677933600230FB6 /* CourseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380802677933600230FB6 /* CourseConfig.swift */; };
+		967380932677972900230FB6 /* FlashcardsTopicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380832677972900230FB6 /* FlashcardsTopicsView.swift */; };
+		967380942677972900230FB6 /* FlashcardsTopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380842677972900230FB6 /* FlashcardsTopicsViewController.swift */; };
+		967380952677972900230FB6 /* FlashcardsTopicsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380852677972900230FB6 /* FlashcardsTopicsViewModel.swift */; };
+		967380962677972900230FB6 /* FlashcardsTopicsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380872677972900230FB6 /* FlashcardsTopicsTableView.swift */; };
+		967380972677972900230FB6 /* FlashcardsTopicsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380882677972900230FB6 /* FlashcardsTopicsTableCell.swift */; };
+		967380982677972900230FB6 /* FlashcardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9673808A2677972900230FB6 /* FlashcardsViewController.swift */; };
+		967380992677972900230FB6 /* FlashCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9673808C2677972900230FB6 /* FlashCardModel.swift */; };
+		9673809A2677972900230FB6 /* FlashcardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9673808D2677972900230FB6 /* FlashcardsViewModel.swift */; };
+		9673809B2677972900230FB6 /* FlashCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380902677972900230FB6 /* FlashCardView.swift */; };
+		9673809C2677972900230FB6 /* FlashCardContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380912677972900230FB6 /* FlashCardContainerView.swift */; };
+		9673809D2677972900230FB6 /* FlashcardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380922677972900230FB6 /* FlashcardsView.swift */; };
+		967380AF2677973500230FB6 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380A02677973500230FB6 /* Flashcard.swift */; };
+		967380B02677973500230FB6 /* FlashcardTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380A12677973500230FB6 /* FlashcardTopic.swift */; };
+		967380B12677973500230FB6 /* FlashCardManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380A32677973500230FB6 /* FlashCardManagerDelegate.swift */; };
+		967380B22677973500230FB6 /* FlashCardManagerMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380A42677973500230FB6 /* FlashCardManagerMediator.swift */; };
+		967380B32677973500230FB6 /* FlashcardsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380A52677973500230FB6 /* FlashcardsManager.swift */; };
+		967380B42677973500230FB6 /* FlashcardsManagerCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380A62677973500230FB6 /* FlashcardsManagerCore.swift */; };
+		967380B52677973500230FB6 /* GetFlashcardsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380A92677973500230FB6 /* GetFlashcardsRequest.swift */; };
+		967380B62677973500230FB6 /* GetFlashcardsResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380AA2677973500230FB6 /* GetFlashcardsResponseMapper.swift */; };
+		967380B72677973500230FB6 /* MarkFlashcardRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380AB2677973500230FB6 /* MarkFlashcardRequest.swift */; };
+		967380B82677973500230FB6 /* GetFlashcardsTopicsResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380AD2677973500230FB6 /* GetFlashcardsTopicsResponseMapper.swift */; };
+		967380B92677973500230FB6 /* GetFlashcardsTopicsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380AE2677973500230FB6 /* GetFlashcardsTopicsRequest.swift */; };
 		967819D7266661E30033134D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967819D6266661E30033134D /* Assets.xcassets */; };
 		96781B65266664010033134D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A05266663FF0033134D /* UIColorExtension.swift */; };
 		96781B66266664010033134D /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A06266663FF0033134D /* Collection+Extension.swift */; };
@@ -278,6 +302,30 @@
 		865FEC5726679C1C009D7A4E /* TimedExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimedExamViewController.swift; sourceTree = "<group>"; };
 		865FEC5826679C1C009D7A4E /* TimedExamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimedExamView.swift; sourceTree = "<group>"; };
 		865FEC5E2667A4E3009D7A4E /* BottomSheetAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetAnimation.swift; sourceTree = "<group>"; };
+		9673807E26778AF200230FB6 /* SCFlashcardsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCFlashcardsCell.swift; sourceTree = "<group>"; };
+		967380802677933600230FB6 /* CourseConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseConfig.swift; sourceTree = "<group>"; };
+		967380832677972900230FB6 /* FlashcardsTopicsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashcardsTopicsView.swift; sourceTree = "<group>"; };
+		967380842677972900230FB6 /* FlashcardsTopicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashcardsTopicsViewController.swift; sourceTree = "<group>"; };
+		967380852677972900230FB6 /* FlashcardsTopicsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashcardsTopicsViewModel.swift; sourceTree = "<group>"; };
+		967380872677972900230FB6 /* FlashcardsTopicsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashcardsTopicsTableView.swift; sourceTree = "<group>"; };
+		967380882677972900230FB6 /* FlashcardsTopicsTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashcardsTopicsTableCell.swift; sourceTree = "<group>"; };
+		9673808A2677972900230FB6 /* FlashcardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashcardsViewController.swift; sourceTree = "<group>"; };
+		9673808C2677972900230FB6 /* FlashCardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCardModel.swift; sourceTree = "<group>"; };
+		9673808D2677972900230FB6 /* FlashcardsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashcardsViewModel.swift; sourceTree = "<group>"; };
+		967380902677972900230FB6 /* FlashCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCardView.swift; sourceTree = "<group>"; };
+		967380912677972900230FB6 /* FlashCardContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCardContainerView.swift; sourceTree = "<group>"; };
+		967380922677972900230FB6 /* FlashcardsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashcardsView.swift; sourceTree = "<group>"; };
+		967380A02677973500230FB6 /* Flashcard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
+		967380A12677973500230FB6 /* FlashcardTopic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashcardTopic.swift; sourceTree = "<group>"; };
+		967380A32677973500230FB6 /* FlashCardManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCardManagerDelegate.swift; sourceTree = "<group>"; };
+		967380A42677973500230FB6 /* FlashCardManagerMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCardManagerMediator.swift; sourceTree = "<group>"; };
+		967380A52677973500230FB6 /* FlashcardsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashcardsManager.swift; sourceTree = "<group>"; };
+		967380A62677973500230FB6 /* FlashcardsManagerCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashcardsManagerCore.swift; sourceTree = "<group>"; };
+		967380A92677973500230FB6 /* GetFlashcardsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetFlashcardsRequest.swift; sourceTree = "<group>"; };
+		967380AA2677973500230FB6 /* GetFlashcardsResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetFlashcardsResponseMapper.swift; sourceTree = "<group>"; };
+		967380AB2677973500230FB6 /* MarkFlashcardRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkFlashcardRequest.swift; sourceTree = "<group>"; };
+		967380AD2677973500230FB6 /* GetFlashcardsTopicsResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetFlashcardsTopicsResponseMapper.swift; sourceTree = "<group>"; };
+		967380AE2677973500230FB6 /* GetFlashcardsTopicsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetFlashcardsTopicsRequest.swift; sourceTree = "<group>"; };
 		967819CA266661DF0033134D /* DMV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967819D6266661E30033134D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		967819DB266661E30033134D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -584,6 +632,121 @@
 			path = Animation;
 			sourceTree = "<group>";
 		};
+		967380822677972900230FB6 /* FlashcardsTopics */ = {
+			isa = PBXGroup;
+			children = (
+				967380862677972900230FB6 /* Views */,
+				967380832677972900230FB6 /* FlashcardsTopicsView.swift */,
+				967380842677972900230FB6 /* FlashcardsTopicsViewController.swift */,
+				967380852677972900230FB6 /* FlashcardsTopicsViewModel.swift */,
+			);
+			path = FlashcardsTopics;
+			sourceTree = "<group>";
+		};
+		967380862677972900230FB6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				967380872677972900230FB6 /* FlashcardsTopicsTableView.swift */,
+				967380882677972900230FB6 /* FlashcardsTopicsTableCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		967380892677972900230FB6 /* Flashcards */ = {
+			isa = PBXGroup;
+			children = (
+				9673808E2677972900230FB6 /* Views */,
+				9673808B2677972900230FB6 /* Models */,
+				9673808A2677972900230FB6 /* FlashcardsViewController.swift */,
+				9673808D2677972900230FB6 /* FlashcardsViewModel.swift */,
+				967380922677972900230FB6 /* FlashcardsView.swift */,
+			);
+			path = Flashcards;
+			sourceTree = "<group>";
+		};
+		9673808B2677972900230FB6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9673808C2677972900230FB6 /* FlashCardModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9673808E2677972900230FB6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9673808F2677972900230FB6 /* CardsView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9673808F2677972900230FB6 /* CardsView */ = {
+			isa = PBXGroup;
+			children = (
+				967380902677972900230FB6 /* FlashCardView.swift */,
+				967380912677972900230FB6 /* FlashCardContainerView.swift */,
+			);
+			path = CardsView;
+			sourceTree = "<group>";
+		};
+		9673809E2677973500230FB6 /* Flashcards */ = {
+			isa = PBXGroup;
+			children = (
+				9673809F2677973500230FB6 /* Models */,
+				967380A22677973500230FB6 /* Manager */,
+				967380A72677973500230FB6 /* Request */,
+			);
+			path = Flashcards;
+			sourceTree = "<group>";
+		};
+		9673809F2677973500230FB6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				967380A02677973500230FB6 /* Flashcard.swift */,
+				967380A12677973500230FB6 /* FlashcardTopic.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		967380A22677973500230FB6 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				967380A32677973500230FB6 /* FlashCardManagerDelegate.swift */,
+				967380A42677973500230FB6 /* FlashCardManagerMediator.swift */,
+				967380A52677973500230FB6 /* FlashcardsManager.swift */,
+				967380A62677973500230FB6 /* FlashcardsManagerCore.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		967380A72677973500230FB6 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				967380A82677973500230FB6 /* GetFlashcards */,
+				967380AB2677973500230FB6 /* MarkFlashcardRequest.swift */,
+				967380AC2677973500230FB6 /* GetFlashcardsTopics */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		967380A82677973500230FB6 /* GetFlashcards */ = {
+			isa = PBXGroup;
+			children = (
+				967380A92677973500230FB6 /* GetFlashcardsRequest.swift */,
+				967380AA2677973500230FB6 /* GetFlashcardsResponseMapper.swift */,
+			);
+			path = GetFlashcards;
+			sourceTree = "<group>";
+		};
+		967380AC2677973500230FB6 /* GetFlashcardsTopics */ = {
+			isa = PBXGroup;
+			children = (
+				967380AD2677973500230FB6 /* GetFlashcardsTopicsResponseMapper.swift */,
+				967380AE2677973500230FB6 /* GetFlashcardsTopicsRequest.swift */,
+			);
+			path = GetFlashcardsTopics;
+			sourceTree = "<group>";
+		};
 		967819C1266661DF0033134D = {
 			isa = PBXGroup;
 			children = (
@@ -732,6 +895,7 @@
 		96781A2A266664000033134D /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				9673809E2677973500230FB6 /* Flashcards */,
 				967DA14526709F25002251D7 /* Paygate */,
 				96781A2B266664000033134D /* Rate */,
 				96781A40266664000033134D /* TestStats */,
@@ -805,6 +969,7 @@
 				96781A4B266664000033134D /* TestConfig.swift */,
 				96781A4C266664000033134D /* Test.swift */,
 				96781A4D266664000033134D /* SITest.swift */,
+				967380802677933600230FB6 /* CourseConfig.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1016,6 +1181,8 @@
 		96781A98266664000033134D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				967380892677972900230FB6 /* Flashcards */,
+				967380822677972900230FB6 /* FlashcardsTopics */,
 				967DA12E26709F1A002251D7 /* Paygate */,
 				865FEC5626679BF3009D7A4E /* TimedExam */,
 				96781A99266664000033134D /* Settings */,
@@ -1126,6 +1293,7 @@
 				96781AB5266664000033134D /* SCCoursesCell.swift */,
 				96781AB6266664000033134D /* SCTrophyCollectionCell.swift */,
 				96781AB7266664000033134D /* SCModesCell.swift */,
+				9673807E26778AF200230FB6 /* SCFlashcardsCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -1799,6 +1967,7 @@
 				967DA15F26709F25002251D7 /* MonetizationManagerCore.swift in Sources */,
 				96781B6E266664010033134D /* ScreenSize.swift in Sources */,
 				96781C26266664030033134D /* TestStatsView.swift in Sources */,
+				9673809C2677972900230FB6 /* FlashCardContainerView.swift in Sources */,
 				96781C57266664030033134D /* OPreloaderCell.swift in Sources */,
 				967DA14026709F1A002251D7 /* PaygateOptionView.swift in Sources */,
 				967DA13D26709F1A002251D7 /* PaygateViewController.swift in Sources */,
@@ -1814,10 +1983,12 @@
 				96781B7F266664010033134D /* TrophyView.swift in Sources */,
 				96781C4F266664030033134D /* LocaleTableViewCell.swift in Sources */,
 				96781C2A266664030033134D /* CourseDetailsViewModel.swift in Sources */,
+				967380982677972900230FB6 /* FlashcardsViewController.swift in Sources */,
 				96781C4A266664030033134D /* OnboardingViewController.swift in Sources */,
 				96781C36266664030033134D /* SIBottomButtonState.swift in Sources */,
 				96781BC0266664020033134D /* GetLocaleRequest.swift in Sources */,
 				96781BD3266664020033134D /* RateUs.swift in Sources */,
+				967380B42677973500230FB6 /* FlashcardsManagerCore.swift in Sources */,
 				96781B94266664020033134D /* TestStats.swift in Sources */,
 				96781C4B266664030033134D /* OSlideStartedView.swift in Sources */,
 				96781BDE266664020033134D /* SplashViewController.swift in Sources */,
@@ -1844,11 +2015,13 @@
 				96781BAC266664020033134D /* SaveQuestionRequest.swift in Sources */,
 				96781BF0266664020033134D /* CourseFlowLayout.swift in Sources */,
 				96781C3F266664030033134D /* CourseStatsElement.swift in Sources */,
+				967380B72677973500230FB6 /* MarkFlashcardRequest.swift in Sources */,
 				96781BCE266664020033134D /* Session.swift in Sources */,
 				96781C20266664030033134D /* TestStatsViewModel.swift in Sources */,
 				96781B95266664020033134D /* GetTestStatsRequest.swift in Sources */,
 				96781BB6266664020033134D /* Language.swift in Sources */,
 				96781BE8266664020033134D /* SCBriefDaysView.swift in Sources */,
+				967380B62677973500230FB6 /* GetFlashcardsResponseMapper.swift in Sources */,
 				96781BAD266664020033134D /* QuestionManager.swift in Sources */,
 				96781BBB266664020033134D /* ProfileManagerCore.swift in Sources */,
 				96781BE5266664020033134D /* SCTrophyCollectionCell.swift in Sources */,
@@ -1857,6 +2030,7 @@
 				967DA13F26709F1A002251D7 /* PaygateScrollView.swift in Sources */,
 				967DA13A26709F1A002251D7 /* PaygateViewModel.swift in Sources */,
 				96781B99266664020033134D /* TestConfig.swift in Sources */,
+				9673807F26778AF200230FB6 /* SCFlashcardsCell.swift in Sources */,
 				96781BFF266664030033134D /* TestingCellType.swift in Sources */,
 				96781C68266664040033134D /* OSlideTimeView.swift in Sources */,
 				967DA14226709F1A002251D7 /* PaygateInfoCell.swift in Sources */,
@@ -1864,7 +2038,10 @@
 				96781C4D266664030033134D /* OProgressView.swift in Sources */,
 				96781BC8266664020033134D /* GetBriefRequest.swift in Sources */,
 				96781B71266664010033134D /* Weak.swift in Sources */,
+				967380AF2677973500230FB6 /* Flashcard.swift in Sources */,
 				96781C5C266664040033134D /* OSlidePlanCell.swift in Sources */,
+				967380B02677973500230FB6 /* FlashcardTopic.swift in Sources */,
+				9673809D2677972900230FB6 /* FlashcardsView.swift in Sources */,
 				96781C47266664030033134D /* CourseProgressView.swift in Sources */,
 				96781C2D266664030033134D /* GradientProgressView.swift in Sources */,
 				967DA14126709F1A002251D7 /* PaygatePaidView.swift in Sources */,
@@ -1874,6 +2051,7 @@
 				96781C18266664030033134D /* TestStatsResultCell.swift in Sources */,
 				96781C17266664030033134D /* TestStatsAnswerCell.swift in Sources */,
 				967DA15E26709F25002251D7 /* GetMonetizationConfigRequest.swift in Sources */,
+				967380B22677973500230FB6 /* FlashCardManagerMediator.swift in Sources */,
 				96781C56266664030033134D /* ODatePicker.swift in Sources */,
 				96781C22266664030033134D /* TestStatsProgressView.swift in Sources */,
 				96781BFC266664030033134D /* TestViewModel.swift in Sources */,
@@ -1881,6 +2059,8 @@
 				96781BD0266664020033134D /* SessionManager.swift in Sources */,
 				96781C01266664030033134D /* TestAnalytics.swift in Sources */,
 				96781BED266664020033134D /* CourseCell.swift in Sources */,
+				967380972677972900230FB6 /* FlashcardsTopicsTableCell.swift in Sources */,
+				967380B12677973500230FB6 /* FlashCardManagerDelegate.swift in Sources */,
 				96781C62266664040033134D /* OSlidePreloaderView.swift in Sources */,
 				96781BEB266664020033134D /* SCModeView.swift in Sources */,
 				96781C6B266664040033134D /* OnboardingAnalytics.swift in Sources */,
@@ -1893,6 +2073,7 @@
 				96781C46266664030033134D /* MainProgressView.swift in Sources */,
 				96781C6A266664040033134D /* OnboardingViewModel.swift in Sources */,
 				96781BF5266664020033134D /* TabItemView.swift in Sources */,
+				967380B52677973500230FB6 /* GetFlashcardsRequest.swift in Sources */,
 				96781C19266664030033134D /* TestStatsFilterCell.swift in Sources */,
 				96781BAE266664020033134D /* QuestionManagerMediator.swift in Sources */,
 				96781C54266664030033134D /* LocaleCountryView.swift in Sources */,
@@ -1907,12 +2088,14 @@
 				96781C5F266664040033134D /* OSlideView.swift in Sources */,
 				96781BFE266664030033134D /* TestStatsElement.swift in Sources */,
 				96781B9C266664020033134D /* GetTestResponseMapper.swift in Sources */,
+				967380932677972900230FB6 /* FlashcardsTopicsView.swift in Sources */,
 				96781C37266664030033134D /* SITestViewController.swift in Sources */,
 				96781B68266664010033134D /* UIDeviceExtension.swift in Sources */,
 				96781B7A266664010033134D /* PaddingLabel.swift in Sources */,
 				96781C00266664030033134D /* TestType.swift in Sources */,
 				96781BFB266664030033134D /* ExplanationCell.swift in Sources */,
 				96781B6A266664010033134D /* StringExtension.swift in Sources */,
+				967380B92677973500230FB6 /* GetFlashcardsTopicsRequest.swift in Sources */,
 				96781BFA266664030033134D /* AnswerCell.swift in Sources */,
 				96781BE2266664020033134D /* StudyViewController.swift in Sources */,
 				96781C67266664040033134D /* OSlideLocaleView.swift in Sources */,
@@ -1928,6 +2111,7 @@
 				967DA15C26709F25002251D7 /* Paygate.swift in Sources */,
 				96781C1C266664030033134D /* TestStatsAnswer.swift in Sources */,
 				96781B75266664010033134D /* NursingNavigationController.swift in Sources */,
+				967380B32677973500230FB6 /* FlashcardsManager.swift in Sources */,
 				96781BB8266664020033134D /* State.swift in Sources */,
 				96781BA8266664020033134D /* GetTenSetRequest.swift in Sources */,
 				96781BC3266664020033134D /* SetRequest.swift in Sources */,
@@ -1941,6 +2125,7 @@
 				96781BE0266664020033134D /* SplashView.swift in Sources */,
 				96781BA2266664020033134D /* RemoveSavedQuestionRequest.swift in Sources */,
 				967DA14326709F1A002251D7 /* PaygateFreeView.swift in Sources */,
+				967380942677972900230FB6 /* FlashcardsTopicsViewController.swift in Sources */,
 				96781C1A266664030033134D /* TestStatsComunityResult.swift in Sources */,
 				96781C0B266664030033134D /* AVPlayerView.swift in Sources */,
 				96781BAB266664020033134D /* GetSavedAndIncorrectResponseMapper.swift in Sources */,
@@ -1960,6 +2145,7 @@
 				96781BBA266664020033134D /* Country.swift in Sources */,
 				96781BC1266664020033134D /* GetCountriesRequest.swift in Sources */,
 				96781C27266664030033134D /* CourseDetailsViewController.swift in Sources */,
+				967380812677933600230FB6 /* CourseConfig.swift in Sources */,
 				96781B65266664010033134D /* UIColorExtension.swift in Sources */,
 				96781B6D266664010033134D /* TextAttributes.swift in Sources */,
 				96781BB0266664020033134D /* QuestionManagerDelagate.swift in Sources */,
@@ -1967,10 +2153,12 @@
 				96781BE3266664020033134D /* SCTitleCell.swift in Sources */,
 				96781B7B266664010033134D /* PaddingPickerView.swift in Sources */,
 				96781C64266664040033134D /* OSlideCountView.swift in Sources */,
+				9673809A2677972900230FB6 /* FlashcardsViewModel.swift in Sources */,
 				96781C42266664030033134D /* TrophyCell.swift in Sources */,
 				96781C2F266664030033134D /* SIQuestionCell.swift in Sources */,
 				96781B69266664010033134D /* UIEdgeInsets+Extension.swift in Sources */,
 				96781BCB266664020033134D /* GetStatsRequest.swift in Sources */,
+				967380992677972900230FB6 /* FlashCardModel.swift in Sources */,
 				96781BE9266664020033134D /* StudyCollectionElement.swift in Sources */,
 				96781C1B266664030033134D /* TestStatsProgressElement.swift in Sources */,
 				96781C32266664030033134D /* SITestType.swift in Sources */,
@@ -2001,7 +2189,9 @@
 				96781BDF266664020033134D /* SplashViewModel.swift in Sources */,
 				96781BA6266664020033134D /* GetTestRequest.swift in Sources */,
 				96781C31266664030033134D /* SITestProgressCollectionCell.swift in Sources */,
+				967380962677972900230FB6 /* FlashcardsTopicsTableView.swift in Sources */,
 				96781B9E266664020033134D /* SendAnswerResponseMapper.swift in Sources */,
+				967380952677972900230FB6 /* FlashcardsTopicsViewModel.swift in Sources */,
 				96781BFD266664030033134D /* TestBottomButtonState.swift in Sources */,
 				96781C29266664030033134D /* CourseDetailsTableElement.swift in Sources */,
 				96781C05266664030033134D /* TestViewController.swift in Sources */,
@@ -2013,6 +2203,7 @@
 				967DA13C26709F1A002251D7 /* PaygateView.swift in Sources */,
 				96781C3E266664030033134D /* MainStatsElement.swift in Sources */,
 				96781B96266664020033134D /* GetTestStatsResponseMapper.swift in Sources */,
+				967380B82677973500230FB6 /* GetFlashcardsTopicsResponseMapper.swift in Sources */,
 				96781BA3266664020033134D /* GetQotdRequest.swift in Sources */,
 				96781B78266664010033134D /* ProgressView.swift in Sources */,
 				865FEC5B26679C1C009D7A4E /* TimedExamView.swift in Sources */,
@@ -2022,6 +2213,7 @@
 				96781C06266664030033134D /* QuestionTableView.swift in Sources */,
 				96781BA5266664020033134D /* SendAnswerRequest.swift in Sources */,
 				96781C48266664030033134D /* MainStatsDescriptionView.swift in Sources */,
+				9673809B2677972900230FB6 /* FlashCardView.swift in Sources */,
 				96781BF4266664020033134D /* CourseViewCoordinator.swift in Sources */,
 				96781BEC266664020033134D /* CourseCellProgressView.swift in Sources */,
 				96781C03266664030033134D /* TestElement.swift in Sources */,
@@ -2178,7 +2370,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = "$(SRCROOT)/DMV/Resource/Info.plist";
@@ -2187,7 +2379,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.3;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV Development Profile";
@@ -2205,7 +2397,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = "$(SRCROOT)/DMV/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -2213,7 +2405,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.3;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV AppStore Profile";
