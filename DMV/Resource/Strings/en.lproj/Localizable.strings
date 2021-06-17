@@ -90,6 +90,9 @@
 "Stats.MainRate.LongestStreak" = "Longest streak";
 "Stats.MainRate.AnsweredQuestions" = "Answered questions";
 "Stats.MainRate.LearnedFlashcards" = "Learned flashcard sets";
+"Stats.Description.TestsTake" = "Tests taken";
+"Stats.Description.CorrectAnswers" = "Correct answers";
+"Stats.Description.QuestionsTaken" = "Questions taken";
 "Stats.Title" = "Stats";
 "Stats.Day.One" = "day";
 "Stats.Day.Two" = "days";
