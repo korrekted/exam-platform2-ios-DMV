@@ -56,6 +56,7 @@
 		967381FD26793C0C00230FB6 /* PaygateMainInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967381F526793C0C00230FB6 /* PaygateMainInfoCell.swift */; };
 		967381FE26793C0C00230FB6 /* PaygateOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967381F626793C0C00230FB6 /* PaygateOptionView.swift */; };
 		967381FF26793C0C00230FB6 /* PaygateSpecialOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967381F726793C0C00230FB6 /* PaygateSpecialOfferView.swift */; };
+		96738238267B3DC200230FB6 /* SF-Pro-Rounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 96738237267B3DB600230FB6 /* SF-Pro-Rounded-Medium.otf */; };
 		967819D7266661E30033134D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967819D6266661E30033134D /* Assets.xcassets */; };
 		96781B65266664010033134D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A05266663FF0033134D /* UIColorExtension.swift */; };
 		96781B66266664010033134D /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A06266663FF0033134D /* Collection+Extension.swift */; };
@@ -348,6 +349,7 @@
 		967381F526793C0C00230FB6 /* PaygateMainInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateMainInfoCell.swift; sourceTree = "<group>"; };
 		967381F626793C0C00230FB6 /* PaygateOptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateOptionView.swift; sourceTree = "<group>"; };
 		967381F726793C0C00230FB6 /* PaygateSpecialOfferView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateSpecialOfferView.swift; sourceTree = "<group>"; };
+		96738237267B3DB600230FB6 /* SF-Pro-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Medium.otf"; sourceTree = "<group>"; };
 		967819CA266661DF0033134D /* DMV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967819D6266661E30033134D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		967819DB266661E30033134D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1793,6 +1795,7 @@
 		96781C772666646E0033134D /* SFProRounded */ = {
 			isa = PBXGroup;
 			children = (
+				96738237267B3DB600230FB6 /* SF-Pro-Rounded-Medium.otf */,
 				96781C782666646E0033134D /* SF-Pro-Rounded-Semibold.otf */,
 				96781C792666646E0033134D /* SF-Pro-Rounded-Regular.otf */,
 				96781C7A2666646E0033134D /* SF-Pro-Rounded-Bold.otf */,
@@ -1870,6 +1873,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96738238267B3DC200230FB6 /* SF-Pro-Rounded-Medium.otf in Resources */,
 				96781C71266664600033134D /* LaunchScreen.storyboard in Resources */,
 				96781C9F266963CA0033134D /* Localizable.strings in Resources */,
 				96781C7B2666646E0033134D /* lato-regular.otf in Resources */,
