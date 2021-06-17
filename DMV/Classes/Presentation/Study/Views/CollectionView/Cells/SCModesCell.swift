@@ -72,7 +72,6 @@ private extension SCModesCell {
             todayView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16.scale),
             todayView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16.scale),
             todayView.widthAnchor.constraint(equalTo: randomView.widthAnchor),
-            todayView.heightAnchor.constraint(equalToConstant: 180)
         ])
         
         NSLayoutConstraint.activate([
@@ -80,7 +79,6 @@ private extension SCModesCell {
             randomView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16.scale),
             randomView.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor),
             randomView.trailingAnchor.constraint(equalTo: todayView.trailingAnchor),
-            randomView.heightAnchor.constraint(equalToConstant: 148)
         ])
         
         NSLayoutConstraint.activate([
@@ -93,7 +91,6 @@ private extension SCModesCell {
         NSLayoutConstraint.activate([
             missedView.topAnchor.constraint(equalTo: tenView.bottomAnchor, constant: 16.scale),
             missedView.leadingAnchor.constraint(equalTo: randomView.trailingAnchor, constant: 16.scale),
-            missedView.heightAnchor.constraint(equalTo: tenView.heightAnchor),
             missedView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16.scale),
             missedView.widthAnchor.constraint(equalTo: tenView.widthAnchor)
         ])
@@ -102,8 +99,7 @@ private extension SCModesCell {
             timeView.topAnchor.constraint(equalTo: missedView.bottomAnchor, constant: 16.scale),
             timeView.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor, constant: -6.scale),
             timeView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16.scale),
-            timeView.widthAnchor.constraint(equalTo: missedView.widthAnchor),
-            timeView.heightAnchor.constraint(equalTo: tenView.heightAnchor)
+            timeView.widthAnchor.constraint(equalTo: missedView.widthAnchor)
         ])
     }
 }

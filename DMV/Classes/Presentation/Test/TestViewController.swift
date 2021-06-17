@@ -36,7 +36,18 @@ final class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        mainView.navigationView.leftAction.addTarget(self, action: #selector(popAction), for: .touchUpInside)
+        mainView.navigationView.leftAction.rx.tap
+            .withLatestFrom(viewModel.userTestId)
+            .withLatestFrom(viewModel.currentTestType) { ($0, $1) }
+            .bind(to: Binder(self) { base, tuple in
+                let (id, type) = tuple
+                if case .timedQuizz = type, let id = id {
+                    QuestionManagerMediator.shared.timedTestClosed(userTestId: id)
+                }
+                QuestionManagerMediator.shared.testClosed()
+                base.navigationController?.popViewController(animated: true)
+            })
+            .disposed(by: disposeBag)
         
         let courseName = viewModel.courseName
         
@@ -124,12 +135,12 @@ final class TestViewController: UIViewController {
                 return isHidden ? 0 : bottomOffset
             }
         
-        let bottomButtonOffset = viewModel.bottomViewState.map { $0 == .hidden ? 0 : 195.scale }
-        
-        Driver
-            .merge(nextOffset, bottomButtonOffset)
+        Observable
+            .combineLatest(nextOffset.asObservable(), viewModel.bottomViewState.asObservable()) { nextOffset, bottomState in
+                bottomState == .hidden ? nextOffset : 195.scale
+            }
             .distinctUntilChanged()
-            .drive(Binder(mainView.tableView) {
+            .bind(to: Binder(mainView.tableView) {
                 $0.contentInset.bottom = $1
             })
             .disposed(by: disposeBag)
@@ -149,33 +160,6 @@ final class TestViewController: UIViewController {
         viewModel.bottomViewState
             .drive(Binder(mainView) {
                 $0.setupBottomButton(for: $1)
-            })
-            .disposed(by: disposeBag)
-        
-        mainView.tableView
-            .expandContent
-            .bind(to: Binder(self) { base, content in
-                switch content {
-                case let .image(url):
-                    DispatchQueue.global(qos: .utility).async { [weak base] in
-                        if let image = try? UIImage(data: Data(contentsOf: url)) {
-                            DispatchQueue.main.async {
-                                let controller = ZoomImageViewController(image: image)
-                                controller.view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
-                                base?.present(controller, animated: true)
-                            }
-                            
-                        }
-                    }
-                case let .video(url):
-                    let controller = AVPlayerViewController()
-                    controller.view.backgroundColor = .black
-                    let player = AVPlayer(url: url)
-                    controller.player = player
-                    base.present(controller, animated: true) { [weak player] in
-                        player?.play()
-                    }
-                }
             })
             .disposed(by: disposeBag)
         
@@ -220,7 +204,7 @@ final class TestViewController: UIViewController {
                     rightCounterTitle = "Question.Counter.Question".localized
                 }
                 
-                base.navigationView.setTitle(title: testType.name)
+                base.navigationView.setTitle(title: testType.title)
                 base.counter.setup(leftTitle: leftCounterTitle, rightTitle: rightCounterTitle)
             })
             .disposed(by: disposeBag)
@@ -228,14 +212,6 @@ final class TestViewController: UIViewController {
         viewModel.isSavedQuestion
             .drive(Binder(mainView) {
                 $0.saveQuestion($1)
-            })
-            .disposed(by: disposeBag)
-        
-        mainView.tableView
-            .expandContent
-            .withLatestFrom(courseName)
-            .subscribe(onNext: { [weak self] name in
-                self?.logTapAnalytics(courseName: name, what: "media")
             })
             .disposed(by: disposeBag)
         
@@ -257,12 +233,12 @@ final class TestViewController: UIViewController {
 
 // MARK: Make
 extension TestViewController {
-    static func make(testTypes: [TestType], activeSubscription: Bool, courseId: Int, isTopicTest: Bool) -> TestViewController {
+    static func make(testType: TestType, activeSubscription: Bool, courseId: Int, isTopicTest: Bool) -> TestViewController {
         let controller = TestViewController()
         controller.modalPresentationStyle = .fullScreen
         controller.viewModel.isTopicTest = isTopicTest
         controller.viewModel.activeSubscription = activeSubscription
-        controller.viewModel.testTypes = testTypes
+        controller.viewModel.testType.accept(testType)
         controller.viewModel.courseId.accept(courseId)
         return controller
     }
@@ -281,7 +257,7 @@ extension TestViewController {
 // MARK: Private
 private extension TestViewController {
     func logAnalytics(courseName: String) {
-        guard let type = viewModel.testType else {
+        guard let type = viewModel.currentType else {
             return
         }
         
@@ -294,7 +270,7 @@ private extension TestViewController {
     }
     
     func logTapAnalytics(courseName: String, what: String) {
-        guard let type = viewModel.testType else {
+        guard let type = viewModel.currentType else {
             return
         }
         
@@ -305,11 +281,6 @@ private extension TestViewController {
             .logEvent(name: "Question Tap", parameters: ["course": courseName,
                                                          "mode": name,
                                                          "what": what])
-    }
-    
-    @objc func popAction() {
-        QuestionManagerMediator.shared.testClosed()
-        navigationController?.popViewController(animated: true)
     }
 }
 

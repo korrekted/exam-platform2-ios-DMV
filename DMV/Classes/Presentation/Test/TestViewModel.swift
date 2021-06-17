@@ -12,7 +12,7 @@ final class TestViewModel {
     
     var activeSubscription = true
 
-    var testTypes = [TestType]()
+    var testType = BehaviorRelay<TestType?>(value: nil)
     let courseId = BehaviorRelay<Int?>(value: nil)
     let didTapNext = PublishRelay<Void>()
     let didTapConfirm = PublishRelay<Void>()
@@ -32,9 +32,10 @@ final class TestViewModel {
     lazy var rightCounterValue = makeRightCounterContent()
     lazy var testStatsElement = makeTestStatsElement()
     lazy var isSavedQuestion = makeIsSavedQuestion()
+    lazy var userTestId = currentTestElement.map { $0.element?.userTestId }
     
     private(set) lazy var currentTestType = makeCurrentTestType().share(replay: 1, scope: .forever)
-    private(set) var testType: TestType? = nil
+    private(set) var currentType: TestType? = nil
     
     private lazy var questionManager = QuestionManagerCore()
     private lazy var courseManager = CoursesManagerCore()
@@ -54,9 +55,13 @@ final class TestViewModel {
 // MARK: Private
 private extension TestViewModel {
     func makeCourseName() -> Driver<String> {
-        courseManager
-            .rxGetSelectedCourse()
-            .compactMap { $0?.name }
+         testElement
+            .map { $0.element?.name }
+            .withLatestFrom(courseManager.rxGetSelectedCourse()) { ($0, $1) }
+            .compactMap { name, course -> String? in
+                guard let name = name, !name.isEmpty else { return course?.name }
+                return name
+            }
             .asDriver(onErrorDriveWith: .empty())
     }
     
@@ -151,13 +156,13 @@ private extension TestViewModel {
     }
     
     func makeCurrentTestType() -> Observable<TestType> {
-        loadNextTestSignal
-            .startWith(())
-            .compactMap { [weak self] _ -> TestType? in
-                guard let self = self, !self.testTypes.isEmpty else { return nil }
-                self.testType = self.testTypes.removeFirst()
-                return self.testType
-            }
+        testType
+            .compactMap { $0 }
+            .take(1)
+            .concat(loadNextTestSignal.map { .get(testId: nil) })
+            .do(onNext: { [weak self] in
+                self?.currentType = $0
+            })
     }
     
     func makeErrorMessage() -> Signal<String> {
@@ -194,7 +199,7 @@ private extension TestViewModel {
             .withLatestFrom(currentTestType) { ($0, $1) }
             .compactMap { [weak self] userTestId, testType -> TestStatsElement? in
                 guard let self = self else { return nil }
-                return TestStatsElement(userTestId: userTestId, testType: testType, isEnableNext: !self.testTypes.isEmpty, isTopicTest: self.isTopicTest)
+                return TestStatsElement(userTestId: userTestId, testType: testType, isEnableNext: true, isTopicTest: self.isTopicTest)
             }
     }
     
@@ -453,7 +458,7 @@ private extension TestViewModel {
 private extension TestViewModel {
     
     func logAnswerAnalitycs(isCorrect: Bool) {
-        guard let type = testType, let courseName = courseManager.getSelectedCourse()?.name else {
+        guard let type = currentType, let courseName = courseManager.getSelectedCourse()?.name else {
             return
         }
         let name = isCorrect ? "Question Answered Correctly" : "Question Answered Incorrectly"
