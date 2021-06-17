@@ -78,3 +78,16 @@ private extension AnswerCell {
         return view
     }
 }
+
+extension AnswerCell {
+    static func height(for element: AnswerElement, with width: CGFloat) -> CGFloat {
+        sizingCell.setup(element: element)
+        return sizingCell.contentView.systemLayoutSizeFitting(
+            CGSize(width: width, height: UIView.layoutFittingCompressedSize.height),
+            withHorizontalFittingPriority: .required,
+            verticalFittingPriority: .fittingSizeLevel
+        ).height + 1.scale
+    }
+    
+    private static let sizingCell = AnswerCell()
+}

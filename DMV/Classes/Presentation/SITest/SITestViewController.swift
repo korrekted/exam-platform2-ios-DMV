@@ -103,7 +103,7 @@ final class SITestViewController: UIViewController {
         let nextOffset = isHiddenNext
             .compactMap { [weak mainView] isHidden -> CGFloat? in
                 let bottomOffset = mainView.map { $0.bounds.height - $0.nextButton.frame.minY + 9.scale }
-                return isHidden ? nil : bottomOffset
+                return isHidden ? 32.scale : bottomOffset
             }
         
         Observable
@@ -113,6 +113,12 @@ final class SITestViewController: UIViewController {
             .distinctUntilChanged()
             .bind(to: Binder(mainView.tableView) {
                 $0.contentInset.bottom = $1
+            })
+            .disposed(by: disposeBag)
+        
+        viewModel.bottomViewState
+            .drive(Binder(mainView) {
+                $0.setupBottomButton(for: $1)
             })
             .disposed(by: disposeBag)
         
