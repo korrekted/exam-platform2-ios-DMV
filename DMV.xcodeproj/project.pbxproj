@@ -10,6 +10,8 @@
 		865FEC5A26679C1C009D7A4E /* TimedExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865FEC5726679C1C009D7A4E /* TimedExamViewController.swift */; };
 		865FEC5B26679C1C009D7A4E /* TimedExamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865FEC5826679C1C009D7A4E /* TimedExamView.swift */; };
 		865FEC5F2667A4E3009D7A4E /* BottomSheetAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865FEC5E2667A4E3009D7A4E /* BottomSheetAnimation.swift */; };
+		96155B6C2689A8AD00228151 /* CoursesMediatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96155B6B2689A8AD00228151 /* CoursesMediatorDelegate.swift */; };
+		96155B6E2689A8E300228151 /* CoursesMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96155B6D2689A8E300228151 /* CoursesMediator.swift */; };
 		9673807F26778AF200230FB6 /* SCFlashcardsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9673807E26778AF200230FB6 /* SCFlashcardsCell.swift */; };
 		967380812677933600230FB6 /* CourseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380802677933600230FB6 /* CourseConfig.swift */; };
 		967380932677972900230FB6 /* FlashcardsTopicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380832677972900230FB6 /* FlashcardsTopicsView.swift */; };
@@ -303,6 +305,8 @@
 		865FEC5726679C1C009D7A4E /* TimedExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimedExamViewController.swift; sourceTree = "<group>"; };
 		865FEC5826679C1C009D7A4E /* TimedExamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimedExamView.swift; sourceTree = "<group>"; };
 		865FEC5E2667A4E3009D7A4E /* BottomSheetAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetAnimation.swift; sourceTree = "<group>"; };
+		96155B6B2689A8AD00228151 /* CoursesMediatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesMediatorDelegate.swift; sourceTree = "<group>"; };
+		96155B6D2689A8E300228151 /* CoursesMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesMediator.swift; sourceTree = "<group>"; };
 		9673807E26778AF200230FB6 /* SCFlashcardsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCFlashcardsCell.swift; sourceTree = "<group>"; };
 		967380802677933600230FB6 /* CourseConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseConfig.swift; sourceTree = "<group>"; };
 		967380832677972900230FB6 /* FlashcardsTopicsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashcardsTopicsView.swift; sourceTree = "<group>"; };
@@ -632,6 +636,15 @@
 				865FEC5E2667A4E3009D7A4E /* BottomSheetAnimation.swift */,
 			);
 			path = Animation;
+			sourceTree = "<group>";
+		};
+		96155B6A2689A89000228151 /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				96155B6B2689A8AD00228151 /* CoursesMediatorDelegate.swift */,
+				96155B6D2689A8E300228151 /* CoursesMediator.swift */,
+			);
+			path = Mediator;
 			sourceTree = "<group>";
 		};
 		967380822677972900230FB6 /* FlashcardsTopics */ = {
@@ -1082,6 +1095,7 @@
 		96781A65266664000033134D /* Courses */ = {
 			isa = PBXGroup;
 			children = (
+				96155B6A2689A89000228151 /* Mediator */,
 				96781A66266664000033134D /* Models */,
 				96781A68266664000033134D /* Requests */,
 				96781A6B266664000033134D /* Manager */,
@@ -1957,6 +1971,7 @@
 			files = (
 				96781BF6266664020033134D /* TabView.swift in Sources */,
 				96781C21266664030033134D /* TestComunityResultLineView.swift in Sources */,
+				96155B6C2689A8AD00228151 /* CoursesMediatorDelegate.swift in Sources */,
 				96781BD8266664020033134D /* STSettingLinksCell.swift in Sources */,
 				96781BC7266664020033134D /* Stats.swift in Sources */,
 				96781BB1266664020033134D /* Course.swift in Sources */,
@@ -2208,6 +2223,7 @@
 				967381E026793BFC00230FB6 /* PaygateManagerCore.swift in Sources */,
 				967380B82677973500230FB6 /* GetFlashcardsTopicsResponseMapper.swift in Sources */,
 				96781BA3266664020033134D /* GetQotdRequest.swift in Sources */,
+				96155B6E2689A8E300228151 /* CoursesMediator.swift in Sources */,
 				96781B78266664010033134D /* ProgressView.swift in Sources */,
 				967381FD26793C0C00230FB6 /* PaygateMainInfoCell.swift in Sources */,
 				865FEC5B26679C1C009D7A4E /* TimedExamView.swift in Sources */,

@@ -21,6 +21,8 @@ extension CoursesManagerCore {
         }
         
         UserDefaults.standard.set(data, forKey: Constants.selectedCourseCacheKey)
+        
+        CoursesMediator.shared.notifyAbout(selectedCourse: course)
     }
     
     func getSelectedCourse() -> Course? {
