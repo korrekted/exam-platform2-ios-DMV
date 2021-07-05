@@ -20,8 +20,8 @@ final class OPreloaderCell: UIView {
     var title: String = "" {
         didSet {
             let attrs = TextAttributes()
-                .font(Fonts.SFProRounded.semiBold(size: 20.scale))
-                .lineHeight(28.scale)
+                .font(Fonts.SFProRounded.regular(size: 18.scale))
+                .lineHeight(25.scale)
                 .textColor(Onboarding.Preloader.text)
             
             label.attributedText = title.attributed(with: attrs)
