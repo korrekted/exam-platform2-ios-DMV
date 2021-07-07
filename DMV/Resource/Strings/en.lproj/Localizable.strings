@@ -75,11 +75,11 @@
 "Onboarding.MinutesAtTime.15min" = "15 min";
 "Onboarding.MinutesAtTime.20min" = "20 min";
 "Onboarding.MinutesAtTime.Header" = "You can alter these settings later";
-"Onboarding.Experience.Title" = "Do you have any experiene\nwith driving?";
-"Onboarding.Experience.Period1" = "No experience";
-"Onboarding.Experience.Period2" = "I know the main rules";
-"Onboarding.Experience.Period3" = "I know most of the signs";
-"Onboarding.Experience.Period4" = "I have a bit of driving experience";
+"Onboarding.Experience.Title" = "Do you have any driving\nexperience?";
+"Onboarding.Experience.Cell1.Title" = "No experience";
+"Onboarding.Experience.Cell1.Subtitle" = "Never tried to study before";
+"Onboarding.Experience.Cell2.Title" = "Some experience";
+"Onboarding.Experience.Cell2.Subtitle" = "Know general rules and signs";
 "Onboarding.Experience.Header" = "You can alter these settings later";
 "Onboarding.WhenStudy.Title" = "When do you want\nto study?";
 "Onboarding.WhenStudy.Cell1" = "Early morning";

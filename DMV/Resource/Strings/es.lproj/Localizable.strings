@@ -76,10 +76,10 @@
 "Onboarding.MinutesAtTime.20min" = "20 min";
 "Onboarding.MinutesAtTime.Header" = "Puede modificar esta configuración más tarde";
 "Onboarding.Experience.Title" = "¿Cuál es tu\nexperiencia de\nconducción?";
-"Onboarding.Experience.Period1" = "0-2 años";
-"Onboarding.Experience.Period2" = "2-4 años";
-"Onboarding.Experience.Period3" = "4-6 años";
-"Onboarding.Experience.Period4" = "6+ años";
+"Onboarding.Experience.Cell1.Title" = "No experiencia";
+"Onboarding.Experience.Cell1.Subtitle" = "Nunca intenté estudiar antes";
+"Onboarding.Experience.Cell2.Title" = "Alguna experiencia";
+"Onboarding.Experience.Cell2.Subtitle" = "Conocimiento de reglas y signos generales";
 "Onboarding.Experience.Header" = "Puede modificar esta configuración más tarde";
 "Onboarding.WhenStudy.Title" = "Cuando quieres\nestudiar?";
 "Onboarding.WhenStudy.Cell1" = "Temprano en la mañana";
