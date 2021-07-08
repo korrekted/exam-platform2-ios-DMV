@@ -74,7 +74,7 @@ private extension OSlideExperienceView {
             return
         }
         
-        [cell, cell2].forEach { $0.isChecked = false }
+        [cell1, cell2].forEach { $0.isChecked = false }
 
         cell.isChecked = true
 
