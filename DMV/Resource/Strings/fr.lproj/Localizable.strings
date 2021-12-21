@@ -75,6 +75,7 @@
 "Onboarding.MinutesAtTime.15min" = "15 min";
 "Onboarding.MinutesAtTime.20min" = "20 min";
 "Onboarding.MinutesAtTime.Header" = "Vous pouvez modifier ces paramètres ultérieurement";
+"Onboarding.Experience.Title" = "Avez-vous une moto\n expérience de conduite?";
 "Onboarding.Experience.Cell1.Title" = "Sans expérience";
 "Onboarding.Experience.Cell1.Subtitle" = " Jamais essayé d'étudier avant";
 "Onboarding.Experience.Cell2.Title" = "Un peu d'expérience";
