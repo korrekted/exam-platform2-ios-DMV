@@ -14,6 +14,7 @@ final class ProfileMediator {
     private var delegates = [Weak<ProfileMediatorDelegate>]()
     
     private lazy var updateProfileLocaleTrigger = PublishRelay<ProfileLocale>()
+    private lazy var updatedTestModeTrigger = PublishRelay<TestMode>()
     
     private init() {}
 }
@@ -29,12 +30,26 @@ extension ProfileMediator {
             self?.updateProfileLocaleTrigger.accept(profileLocale)
         }
     }
+    
+    func notifyAboutUpdated(testMode: TestMode) {
+        DispatchQueue.main.async { [weak self] in
+            self?.delegates.forEach {
+                $0.weak?.didUpdated(testMode: testMode)
+            }
+
+            self?.updatedTestModeTrigger.accept(testMode)
+        }
+    }
 }
 
 // MARK: Triggers(Rx)
 extension ProfileMediator {
     var rxUpdatedProfileLocale: Signal<ProfileLocale> {
         updateProfileLocaleTrigger.asSignal()
+    }
+    
+    var rxUpdatedTestMode: Signal<TestMode> {
+        updatedTestModeTrigger.asSignal()
     }
 }
 

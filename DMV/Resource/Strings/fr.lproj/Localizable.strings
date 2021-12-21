@@ -124,6 +124,7 @@
 "Settings.PrivacyPolicy" = "Politique de confidentialité";
 "Settings.YourLocale" = "Votre région";
 "Settings.YourLanguage" = "Votre langue";
+"Settings.Mode" = "Modo de prueb";
 
 // MARK: Stats
 "Stats.PassRate.Title" = "Taux de réussite actuel";
