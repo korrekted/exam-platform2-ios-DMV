@@ -340,6 +340,8 @@
 		96F92A8026920D82006331D7 /* TestMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F92A7F26920D82006331D7 /* TestMode.swift */; };
 		DE3449FA2771D96600632F72 /* STModeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3449F92771D96600632F72 /* STModeCell.swift */; };
 		DE3449FC2771DC1600632F72 /* STChangeModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3449FB2771DC1600632F72 /* STChangeModeView.swift */; };
+		DE93780E27BA74940073F27C /* RestApiTransportExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE93780D27BA74940073F27C /* RestApiTransportExtension.swift */; };
+		DE93781027BA74AC0073F27C /* XOREncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE93780F27BA74AC0073F27C /* XOREncryption.swift */; };
 		E2D80A444A086C4FC0564B36 /* Pods_DMV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B862032F73539581F73AEB /* Pods_DMV.framework */; };
 /* End PBXBuildFile section */
 
@@ -708,6 +710,8 @@
 		DE3449F92771D96600632F72 /* STModeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STModeCell.swift; sourceTree = "<group>"; };
 		DE3449FB2771DC1600632F72 /* STChangeModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STChangeModeView.swift; sourceTree = "<group>"; };
 		DE344A022771F8B700632F72 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DE93780D27BA74940073F27C /* RestApiTransportExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiTransportExtension.swift; sourceTree = "<group>"; };
+		DE93780F27BA74AC0073F27C /* XOREncryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XOREncryption.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1092,6 +1096,7 @@
 				96781A08266663FF0033134D /* UIDeviceExtension.swift */,
 				96781A09266663FF0033134D /* UIEdgeInsets+Extension.swift */,
 				96781A0A266663FF0033134D /* StringExtension.swift */,
+				DE93780D27BA74940073F27C /* RestApiTransportExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1105,6 +1110,7 @@
 				96781A10266664000033134D /* Fonts.swift */,
 				96781A11266664000033134D /* Error */,
 				96781A13266664000033134D /* Weak.swift */,
+				DE93780F27BA74AC0073F27C /* XOREncryption.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -2356,6 +2362,7 @@
 				967381EC26793BFC00230FB6 /* MonetizationManagerCore.swift in Sources */,
 				96781BC8266664020033134D /* GetBriefRequest.swift in Sources */,
 				96781B71266664010033134D /* Weak.swift in Sources */,
+				DE93780E27BA74940073F27C /* RestApiTransportExtension.swift in Sources */,
 				967381E726793BFC00230FB6 /* Paygate.swift in Sources */,
 				967380AF2677973500230FB6 /* Flashcard.swift in Sources */,
 				967380B02677973500230FB6 /* FlashcardTopic.swift in Sources */,
@@ -2504,6 +2511,7 @@
 				96781BB5266664020033134D /* CoursesManager.swift in Sources */,
 				96781B7D266664010033134D /* CircleView.swift in Sources */,
 				96781C40266664030033134D /* StatsView.swift in Sources */,
+				DE93781027BA74AC0073F27C /* XOREncryption.swift in Sources */,
 				96781C15266664030033134D /* TestStatsProgressCell.swift in Sources */,
 				96781B85266664010033134D /* RateManager.swift in Sources */,
 				96781BE6266664020033134D /* SCModesCell.swift in Sources */,
@@ -2603,7 +2611,7 @@
 				CODE_SIGN_ENTITLEMENTS = StatsWidgetsExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 24;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = StatsWidgets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -2612,7 +2620,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.8.5;
+				MARKETING_VERSION = 1.9.1;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv.stats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV StatsWidgets Development Profile";
@@ -2630,7 +2638,7 @@
 				CODE_SIGN_ENTITLEMENTS = StatsWidgetsExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 24;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = StatsWidgets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -2639,7 +2647,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.8.5;
+				MARKETING_VERSION = 1.9.1;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv.stats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV StatsWidgets AppStore Profile";
@@ -2775,7 +2783,7 @@
 				CODE_SIGN_ENTITLEMENTS = DMV/DMV.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 24;
+				CURRENT_PROJECT_VERSION = 25;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = "$(SRCROOT)/DMV/Resource/Info.plist";
@@ -2784,7 +2792,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.8.5;
+				MARKETING_VERSION = 1.9.1;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV Development Profile";
@@ -2804,7 +2812,7 @@
 				CODE_SIGN_ENTITLEMENTS = DMV/DMV.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 24;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = "$(SRCROOT)/DMV/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -2812,7 +2820,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.8.5;
+				MARKETING_VERSION = 1.9.1;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV AppStore Profile";
