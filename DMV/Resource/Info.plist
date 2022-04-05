@@ -41,6 +41,8 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>FacebookAppID</key>
 	<string>4227822093941595</string>
+	<key>FacebookClientToken</key>
+	<string>950cf11774129516d645c308a937b595</string>
 	<key>FacebookDisplayName</key>
 	<string>DMV Prep</string>
 	<key>LSRequiresIPhoneOS</key>
