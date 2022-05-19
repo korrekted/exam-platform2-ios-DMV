@@ -342,6 +342,8 @@
 		DE3449FC2771DC1600632F72 /* STChangeModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3449FB2771DC1600632F72 /* STChangeModeView.swift */; };
 		DE93780E27BA74940073F27C /* RestApiTransportExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE93780D27BA74940073F27C /* RestApiTransportExtension.swift */; };
 		DE93781027BA74AC0073F27C /* XOREncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE93780F27BA74AC0073F27C /* XOREncryption.swift */; };
+		DEADEB03283634B60057AA44 /* DefaultRequestWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB02283634B60057AA44 /* DefaultRequestWrapper.swift */; };
+		DEADEB05283634CA0057AA44 /* XORRequestWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB04283634CA0057AA44 /* XORRequestWrapper.swift */; };
 		E2D80A444A086C4FC0564B36 /* Pods_DMV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B862032F73539581F73AEB /* Pods_DMV.framework */; };
 /* End PBXBuildFile section */
 
@@ -712,6 +714,8 @@
 		DE344A022771F8B700632F72 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DE93780D27BA74940073F27C /* RestApiTransportExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiTransportExtension.swift; sourceTree = "<group>"; };
 		DE93780F27BA74AC0073F27C /* XOREncryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XOREncryption.swift; sourceTree = "<group>"; };
+		DEADEB02283634B60057AA44 /* DefaultRequestWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRequestWrapper.swift; sourceTree = "<group>"; };
+		DEADEB04283634CA0057AA44 /* XORRequestWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XORRequestWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1075,14 +1079,14 @@
 		96781A03266663FF0033134D /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				96781A27266664000033134D /* Rx */,
 				96781A04266663FF0033134D /* Extension */,
-				96781A0B266663FF0033134D /* GlobalDefinitions.swift */,
 				96781A0C266664000033134D /* Utils */,
 				96781A14266664000033134D /* Components */,
 				96781A18266664000033134D /* CustomViews */,
 				96781A25266664000033134D /* AppDelegate.swift */,
+				96781A0B266663FF0033134D /* GlobalDefinitions.swift */,
 				96781A26266664000033134D /* ColorsPalette.swift */,
-				96781A27266664000033134D /* Rx */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -1104,11 +1108,11 @@
 		96781A0C266664000033134D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				96781A11266664000033134D /* Error */,
 				96781A0D266664000033134D /* Scalable.swift */,
 				96781A0E266664000033134D /* TextAttributes.swift */,
 				96781A0F266664000033134D /* ScreenSize.swift */,
 				96781A10266664000033134D /* Fonts.swift */,
-				96781A11266664000033134D /* Error */,
 				96781A13266664000033134D /* Weak.swift */,
 				DE93780F27BA74AC0073F27C /* XOREncryption.swift */,
 			);
@@ -1126,6 +1130,7 @@
 		96781A14266664000033134D /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DEADEB01283634AC0057AA44 /* RequestWrapper */,
 				96781A15266664000033134D /* ImagePicker.swift */,
 				96781A16266664000033134D /* LoaderView.swift */,
 				96781A17266664000033134D /* Toast.swift */,
@@ -2063,6 +2068,15 @@
 			path = GetTestMode;
 			sourceTree = "<group>";
 		};
+		DEADEB01283634AC0057AA44 /* RequestWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				DEADEB02283634B60057AA44 /* DefaultRequestWrapper.swift */,
+				DEADEB04283634CA0057AA44 /* XORRequestWrapper.swift */,
+			);
+			path = RequestWrapper;
+			sourceTree = "<group>";
+		};
 		E4CD456C364ABE0948920F44 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2454,6 +2468,7 @@
 				96781BE0266664020033134D /* SplashView.swift in Sources */,
 				96781BA2266664020033134D /* RemoveSavedQuestionRequest.swift in Sources */,
 				967380942677972900230FB6 /* FlashcardsTopicsViewController.swift in Sources */,
+				DEADEB05283634CA0057AA44 /* XORRequestWrapper.swift in Sources */,
 				96781C1A266664030033134D /* TestStatsComunityResult.swift in Sources */,
 				96781C0B266664030033134D /* AVPlayerView.swift in Sources */,
 				966FDFF02693141800B8FC20 /* StatsShareManager.swift in Sources */,
@@ -2524,6 +2539,7 @@
 				96781C31266664030033134D /* SITestProgressCollectionCell.swift in Sources */,
 				967381E126793BFC00230FB6 /* MonetizationManager.swift in Sources */,
 				967380962677972900230FB6 /* FlashcardsTopicsTableView.swift in Sources */,
+				DEADEB03283634B60057AA44 /* DefaultRequestWrapper.swift in Sources */,
 				96781B9E266664020033134D /* SendAnswerResponseMapper.swift in Sources */,
 				967381E226793BFC00230FB6 /* PaygateMapper.swift in Sources */,
 				967380952677972900230FB6 /* FlashcardsTopicsViewModel.swift in Sources */,
