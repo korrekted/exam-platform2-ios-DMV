@@ -346,6 +346,11 @@
 		DEADEB05283634CA0057AA44 /* XORRequestWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB04283634CA0057AA44 /* XORRequestWrapper.swift */; };
 		DEADEB08283636AA0057AA44 /* OnboardingScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB07283636AA0057AA44 /* OnboardingScope.swift */; };
 		DEADEB0A283637A90057AA44 /* SSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB09283637A90057AA44 /* SSlideView.swift */; };
+		DEADEB0C283648490057AA44 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB0B283648490057AA44 /* Spinner.swift */; };
+		DEADEB0E283648DE0057AA44 /* NumberLaunches.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB0D283648DE0057AA44 /* NumberLaunches.swift */; };
+		DEADEB10283648EF0057AA44 /* ObservableRetrySingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB0F283648EF0057AA44 /* ObservableRetrySingle.swift */; };
+		DEADEB132836491A0057AA44 /* TryAgainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB122836491A0057AA44 /* TryAgainViewController.swift */; };
+		DEADEB152836492A0057AA44 /* TryAgainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB142836492A0057AA44 /* TryAgainView.swift */; };
 		E2D80A444A086C4FC0564B36 /* Pods_DMV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B862032F73539581F73AEB /* Pods_DMV.framework */; };
 /* End PBXBuildFile section */
 
@@ -720,6 +725,11 @@
 		DEADEB04283634CA0057AA44 /* XORRequestWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XORRequestWrapper.swift; sourceTree = "<group>"; };
 		DEADEB07283636AA0057AA44 /* OnboardingScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScope.swift; sourceTree = "<group>"; };
 		DEADEB09283637A90057AA44 /* SSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSlideView.swift; sourceTree = "<group>"; };
+		DEADEB0B283648490057AA44 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		DEADEB0D283648DE0057AA44 /* NumberLaunches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberLaunches.swift; sourceTree = "<group>"; };
+		DEADEB0F283648EF0057AA44 /* ObservableRetrySingle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableRetrySingle.swift; sourceTree = "<group>"; };
+		DEADEB122836491A0057AA44 /* TryAgainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryAgainViewController.swift; sourceTree = "<group>"; };
+		DEADEB142836492A0057AA44 /* TryAgainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryAgainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1119,6 +1129,8 @@
 				96781A10266664000033134D /* Fonts.swift */,
 				96781A13266664000033134D /* Weak.swift */,
 				DE93780F27BA74AC0073F27C /* XOREncryption.swift */,
+				DEADEB0D283648DE0057AA44 /* NumberLaunches.swift */,
+				DEADEB0F283648EF0057AA44 /* ObservableRetrySingle.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1155,6 +1167,7 @@
 				96781A22266664000033134D /* CircleView.swift */,
 				96781A23266664000033134D /* GradientView.swift */,
 				96781A24266664000033134D /* TrophyView.swift */,
+				DEADEB0B283648490057AA44 /* Spinner.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -1470,6 +1483,7 @@
 		96781A98266664000033134D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DEADEB112836490A0057AA44 /* TryAgain */,
 				96F92A0E2692086B006331D7 /* Onboarding */,
 				967381EE26793C0C00230FB6 /* Paygate */,
 				967380892677972900230FB6 /* Flashcards */,
@@ -2091,6 +2105,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		DEADEB112836490A0057AA44 /* TryAgain */ = {
+			isa = PBXGroup;
+			children = (
+				DEADEB122836491A0057AA44 /* TryAgainViewController.swift */,
+				DEADEB142836492A0057AA44 /* TryAgainView.swift */,
+			);
+			path = TryAgain;
+			sourceTree = "<group>";
+		};
 		E4CD456C364ABE0948920F44 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2353,6 +2376,7 @@
 				96781B98266664020033134D /* TestStatsManager.swift in Sources */,
 				96781B72266664010033134D /* ImagePicker.swift in Sources */,
 				96781C38266664030033134D /* SITestTableView.swift in Sources */,
+				DEADEB152836492A0057AA44 /* TryAgainView.swift in Sources */,
 				96781C3B266664030033134D /* StatsViewModel.swift in Sources */,
 				96781BEA266664020033134D /* StudyCollectionView.swift in Sources */,
 				96781C1E266664030033134D /* TestStatsDescriptionElement.swift in Sources */,
@@ -2361,6 +2385,7 @@
 				96781B97266664020033134D /* TestStatsManagerCore.swift in Sources */,
 				96781C04266664030033134D /* TestView.swift in Sources */,
 				96781C25266664030033134D /* TestStatsFilterView.swift in Sources */,
+				DEADEB0C283648490057AA44 /* Spinner.swift in Sources */,
 				96F92A562692086B006331D7 /* LocaleCountryView.swift in Sources */,
 				96781BAC266664020033134D /* SaveQuestionRequest.swift in Sources */,
 				96781BF0266664020033134D /* CourseFlowLayout.swift in Sources */,
@@ -2371,6 +2396,7 @@
 				96781B95266664020033134D /* GetTestStatsRequest.swift in Sources */,
 				96781BB6266664020033134D /* Language.swift in Sources */,
 				96781BE8266664020033134D /* SCBriefDaysView.swift in Sources */,
+				DEADEB10283648EF0057AA44 /* ObservableRetrySingle.swift in Sources */,
 				96F92A5F2692086B006331D7 /* WelcomeSlide1View.swift in Sources */,
 				967380B62677973500230FB6 /* GetFlashcardsResponseMapper.swift in Sources */,
 				967381ED26793BFC00230FB6 /* PaygateManager.swift in Sources */,
@@ -2423,6 +2449,7 @@
 				865FEC5F2667A4E3009D7A4E /* BottomSheetAnimation.swift in Sources */,
 				96781BCF266664020033134D /* SessionManagerCore.swift in Sources */,
 				96781B67266664010033134D /* UITapGestureRecognizerExtension.swift in Sources */,
+				DEADEB0E283648DE0057AA44 /* NumberLaunches.swift in Sources */,
 				96781C46266664030033134D /* MainProgressView.swift in Sources */,
 				96F92A5D2692086B006331D7 /* OMinutesAtTimeCell.swift in Sources */,
 				96781BF5266664020033134D /* TabItemView.swift in Sources */,
@@ -2465,6 +2492,7 @@
 				96781C1C266664030033134D /* TestStatsAnswer.swift in Sources */,
 				96F92A4C2692086B006331D7 /* OSlideModeView.swift in Sources */,
 				96781B75266664010033134D /* NursingNavigationController.swift in Sources */,
+				DEADEB132836491A0057AA44 /* TryAgainViewController.swift in Sources */,
 				967380B32677973500230FB6 /* FlashcardsManager.swift in Sources */,
 				96781BB8266664020033134D /* State.swift in Sources */,
 				96781BA8266664020033134D /* GetTenSetRequest.swift in Sources */,
