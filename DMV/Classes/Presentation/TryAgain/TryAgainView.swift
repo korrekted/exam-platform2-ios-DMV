@@ -114,7 +114,7 @@ private extension TryAgainView {
     
     func makeButton() -> UIButton {
         let attrs = TextAttributes()
-            .textColor(TryAgainPalette.title)
+            .textColor(TryAgainPalette.background)
             .font(Fonts.SFProRounded.semiBold(size: 20.scale))
         
         let view = UIButton()
@@ -128,7 +128,7 @@ private extension TryAgainView {
     
     func makeContactButton() -> TapAreaButton {
         let attrs = TextAttributes()
-            .textColor(TryAgainPalette.title)
+            .textColor(TryAgainPalette.tryAgainButtonBackground)
             .font(Fonts.SFProRounded.semiBold(size: 20.scale))
         
         let view = TapAreaButton()
