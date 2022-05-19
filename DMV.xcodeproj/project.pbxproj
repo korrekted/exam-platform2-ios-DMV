@@ -344,6 +344,8 @@
 		DE93781027BA74AC0073F27C /* XOREncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE93780F27BA74AC0073F27C /* XOREncryption.swift */; };
 		DEADEB03283634B60057AA44 /* DefaultRequestWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB02283634B60057AA44 /* DefaultRequestWrapper.swift */; };
 		DEADEB05283634CA0057AA44 /* XORRequestWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB04283634CA0057AA44 /* XORRequestWrapper.swift */; };
+		DEADEB08283636AA0057AA44 /* OnboardingScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB07283636AA0057AA44 /* OnboardingScope.swift */; };
+		DEADEB0A283637A90057AA44 /* SSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB09283637A90057AA44 /* SSlideView.swift */; };
 		E2D80A444A086C4FC0564B36 /* Pods_DMV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B862032F73539581F73AEB /* Pods_DMV.framework */; };
 /* End PBXBuildFile section */
 
@@ -716,6 +718,8 @@
 		DE93780F27BA74AC0073F27C /* XOREncryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XOREncryption.swift; sourceTree = "<group>"; };
 		DEADEB02283634B60057AA44 /* DefaultRequestWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRequestWrapper.swift; sourceTree = "<group>"; };
 		DEADEB04283634CA0057AA44 /* XORRequestWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XORRequestWrapper.swift; sourceTree = "<group>"; };
+		DEADEB07283636AA0057AA44 /* OnboardingScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScope.swift; sourceTree = "<group>"; };
+		DEADEB09283637A90057AA44 /* SSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSlideView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1513,6 +1517,7 @@
 				96781AA7266664000033134D /* SettingsTableView.swift */,
 				96781AA8266664000033134D /* SettingsTableSection.swift */,
 				DE3449FB2771DC1600632F72 /* STChangeModeView.swift */,
+				DEADEB09283637A90057AA44 /* SSlideView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1942,6 +1947,7 @@
 		96F92A0E2692086B006331D7 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				DEADEB06283636A20057AA44 /* Utils */,
 				96F92A482692086B006331D7 /* Analytics */,
 				96F92A102692086B006331D7 /* Views */,
 				96F92A0F2692086B006331D7 /* OnboardingViewController.swift */,
@@ -2075,6 +2081,14 @@
 				DEADEB04283634CA0057AA44 /* XORRequestWrapper.swift */,
 			);
 			path = RequestWrapper;
+			sourceTree = "<group>";
+		};
+		DEADEB06283636A20057AA44 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DEADEB07283636AA0057AA44 /* OnboardingScope.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		E4CD456C364ABE0948920F44 /* Pods */ = {
@@ -2379,6 +2393,7 @@
 				DE93780E27BA74940073F27C /* RestApiTransportExtension.swift in Sources */,
 				967381E726793BFC00230FB6 /* Paygate.swift in Sources */,
 				967380AF2677973500230FB6 /* Flashcard.swift in Sources */,
+				DEADEB08283636AA0057AA44 /* OnboardingScope.swift in Sources */,
 				967380B02677973500230FB6 /* FlashcardTopic.swift in Sources */,
 				9673809D2677972900230FB6 /* FlashcardsView.swift in Sources */,
 				96F92A5A2692086B006331D7 /* OModeCollectionElement.swift in Sources */,
@@ -2470,6 +2485,7 @@
 				967380942677972900230FB6 /* FlashcardsTopicsViewController.swift in Sources */,
 				DEADEB05283634CA0057AA44 /* XORRequestWrapper.swift in Sources */,
 				96781C1A266664030033134D /* TestStatsComunityResult.swift in Sources */,
+				DEADEB0A283637A90057AA44 /* SSlideView.swift in Sources */,
 				96781C0B266664030033134D /* AVPlayerView.swift in Sources */,
 				966FDFF02693141800B8FC20 /* StatsShareManager.swift in Sources */,
 				96781BAB266664020033134D /* GetSavedAndIncorrectResponseMapper.swift in Sources */,
