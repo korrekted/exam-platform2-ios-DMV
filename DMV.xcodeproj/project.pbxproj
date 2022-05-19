@@ -98,7 +98,6 @@
 		96781B70266664010033134D /* SignError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A12266664000033134D /* SignError.swift */; };
 		96781B71266664010033134D /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A13266664000033134D /* Weak.swift */; };
 		96781B72266664010033134D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A15266664000033134D /* ImagePicker.swift */; };
-		96781B73266664010033134D /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A16266664000033134D /* LoaderView.swift */; };
 		96781B74266664010033134D /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A17266664000033134D /* Toast.swift */; };
 		96781B75266664010033134D /* NursingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A1A266664000033134D /* NursingNavigationController.swift */; };
 		96781B76266664010033134D /* NursingNavigationControllerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A1B266664000033134D /* NursingNavigationControllerSettings.swift */; };
@@ -353,6 +352,7 @@
 		DEADEB1828364A990057AA44 /* SplashActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB1728364A990057AA44 /* SplashActivity.swift */; };
 		DEADEB1A28364AA60057AA44 /* SplashSDKInitialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB1928364AA60057AA44 /* SplashSDKInitialize.swift */; };
 		DEADEB1C28364C1F0057AA44 /* ContentError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB1B28364C1F0057AA44 /* ContentError.swift */; };
+		DEADEB1E283691470057AA44 /* TestBottomSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB1D283691470057AA44 /* TestBottomSpinner.swift */; };
 		E2D80A444A086C4FC0564B36 /* Pods_DMV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B862032F73539581F73AEB /* Pods_DMV.framework */; };
 /* End PBXBuildFile section */
 
@@ -474,7 +474,6 @@
 		96781A12266664000033134D /* SignError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignError.swift; sourceTree = "<group>"; };
 		96781A13266664000033134D /* Weak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
 		96781A15266664000033134D /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		96781A16266664000033134D /* LoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		96781A17266664000033134D /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		96781A1A266664000033134D /* NursingNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NursingNavigationController.swift; sourceTree = "<group>"; };
 		96781A1B266664000033134D /* NursingNavigationControllerSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NursingNavigationControllerSettings.swift; sourceTree = "<group>"; };
@@ -734,6 +733,7 @@
 		DEADEB1728364A990057AA44 /* SplashActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashActivity.swift; sourceTree = "<group>"; };
 		DEADEB1928364AA60057AA44 /* SplashSDKInitialize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashSDKInitialize.swift; sourceTree = "<group>"; };
 		DEADEB1B28364C1F0057AA44 /* ContentError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentError.swift; sourceTree = "<group>"; };
+		DEADEB1D283691470057AA44 /* TestBottomSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBottomSpinner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1152,7 +1152,6 @@
 			children = (
 				DEADEB01283634AC0057AA44 /* RequestWrapper */,
 				96781A15266664000033134D /* ImagePicker.swift */,
-				96781A16266664000033134D /* LoaderView.swift */,
 				96781A17266664000033134D /* Toast.swift */,
 			);
 			path = Components;
@@ -1720,6 +1719,7 @@
 				96781AE5266664000033134D /* TestProgressView.swift */,
 				96781AE6266664000033134D /* ImageScrollView.swift */,
 				96781AE7266664000033134D /* AVPlayerView.swift */,
+				DEADEB1D283691470057AA44 /* TestBottomSpinner.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -2364,6 +2364,7 @@
 				96781B74266664010033134D /* Toast.swift in Sources */,
 				96781BDB266664020033134D /* SettingsTableView.swift in Sources */,
 				96781C3D266664030033134D /* StatsCellType.swift in Sources */,
+				DEADEB1E283691470057AA44 /* TestBottomSpinner.swift in Sources */,
 				96781BB4266664020033134D /* CoursesManagerCore.swift in Sources */,
 				96781B7F266664010033134D /* TrophyView.swift in Sources */,
 				96F92A4B2692086B006331D7 /* OSlideWelcomeView.swift in Sources */,
@@ -2385,7 +2386,6 @@
 				96781C0A266664030033134D /* ImageScrollView.swift in Sources */,
 				96781B70266664010033134D /* SignError.swift in Sources */,
 				96781BCC266664020033134D /* StatsManagerCore.swift in Sources */,
-				96781B73266664010033134D /* LoaderView.swift in Sources */,
 				96781B6C266664010033134D /* Scalable.swift in Sources */,
 				96781B98266664020033134D /* TestStatsManager.swift in Sources */,
 				96781B72266664010033134D /* ImagePicker.swift in Sources */,

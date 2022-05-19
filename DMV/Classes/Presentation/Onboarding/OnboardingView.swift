@@ -26,6 +26,8 @@ final class OnboardingView: UIView {
     lazy var previousButton = makePreviousButton()
     lazy var headerLabel = makeHeaderLabel()
     
+    lazy var planView = OSlidePlanView(step: .plan, scope: scope)
+    
     private lazy var scope = OnboardingScope()
     
     private lazy var contentViews: [OSlideView] = {
@@ -41,7 +43,7 @@ final class OnboardingView: UIView {
             OWhenStudyView(step: .whenStudy, scope: scope),
             OPushView(step: .push, scope: scope),
             OSlidePreloaderView(step: .preloader, scope: scope),
-            OSlidePlanView(step: .plan, scope: scope)
+            planView
         ]
     }()
     
