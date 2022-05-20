@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RxSwift
 
 final class OSlideWhenTakingView: OSlideView {
     lazy var titleLabel = makeTitleLabel()
@@ -13,14 +14,41 @@ final class OSlideWhenTakingView: OSlideView {
     lazy var cursorView = makeCursorView()
     lazy var button = makeButton()
     
+    private lazy var disposeBag = DisposeBag()
+    
     override init(step: OnboardingView.Step, scope: OnboardingScope) {
         super.init(step: step, scope: scope)
         
         makeConstraints()
+        initialize()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+}
+
+// MARK: Private
+private extension OSlideWhenTakingView {
+    func initialize() {
+        button.rx.tap
+            .subscribe(onNext: { [weak self] in
+                guard let self = self else {
+                    return
+                }
+                
+                let date = self.datePickerView.date
+                
+                let formatter = DateFormatter()
+                formatter.dateFormat = "dd.MM.yyyy"
+                
+                let examDate = formatter.string(from: date)
+                
+                self.scope.examDate = examDate
+
+                self.onNext()
+            })
+            .disposed(by: disposeBag)
     }
 }
 
@@ -114,7 +142,6 @@ private extension OSlideWhenTakingView {
         view.backgroundColor = Onboarding.primaryButton
         view.layer.cornerRadius = 30.scale
         view.setAttributedTitle("Onboarding.Next".localized.attributed(with: attrs), for: .normal)
-        view.addTarget(self, action: #selector(onNext), for: .touchUpInside)
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view
