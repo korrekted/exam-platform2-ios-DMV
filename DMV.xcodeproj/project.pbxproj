@@ -38,7 +38,6 @@
 		966FE02B2693154000B8FC20 /* StatsShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966FDFEF2693141800B8FC20 /* StatsShareManager.swift */; };
 		966FE02C2693154E00B8FC20 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A89266664000033134D /* Stats.swift */; };
 		9673807F26778AF200230FB6 /* SCFlashcardsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9673807E26778AF200230FB6 /* SCFlashcardsCell.swift */; };
-		967380812677933600230FB6 /* CourseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380802677933600230FB6 /* CourseConfig.swift */; };
 		967380932677972900230FB6 /* FlashcardsTopicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380832677972900230FB6 /* FlashcardsTopicsView.swift */; };
 		967380942677972900230FB6 /* FlashcardsTopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380842677972900230FB6 /* FlashcardsTopicsViewController.swift */; };
 		967380952677972900230FB6 /* FlashcardsTopicsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967380852677972900230FB6 /* FlashcardsTopicsViewModel.swift */; };
@@ -121,30 +120,6 @@
 		96781B96266664020033134D /* GetTestStatsResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A45266664000033134D /* GetTestStatsResponseMapper.swift */; };
 		96781B97266664020033134D /* TestStatsManagerCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A47266664000033134D /* TestStatsManagerCore.swift */; };
 		96781B98266664020033134D /* TestStatsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A48266664000033134D /* TestStatsManager.swift */; };
-		96781B99266664020033134D /* TestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A4B266664000033134D /* TestConfig.swift */; };
-		96781B9A266664020033134D /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A4C266664000033134D /* Test.swift */; };
-		96781B9B266664020033134D /* SITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A4D266664000033134D /* SITest.swift */; };
-		96781B9C266664020033134D /* GetTestResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A4F266664000033134D /* GetTestResponseMapper.swift */; };
-		96781B9D266664020033134D /* GetTestConfigResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A50266664000033134D /* GetTestConfigResponseMapper.swift */; };
-		96781B9E266664020033134D /* SendAnswerResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A51266664000033134D /* SendAnswerResponseMapper.swift */; };
-		96781B9F266664020033134D /* GetTestConfigRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A52266664000033134D /* GetTestConfigRequest.swift */; };
-		96781BA0266664020033134D /* GetFailedSetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A53266664000033134D /* GetFailedSetRequest.swift */; };
-		96781BA1266664020033134D /* GetRandomSetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A54266664000033134D /* GetRandomSetRequest.swift */; };
-		96781BA2266664020033134D /* RemoveSavedQuestionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A55266664000033134D /* RemoveSavedQuestionRequest.swift */; };
-		96781BA3266664020033134D /* GetQotdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A56266664000033134D /* GetQotdRequest.swift */; };
-		96781BA4266664020033134D /* GetSavedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A57266664000033134D /* GetSavedRequest.swift */; };
-		96781BA5266664020033134D /* SendAnswerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A58266664000033134D /* SendAnswerRequest.swift */; };
-		96781BA6266664020033134D /* GetTestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A59266664000033134D /* GetTestRequest.swift */; };
-		96781BA7266664020033134D /* FinishTestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A5A266664000033134D /* FinishTestRequest.swift */; };
-		96781BA8266664020033134D /* GetTenSetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A5B266664000033134D /* GetTenSetRequest.swift */; };
-		96781BA9266664020033134D /* GetIncorrectRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A5C266664000033134D /* GetIncorrectRequest.swift */; };
-		96781BAA266664020033134D /* GetAgainTestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A5D266664000033134D /* GetAgainTestRequest.swift */; };
-		96781BAB266664020033134D /* GetSavedAndIncorrectResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A5E266664000033134D /* GetSavedAndIncorrectResponseMapper.swift */; };
-		96781BAC266664020033134D /* SaveQuestionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A5F266664000033134D /* SaveQuestionRequest.swift */; };
-		96781BAD266664020033134D /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A61266664000033134D /* QuestionManager.swift */; };
-		96781BAE266664020033134D /* QuestionManagerMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A62266664000033134D /* QuestionManagerMediator.swift */; };
-		96781BAF266664020033134D /* QuestionManagerCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A63266664000033134D /* QuestionManagerCore.swift */; };
-		96781BB0266664020033134D /* QuestionManagerDelagate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A64266664000033134D /* QuestionManagerDelagate.swift */; };
 		96781BB1266664020033134D /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A67266664000033134D /* Course.swift */; };
 		96781BB2266664020033134D /* GetCourcesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A69266664000033134D /* GetCourcesRequest.swift */; };
 		96781BB3266664020033134D /* GetCourcesResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A6A266664000033134D /* GetCourcesResponseMapper.swift */; };
@@ -211,46 +186,6 @@
 		96781BF4266664020033134D /* CourseViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781ACB266664000033134D /* CourseViewCoordinator.swift */; };
 		96781BF5266664020033134D /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781ACD266664000033134D /* TabItemView.swift */; };
 		96781BF6266664020033134D /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781ACE266664000033134D /* TabView.swift */; };
-		96781BF7266664020033134D /* QuestionContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AD1266664000033134D /* QuestionContentCell.swift */; };
-		96781BF8266664020033134D /* QuestionCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AD2266664000033134D /* QuestionCollectionCell.swift */; };
-		96781BF9266664020033134D /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AD3266664000033134D /* QuestionCell.swift */; };
-		96781BFA266664030033134D /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AD4266664000033134D /* AnswerCell.swift */; };
-		96781BFB266664030033134D /* ExplanationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AD5266664000033134D /* ExplanationCell.swift */; };
-		96781BFC266664030033134D /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AD6266664000033134D /* TestViewModel.swift */; };
-		96781BFD266664030033134D /* TestBottomButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AD8266664000033134D /* TestBottomButtonState.swift */; };
-		96781BFE266664030033134D /* TestStatsElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AD9266664000033134D /* TestStatsElement.swift */; };
-		96781BFF266664030033134D /* TestingCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781ADA266664000033134D /* TestingCellType.swift */; };
-		96781C00266664030033134D /* TestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781ADB266664000033134D /* TestType.swift */; };
-		96781C01266664030033134D /* TestAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781ADC266664000033134D /* TestAnalytics.swift */; };
-		96781C02266664030033134D /* QuestionContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781ADD266664000033134D /* QuestionContentType.swift */; };
-		96781C03266664030033134D /* TestElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781ADE266664000033134D /* TestElement.swift */; };
-		96781C04266664030033134D /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781ADF266664000033134D /* TestView.swift */; };
-		96781C05266664030033134D /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AE0266664000033134D /* TestViewController.swift */; };
-		96781C06266664030033134D /* QuestionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AE2266664000033134D /* QuestionTableView.swift */; };
-		96781C07266664030033134D /* QuestionContentCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AE3266664000033134D /* QuestionContentCollectionView.swift */; };
-		96781C08266664030033134D /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AE4266664000033134D /* AnswerView.swift */; };
-		96781C09266664030033134D /* TestProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AE5266664000033134D /* TestProgressView.swift */; };
-		96781C0A266664030033134D /* ImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AE6266664000033134D /* ImageScrollView.swift */; };
-		96781C0B266664030033134D /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AE7266664000033134D /* AVPlayerView.swift */; };
-		96781C14266664030033134D /* TestStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AF3266664000033134D /* TestStatsViewController.swift */; };
-		96781C15266664030033134D /* TestStatsProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AF5266664000033134D /* TestStatsProgressCell.swift */; };
-		96781C16266664030033134D /* TestStatsComunityResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AF6266664000033134D /* TestStatsComunityResultCell.swift */; };
-		96781C17266664030033134D /* TestStatsAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AF7266664000033134D /* TestStatsAnswerCell.swift */; };
-		96781C18266664030033134D /* TestStatsResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AF8266664000033134D /* TestStatsResultCell.swift */; };
-		96781C19266664030033134D /* TestStatsFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AF9266664000033134D /* TestStatsFilterCell.swift */; };
-		96781C1A266664030033134D /* TestStatsComunityResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AFB266664000033134D /* TestStatsComunityResult.swift */; };
-		96781C1B266664030033134D /* TestStatsProgressElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AFC266664000033134D /* TestStatsProgressElement.swift */; };
-		96781C1C266664030033134D /* TestStatsAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AFD266664000033134D /* TestStatsAnswer.swift */; };
-		96781C1D266664030033134D /* TestStatsCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AFE266664000033134D /* TestStatsCellType.swift */; };
-		96781C1E266664030033134D /* TestStatsDescriptionElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781AFF266664000033134D /* TestStatsDescriptionElement.swift */; };
-		96781C1F266664030033134D /* TestStatsFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B00266664000033134D /* TestStatsFilter.swift */; };
-		96781C20266664030033134D /* TestStatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B01266664000033134D /* TestStatsViewModel.swift */; };
-		96781C21266664030033134D /* TestComunityResultLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B03266664010033134D /* TestComunityResultLineView.swift */; };
-		96781C22266664030033134D /* TestStatsProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B04266664010033134D /* TestStatsProgressView.swift */; };
-		96781C23266664030033134D /* TestStatsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B05266664010033134D /* TestStatsTableView.swift */; };
-		96781C24266664030033134D /* TestStatsResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B06266664010033134D /* TestStatsResultView.swift */; };
-		96781C25266664030033134D /* TestStatsFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B07266664010033134D /* TestStatsFilterView.swift */; };
-		96781C26266664030033134D /* TestStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B08266664010033134D /* TestStatsView.swift */; };
 		96781C27266664030033134D /* CourseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B0A266664010033134D /* CourseDetailsViewController.swift */; };
 		96781C28266664030033134D /* CourseDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B0B266664010033134D /* CourseDetailsView.swift */; };
 		96781C29266664030033134D /* CourseDetailsTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B0D266664010033134D /* CourseDetailsTableElement.swift */; };
@@ -258,19 +193,6 @@
 		96781C2B266664030033134D /* CourseDetailsTestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B12266664010033134D /* CourseDetailsTestCell.swift */; };
 		96781C2C266664030033134D /* CourseDetailsTabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B13266664010033134D /* CourseDetailsTabelView.swift */; };
 		96781C2D266664030033134D /* GradientProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B14266664010033134D /* GradientProgressView.swift */; };
-		96781C2E266664030033134D /* SITestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B16266664010033134D /* SITestView.swift */; };
-		96781C2F266664030033134D /* SIQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B18266664010033134D /* SIQuestionCell.swift */; };
-		96781C30266664030033134D /* SIAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B19266664010033134D /* SIAnswerCell.swift */; };
-		96781C31266664030033134D /* SITestProgressCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B1A266664010033134D /* SITestProgressCollectionCell.swift */; };
-		96781C32266664030033134D /* SITestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B1C266664010033134D /* SITestType.swift */; };
-		96781C33266664030033134D /* SIProgressElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B1D266664010033134D /* SIProgressElement.swift */; };
-		96781C34266664030033134D /* SITestCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B1E266664010033134D /* SITestCellType.swift */; };
-		96781C35266664030033134D /* SITestElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B1F266664010033134D /* SITestElement.swift */; };
-		96781C36266664030033134D /* SIBottomButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B20266664010033134D /* SIBottomButtonState.swift */; };
-		96781C37266664030033134D /* SITestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B21266664010033134D /* SITestViewController.swift */; };
-		96781C38266664030033134D /* SITestTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B23266664010033134D /* SITestTableView.swift */; };
-		96781C39266664030033134D /* SIProgressCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B24266664010033134D /* SIProgressCollectionView.swift */; };
-		96781C3A266664030033134D /* SITestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B25266664010033134D /* SITestViewModel.swift */; };
 		96781C3B266664030033134D /* StatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B27266664010033134D /* StatsViewModel.swift */; };
 		96781C3C266664030033134D /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B28266664010033134D /* StatsViewController.swift */; };
 		96781C3D266664030033134D /* StatsCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781B2A266664010033134D /* StatsCellType.swift */; };
@@ -352,7 +274,93 @@
 		DEADEB1828364A990057AA44 /* SplashActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB1728364A990057AA44 /* SplashActivity.swift */; };
 		DEADEB1A28364AA60057AA44 /* SplashSDKInitialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB1928364AA60057AA44 /* SplashSDKInitialize.swift */; };
 		DEADEB1C28364C1F0057AA44 /* ContentError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB1B28364C1F0057AA44 /* ContentError.swift */; };
-		DEADEB1E283691470057AA44 /* TestBottomSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB1D283691470057AA44 /* TestBottomSpinner.swift */; };
+		DED1CFE42866EA9000E70292 /* TestCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CF962866EA9000E70292 /* TestCoordinator.swift */; };
+		DED1CFE52866EA9000E70292 /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CF982866EA9000E70292 /* TestViewModel.swift */; };
+		DED1CFE62866EA9000E70292 /* TestCloseMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CF9A2866EA9000E70292 /* TestCloseMediator.swift */; };
+		DED1CFE72866EA9000E70292 /* TestCloseObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CF9B2866EA9000E70292 /* TestCloseObserver.swift */; };
+		DED1CFE82866EA9000E70292 /* TestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CF9D2866EA9000E70292 /* TestType.swift */; };
+		DED1CFE92866EA9000E70292 /* TestAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CF9E2866EA9000E70292 /* TestAnalytics.swift */; };
+		DED1CFEA2866EA9000E70292 /* TestFinishElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CF9F2866EA9000E70292 /* TestFinishElement.swift */; };
+		DED1CFEB2866EA9000E70292 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFA02866EA9000E70292 /* TestView.swift */; };
+		DED1CFEC2866EA9000E70292 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFA12866EA9000E70292 /* TestViewController.swift */; };
+		DED1CFED2866EA9000E70292 /* QuestionTableAnswersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFA52866EA9000E70292 /* QuestionTableAnswersCell.swift */; };
+		DED1CFEE2866EA9000E70292 /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFA72866EA9000E70292 /* AnswerView.swift */; };
+		DED1CFEF2866EA9000E70292 /* QuestionTableQuestionReferenceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFA82866EA9000E70292 /* QuestionTableQuestionReferenceCell.swift */; };
+		DED1CFF02866EA9000E70292 /* QuestionTableExplanationImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFA92866EA9000E70292 /* QuestionTableExplanationImageCell.swift */; };
+		DED1CFF12866EA9000E70292 /* QuestionTableQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFAA2866EA9000E70292 /* QuestionTableQuestionCell.swift */; };
+		DED1CFF22866EA9000E70292 /* QuestionTableExplanationTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFAB2866EA9000E70292 /* QuestionTableExplanationTitleCell.swift */; };
+		DED1CFF32866EA9000E70292 /* QuestionTableContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFAC2866EA9000E70292 /* QuestionTableContentCell.swift */; };
+		DED1CFF42866EA9000E70292 /* QuestionTableExplanationTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFAD2866EA9000E70292 /* QuestionTableExplanationTextCell.swift */; };
+		DED1CFF52866EA9000E70292 /* QuestionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFAE2866EA9000E70292 /* QuestionTableView.swift */; };
+		DED1CFF62866EA9000E70292 /* QuestionTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFAF2866EA9000E70292 /* QuestionTableElement.swift */; };
+		DED1CFF72866EA9000E70292 /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFB22866EA9000E70292 /* AVPlayerView.swift */; };
+		DED1CFF82866EA9000E70292 /* QuestionContentCollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFB32866EA9000E70292 /* QuestionContentCollectionType.swift */; };
+		DED1CFF92866EA9000E70292 /* QuestionContentCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFB42866EA9000E70292 /* QuestionContentCollectionCell.swift */; };
+		DED1CFFA2866EA9000E70292 /* QuestionContentCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFB52866EA9000E70292 /* QuestionContentCollectionView.swift */; };
+		DED1CFFB2866EA9000E70292 /* TestProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFB62866EA9000E70292 /* TestProgressView.swift */; };
+		DED1CFFC2866EA9000E70292 /* TestBottomSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFB72866EA9000E70292 /* TestBottomSpinner.swift */; };
+		DED1CFFD2866EA9000E70292 /* TestBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFB82866EA9000E70292 /* TestBottomView.swift */; };
+		DED1CFFE2866EA9000E70292 /* TestStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFBA2866EA9000E70292 /* TestStatsViewController.swift */; };
+		DED1CFFF2866EA9000E70292 /* TestStatsProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFBC2866EA9000E70292 /* TestStatsProgressCell.swift */; };
+		DED1D0002866EA9000E70292 /* TestStatsComunityResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFBD2866EA9000E70292 /* TestStatsComunityResultCell.swift */; };
+		DED1D0012866EA9000E70292 /* TestStatsAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFBE2866EA9000E70292 /* TestStatsAnswerCell.swift */; };
+		DED1D0022866EA9000E70292 /* TestStatsResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFBF2866EA9000E70292 /* TestStatsResultCell.swift */; };
+		DED1D0032866EA9000E70292 /* TestStatsFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFC02866EA9000E70292 /* TestStatsFilterCell.swift */; };
+		DED1D0042866EA9000E70292 /* TestStatsComunityResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFC22866EA9000E70292 /* TestStatsComunityResult.swift */; };
+		DED1D0052866EA9000E70292 /* TestStatsProgressElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFC32866EA9000E70292 /* TestStatsProgressElement.swift */; };
+		DED1D0062866EA9000E70292 /* TestStatsAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFC42866EA9000E70292 /* TestStatsAnswer.swift */; };
+		DED1D0072866EA9000E70292 /* TestStatsCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFC52866EA9000E70292 /* TestStatsCellType.swift */; };
+		DED1D0082866EA9000E70292 /* TestStatsDescriptionElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFC62866EA9000E70292 /* TestStatsDescriptionElement.swift */; };
+		DED1D0092866EA9000E70292 /* TestStatsFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFC72866EA9000E70292 /* TestStatsFilter.swift */; };
+		DED1D00A2866EA9000E70292 /* TestStatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFC82866EA9000E70292 /* TestStatsViewModel.swift */; };
+		DED1D00B2866EA9000E70292 /* TestComunityResultLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFCA2866EA9000E70292 /* TestComunityResultLineView.swift */; };
+		DED1D00C2866EA9000E70292 /* TestStatsProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFCB2866EA9000E70292 /* TestStatsProgressView.swift */; };
+		DED1D00D2866EA9000E70292 /* TestStatsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFCC2866EA9000E70292 /* TestStatsTableView.swift */; };
+		DED1D00E2866EA9000E70292 /* TestStatsResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFCD2866EA9000E70292 /* TestStatsResultView.swift */; };
+		DED1D00F2866EA9000E70292 /* TestStatsFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFCE2866EA9000E70292 /* TestStatsFilterView.swift */; };
+		DED1D0102866EA9000E70292 /* TestStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFCF2866EA9000E70292 /* TestStatsView.swift */; };
+		DED1D0112866EA9000E70292 /* TestSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFD02866EA9000E70292 /* TestSequence.swift */; };
+		DED1D0122866EA9000E70292 /* SITestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFD22866EA9000E70292 /* SITestView.swift */; };
+		DED1D0132866EA9000E70292 /* SITestCloseMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFD42866EA9000E70292 /* SITestCloseMediator.swift */; };
+		DED1D0142866EA9000E70292 /* SITestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFD62866EA9000E70292 /* SITestType.swift */; };
+		DED1D0152866EA9000E70292 /* SITestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFD72866EA9000E70292 /* SITestViewController.swift */; };
+		DED1D0162866EA9000E70292 /* SITestTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFDA2866EA9000E70292 /* SITestTableView.swift */; };
+		DED1D0172866EA9000E70292 /* SIAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFDC2866EA9000E70292 /* SIAnswerCell.swift */; };
+		DED1D0182866EA9000E70292 /* SITestElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFDD2866EA9000E70292 /* SITestElement.swift */; };
+		DED1D0192866EA9000E70292 /* SIProgressElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFDF2866EA9000E70292 /* SIProgressElement.swift */; };
+		DED1D01A2866EA9000E70292 /* SIProgressCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFE02866EA9000E70292 /* SIProgressCollectionView.swift */; };
+		DED1D01B2866EA9000E70292 /* SITestProgressCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFE12866EA9000E70292 /* SITestProgressCollectionCell.swift */; };
+		DED1D01C2866EA9000E70292 /* SITestBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFE22866EA9000E70292 /* SITestBottomView.swift */; };
+		DED1D01D2866EA9000E70292 /* SITestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1CFE32866EA9000E70292 /* SITestViewModel.swift */; };
+		DED1D03E2866EAD000E70292 /* TestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D0202866EAD000E70292 /* TestConfig.swift */; };
+		DED1D03F2866EAD000E70292 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D0212866EAD000E70292 /* Test.swift */; };
+		DED1D0402866EAD000E70292 /* CourseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D0222866EAD000E70292 /* CourseConfig.swift */; };
+		DED1D0412866EAD000E70292 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D0232866EAD000E70292 /* Question.swift */; };
+		DED1D0422866EAD000E70292 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D0242866EAD000E70292 /* Answer.swift */; };
+		DED1D0432866EAD000E70292 /* RemoveSavedQuestionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D0262866EAD000E70292 /* RemoveSavedQuestionRequest.swift */; };
+		DED1D0442866EAD000E70292 /* GetTestResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D0282866EAD000E70292 /* GetTestResponseMapper.swift */; };
+		DED1D0452866EAD000E70292 /* GetFailedSetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D0292866EAD000E70292 /* GetFailedSetRequest.swift */; };
+		DED1D0462866EAD000E70292 /* GetRandomSetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D02A2866EAD000E70292 /* GetRandomSetRequest.swift */; };
+		DED1D0472866EAD000E70292 /* GetQotdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D02B2866EAD000E70292 /* GetQotdRequest.swift */; };
+		DED1D0482866EAD000E70292 /* GetSavedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D02C2866EAD000E70292 /* GetSavedRequest.swift */; };
+		DED1D0492866EAD000E70292 /* GetTestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D02D2866EAD000E70292 /* GetTestRequest.swift */; };
+		DED1D04A2866EAD000E70292 /* GetTenSetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D02E2866EAD000E70292 /* GetTenSetRequest.swift */; };
+		DED1D04B2866EAD000E70292 /* GetIncorrectRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D02F2866EAD000E70292 /* GetIncorrectRequest.swift */; };
+		DED1D04C2866EAD000E70292 /* AnswerMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D0302866EAD000E70292 /* AnswerMapper.swift */; };
+		DED1D04D2866EAD000E70292 /* QuestionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D0312866EAD000E70292 /* QuestionMapper.swift */; };
+		DED1D04E2866EAD000E70292 /* AgainTestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D0322866EAD000E70292 /* AgainTestRequest.swift */; };
+		DED1D04F2866EAD000E70292 /* GetTestConfigResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D0342866EAD000E70292 /* GetTestConfigResponseMapper.swift */; };
+		DED1D0502866EAD000E70292 /* GetTestConfigRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D0352866EAD000E70292 /* GetTestConfigRequest.swift */; };
+		DED1D0512866EAD000E70292 /* SendAnswerResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D0372866EAD000E70292 /* SendAnswerResponseMapper.swift */; };
+		DED1D0522866EAD000E70292 /* SendAnswerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D0382866EAD000E70292 /* SendAnswerRequest.swift */; };
+		DED1D0532866EAD000E70292 /* FinishTestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D0392866EAD000E70292 /* FinishTestRequest.swift */; };
+		DED1D0542866EAD000E70292 /* SaveQuestionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D03A2866EAD000E70292 /* SaveQuestionRequest.swift */; };
+		DED1D0552866EAD000E70292 /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D03C2866EAD000E70292 /* QuestionManager.swift */; };
+		DED1D0562866EAD000E70292 /* QuestionMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D03D2866EAD000E70292 /* QuestionMediator.swift */; };
+		DED1D0582866EB2F00E70292 /* Observable+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D0572866EB2F00E70292 /* Observable+Utils.swift */; };
+		DED1D05A2866EB3B00E70292 /* Single+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D0592866EB3B00E70292 /* Single+Utils.swift */; };
+		DED1D05D2866EB8A00E70292 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D05C2866EB8A00E70292 /* PhotoViewController.swift */; };
+		DED1D0602866EB9700E70292 /* ImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED1D05F2866EB9700E70292 /* ImageScrollView.swift */; };
 		E2D80A444A086C4FC0564B36 /* Pods_DMV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B862032F73539581F73AEB /* Pods_DMV.framework */; };
 /* End PBXBuildFile section */
 
@@ -412,7 +420,6 @@
 		966FE01F269314F100B8FC20 /* QuestionsTakenWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsTakenWidget.swift; sourceTree = "<group>"; };
 		966FE020269314F100B8FC20 /* PassRateWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassRateWidget.swift; sourceTree = "<group>"; };
 		9673807E26778AF200230FB6 /* SCFlashcardsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCFlashcardsCell.swift; sourceTree = "<group>"; };
-		967380802677933600230FB6 /* CourseConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseConfig.swift; sourceTree = "<group>"; };
 		967380832677972900230FB6 /* FlashcardsTopicsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashcardsTopicsView.swift; sourceTree = "<group>"; };
 		967380842677972900230FB6 /* FlashcardsTopicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashcardsTopicsViewController.swift; sourceTree = "<group>"; };
 		967380852677972900230FB6 /* FlashcardsTopicsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashcardsTopicsViewModel.swift; sourceTree = "<group>"; };
@@ -497,30 +504,6 @@
 		96781A45266664000033134D /* GetTestStatsResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTestStatsResponseMapper.swift; sourceTree = "<group>"; };
 		96781A47266664000033134D /* TestStatsManagerCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsManagerCore.swift; sourceTree = "<group>"; };
 		96781A48266664000033134D /* TestStatsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsManager.swift; sourceTree = "<group>"; };
-		96781A4B266664000033134D /* TestConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestConfig.swift; sourceTree = "<group>"; };
-		96781A4C266664000033134D /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
-		96781A4D266664000033134D /* SITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SITest.swift; sourceTree = "<group>"; };
-		96781A4F266664000033134D /* GetTestResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTestResponseMapper.swift; sourceTree = "<group>"; };
-		96781A50266664000033134D /* GetTestConfigResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTestConfigResponseMapper.swift; sourceTree = "<group>"; };
-		96781A51266664000033134D /* SendAnswerResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendAnswerResponseMapper.swift; sourceTree = "<group>"; };
-		96781A52266664000033134D /* GetTestConfigRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTestConfigRequest.swift; sourceTree = "<group>"; };
-		96781A53266664000033134D /* GetFailedSetRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetFailedSetRequest.swift; sourceTree = "<group>"; };
-		96781A54266664000033134D /* GetRandomSetRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRandomSetRequest.swift; sourceTree = "<group>"; };
-		96781A55266664000033134D /* RemoveSavedQuestionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveSavedQuestionRequest.swift; sourceTree = "<group>"; };
-		96781A56266664000033134D /* GetQotdRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetQotdRequest.swift; sourceTree = "<group>"; };
-		96781A57266664000033134D /* GetSavedRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSavedRequest.swift; sourceTree = "<group>"; };
-		96781A58266664000033134D /* SendAnswerRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendAnswerRequest.swift; sourceTree = "<group>"; };
-		96781A59266664000033134D /* GetTestRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTestRequest.swift; sourceTree = "<group>"; };
-		96781A5A266664000033134D /* FinishTestRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishTestRequest.swift; sourceTree = "<group>"; };
-		96781A5B266664000033134D /* GetTenSetRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTenSetRequest.swift; sourceTree = "<group>"; };
-		96781A5C266664000033134D /* GetIncorrectRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetIncorrectRequest.swift; sourceTree = "<group>"; };
-		96781A5D266664000033134D /* GetAgainTestRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAgainTestRequest.swift; sourceTree = "<group>"; };
-		96781A5E266664000033134D /* GetSavedAndIncorrectResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSavedAndIncorrectResponseMapper.swift; sourceTree = "<group>"; };
-		96781A5F266664000033134D /* SaveQuestionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveQuestionRequest.swift; sourceTree = "<group>"; };
-		96781A61266664000033134D /* QuestionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionManager.swift; sourceTree = "<group>"; };
-		96781A62266664000033134D /* QuestionManagerMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionManagerMediator.swift; sourceTree = "<group>"; };
-		96781A63266664000033134D /* QuestionManagerCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionManagerCore.swift; sourceTree = "<group>"; };
-		96781A64266664000033134D /* QuestionManagerDelagate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionManagerDelagate.swift; sourceTree = "<group>"; };
 		96781A67266664000033134D /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		96781A69266664000033134D /* GetCourcesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCourcesRequest.swift; sourceTree = "<group>"; };
 		96781A6A266664000033134D /* GetCourcesResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCourcesResponseMapper.swift; sourceTree = "<group>"; };
@@ -587,46 +570,6 @@
 		96781ACB266664000033134D /* CourseViewCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseViewCoordinator.swift; sourceTree = "<group>"; };
 		96781ACD266664000033134D /* TabItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
 		96781ACE266664000033134D /* TabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
-		96781AD1266664000033134D /* QuestionContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionContentCell.swift; sourceTree = "<group>"; };
-		96781AD2266664000033134D /* QuestionCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionCollectionCell.swift; sourceTree = "<group>"; };
-		96781AD3266664000033134D /* QuestionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
-		96781AD4266664000033134D /* AnswerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
-		96781AD5266664000033134D /* ExplanationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplanationCell.swift; sourceTree = "<group>"; };
-		96781AD6266664000033134D /* TestViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
-		96781AD8266664000033134D /* TestBottomButtonState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBottomButtonState.swift; sourceTree = "<group>"; };
-		96781AD9266664000033134D /* TestStatsElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsElement.swift; sourceTree = "<group>"; };
-		96781ADA266664000033134D /* TestingCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingCellType.swift; sourceTree = "<group>"; };
-		96781ADB266664000033134D /* TestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestType.swift; sourceTree = "<group>"; };
-		96781ADC266664000033134D /* TestAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAnalytics.swift; sourceTree = "<group>"; };
-		96781ADD266664000033134D /* QuestionContentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionContentType.swift; sourceTree = "<group>"; };
-		96781ADE266664000033134D /* TestElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestElement.swift; sourceTree = "<group>"; };
-		96781ADF266664000033134D /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
-		96781AE0266664000033134D /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
-		96781AE2266664000033134D /* QuestionTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableView.swift; sourceTree = "<group>"; };
-		96781AE3266664000033134D /* QuestionContentCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionContentCollectionView.swift; sourceTree = "<group>"; };
-		96781AE4266664000033134D /* AnswerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
-		96781AE5266664000033134D /* TestProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestProgressView.swift; sourceTree = "<group>"; };
-		96781AE6266664000033134D /* ImageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScrollView.swift; sourceTree = "<group>"; };
-		96781AE7266664000033134D /* AVPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
-		96781AF3266664000033134D /* TestStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsViewController.swift; sourceTree = "<group>"; };
-		96781AF5266664000033134D /* TestStatsProgressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsProgressCell.swift; sourceTree = "<group>"; };
-		96781AF6266664000033134D /* TestStatsComunityResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsComunityResultCell.swift; sourceTree = "<group>"; };
-		96781AF7266664000033134D /* TestStatsAnswerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsAnswerCell.swift; sourceTree = "<group>"; };
-		96781AF8266664000033134D /* TestStatsResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsResultCell.swift; sourceTree = "<group>"; };
-		96781AF9266664000033134D /* TestStatsFilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsFilterCell.swift; sourceTree = "<group>"; };
-		96781AFB266664000033134D /* TestStatsComunityResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsComunityResult.swift; sourceTree = "<group>"; };
-		96781AFC266664000033134D /* TestStatsProgressElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsProgressElement.swift; sourceTree = "<group>"; };
-		96781AFD266664000033134D /* TestStatsAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsAnswer.swift; sourceTree = "<group>"; };
-		96781AFE266664000033134D /* TestStatsCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsCellType.swift; sourceTree = "<group>"; };
-		96781AFF266664000033134D /* TestStatsDescriptionElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsDescriptionElement.swift; sourceTree = "<group>"; };
-		96781B00266664000033134D /* TestStatsFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsFilter.swift; sourceTree = "<group>"; };
-		96781B01266664000033134D /* TestStatsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsViewModel.swift; sourceTree = "<group>"; };
-		96781B03266664010033134D /* TestComunityResultLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestComunityResultLineView.swift; sourceTree = "<group>"; };
-		96781B04266664010033134D /* TestStatsProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsProgressView.swift; sourceTree = "<group>"; };
-		96781B05266664010033134D /* TestStatsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsTableView.swift; sourceTree = "<group>"; };
-		96781B06266664010033134D /* TestStatsResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsResultView.swift; sourceTree = "<group>"; };
-		96781B07266664010033134D /* TestStatsFilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsFilterView.swift; sourceTree = "<group>"; };
-		96781B08266664010033134D /* TestStatsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsView.swift; sourceTree = "<group>"; };
 		96781B0A266664010033134D /* CourseDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewController.swift; sourceTree = "<group>"; };
 		96781B0B266664010033134D /* CourseDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailsView.swift; sourceTree = "<group>"; };
 		96781B0D266664010033134D /* CourseDetailsTableElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailsTableElement.swift; sourceTree = "<group>"; };
@@ -634,19 +577,6 @@
 		96781B12266664010033134D /* CourseDetailsTestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailsTestCell.swift; sourceTree = "<group>"; };
 		96781B13266664010033134D /* CourseDetailsTabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailsTabelView.swift; sourceTree = "<group>"; };
 		96781B14266664010033134D /* GradientProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientProgressView.swift; sourceTree = "<group>"; };
-		96781B16266664010033134D /* SITestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SITestView.swift; sourceTree = "<group>"; };
-		96781B18266664010033134D /* SIQuestionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIQuestionCell.swift; sourceTree = "<group>"; };
-		96781B19266664010033134D /* SIAnswerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIAnswerCell.swift; sourceTree = "<group>"; };
-		96781B1A266664010033134D /* SITestProgressCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SITestProgressCollectionCell.swift; sourceTree = "<group>"; };
-		96781B1C266664010033134D /* SITestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SITestType.swift; sourceTree = "<group>"; };
-		96781B1D266664010033134D /* SIProgressElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIProgressElement.swift; sourceTree = "<group>"; };
-		96781B1E266664010033134D /* SITestCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SITestCellType.swift; sourceTree = "<group>"; };
-		96781B1F266664010033134D /* SITestElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SITestElement.swift; sourceTree = "<group>"; };
-		96781B20266664010033134D /* SIBottomButtonState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIBottomButtonState.swift; sourceTree = "<group>"; };
-		96781B21266664010033134D /* SITestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SITestViewController.swift; sourceTree = "<group>"; };
-		96781B23266664010033134D /* SITestTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SITestTableView.swift; sourceTree = "<group>"; };
-		96781B24266664010033134D /* SIProgressCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIProgressCollectionView.swift; sourceTree = "<group>"; };
-		96781B25266664010033134D /* SITestViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SITestViewModel.swift; sourceTree = "<group>"; };
 		96781B27266664010033134D /* StatsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewModel.swift; sourceTree = "<group>"; };
 		96781B28266664010033134D /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		96781B2A266664010033134D /* StatsCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsCellType.swift; sourceTree = "<group>"; };
@@ -733,7 +663,93 @@
 		DEADEB1728364A990057AA44 /* SplashActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashActivity.swift; sourceTree = "<group>"; };
 		DEADEB1928364AA60057AA44 /* SplashSDKInitialize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashSDKInitialize.swift; sourceTree = "<group>"; };
 		DEADEB1B28364C1F0057AA44 /* ContentError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentError.swift; sourceTree = "<group>"; };
-		DEADEB1D283691470057AA44 /* TestBottomSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBottomSpinner.swift; sourceTree = "<group>"; };
+		DED1CF962866EA9000E70292 /* TestCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCoordinator.swift; sourceTree = "<group>"; };
+		DED1CF982866EA9000E70292 /* TestViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
+		DED1CF9A2866EA9000E70292 /* TestCloseMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCloseMediator.swift; sourceTree = "<group>"; };
+		DED1CF9B2866EA9000E70292 /* TestCloseObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCloseObserver.swift; sourceTree = "<group>"; };
+		DED1CF9D2866EA9000E70292 /* TestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestType.swift; sourceTree = "<group>"; };
+		DED1CF9E2866EA9000E70292 /* TestAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAnalytics.swift; sourceTree = "<group>"; };
+		DED1CF9F2866EA9000E70292 /* TestFinishElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestFinishElement.swift; sourceTree = "<group>"; };
+		DED1CFA02866EA9000E70292 /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		DED1CFA12866EA9000E70292 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		DED1CFA52866EA9000E70292 /* QuestionTableAnswersCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableAnswersCell.swift; sourceTree = "<group>"; };
+		DED1CFA72866EA9000E70292 /* AnswerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
+		DED1CFA82866EA9000E70292 /* QuestionTableQuestionReferenceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableQuestionReferenceCell.swift; sourceTree = "<group>"; };
+		DED1CFA92866EA9000E70292 /* QuestionTableExplanationImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableExplanationImageCell.swift; sourceTree = "<group>"; };
+		DED1CFAA2866EA9000E70292 /* QuestionTableQuestionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableQuestionCell.swift; sourceTree = "<group>"; };
+		DED1CFAB2866EA9000E70292 /* QuestionTableExplanationTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableExplanationTitleCell.swift; sourceTree = "<group>"; };
+		DED1CFAC2866EA9000E70292 /* QuestionTableContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableContentCell.swift; sourceTree = "<group>"; };
+		DED1CFAD2866EA9000E70292 /* QuestionTableExplanationTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableExplanationTextCell.swift; sourceTree = "<group>"; };
+		DED1CFAE2866EA9000E70292 /* QuestionTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableView.swift; sourceTree = "<group>"; };
+		DED1CFAF2866EA9000E70292 /* QuestionTableElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableElement.swift; sourceTree = "<group>"; };
+		DED1CFB22866EA9000E70292 /* AVPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
+		DED1CFB32866EA9000E70292 /* QuestionContentCollectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionContentCollectionType.swift; sourceTree = "<group>"; };
+		DED1CFB42866EA9000E70292 /* QuestionContentCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionContentCollectionCell.swift; sourceTree = "<group>"; };
+		DED1CFB52866EA9000E70292 /* QuestionContentCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionContentCollectionView.swift; sourceTree = "<group>"; };
+		DED1CFB62866EA9000E70292 /* TestProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestProgressView.swift; sourceTree = "<group>"; };
+		DED1CFB72866EA9000E70292 /* TestBottomSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBottomSpinner.swift; sourceTree = "<group>"; };
+		DED1CFB82866EA9000E70292 /* TestBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBottomView.swift; sourceTree = "<group>"; };
+		DED1CFBA2866EA9000E70292 /* TestStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsViewController.swift; sourceTree = "<group>"; };
+		DED1CFBC2866EA9000E70292 /* TestStatsProgressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsProgressCell.swift; sourceTree = "<group>"; };
+		DED1CFBD2866EA9000E70292 /* TestStatsComunityResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsComunityResultCell.swift; sourceTree = "<group>"; };
+		DED1CFBE2866EA9000E70292 /* TestStatsAnswerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsAnswerCell.swift; sourceTree = "<group>"; };
+		DED1CFBF2866EA9000E70292 /* TestStatsResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsResultCell.swift; sourceTree = "<group>"; };
+		DED1CFC02866EA9000E70292 /* TestStatsFilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsFilterCell.swift; sourceTree = "<group>"; };
+		DED1CFC22866EA9000E70292 /* TestStatsComunityResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsComunityResult.swift; sourceTree = "<group>"; };
+		DED1CFC32866EA9000E70292 /* TestStatsProgressElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsProgressElement.swift; sourceTree = "<group>"; };
+		DED1CFC42866EA9000E70292 /* TestStatsAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsAnswer.swift; sourceTree = "<group>"; };
+		DED1CFC52866EA9000E70292 /* TestStatsCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsCellType.swift; sourceTree = "<group>"; };
+		DED1CFC62866EA9000E70292 /* TestStatsDescriptionElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsDescriptionElement.swift; sourceTree = "<group>"; };
+		DED1CFC72866EA9000E70292 /* TestStatsFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsFilter.swift; sourceTree = "<group>"; };
+		DED1CFC82866EA9000E70292 /* TestStatsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsViewModel.swift; sourceTree = "<group>"; };
+		DED1CFCA2866EA9000E70292 /* TestComunityResultLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestComunityResultLineView.swift; sourceTree = "<group>"; };
+		DED1CFCB2866EA9000E70292 /* TestStatsProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsProgressView.swift; sourceTree = "<group>"; };
+		DED1CFCC2866EA9000E70292 /* TestStatsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsTableView.swift; sourceTree = "<group>"; };
+		DED1CFCD2866EA9000E70292 /* TestStatsResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsResultView.swift; sourceTree = "<group>"; };
+		DED1CFCE2866EA9000E70292 /* TestStatsFilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsFilterView.swift; sourceTree = "<group>"; };
+		DED1CFCF2866EA9000E70292 /* TestStatsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsView.swift; sourceTree = "<group>"; };
+		DED1CFD02866EA9000E70292 /* TestSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSequence.swift; sourceTree = "<group>"; };
+		DED1CFD22866EA9000E70292 /* SITestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SITestView.swift; sourceTree = "<group>"; };
+		DED1CFD42866EA9000E70292 /* SITestCloseMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SITestCloseMediator.swift; sourceTree = "<group>"; };
+		DED1CFD62866EA9000E70292 /* SITestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SITestType.swift; sourceTree = "<group>"; };
+		DED1CFD72866EA9000E70292 /* SITestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SITestViewController.swift; sourceTree = "<group>"; };
+		DED1CFDA2866EA9000E70292 /* SITestTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SITestTableView.swift; sourceTree = "<group>"; };
+		DED1CFDC2866EA9000E70292 /* SIAnswerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIAnswerCell.swift; sourceTree = "<group>"; };
+		DED1CFDD2866EA9000E70292 /* SITestElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SITestElement.swift; sourceTree = "<group>"; };
+		DED1CFDF2866EA9000E70292 /* SIProgressElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIProgressElement.swift; sourceTree = "<group>"; };
+		DED1CFE02866EA9000E70292 /* SIProgressCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIProgressCollectionView.swift; sourceTree = "<group>"; };
+		DED1CFE12866EA9000E70292 /* SITestProgressCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SITestProgressCollectionCell.swift; sourceTree = "<group>"; };
+		DED1CFE22866EA9000E70292 /* SITestBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SITestBottomView.swift; sourceTree = "<group>"; };
+		DED1CFE32866EA9000E70292 /* SITestViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SITestViewModel.swift; sourceTree = "<group>"; };
+		DED1D0202866EAD000E70292 /* TestConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestConfig.swift; sourceTree = "<group>"; };
+		DED1D0212866EAD000E70292 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		DED1D0222866EAD000E70292 /* CourseConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseConfig.swift; sourceTree = "<group>"; };
+		DED1D0232866EAD000E70292 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		DED1D0242866EAD000E70292 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		DED1D0262866EAD000E70292 /* RemoveSavedQuestionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveSavedQuestionRequest.swift; sourceTree = "<group>"; };
+		DED1D0282866EAD000E70292 /* GetTestResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTestResponseMapper.swift; sourceTree = "<group>"; };
+		DED1D0292866EAD000E70292 /* GetFailedSetRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetFailedSetRequest.swift; sourceTree = "<group>"; };
+		DED1D02A2866EAD000E70292 /* GetRandomSetRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRandomSetRequest.swift; sourceTree = "<group>"; };
+		DED1D02B2866EAD000E70292 /* GetQotdRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetQotdRequest.swift; sourceTree = "<group>"; };
+		DED1D02C2866EAD000E70292 /* GetSavedRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSavedRequest.swift; sourceTree = "<group>"; };
+		DED1D02D2866EAD000E70292 /* GetTestRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTestRequest.swift; sourceTree = "<group>"; };
+		DED1D02E2866EAD000E70292 /* GetTenSetRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTenSetRequest.swift; sourceTree = "<group>"; };
+		DED1D02F2866EAD000E70292 /* GetIncorrectRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetIncorrectRequest.swift; sourceTree = "<group>"; };
+		DED1D0302866EAD000E70292 /* AnswerMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerMapper.swift; sourceTree = "<group>"; };
+		DED1D0312866EAD000E70292 /* QuestionMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionMapper.swift; sourceTree = "<group>"; };
+		DED1D0322866EAD000E70292 /* AgainTestRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgainTestRequest.swift; sourceTree = "<group>"; };
+		DED1D0342866EAD000E70292 /* GetTestConfigResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTestConfigResponseMapper.swift; sourceTree = "<group>"; };
+		DED1D0352866EAD000E70292 /* GetTestConfigRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTestConfigRequest.swift; sourceTree = "<group>"; };
+		DED1D0372866EAD000E70292 /* SendAnswerResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendAnswerResponseMapper.swift; sourceTree = "<group>"; };
+		DED1D0382866EAD000E70292 /* SendAnswerRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendAnswerRequest.swift; sourceTree = "<group>"; };
+		DED1D0392866EAD000E70292 /* FinishTestRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishTestRequest.swift; sourceTree = "<group>"; };
+		DED1D03A2866EAD000E70292 /* SaveQuestionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveQuestionRequest.swift; sourceTree = "<group>"; };
+		DED1D03C2866EAD000E70292 /* QuestionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionManager.swift; sourceTree = "<group>"; };
+		DED1D03D2866EAD000E70292 /* QuestionMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionMediator.swift; sourceTree = "<group>"; };
+		DED1D0572866EB2F00E70292 /* Observable+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Utils.swift"; sourceTree = "<group>"; };
+		DED1D0592866EB3B00E70292 /* Single+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Single+Utils.swift"; sourceTree = "<group>"; };
+		DED1D05C2866EB8A00E70292 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		DED1D05F2866EB9700E70292 /* ImageScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1118,6 +1134,8 @@
 				96781A09266663FF0033134D /* UIEdgeInsets+Extension.swift */,
 				96781A0A266663FF0033134D /* StringExtension.swift */,
 				DE93780D27BA74940073F27C /* RestApiTransportExtension.swift */,
+				DED1D0572866EB2F00E70292 /* Observable+Utils.swift */,
+				DED1D0592866EB3B00E70292 /* Single+Utils.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1196,11 +1214,11 @@
 		96781A2A266664000033134D /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				DED1D01E2866EAD000E70292 /* Questions */,
 				967381CE26793BFC00230FB6 /* Paygate */,
 				9673809E2677973500230FB6 /* Flashcards */,
 				96781A2B266664000033134D /* Rate */,
 				96781A40266664000033134D /* TestStats */,
-				96781A49266664000033134D /* Qestions */,
 				96781A65266664000033134D /* Courses */,
 				96781A6E266664000033134D /* Profile */,
 				96781A86266664000033134D /* Stats */,
@@ -1250,62 +1268,6 @@
 			children = (
 				96781A47266664000033134D /* TestStatsManagerCore.swift */,
 				96781A48266664000033134D /* TestStatsManager.swift */,
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
-		96781A49266664000033134D /* Qestions */ = {
-			isa = PBXGroup;
-			children = (
-				96781A4A266664000033134D /* Models */,
-				96781A4E266664000033134D /* Requests */,
-				96781A60266664000033134D /* Manager */,
-			);
-			path = Qestions;
-			sourceTree = "<group>";
-		};
-		96781A4A266664000033134D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				96781A4B266664000033134D /* TestConfig.swift */,
-				96781A4C266664000033134D /* Test.swift */,
-				96781A4D266664000033134D /* SITest.swift */,
-				967380802677933600230FB6 /* CourseConfig.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		96781A4E266664000033134D /* Requests */ = {
-			isa = PBXGroup;
-			children = (
-				96781A4F266664000033134D /* GetTestResponseMapper.swift */,
-				96781A50266664000033134D /* GetTestConfigResponseMapper.swift */,
-				96781A51266664000033134D /* SendAnswerResponseMapper.swift */,
-				96781A52266664000033134D /* GetTestConfigRequest.swift */,
-				96781A53266664000033134D /* GetFailedSetRequest.swift */,
-				96781A54266664000033134D /* GetRandomSetRequest.swift */,
-				96781A55266664000033134D /* RemoveSavedQuestionRequest.swift */,
-				96781A56266664000033134D /* GetQotdRequest.swift */,
-				96781A57266664000033134D /* GetSavedRequest.swift */,
-				96781A58266664000033134D /* SendAnswerRequest.swift */,
-				96781A59266664000033134D /* GetTestRequest.swift */,
-				96781A5A266664000033134D /* FinishTestRequest.swift */,
-				96781A5B266664000033134D /* GetTenSetRequest.swift */,
-				96781A5C266664000033134D /* GetIncorrectRequest.swift */,
-				96781A5D266664000033134D /* GetAgainTestRequest.swift */,
-				96781A5E266664000033134D /* GetSavedAndIncorrectResponseMapper.swift */,
-				96781A5F266664000033134D /* SaveQuestionRequest.swift */,
-			);
-			path = Requests;
-			sourceTree = "<group>";
-		};
-		96781A60266664000033134D /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				96781A61266664000033134D /* QuestionManager.swift */,
-				96781A62266664000033134D /* QuestionManagerMediator.swift */,
-				96781A63266664000033134D /* QuestionManagerCore.swift */,
-				96781A64266664000033134D /* QuestionManagerDelagate.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -1486,6 +1448,8 @@
 		96781A98266664000033134D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DED1D05B2866EB7D00E70292 /* Photo */,
+				DED1CF952866EA9000E70292 /* Test */,
 				DEADEB112836490A0057AA44 /* TryAgain */,
 				96F92A0E2692086B006331D7 /* Onboarding */,
 				967381EE26793C0C00230FB6 /* Paygate */,
@@ -1496,10 +1460,7 @@
 				96781AAA266664000033134D /* Splash */,
 				96781AAE266664000033134D /* Study */,
 				96781AC8266664000033134D /* Course */,
-				96781ACF266664000033134D /* Test */,
-				96781AF2266664000033134D /* TestStats */,
 				96781B09266664010033134D /* CourseDetails */,
-				96781B15266664010033134D /* SITest */,
 				96781B26266664010033134D /* Stats */,
 			);
 			path = Presentation;
@@ -1671,109 +1632,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		96781ACF266664000033134D /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				96781AD7266664000033134D /* Models */,
-				96781AD0266664000033134D /* Cells */,
-				96781AE1266664000033134D /* Views */,
-				96781AD6266664000033134D /* TestViewModel.swift */,
-				96781ADF266664000033134D /* TestView.swift */,
-				96781AE0266664000033134D /* TestViewController.swift */,
-			);
-			path = Test;
-			sourceTree = "<group>";
-		};
-		96781AD0266664000033134D /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				96781AD1266664000033134D /* QuestionContentCell.swift */,
-				96781AD2266664000033134D /* QuestionCollectionCell.swift */,
-				96781AD3266664000033134D /* QuestionCell.swift */,
-				96781AD4266664000033134D /* AnswerCell.swift */,
-				96781AD5266664000033134D /* ExplanationCell.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		96781AD7266664000033134D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				96781AD8266664000033134D /* TestBottomButtonState.swift */,
-				96781AD9266664000033134D /* TestStatsElement.swift */,
-				96781ADA266664000033134D /* TestingCellType.swift */,
-				96781ADB266664000033134D /* TestType.swift */,
-				96781ADC266664000033134D /* TestAnalytics.swift */,
-				96781ADD266664000033134D /* QuestionContentType.swift */,
-				96781ADE266664000033134D /* TestElement.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		96781AE1266664000033134D /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				96781AE2266664000033134D /* QuestionTableView.swift */,
-				96781AE3266664000033134D /* QuestionContentCollectionView.swift */,
-				96781AE4266664000033134D /* AnswerView.swift */,
-				96781AE5266664000033134D /* TestProgressView.swift */,
-				96781AE6266664000033134D /* ImageScrollView.swift */,
-				96781AE7266664000033134D /* AVPlayerView.swift */,
-				DEADEB1D283691470057AA44 /* TestBottomSpinner.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		96781AF2266664000033134D /* TestStats */ = {
-			isa = PBXGroup;
-			children = (
-				96781AFA266664000033134D /* Models */,
-				96781B02266664010033134D /* Views */,
-				96781AF4266664000033134D /* Cells */,
-				96781AF3266664000033134D /* TestStatsViewController.swift */,
-				96781B01266664000033134D /* TestStatsViewModel.swift */,
-				96781B08266664010033134D /* TestStatsView.swift */,
-			);
-			path = TestStats;
-			sourceTree = "<group>";
-		};
-		96781AF4266664000033134D /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				96781AF5266664000033134D /* TestStatsProgressCell.swift */,
-				96781AF6266664000033134D /* TestStatsComunityResultCell.swift */,
-				96781AF7266664000033134D /* TestStatsAnswerCell.swift */,
-				96781AF8266664000033134D /* TestStatsResultCell.swift */,
-				96781AF9266664000033134D /* TestStatsFilterCell.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		96781AFA266664000033134D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				96781AFB266664000033134D /* TestStatsComunityResult.swift */,
-				96781AFC266664000033134D /* TestStatsProgressElement.swift */,
-				96781AFD266664000033134D /* TestStatsAnswer.swift */,
-				96781AFE266664000033134D /* TestStatsCellType.swift */,
-				96781AFF266664000033134D /* TestStatsDescriptionElement.swift */,
-				96781B00266664000033134D /* TestStatsFilter.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		96781B02266664010033134D /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				96781B03266664010033134D /* TestComunityResultLineView.swift */,
-				96781B04266664010033134D /* TestStatsProgressView.swift */,
-				96781B05266664010033134D /* TestStatsTableView.swift */,
-				96781B06266664010033134D /* TestStatsResultView.swift */,
-				96781B07266664010033134D /* TestStatsFilterView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		96781B09266664010033134D /* CourseDetails */ = {
 			isa = PBXGroup;
 			children = (
@@ -1818,50 +1676,6 @@
 				96781B12266664010033134D /* CourseDetailsTestCell.swift */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		96781B15266664010033134D /* SITest */ = {
-			isa = PBXGroup;
-			children = (
-				96781B1B266664010033134D /* Models */,
-				96781B22266664010033134D /* Views */,
-				96781B17266664010033134D /* Cells */,
-				96781B16266664010033134D /* SITestView.swift */,
-				96781B21266664010033134D /* SITestViewController.swift */,
-				96781B25266664010033134D /* SITestViewModel.swift */,
-			);
-			path = SITest;
-			sourceTree = "<group>";
-		};
-		96781B17266664010033134D /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				96781B18266664010033134D /* SIQuestionCell.swift */,
-				96781B19266664010033134D /* SIAnswerCell.swift */,
-				96781B1A266664010033134D /* SITestProgressCollectionCell.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		96781B1B266664010033134D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				96781B1C266664010033134D /* SITestType.swift */,
-				96781B1D266664010033134D /* SIProgressElement.swift */,
-				96781B1E266664010033134D /* SITestCellType.swift */,
-				96781B1F266664010033134D /* SITestElement.swift */,
-				96781B20266664010033134D /* SIBottomButtonState.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		96781B22266664010033134D /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				96781B23266664010033134D /* SITestTableView.swift */,
-				96781B24266664010033134D /* SIProgressCollectionView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		96781B26266664010033134D /* Stats */ = {
@@ -2128,6 +1942,328 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		DED1CF952866EA9000E70292 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				DED1CFD12866EA9000E70292 /* SITest */,
+				DED1CF972866EA9000E70292 /* Test */,
+				DED1CFB92866EA9000E70292 /* TestStats */,
+				DED1CF962866EA9000E70292 /* TestCoordinator.swift */,
+				DED1CFD02866EA9000E70292 /* TestSequence.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		DED1CF972866EA9000E70292 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				DED1CF982866EA9000E70292 /* TestViewModel.swift */,
+				DED1CF992866EA9000E70292 /* Observer */,
+				DED1CF9C2866EA9000E70292 /* Models */,
+				DED1CFA02866EA9000E70292 /* TestView.swift */,
+				DED1CFA12866EA9000E70292 /* TestViewController.swift */,
+				DED1CFA22866EA9000E70292 /* Views */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		DED1CF992866EA9000E70292 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				DED1CF9A2866EA9000E70292 /* TestCloseMediator.swift */,
+				DED1CF9B2866EA9000E70292 /* TestCloseObserver.swift */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
+		DED1CF9C2866EA9000E70292 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DED1CF9D2866EA9000E70292 /* TestType.swift */,
+				DED1CF9E2866EA9000E70292 /* TestAnalytics.swift */,
+				DED1CF9F2866EA9000E70292 /* TestFinishElement.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DED1CFA22866EA9000E70292 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DED1CFA32866EA9000E70292 /* TableView */,
+				DED1CFB02866EA9000E70292 /* CollectionView */,
+				DED1CFB62866EA9000E70292 /* TestProgressView.swift */,
+				DED1CFB72866EA9000E70292 /* TestBottomSpinner.swift */,
+				DED1CFB82866EA9000E70292 /* TestBottomView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DED1CFA32866EA9000E70292 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DED1CFA42866EA9000E70292 /* Cells */,
+				DED1CFAE2866EA9000E70292 /* QuestionTableView.swift */,
+				DED1CFAF2866EA9000E70292 /* QuestionTableElement.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DED1CFA42866EA9000E70292 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DED1CFA52866EA9000E70292 /* QuestionTableAnswersCell.swift */,
+				DED1CFA62866EA9000E70292 /* Atoms */,
+				DED1CFA82866EA9000E70292 /* QuestionTableQuestionReferenceCell.swift */,
+				DED1CFA92866EA9000E70292 /* QuestionTableExplanationImageCell.swift */,
+				DED1CFAA2866EA9000E70292 /* QuestionTableQuestionCell.swift */,
+				DED1CFAB2866EA9000E70292 /* QuestionTableExplanationTitleCell.swift */,
+				DED1CFAC2866EA9000E70292 /* QuestionTableContentCell.swift */,
+				DED1CFAD2866EA9000E70292 /* QuestionTableExplanationTextCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DED1CFA62866EA9000E70292 /* Atoms */ = {
+			isa = PBXGroup;
+			children = (
+				DED1CFA72866EA9000E70292 /* AnswerView.swift */,
+			);
+			path = Atoms;
+			sourceTree = "<group>";
+		};
+		DED1CFB02866EA9000E70292 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DED1CFB12866EA9000E70292 /* Atoms */,
+				DED1CFB32866EA9000E70292 /* QuestionContentCollectionType.swift */,
+				DED1CFB42866EA9000E70292 /* QuestionContentCollectionCell.swift */,
+				DED1CFB52866EA9000E70292 /* QuestionContentCollectionView.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		DED1CFB12866EA9000E70292 /* Atoms */ = {
+			isa = PBXGroup;
+			children = (
+				DED1CFB22866EA9000E70292 /* AVPlayerView.swift */,
+			);
+			path = Atoms;
+			sourceTree = "<group>";
+		};
+		DED1CFB92866EA9000E70292 /* TestStats */ = {
+			isa = PBXGroup;
+			children = (
+				DED1CFBA2866EA9000E70292 /* TestStatsViewController.swift */,
+				DED1CFBB2866EA9000E70292 /* Cells */,
+				DED1CFC12866EA9000E70292 /* Models */,
+				DED1CFC82866EA9000E70292 /* TestStatsViewModel.swift */,
+				DED1CFC92866EA9000E70292 /* Views */,
+				DED1CFCF2866EA9000E70292 /* TestStatsView.swift */,
+			);
+			path = TestStats;
+			sourceTree = "<group>";
+		};
+		DED1CFBB2866EA9000E70292 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DED1CFBC2866EA9000E70292 /* TestStatsProgressCell.swift */,
+				DED1CFBD2866EA9000E70292 /* TestStatsComunityResultCell.swift */,
+				DED1CFBE2866EA9000E70292 /* TestStatsAnswerCell.swift */,
+				DED1CFBF2866EA9000E70292 /* TestStatsResultCell.swift */,
+				DED1CFC02866EA9000E70292 /* TestStatsFilterCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DED1CFC12866EA9000E70292 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DED1CFC22866EA9000E70292 /* TestStatsComunityResult.swift */,
+				DED1CFC32866EA9000E70292 /* TestStatsProgressElement.swift */,
+				DED1CFC42866EA9000E70292 /* TestStatsAnswer.swift */,
+				DED1CFC52866EA9000E70292 /* TestStatsCellType.swift */,
+				DED1CFC62866EA9000E70292 /* TestStatsDescriptionElement.swift */,
+				DED1CFC72866EA9000E70292 /* TestStatsFilter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DED1CFC92866EA9000E70292 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DED1CFCA2866EA9000E70292 /* TestComunityResultLineView.swift */,
+				DED1CFCB2866EA9000E70292 /* TestStatsProgressView.swift */,
+				DED1CFCC2866EA9000E70292 /* TestStatsTableView.swift */,
+				DED1CFCD2866EA9000E70292 /* TestStatsResultView.swift */,
+				DED1CFCE2866EA9000E70292 /* TestStatsFilterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DED1CFD12866EA9000E70292 /* SITest */ = {
+			isa = PBXGroup;
+			children = (
+				DED1CFD22866EA9000E70292 /* SITestView.swift */,
+				DED1CFD32866EA9000E70292 /* Observer */,
+				DED1CFD52866EA9000E70292 /* Models */,
+				DED1CFD72866EA9000E70292 /* SITestViewController.swift */,
+				DED1CFD82866EA9000E70292 /* Views */,
+				DED1CFE32866EA9000E70292 /* SITestViewModel.swift */,
+			);
+			path = SITest;
+			sourceTree = "<group>";
+		};
+		DED1CFD32866EA9000E70292 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				DED1CFD42866EA9000E70292 /* SITestCloseMediator.swift */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
+		DED1CFD52866EA9000E70292 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DED1CFD62866EA9000E70292 /* SITestType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DED1CFD82866EA9000E70292 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DED1CFD92866EA9000E70292 /* TableView */,
+				DED1CFDE2866EA9000E70292 /* CollectionView */,
+				DED1CFE22866EA9000E70292 /* SITestBottomView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DED1CFD92866EA9000E70292 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DED1CFDA2866EA9000E70292 /* SITestTableView.swift */,
+				DED1CFDB2866EA9000E70292 /* Cells */,
+				DED1CFDD2866EA9000E70292 /* SITestElement.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DED1CFDB2866EA9000E70292 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DED1CFDC2866EA9000E70292 /* SIAnswerCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DED1CFDE2866EA9000E70292 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DED1CFDF2866EA9000E70292 /* SIProgressElement.swift */,
+				DED1CFE02866EA9000E70292 /* SIProgressCollectionView.swift */,
+				DED1CFE12866EA9000E70292 /* SITestProgressCollectionCell.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		DED1D01E2866EAD000E70292 /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				DED1D01F2866EAD000E70292 /* Models */,
+				DED1D0252866EAD000E70292 /* Requests */,
+				DED1D03B2866EAD000E70292 /* Manager */,
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
+		DED1D01F2866EAD000E70292 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DED1D0202866EAD000E70292 /* TestConfig.swift */,
+				DED1D0212866EAD000E70292 /* Test.swift */,
+				DED1D0222866EAD000E70292 /* CourseConfig.swift */,
+				DED1D0232866EAD000E70292 /* Question.swift */,
+				DED1D0242866EAD000E70292 /* Answer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DED1D0252866EAD000E70292 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				DED1D0262866EAD000E70292 /* RemoveSavedQuestionRequest.swift */,
+				DED1D0272866EAD000E70292 /* GetTest */,
+				DED1D0322866EAD000E70292 /* AgainTestRequest.swift */,
+				DED1D0332866EAD000E70292 /* GetTestConfig */,
+				DED1D0362866EAD000E70292 /* SendAnswer */,
+				DED1D0392866EAD000E70292 /* FinishTestRequest.swift */,
+				DED1D03A2866EAD000E70292 /* SaveQuestionRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		DED1D0272866EAD000E70292 /* GetTest */ = {
+			isa = PBXGroup;
+			children = (
+				DED1D0282866EAD000E70292 /* GetTestResponseMapper.swift */,
+				DED1D0292866EAD000E70292 /* GetFailedSetRequest.swift */,
+				DED1D02A2866EAD000E70292 /* GetRandomSetRequest.swift */,
+				DED1D02B2866EAD000E70292 /* GetQotdRequest.swift */,
+				DED1D02C2866EAD000E70292 /* GetSavedRequest.swift */,
+				DED1D02D2866EAD000E70292 /* GetTestRequest.swift */,
+				DED1D02E2866EAD000E70292 /* GetTenSetRequest.swift */,
+				DED1D02F2866EAD000E70292 /* GetIncorrectRequest.swift */,
+				DED1D0302866EAD000E70292 /* AnswerMapper.swift */,
+				DED1D0312866EAD000E70292 /* QuestionMapper.swift */,
+			);
+			path = GetTest;
+			sourceTree = "<group>";
+		};
+		DED1D0332866EAD000E70292 /* GetTestConfig */ = {
+			isa = PBXGroup;
+			children = (
+				DED1D0342866EAD000E70292 /* GetTestConfigResponseMapper.swift */,
+				DED1D0352866EAD000E70292 /* GetTestConfigRequest.swift */,
+			);
+			path = GetTestConfig;
+			sourceTree = "<group>";
+		};
+		DED1D0362866EAD000E70292 /* SendAnswer */ = {
+			isa = PBXGroup;
+			children = (
+				DED1D0372866EAD000E70292 /* SendAnswerResponseMapper.swift */,
+				DED1D0382866EAD000E70292 /* SendAnswerRequest.swift */,
+			);
+			path = SendAnswer;
+			sourceTree = "<group>";
+		};
+		DED1D03B2866EAD000E70292 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				DED1D03C2866EAD000E70292 /* QuestionManager.swift */,
+				DED1D03D2866EAD000E70292 /* QuestionMediator.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		DED1D05B2866EB7D00E70292 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				DED1D05E2866EB8D00E70292 /* Views */,
+				DED1D05C2866EB8A00E70292 /* PhotoViewController.swift */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		DED1D05E2866EB8D00E70292 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DED1D05F2866EB9700E70292 /* ImageScrollView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E4CD456C364ABE0948920F44 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2339,20 +2475,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				96781BF6266664020033134D /* TabView.swift in Sources */,
-				96781C21266664030033134D /* TestComunityResultLineView.swift in Sources */,
+				DED1D0412866EAD000E70292 /* Question.swift in Sources */,
+				DED1D0142866EA9000E70292 /* SITestType.swift in Sources */,
 				96155B6C2689A8AD00228151 /* CoursesMediatorDelegate.swift in Sources */,
 				96781BD8266664020033134D /* STSettingLinksCell.swift in Sources */,
+				DED1CFEB2866EA9000E70292 /* TestView.swift in Sources */,
 				96781BC7266664020033134D /* Stats.swift in Sources */,
 				96781BB1266664020033134D /* Course.swift in Sources */,
-				96781BAF266664020033134D /* QuestionManagerCore.swift in Sources */,
 				96781BBC266664020033134D /* ProfileManager.swift in Sources */,
-				96781C35266664030033134D /* SITestElement.swift in Sources */,
+				DED1CFF02866EA9000E70292 /* QuestionTableExplanationImageCell.swift in Sources */,
 				96781C45266664030033134D /* MainStatsDescriptionLineView.swift in Sources */,
 				96F92A682692086B006331D7 /* OSlidePlanCell.swift in Sources */,
 				96781B84266664010033134D /* RateManagerCore.swift in Sources */,
-				96781BAA266664020033134D /* GetAgainTestRequest.swift in Sources */,
 				96781B6E266664010033134D /* ScreenSize.swift in Sources */,
-				96781C26266664030033134D /* TestStatsView.swift in Sources */,
 				9673809C2677972900230FB6 /* FlashCardContainerView.swift in Sources */,
 				96F92A722692086B006331D7 /* OSlideExperienceView.swift in Sources */,
 				96F92A6D2692086B006331D7 /* OSlideView.swift in Sources */,
@@ -2364,72 +2499,75 @@
 				96781B74266664010033134D /* Toast.swift in Sources */,
 				96781BDB266664020033134D /* SettingsTableView.swift in Sources */,
 				96781C3D266664030033134D /* StatsCellType.swift in Sources */,
-				DEADEB1E283691470057AA44 /* TestBottomSpinner.swift in Sources */,
 				96781BB4266664020033134D /* CoursesManagerCore.swift in Sources */,
 				96781B7F266664010033134D /* TrophyView.swift in Sources */,
 				96F92A4B2692086B006331D7 /* OSlideWelcomeView.swift in Sources */,
+				DED1D04D2866EAD000E70292 /* QuestionMapper.swift in Sources */,
 				96781C2A266664030033134D /* CourseDetailsViewModel.swift in Sources */,
 				967380982677972900230FB6 /* FlashcardsViewController.swift in Sources */,
-				96781C36266664030033134D /* SIBottomButtonState.swift in Sources */,
 				96781BC0266664020033134D /* GetLocaleRequest.swift in Sources */,
+				DED1CFEF2866EA9000E70292 /* QuestionTableQuestionReferenceCell.swift in Sources */,
 				96781BD3266664020033134D /* RateUs.swift in Sources */,
 				967381E626793BFC00230FB6 /* ProductPrice.swift in Sources */,
 				967380B42677973500230FB6 /* FlashcardsManagerCore.swift in Sources */,
 				96781B94266664020033134D /* TestStats.swift in Sources */,
 				96781BDE266664020033134D /* SplashViewController.swift in Sources */,
+				DED1D0482866EAD000E70292 /* GetSavedRequest.swift in Sources */,
+				DED1D0092866EA9000E70292 /* TestStatsFilter.swift in Sources */,
 				96781B80266664010033134D /* AppDelegate.swift in Sources */,
 				96F92A592692086B006331D7 /* OModesCollectionView.swift in Sources */,
 				96781BDD266664020033134D /* SettingsViewController.swift in Sources */,
 				96F92A752692086B006331D7 /* OSlideLocaleView.swift in Sources */,
+				DED1D0502866EAD000E70292 /* GetTestConfigRequest.swift in Sources */,
 				96781C44266664030033134D /* StatsTableView.swift in Sources */,
+				DED1D0582866EB2F00E70292 /* Observable+Utils.swift in Sources */,
 				96F92A4A2692086B006331D7 /* OnboardingViewController.swift in Sources */,
-				96781C0A266664030033134D /* ImageScrollView.swift in Sources */,
 				96781B70266664010033134D /* SignError.swift in Sources */,
 				96781BCC266664020033134D /* StatsManagerCore.swift in Sources */,
 				96781B6C266664010033134D /* Scalable.swift in Sources */,
 				96781B98266664020033134D /* TestStatsManager.swift in Sources */,
 				96781B72266664010033134D /* ImagePicker.swift in Sources */,
-				96781C38266664030033134D /* SITestTableView.swift in Sources */,
 				DEADEB152836492A0057AA44 /* TryAgainView.swift in Sources */,
 				96781C3B266664030033134D /* StatsViewModel.swift in Sources */,
 				96781BEA266664020033134D /* StudyCollectionView.swift in Sources */,
-				96781C1E266664030033134D /* TestStatsDescriptionElement.swift in Sources */,
+				DED1CFE92866EA9000E70292 /* TestAnalytics.swift in Sources */,
+				DED1D0542866EAD000E70292 /* SaveQuestionRequest.swift in Sources */,
 				96F92A5E2692086B006331D7 /* MinutesAtTimeElement.swift in Sources */,
-				96781BA7266664020033134D /* FinishTestRequest.swift in Sources */,
 				96781B97266664020033134D /* TestStatsManagerCore.swift in Sources */,
-				96781C04266664030033134D /* TestView.swift in Sources */,
-				96781C25266664030033134D /* TestStatsFilterView.swift in Sources */,
 				DEADEB0C283648490057AA44 /* Spinner.swift in Sources */,
 				96F92A562692086B006331D7 /* LocaleCountryView.swift in Sources */,
-				96781BAC266664020033134D /* SaveQuestionRequest.swift in Sources */,
 				96781BF0266664020033134D /* CourseFlowLayout.swift in Sources */,
+				DED1D01B2866EA9000E70292 /* SITestProgressCollectionCell.swift in Sources */,
+				DED1CFF92866EA9000E70292 /* QuestionContentCollectionCell.swift in Sources */,
+				DED1CFF62866EA9000E70292 /* QuestionTableElement.swift in Sources */,
 				96781C3F266664030033134D /* CourseStatsElement.swift in Sources */,
 				967380B72677973500230FB6 /* MarkFlashcardRequest.swift in Sources */,
 				96781BCE266664020033134D /* Session.swift in Sources */,
-				96781C20266664030033134D /* TestStatsViewModel.swift in Sources */,
 				96781B95266664020033134D /* GetTestStatsRequest.swift in Sources */,
 				96781BB6266664020033134D /* Language.swift in Sources */,
 				96781BE8266664020033134D /* SCBriefDaysView.swift in Sources */,
 				DEADEB10283648EF0057AA44 /* ObservableRetrySingle.swift in Sources */,
+				DED1D01D2866EA9000E70292 /* SITestViewModel.swift in Sources */,
 				96F92A5F2692086B006331D7 /* WelcomeSlide1View.swift in Sources */,
 				967380B62677973500230FB6 /* GetFlashcardsResponseMapper.swift in Sources */,
 				967381E526793BFC00230FB6 /* MonetizationConfig.swift in Sources */,
-				96781BAD266664020033134D /* QuestionManager.swift in Sources */,
+				DED1D0102866EA9000E70292 /* TestStatsView.swift in Sources */,
 				96F92A532692086B006331D7 /* LocaleTableViewElement.swift in Sources */,
 				96781BBB266664020033134D /* ProfileManagerCore.swift in Sources */,
 				96781BE5266664020033134D /* SCTrophyCollectionCell.swift in Sources */,
 				96781BB3266664020033134D /* GetCourcesResponseMapper.swift in Sources */,
 				96781C43266664030033134D /* MainRateCell.swift in Sources */,
 				DE3449FA2771D96600632F72 /* STModeCell.swift in Sources */,
-				96781B99266664020033134D /* TestConfig.swift in Sources */,
 				96F92A4F2692086B006331D7 /* OProgressView.swift in Sources */,
 				96F92A572692086B006331D7 /* OModesCollectionLayout.swift in Sources */,
 				DEADEB1828364A990057AA44 /* SplashActivity.swift in Sources */,
 				9673807F26778AF200230FB6 /* SCFlashcardsCell.swift in Sources */,
-				96781BFF266664030033134D /* TestingCellType.swift in Sources */,
+				DED1D0532866EAD000E70292 /* FinishTestRequest.swift in Sources */,
 				967381EC26793BFC00230FB6 /* MonetizationManagerCore.swift in Sources */,
+				DED1D0512866EAD000E70292 /* SendAnswerResponseMapper.swift in Sources */,
 				96781BC8266664020033134D /* GetBriefRequest.swift in Sources */,
 				96781B71266664010033134D /* Weak.swift in Sources */,
+				DED1D0472866EAD000E70292 /* GetQotdRequest.swift in Sources */,
 				DE93780E27BA74940073F27C /* RestApiTransportExtension.swift in Sources */,
 				967381E726793BFC00230FB6 /* Paygate.swift in Sources */,
 				967380AF2677973500230FB6 /* Flashcard.swift in Sources */,
@@ -2437,179 +2575,191 @@
 				967380B02677973500230FB6 /* FlashcardTopic.swift in Sources */,
 				9673809D2677972900230FB6 /* FlashcardsView.swift in Sources */,
 				96F92A5A2692086B006331D7 /* OModeCollectionElement.swift in Sources */,
+				DED1D00A2866EA9000E70292 /* TestStatsViewModel.swift in Sources */,
 				96781C47266664030033134D /* CourseProgressView.swift in Sources */,
 				96781C2D266664030033134D /* GradientProgressView.swift in Sources */,
+				DED1CFF12866EA9000E70292 /* QuestionTableQuestionCell.swift in Sources */,
 				96781BC9266664020033134D /* GetBriefResponseMapper.swift in Sources */,
-				96781C39266664030033134D /* SIProgressCollectionView.swift in Sources */,
-				96781C18266664030033134D /* TestStatsResultCell.swift in Sources */,
-				96781C17266664030033134D /* TestStatsAnswerCell.swift in Sources */,
 				967380B22677973500230FB6 /* FlashCardManagerMediator.swift in Sources */,
+				DED1CFFF2866EA9000E70292 /* TestStatsProgressCell.swift in Sources */,
+				DED1D05A2866EB3B00E70292 /* Single+Utils.swift in Sources */,
+				DED1D0432866EAD000E70292 /* RemoveSavedQuestionRequest.swift in Sources */,
 				963090052692FE59000D5A1F /* OExperienceCell.swift in Sources */,
-				96781C22266664030033134D /* TestStatsProgressView.swift in Sources */,
-				96781BFC266664030033134D /* TestViewModel.swift in Sources */,
 				96781BEF266664020033134D /* CourseCollectionView.swift in Sources */,
 				967381EB26793BFC00230FB6 /* GetMonetizationConfigRequest.swift in Sources */,
+				DED1D0032866EA9000E70292 /* TestStatsFilterCell.swift in Sources */,
 				96781BD0266664020033134D /* SessionManager.swift in Sources */,
-				96781C01266664030033134D /* TestAnalytics.swift in Sources */,
 				96781BED266664020033134D /* CourseCell.swift in Sources */,
 				96F92A622692086B006331D7 /* WelcomeSlide2View.swift in Sources */,
 				967380972677972900230FB6 /* FlashcardsTopicsTableCell.swift in Sources */,
+				DED1D00C2866EA9000E70292 /* TestStatsProgressView.swift in Sources */,
+				DED1D04A2866EAD000E70292 /* GetTenSetRequest.swift in Sources */,
 				967380B12677973500230FB6 /* FlashCardManagerDelegate.swift in Sources */,
 				967381FC26793C0C00230FB6 /* PaygateMainView.swift in Sources */,
 				96F92A612692086B006331D7 /* WelcomeSlide3View.swift in Sources */,
 				96781BEB266664020033134D /* SCModeView.swift in Sources */,
+				DED1CFFD2866EA9000E70292 /* TestBottomView.swift in Sources */,
 				96781B77266664010033134D /* TapAreaButton.swift in Sources */,
-				96781BF8266664020033134D /* QuestionCollectionCell.swift in Sources */,
 				865FEC5F2667A4E3009D7A4E /* BottomSheetAnimation.swift in Sources */,
+				DED1D0052866EA9000E70292 /* TestStatsProgressElement.swift in Sources */,
 				96781BCF266664020033134D /* SessionManagerCore.swift in Sources */,
 				96781B67266664010033134D /* UITapGestureRecognizerExtension.swift in Sources */,
+				DED1D0402866EAD000E70292 /* CourseConfig.swift in Sources */,
 				DEADEB0E283648DE0057AA44 /* NumberLaunches.swift in Sources */,
+				DED1CFE82866EA9000E70292 /* TestType.swift in Sources */,
+				DED1D0062866EA9000E70292 /* TestStatsAnswer.swift in Sources */,
 				96781C46266664030033134D /* MainProgressView.swift in Sources */,
 				96F92A5D2692086B006331D7 /* OMinutesAtTimeCell.swift in Sources */,
 				96781BF5266664020033134D /* TabItemView.swift in Sources */,
 				967380B52677973500230FB6 /* GetFlashcardsRequest.swift in Sources */,
-				96781C19266664030033134D /* TestStatsFilterCell.swift in Sources */,
-				96781BAE266664020033134D /* QuestionManagerMediator.swift in Sources */,
 				967381F926793C0C00230FB6 /* PaygateViewControllerDelegate.swift in Sources */,
+				DED1CFFE2866EA9000E70292 /* TestStatsViewController.swift in Sources */,
 				967381E326793BFC00230FB6 /* GetMonetizationResponseMapper.swift in Sources */,
-				96781C16266664030033134D /* TestStatsComunityResultCell.swift in Sources */,
 				96781B7E266664010033134D /* GradientView.swift in Sources */,
-				96781C07266664030033134D /* QuestionContentCollectionView.swift in Sources */,
+				DED1D0132866EA9000E70292 /* SITestCloseMediator.swift in Sources */,
 				96781BDC266664020033134D /* SettingsTableSection.swift in Sources */,
-				96781C08266664030033134D /* AnswerView.swift in Sources */,
-				96781BFE266664030033134D /* TestStatsElement.swift in Sources */,
-				96781B9C266664020033134D /* GetTestResponseMapper.swift in Sources */,
+				DED1CFE62866EA9000E70292 /* TestCloseMediator.swift in Sources */,
 				967380932677972900230FB6 /* FlashcardsTopicsView.swift in Sources */,
+				DED1D0112866EA9000E70292 /* TestSequence.swift in Sources */,
+				DED1D0442866EAD000E70292 /* GetTestResponseMapper.swift in Sources */,
 				96F92A6C2692086B006331D7 /* OWhenStudyView.swift in Sources */,
-				96781C37266664030033134D /* SITestViewController.swift in Sources */,
 				96781B68266664010033134D /* UIDeviceExtension.swift in Sources */,
 				96781B7A266664010033134D /* PaddingLabel.swift in Sources */,
-				96781C00266664030033134D /* TestType.swift in Sources */,
+				DED1D0192866EA9000E70292 /* SIProgressElement.swift in Sources */,
 				96F92A552692086B006331D7 /* LocaleStateView.swift in Sources */,
-				96781BFB266664030033134D /* ExplanationCell.swift in Sources */,
+				DED1D0002866EA9000E70292 /* TestStatsComunityResultCell.swift in Sources */,
 				96781B6A266664010033134D /* StringExtension.swift in Sources */,
 				967380B92677973500230FB6 /* GetFlashcardsTopicsRequest.swift in Sources */,
-				96781BFA266664030033134D /* AnswerCell.swift in Sources */,
 				96781BE2266664020033134D /* StudyViewController.swift in Sources */,
 				967381FB26793C0C00230FB6 /* PaygateViewController.swift in Sources */,
 				96F92A792692086B006331D7 /* OnboardingAnalytics.swift in Sources */,
 				96781BF1266664020033134D /* StudyView.swift in Sources */,
 				96F92A7E26920D58006331D7 /* GetTestModeResponseMapper.swift in Sources */,
+				DED1D00B2866EA9000E70292 /* TestComunityResultLineView.swift in Sources */,
 				96781BB9266664020033134D /* ProfileLocale.swift in Sources */,
 				96781B82266664010033134D /* RxActivityIndicator.swift in Sources */,
-				96781C33266664030033134D /* SIProgressElement.swift in Sources */,
 				96781B79266664010033134D /* NavigationBar.swift in Sources */,
 				96781BB2266664020033134D /* GetCourcesRequest.swift in Sources */,
-				96781B9F266664020033134D /* GetTestConfigRequest.swift in Sources */,
+				DED1CFF42866EA9000E70292 /* QuestionTableExplanationTextCell.swift in Sources */,
+				DED1D00D2866EA9000E70292 /* TestStatsTableView.swift in Sources */,
 				967381FF26793C0C00230FB6 /* PaygateSpecialOfferView.swift in Sources */,
-				96781C3A266664030033134D /* SITestViewModel.swift in Sources */,
-				96781C1C266664030033134D /* TestStatsAnswer.swift in Sources */,
 				96F92A4C2692086B006331D7 /* OSlideModeView.swift in Sources */,
 				96781B75266664010033134D /* NursingNavigationController.swift in Sources */,
 				DEADEB132836491A0057AA44 /* TryAgainViewController.swift in Sources */,
 				967380B32677973500230FB6 /* FlashcardsManager.swift in Sources */,
 				96781BB8266664020033134D /* State.swift in Sources */,
-				96781BA8266664020033134D /* GetTenSetRequest.swift in Sources */,
+				DED1D0172866EA9000E70292 /* SIAnswerCell.swift in Sources */,
 				96781BC3266664020033134D /* SetRequest.swift in Sources */,
-				96781C09266664030033134D /* TestProgressView.swift in Sources */,
 				96781C2B266664030033134D /* CourseDetailsTestCell.swift in Sources */,
 				967381FE26793C0C00230FB6 /* PaygateOptionView.swift in Sources */,
 				96F92A5C2692086B006331D7 /* OPreloaderCell.swift in Sources */,
-				96781C1D266664030033134D /* TestStatsCellType.swift in Sources */,
 				96781BF2266664020033134D /* CourseViewController.swift in Sources */,
+				DED1CFEC2866EA9000E70292 /* TestViewController.swift in Sources */,
 				96781B76266664010033134D /* NursingNavigationControllerSettings.swift in Sources */,
 				96F92A732692086B006331D7 /* OSlideWhenTakingView.swift in Sources */,
 				96F92A602692086B006331D7 /* WelcomeSlideIndicatorView.swift in Sources */,
 				96781BC4266664020033134D /* ProfileMediatorDelegate.swift in Sources */,
 				96F92A782692086B006331D7 /* OnboardingViewModel.swift in Sources */,
 				96781BE0266664020033134D /* SplashView.swift in Sources */,
-				96781BA2266664020033134D /* RemoveSavedQuestionRequest.swift in Sources */,
 				967380942677972900230FB6 /* FlashcardsTopicsViewController.swift in Sources */,
 				DEADEB05283634CA0057AA44 /* XORRequestWrapper.swift in Sources */,
-				96781C1A266664030033134D /* TestStatsComunityResult.swift in Sources */,
+				DED1D05D2866EB8A00E70292 /* PhotoViewController.swift in Sources */,
+				DED1D0522866EAD000E70292 /* SendAnswerRequest.swift in Sources */,
 				DEADEB0A283637A90057AA44 /* SSlideView.swift in Sources */,
-				96781C0B266664030033134D /* AVPlayerView.swift in Sources */,
+				DED1CFE52866EA9000E70292 /* TestViewModel.swift in Sources */,
 				966FDFF02693141800B8FC20 /* StatsShareManager.swift in Sources */,
-				96781BAB266664020033134D /* GetSavedAndIncorrectResponseMapper.swift in Sources */,
-				96781BF9266664020033134D /* QuestionCell.swift in Sources */,
-				96781BA9266664020033134D /* GetIncorrectRequest.swift in Sources */,
 				96781BC5266664020033134D /* ProfileMediator.swift in Sources */,
 				96781BE1266664020033134D /* StudyViewModel.swift in Sources */,
 				96781BE7266664020033134D /* SCBriefDayView.swift in Sources */,
 				865FEC5A26679C1C009D7A4E /* TimedExamViewController.swift in Sources */,
-				96781C23266664030033134D /* TestStatsTableView.swift in Sources */,
-				96781C24266664030033134D /* TestStatsResultView.swift in Sources */,
 				96781BCA266664020033134D /* GetStatsResponseMapper.swift in Sources */,
 				96781BCD266664020033134D /* StatsManager.swift in Sources */,
+				DED1D0462866EAD000E70292 /* GetRandomSetRequest.swift in Sources */,
+				DED1D0562866EAD000E70292 /* QuestionMediator.swift in Sources */,
+				DED1D00E2866EA9000E70292 /* TestStatsResultView.swift in Sources */,
+				DED1D03F2866EAD000E70292 /* Test.swift in Sources */,
+				DED1D01C2866EA9000E70292 /* SITestBottomView.swift in Sources */,
+				DED1D04E2866EAD000E70292 /* AgainTestRequest.swift in Sources */,
 				96781BBA266664020033134D /* Country.swift in Sources */,
 				96781BC1266664020033134D /* GetCountriesRequest.swift in Sources */,
+				DED1D03E2866EAD000E70292 /* TestConfig.swift in Sources */,
+				DED1D0422866EAD000E70292 /* Answer.swift in Sources */,
 				96781C27266664030033134D /* CourseDetailsViewController.swift in Sources */,
-				967380812677933600230FB6 /* CourseConfig.swift in Sources */,
+				DED1CFFA2866EA9000E70292 /* QuestionContentCollectionView.swift in Sources */,
 				96F92A7C26920D45006331D7 /* GetTestModeRequest.swift in Sources */,
 				96781B65266664010033134D /* UIColorExtension.swift in Sources */,
 				96781B6D266664010033134D /* TextAttributes.swift in Sources */,
-				96781BB0266664020033134D /* QuestionManagerDelagate.swift in Sources */,
+				DED1CFF82866EA9000E70292 /* QuestionContentCollectionType.swift in Sources */,
 				96F92A542692086B006331D7 /* LocaleLanguageView.swift in Sources */,
 				96781BC6266664020033134D /* Brief.swift in Sources */,
+				DED1CFF72866EA9000E70292 /* AVPlayerView.swift in Sources */,
 				96781BE3266664020033134D /* SCTitleCell.swift in Sources */,
+				DED1D0072866EA9000E70292 /* TestStatsCellType.swift in Sources */,
 				96F92A502692086B006331D7 /* OSlider.swift in Sources */,
 				96781B7B266664010033134D /* PaddingPickerView.swift in Sources */,
+				DED1CFED2866EA9000E70292 /* QuestionTableAnswersCell.swift in Sources */,
 				9673809A2677972900230FB6 /* FlashcardsViewModel.swift in Sources */,
 				96781C42266664030033134D /* TrophyCell.swift in Sources */,
-				96781C2F266664030033134D /* SIQuestionCell.swift in Sources */,
 				96781B69266664010033134D /* UIEdgeInsets+Extension.swift in Sources */,
 				96781BCB266664020033134D /* GetStatsRequest.swift in Sources */,
+				DED1D0492866EAD000E70292 /* GetTestRequest.swift in Sources */,
 				967380992677972900230FB6 /* FlashCardModel.swift in Sources */,
+				DED1CFEA2866EA9000E70292 /* TestFinishElement.swift in Sources */,
 				96781BE9266664020033134D /* StudyCollectionElement.swift in Sources */,
-				96781C1B266664030033134D /* TestStatsProgressElement.swift in Sources */,
-				96781C32266664030033134D /* SITestType.swift in Sources */,
+				DED1D0182866EA9000E70292 /* SITestElement.swift in Sources */,
 				96F92A6E2692086B006331D7 /* OSlideGoalsView.swift in Sources */,
 				96781BD7266664020033134D /* STLinksCell.swift in Sources */,
-				96781BA4266664020033134D /* GetSavedRequest.swift in Sources */,
 				96781B81266664010033134D /* ColorsPalette.swift in Sources */,
 				96781BD2266664020033134D /* SettingsViewModel.swift in Sources */,
 				96781BD1266664020033134D /* SettingsView.swift in Sources */,
-				96781B9D266664020033134D /* GetTestConfigResponseMapper.swift in Sources */,
 				96F92A6B2692086B006331D7 /* OPushView.swift in Sources */,
-				96781BA0266664020033134D /* GetFailedSetRequest.swift in Sources */,
 				967381E826793BFC00230FB6 /* PaygateMainOffer.swift in Sources */,
+				DED1D04C2866EAD000E70292 /* AnswerMapper.swift in Sources */,
+				DED1D04F2866EAD000E70292 /* GetTestConfigResponseMapper.swift in Sources */,
 				96F92A632692086B006331D7 /* CountCircleView.swift in Sources */,
+				DED1D0552866EAD000E70292 /* QuestionManager.swift in Sources */,
 				96781BD9266664020033134D /* STUnlockCell.swift in Sources */,
-				96781BF7266664020033134D /* QuestionContentCell.swift in Sources */,
+				DED1D0452866EAD000E70292 /* GetFailedSetRequest.swift in Sources */,
+				DED1D0042866EA9000E70292 /* TestStatsComunityResult.swift in Sources */,
 				96781B6F266664010033134D /* Fonts.swift in Sources */,
 				96781BE4266664020033134D /* SCCoursesCell.swift in Sources */,
+				DED1D0152866EA9000E70292 /* SITestViewController.swift in Sources */,
 				96F92A522692086B006331D7 /* LocaleTableView.swift in Sources */,
 				96781C41266664030033134D /* CourseProgressCell.swift in Sources */,
 				967381E926793BFC00230FB6 /* PaygateSpecialOffer.swift in Sources */,
 				96781BB5266664020033134D /* CoursesManager.swift in Sources */,
 				96781B7D266664010033134D /* CircleView.swift in Sources */,
+				DED1D01A2866EA9000E70292 /* SIProgressCollectionView.swift in Sources */,
+				DED1D04B2866EAD000E70292 /* GetIncorrectRequest.swift in Sources */,
+				DED1D0022866EA9000E70292 /* TestStatsResultCell.swift in Sources */,
 				96781C40266664030033134D /* StatsView.swift in Sources */,
+				DED1CFEE2866EA9000E70292 /* AnswerView.swift in Sources */,
+				DED1D0122866EA9000E70292 /* SITestView.swift in Sources */,
 				DE93781027BA74AC0073F27C /* XOREncryption.swift in Sources */,
-				96781C15266664030033134D /* TestStatsProgressCell.swift in Sources */,
+				DED1D0162866EA9000E70292 /* SITestTableView.swift in Sources */,
 				96781B85266664010033134D /* RateManager.swift in Sources */,
+				DED1D0602866EB9700E70292 /* ImageScrollView.swift in Sources */,
 				96781BE6266664020033134D /* SCModesCell.swift in Sources */,
-				96781BA1266664020033134D /* GetRandomSetRequest.swift in Sources */,
+				DED1D0082866EA9000E70292 /* TestStatsDescriptionElement.swift in Sources */,
 				96F92A742692086B006331D7 /* OSlideMinutesAtTimeView.swift in Sources */,
 				96781C3C266664030033134D /* StatsViewController.swift in Sources */,
 				DEADEB1C28364C1F0057AA44 /* ContentError.swift in Sources */,
 				96781BDF266664020033134D /* SplashViewModel.swift in Sources */,
+				DED1CFFC2866EA9000E70292 /* TestBottomSpinner.swift in Sources */,
+				DED1CFF52866EA9000E70292 /* QuestionTableView.swift in Sources */,
 				96F92A712692086B006331D7 /* OSlideCountView.swift in Sources */,
-				96781BA6266664020033134D /* GetTestRequest.swift in Sources */,
-				96781C31266664030033134D /* SITestProgressCollectionCell.swift in Sources */,
 				967381E126793BFC00230FB6 /* MonetizationManager.swift in Sources */,
 				967380962677972900230FB6 /* FlashcardsTopicsTableView.swift in Sources */,
 				DEADEB03283634B60057AA44 /* DefaultRequestWrapper.swift in Sources */,
-				96781B9E266664020033134D /* SendAnswerResponseMapper.swift in Sources */,
 				967381E226793BFC00230FB6 /* PaygateMapper.swift in Sources */,
+				DED1CFF32866EA9000E70292 /* QuestionTableContentCell.swift in Sources */,
 				967380952677972900230FB6 /* FlashcardsTopicsViewModel.swift in Sources */,
 				96F92A582692086B006331D7 /* OModeCell.swift in Sources */,
-				96781BFD266664030033134D /* TestBottomButtonState.swift in Sources */,
 				96781C29266664030033134D /* CourseDetailsTableElement.swift in Sources */,
 				96F92A692692086B006331D7 /* OGoalCell.swift in Sources */,
 				96F92A6F2692086B006331D7 /* OSlidePreloaderView.swift in Sources */,
-				96781C05266664030033134D /* TestViewController.swift in Sources */,
-				96781B9A266664020033134D /* Test.swift in Sources */,
-				96781C30266664030033134D /* SIAnswerCell.swift in Sources */,
+				DED1D00F2866EA9000E70292 /* TestStatsFilterView.swift in Sources */,
+				DED1D0012866EA9000E70292 /* TestStatsAnswerCell.swift in Sources */,
 				96781C28266664030033134D /* CourseDetailsView.swift in Sources */,
 				96781BC2266664020033134D /* GetCountriesResponseMapper.swift in Sources */,
 				967381E426793BFC00230FB6 /* PaygateOption.swift in Sources */,
@@ -2617,40 +2767,34 @@
 				96781C2C266664030033134D /* CourseDetailsTabelView.swift in Sources */,
 				96781C3E266664030033134D /* MainStatsElement.swift in Sources */,
 				96781B96266664020033134D /* GetTestStatsResponseMapper.swift in Sources */,
+				DED1CFE42866EA9000E70292 /* TestCoordinator.swift in Sources */,
 				967381E026793BFC00230FB6 /* PaygateManager.swift in Sources */,
 				967380B82677973500230FB6 /* GetFlashcardsTopicsResponseMapper.swift in Sources */,
-				96781BA3266664020033134D /* GetQotdRequest.swift in Sources */,
 				96155B6E2689A8E300228151 /* CoursesMediator.swift in Sources */,
 				96781B78266664010033134D /* ProgressView.swift in Sources */,
 				967381FD26793C0C00230FB6 /* PaygateMainInfoCell.swift in Sources */,
 				865FEC5B26679C1C009D7A4E /* TimedExamView.swift in Sources */,
 				96F92A702692086B006331D7 /* OSlidePlanView.swift in Sources */,
 				96781BBF266664020033134D /* GetLocaleResponseMapper.swift in Sources */,
-				96781C2E266664030033134D /* SITestView.swift in Sources */,
-				96781C06266664030033134D /* QuestionTableView.swift in Sources */,
-				96781BA5266664020033134D /* SendAnswerRequest.swift in Sources */,
+				DED1CFF22866EA9000E70292 /* QuestionTableExplanationTitleCell.swift in Sources */,
 				96781C48266664030033134D /* MainStatsDescriptionView.swift in Sources */,
 				967381F826793C0C00230FB6 /* PaygateViewModel.swift in Sources */,
+				DED1CFFB2866EA9000E70292 /* TestProgressView.swift in Sources */,
 				9673809B2677972900230FB6 /* FlashCardView.swift in Sources */,
 				96781BF4266664020033134D /* CourseViewCoordinator.swift in Sources */,
+				DED1CFE72866EA9000E70292 /* TestCloseObserver.swift in Sources */,
 				96781BEC266664020033134D /* CourseCellProgressView.swift in Sources */,
-				96781C03266664030033134D /* TestElement.swift in Sources */,
-				96781C14266664030033134D /* TestStatsViewController.swift in Sources */,
 				DE3449FC2771DC1600632F72 /* STChangeModeView.swift in Sources */,
 				96F92A512692086B006331D7 /* LocaleTableViewCell.swift in Sources */,
 				96781BDA266664020033134D /* STChangeLocaleView.swift in Sources */,
 				DEADEB1A28364AA60057AA44 /* SplashSDKInitialize.swift in Sources */,
 				96781BD6266664020033134D /* STLocaleCell.swift in Sources */,
 				96781B83266664010033134D /* UIViewRxExtension.swift in Sources */,
-				96781C1F266664030033134D /* TestStatsFilter.swift in Sources */,
 				96781B6B266664010033134D /* GlobalDefinitions.swift in Sources */,
-				96781C02266664030033134D /* QuestionContentType.swift in Sources */,
 				96781BF3266664020033134D /* CourseView.swift in Sources */,
 				96F92A8026920D82006331D7 /* TestMode.swift in Sources */,
 				96781B66266664010033134D /* Collection+Extension.swift in Sources */,
-				96781C34266664030033134D /* SITestCellType.swift in Sources */,
 				96F92A772692086B006331D7 /* OnboardingView.swift in Sources */,
-				96781B9B266664020033134D /* SITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2687,7 +2831,7 @@
 				CODE_SIGN_ENTITLEMENTS = StatsWidgetsExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 33;
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = StatsWidgets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -2696,7 +2840,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.10.2;
+				MARKETING_VERSION = 1.11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv.stats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV StatsWidgets AppStore Profile";
@@ -2714,7 +2858,7 @@
 				CODE_SIGN_ENTITLEMENTS = StatsWidgetsExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 33;
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = StatsWidgets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -2723,7 +2867,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.10.2;
+				MARKETING_VERSION = 1.11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv.stats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV StatsWidgets AppStore Profile";
@@ -2859,7 +3003,7 @@
 				CODE_SIGN_ENTITLEMENTS = DMV/DMV.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 33;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = "$(SRCROOT)/DMV/Resource/Info.plist";
@@ -2868,7 +3012,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.10.2;
+				MARKETING_VERSION = 1.11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV AppStore Profile";
@@ -2888,7 +3032,7 @@
 				CODE_SIGN_ENTITLEMENTS = DMV/DMV.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 33;
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = "$(SRCROOT)/DMV/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -2896,7 +3040,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.10.2;
+				MARKETING_VERSION = 1.11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV AppStore Profile";
