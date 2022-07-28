@@ -39,7 +39,7 @@ extension CoursesManagerCore {
 // MARK: API(Rx)
 extension CoursesManagerCore {
     func retrieveCourses() -> Single<[Course]> {
-        guard let userToken = SessionManagerCore().getSession()?.userToken else {
+        guard let userToken = SessionManager().getSession()?.userToken else {
             return .deferred { .just([]) }
         }
         

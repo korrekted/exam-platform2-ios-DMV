@@ -41,4 +41,7 @@ protocol ProfileManager {
                    state: String?,
                    language: String?,
                    testMode: Int?) -> Single<Void>
+    
+    func syncTokens(oldToken: String, newToken: String) -> Single<Void>
+    func login(userToken: String) -> Single<Void>
 }

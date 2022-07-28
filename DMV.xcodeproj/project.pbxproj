@@ -147,7 +147,6 @@
 		96781BCC266664020033134D /* StatsManagerCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A90266664000033134D /* StatsManagerCore.swift */; };
 		96781BCD266664020033134D /* StatsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A91266664000033134D /* StatsManager.swift */; };
 		96781BCE266664020033134D /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A94266664000033134D /* Session.swift */; };
-		96781BCF266664020033134D /* SessionManagerCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A96266664000033134D /* SessionManagerCore.swift */; };
 		96781BD0266664020033134D /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A97266664000033134D /* SessionManager.swift */; };
 		96781BD1266664020033134D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A9A266664000033134D /* SettingsView.swift */; };
 		96781BD2266664020033134D /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A9B266664000033134D /* SettingsViewModel.swift */; };
@@ -260,6 +259,20 @@
 		96F92A8026920D82006331D7 /* TestMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F92A7F26920D82006331D7 /* TestMode.swift */; };
 		DE3449FA2771D96600632F72 /* STModeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3449F92771D96600632F72 /* STModeCell.swift */; };
 		DE3449FC2771DC1600632F72 /* STChangeModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3449FB2771DC1600632F72 /* STChangeModeView.swift */; };
+		DE6836B82892D1E500FAEF96 /* BranchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836B72892D1E500FAEF96 /* BranchManager.swift */; };
+		DE6836BA2892D1EE00FAEF96 /* AmplitudeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836B92892D1EE00FAEF96 /* AmplitudeManager.swift */; };
+		DE6836BC2892D1F700FAEF96 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836BB2892D1F700FAEF96 /* FirebaseManager.swift */; };
+		DE6836BE2892D20600FAEF96 /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836BD2892D20600FAEF96 /* FacebookManager.swift */; };
+		DE6836C02892D2A200FAEF96 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836BF2892D2A200FAEF96 /* LoginRequest.swift */; };
+		DE6836C22892D2B200FAEF96 /* SyncTokensRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836C12892D2B200FAEF96 /* SyncTokensRequest.swift */; };
+		DE6836C52892D2F200FAEF96 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836C42892D2F200FAEF96 /* IAPManager.swift */; };
+		DE6836C72892D2FB00FAEF96 /* PurchaseValidationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836C62892D2FB00FAEF96 /* PurchaseValidationObserver.swift */; };
+		DE6836CA2892D31500FAEF96 /* IAPActionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836C92892D31500FAEF96 /* IAPActionResult.swift */; };
+		DE6836CC2892D33000FAEF96 /* IAPProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836CB2892D33000FAEF96 /* IAPProduct.swift */; };
+		DE6836CF2892D34F00FAEF96 /* IAPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836CE2892D34F00FAEF96 /* IAPError.swift */; };
+		DE6836D12892D35D00FAEF96 /* IAPErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836D02892D35D00FAEF96 /* IAPErrorHelper.swift */; };
+		DE6836D32892D74400FAEF96 /* SplashReceiptValidationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836D22892D74400FAEF96 /* SplashReceiptValidationObserver.swift */; };
+		DE6836D52892D7FF00FAEF96 /* PaygateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836D42892D7FF00FAEF96 /* PaygateInteractor.swift */; };
 		DE93780E27BA74940073F27C /* RestApiTransportExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE93780D27BA74940073F27C /* RestApiTransportExtension.swift */; };
 		DE93781027BA74AC0073F27C /* XOREncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE93780F27BA74AC0073F27C /* XOREncryption.swift */; };
 		DEADEB03283634B60057AA44 /* DefaultRequestWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB02283634B60057AA44 /* DefaultRequestWrapper.swift */; };
@@ -531,7 +544,6 @@
 		96781A90266664000033134D /* StatsManagerCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsManagerCore.swift; sourceTree = "<group>"; };
 		96781A91266664000033134D /* StatsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsManager.swift; sourceTree = "<group>"; };
 		96781A94266664000033134D /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		96781A96266664000033134D /* SessionManagerCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManagerCore.swift; sourceTree = "<group>"; };
 		96781A97266664000033134D /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		96781A9A266664000033134D /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		96781A9B266664000033134D /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
@@ -649,6 +661,20 @@
 		DE3449F92771D96600632F72 /* STModeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STModeCell.swift; sourceTree = "<group>"; };
 		DE3449FB2771DC1600632F72 /* STChangeModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STChangeModeView.swift; sourceTree = "<group>"; };
 		DE344A022771F8B700632F72 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DE6836B72892D1E500FAEF96 /* BranchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchManager.swift; sourceTree = "<group>"; };
+		DE6836B92892D1EE00FAEF96 /* AmplitudeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplitudeManager.swift; sourceTree = "<group>"; };
+		DE6836BB2892D1F700FAEF96 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		DE6836BD2892D20600FAEF96 /* FacebookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookManager.swift; sourceTree = "<group>"; };
+		DE6836BF2892D2A200FAEF96 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		DE6836C12892D2B200FAEF96 /* SyncTokensRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncTokensRequest.swift; sourceTree = "<group>"; };
+		DE6836C42892D2F200FAEF96 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
+		DE6836C62892D2FB00FAEF96 /* PurchaseValidationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseValidationObserver.swift; sourceTree = "<group>"; };
+		DE6836C92892D31500FAEF96 /* IAPActionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPActionResult.swift; sourceTree = "<group>"; };
+		DE6836CB2892D33000FAEF96 /* IAPProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPProduct.swift; sourceTree = "<group>"; };
+		DE6836CE2892D34F00FAEF96 /* IAPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPError.swift; sourceTree = "<group>"; };
+		DE6836D02892D35D00FAEF96 /* IAPErrorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPErrorHelper.swift; sourceTree = "<group>"; };
+		DE6836D22892D74400FAEF96 /* SplashReceiptValidationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashReceiptValidationObserver.swift; sourceTree = "<group>"; };
+		DE6836D42892D7FF00FAEF96 /* PaygateInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaygateInteractor.swift; sourceTree = "<group>"; };
 		DE93780D27BA74940073F27C /* RestApiTransportExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiTransportExtension.swift; sourceTree = "<group>"; };
 		DE93780F27BA74AC0073F27C /* XOREncryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XOREncryption.swift; sourceTree = "<group>"; };
 		DEADEB02283634B60057AA44 /* DefaultRequestWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRequestWrapper.swift; sourceTree = "<group>"; };
@@ -1034,11 +1060,12 @@
 		967381EE26793C0C00230FB6 /* Paygate */ = {
 			isa = PBXGroup;
 			children = (
+				967381F326793C0C00230FB6 /* Views */,
 				967381EF26793C0C00230FB6 /* PaygateViewModel.swift */,
 				967381F026793C0C00230FB6 /* PaygateViewControllerDelegate.swift */,
 				967381F126793C0C00230FB6 /* PaygateView.swift */,
 				967381F226793C0C00230FB6 /* PaygateViewController.swift */,
-				967381F326793C0C00230FB6 /* Views */,
+				DE6836D42892D7FF00FAEF96 /* PaygateInteractor.swift */,
 			);
 			path = Paygate;
 			sourceTree = "<group>";
@@ -1112,6 +1139,7 @@
 		96781A03266663FF0033134D /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				DE6836B62892D1D600FAEF96 /* Analytics */,
 				96781A27266664000033134D /* Rx */,
 				96781A04266663FF0033134D /* Extension */,
 				96781A0C266664000033134D /* Utils */,
@@ -1214,6 +1242,7 @@
 		96781A2A266664000033134D /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				DE6836C32892D2DD00FAEF96 /* Purchase */,
 				DED1D01E2866EAD000E70292 /* Questions */,
 				967381CE26793BFC00230FB6 /* Paygate */,
 				9673809E2677973500230FB6 /* Flashcards */,
@@ -1348,6 +1377,8 @@
 				96781A7C266664000033134D /* GetLocale */,
 				96781A7F266664000033134D /* GetCountries */,
 				96781A82266664000033134D /* SetRequest.swift */,
+				DE6836BF2892D2A200FAEF96 /* LoginRequest.swift */,
+				DE6836C12892D2B200FAEF96 /* SyncTokensRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -1439,7 +1470,6 @@
 		96781A95266664000033134D /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				96781A96266664000033134D /* SessionManagerCore.swift */,
 				96781A97266664000033134D /* SessionManager.swift */,
 			);
 			path = Manager;
@@ -1907,6 +1937,46 @@
 			path = GetTestMode;
 			sourceTree = "<group>";
 		};
+		DE6836B62892D1D600FAEF96 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				DE6836B72892D1E500FAEF96 /* BranchManager.swift */,
+				DE6836B92892D1EE00FAEF96 /* AmplitudeManager.swift */,
+				DE6836BB2892D1F700FAEF96 /* FirebaseManager.swift */,
+				DE6836BD2892D20600FAEF96 /* FacebookManager.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		DE6836C32892D2DD00FAEF96 /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				DE6836CD2892D34900FAEF96 /* Error */,
+				DE6836C82892D30F00FAEF96 /* Model */,
+				DE6836C42892D2F200FAEF96 /* IAPManager.swift */,
+				DE6836C62892D2FB00FAEF96 /* PurchaseValidationObserver.swift */,
+			);
+			path = Purchase;
+			sourceTree = "<group>";
+		};
+		DE6836C82892D30F00FAEF96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE6836C92892D31500FAEF96 /* IAPActionResult.swift */,
+				DE6836CB2892D33000FAEF96 /* IAPProduct.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE6836CD2892D34900FAEF96 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				DE6836CE2892D34F00FAEF96 /* IAPError.swift */,
+				DE6836D02892D35D00FAEF96 /* IAPErrorHelper.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
 		DEADEB01283634AC0057AA44 /* RequestWrapper */ = {
 			isa = PBXGroup;
 			children = (
@@ -1938,6 +2008,7 @@
 			children = (
 				DEADEB1728364A990057AA44 /* SplashActivity.swift */,
 				DEADEB1928364AA60057AA44 /* SplashSDKInitialize.swift */,
+				DE6836D22892D74400FAEF96 /* SplashReceiptValidationObserver.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -2517,6 +2588,7 @@
 				96781B80266664010033134D /* AppDelegate.swift in Sources */,
 				96F92A592692086B006331D7 /* OModesCollectionView.swift in Sources */,
 				96781BDD266664020033134D /* SettingsViewController.swift in Sources */,
+				DE6836BA2892D1EE00FAEF96 /* AmplitudeManager.swift in Sources */,
 				96F92A752692086B006331D7 /* OSlideLocaleView.swift in Sources */,
 				DED1D0502866EAD000E70292 /* GetTestConfigRequest.swift in Sources */,
 				96781C44266664030033134D /* StatsTableView.swift in Sources */,
@@ -2526,15 +2598,18 @@
 				96781BCC266664020033134D /* StatsManagerCore.swift in Sources */,
 				96781B6C266664010033134D /* Scalable.swift in Sources */,
 				96781B98266664020033134D /* TestStatsManager.swift in Sources */,
+				DE6836D12892D35D00FAEF96 /* IAPErrorHelper.swift in Sources */,
 				96781B72266664010033134D /* ImagePicker.swift in Sources */,
 				DEADEB152836492A0057AA44 /* TryAgainView.swift in Sources */,
 				96781C3B266664030033134D /* StatsViewModel.swift in Sources */,
 				96781BEA266664020033134D /* StudyCollectionView.swift in Sources */,
+				DE6836CA2892D31500FAEF96 /* IAPActionResult.swift in Sources */,
 				DED1CFE92866EA9000E70292 /* TestAnalytics.swift in Sources */,
 				DED1D0542866EAD000E70292 /* SaveQuestionRequest.swift in Sources */,
 				96F92A5E2692086B006331D7 /* MinutesAtTimeElement.swift in Sources */,
 				96781B97266664020033134D /* TestStatsManagerCore.swift in Sources */,
 				DEADEB0C283648490057AA44 /* Spinner.swift in Sources */,
+				DE6836CF2892D34F00FAEF96 /* IAPError.swift in Sources */,
 				96F92A562692086B006331D7 /* LocaleCountryView.swift in Sources */,
 				96781BF0266664020033134D /* CourseFlowLayout.swift in Sources */,
 				DED1D01B2866EA9000E70292 /* SITestProgressCollectionCell.swift in Sources */,
@@ -2548,6 +2623,7 @@
 				96781BE8266664020033134D /* SCBriefDaysView.swift in Sources */,
 				DEADEB10283648EF0057AA44 /* ObservableRetrySingle.swift in Sources */,
 				DED1D01D2866EA9000E70292 /* SITestViewModel.swift in Sources */,
+				DE6836D52892D7FF00FAEF96 /* PaygateInteractor.swift in Sources */,
 				96F92A5F2692086B006331D7 /* WelcomeSlide1View.swift in Sources */,
 				967380B62677973500230FB6 /* GetFlashcardsResponseMapper.swift in Sources */,
 				967381E526793BFC00230FB6 /* MonetizationConfig.swift in Sources */,
@@ -2579,6 +2655,7 @@
 				96781C47266664030033134D /* CourseProgressView.swift in Sources */,
 				96781C2D266664030033134D /* GradientProgressView.swift in Sources */,
 				DED1CFF12866EA9000E70292 /* QuestionTableQuestionCell.swift in Sources */,
+				DE6836C72892D2FB00FAEF96 /* PurchaseValidationObserver.swift in Sources */,
 				96781BC9266664020033134D /* GetBriefResponseMapper.swift in Sources */,
 				967380B22677973500230FB6 /* FlashCardManagerMediator.swift in Sources */,
 				DED1CFFF2866EA9000E70292 /* TestStatsProgressCell.swift in Sources */,
@@ -2586,10 +2663,13 @@
 				DED1D0432866EAD000E70292 /* RemoveSavedQuestionRequest.swift in Sources */,
 				963090052692FE59000D5A1F /* OExperienceCell.swift in Sources */,
 				96781BEF266664020033134D /* CourseCollectionView.swift in Sources */,
+				DE6836D32892D74400FAEF96 /* SplashReceiptValidationObserver.swift in Sources */,
 				967381EB26793BFC00230FB6 /* GetMonetizationConfigRequest.swift in Sources */,
 				DED1D0032866EA9000E70292 /* TestStatsFilterCell.swift in Sources */,
 				96781BD0266664020033134D /* SessionManager.swift in Sources */,
+				DE6836B82892D1E500FAEF96 /* BranchManager.swift in Sources */,
 				96781BED266664020033134D /* CourseCell.swift in Sources */,
+				DE6836C02892D2A200FAEF96 /* LoginRequest.swift in Sources */,
 				96F92A622692086B006331D7 /* WelcomeSlide2View.swift in Sources */,
 				967380972677972900230FB6 /* FlashcardsTopicsTableCell.swift in Sources */,
 				DED1D00C2866EA9000E70292 /* TestStatsProgressView.swift in Sources */,
@@ -2602,7 +2682,6 @@
 				96781B77266664010033134D /* TapAreaButton.swift in Sources */,
 				865FEC5F2667A4E3009D7A4E /* BottomSheetAnimation.swift in Sources */,
 				DED1D0052866EA9000E70292 /* TestStatsProgressElement.swift in Sources */,
-				96781BCF266664020033134D /* SessionManagerCore.swift in Sources */,
 				96781B67266664010033134D /* UITapGestureRecognizerExtension.swift in Sources */,
 				DED1D0402866EAD000E70292 /* CourseConfig.swift in Sources */,
 				DEADEB0E283648DE0057AA44 /* NumberLaunches.swift in Sources */,
@@ -2659,8 +2738,10 @@
 				96F92A732692086B006331D7 /* OSlideWhenTakingView.swift in Sources */,
 				96F92A602692086B006331D7 /* WelcomeSlideIndicatorView.swift in Sources */,
 				96781BC4266664020033134D /* ProfileMediatorDelegate.swift in Sources */,
+				DE6836BE2892D20600FAEF96 /* FacebookManager.swift in Sources */,
 				96F92A782692086B006331D7 /* OnboardingViewModel.swift in Sources */,
 				96781BE0266664020033134D /* SplashView.swift in Sources */,
+				DE6836CC2892D33000FAEF96 /* IAPProduct.swift in Sources */,
 				967380942677972900230FB6 /* FlashcardsTopicsViewController.swift in Sources */,
 				DEADEB05283634CA0057AA44 /* XORRequestWrapper.swift in Sources */,
 				DED1D05D2866EB8A00E70292 /* PhotoViewController.swift in Sources */,
@@ -2677,6 +2758,7 @@
 				DED1D0462866EAD000E70292 /* GetRandomSetRequest.swift in Sources */,
 				DED1D0562866EAD000E70292 /* QuestionMediator.swift in Sources */,
 				DED1D00E2866EA9000E70292 /* TestStatsResultView.swift in Sources */,
+				DE6836BC2892D1F700FAEF96 /* FirebaseManager.swift in Sources */,
 				DED1D03F2866EAD000E70292 /* Test.swift in Sources */,
 				DED1D01C2866EA9000E70292 /* SITestBottomView.swift in Sources */,
 				DED1D04E2866EAD000E70292 /* AgainTestRequest.swift in Sources */,
@@ -2767,12 +2849,14 @@
 				96781C2C266664030033134D /* CourseDetailsTabelView.swift in Sources */,
 				96781C3E266664030033134D /* MainStatsElement.swift in Sources */,
 				96781B96266664020033134D /* GetTestStatsResponseMapper.swift in Sources */,
+				DE6836C52892D2F200FAEF96 /* IAPManager.swift in Sources */,
 				DED1CFE42866EA9000E70292 /* TestCoordinator.swift in Sources */,
 				967381E026793BFC00230FB6 /* PaygateManager.swift in Sources */,
 				967380B82677973500230FB6 /* GetFlashcardsTopicsResponseMapper.swift in Sources */,
 				96155B6E2689A8E300228151 /* CoursesMediator.swift in Sources */,
 				96781B78266664010033134D /* ProgressView.swift in Sources */,
 				967381FD26793C0C00230FB6 /* PaygateMainInfoCell.swift in Sources */,
+				DE6836C22892D2B200FAEF96 /* SyncTokensRequest.swift in Sources */,
 				865FEC5B26679C1C009D7A4E /* TimedExamView.swift in Sources */,
 				96F92A702692086B006331D7 /* OSlidePlanView.swift in Sources */,
 				96781BBF266664020033134D /* GetLocaleResponseMapper.swift in Sources */,
@@ -2831,7 +2915,7 @@
 				CODE_SIGN_ENTITLEMENTS = StatsWidgetsExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 34;
+				CURRENT_PROJECT_VERSION = 35;
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = StatsWidgets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -2840,7 +2924,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.11.1;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv.stats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV StatsWidgets AppStore Profile";
@@ -2858,7 +2942,7 @@
 				CODE_SIGN_ENTITLEMENTS = StatsWidgetsExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 34;
+				CURRENT_PROJECT_VERSION = 35;
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = StatsWidgets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -2867,7 +2951,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.11.1;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv.stats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV StatsWidgets AppStore Profile";
@@ -3003,16 +3087,16 @@
 				CODE_SIGN_ENTITLEMENTS = DMV/DMV.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 34;
+				CURRENT_PROJECT_VERSION = 35;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = "$(SRCROOT)/DMV/Resource/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.11.1;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV AppStore Profile";
@@ -3032,15 +3116,15 @@
 				CODE_SIGN_ENTITLEMENTS = DMV/DMV.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 34;
+				CURRENT_PROJECT_VERSION = 35;
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = "$(SRCROOT)/DMV/Resource/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.11.1;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV AppStore Profile";

@@ -72,7 +72,7 @@ extension ProfileManagerCore {
 // MARK: Profile locale
 extension ProfileManagerCore {
     func obtainProfileLocale() -> Single<ProfileLocale?> {
-        guard let userToken = SessionManagerCore().getSession()?.userToken else {
+        guard let userToken = SessionManager().getSession()?.userToken else {
             return .error(SignError.tokenNotFound)
         }
         
@@ -86,7 +86,7 @@ extension ProfileManagerCore {
     func set(country: String? = nil,
              state: String? = nil,
              language: String? = nil) -> Single<Void> {
-        guard let userToken = SessionManagerCore().getSession()?.userToken else {
+        guard let userToken = SessionManager().getSession()?.userToken else {
             return .error(SignError.tokenNotFound)
         }
 
@@ -116,7 +116,7 @@ extension ProfileManagerCore {
              testNumber: Int? = nil,
              testWhen: [Int]? = nil,
              notificationKey: String? = nil) -> Single<Void> {
-        guard let userToken = SessionManagerCore().getSession()?.userToken else {
+        guard let userToken = SessionManager().getSession()?.userToken else {
             return .error(SignError.tokenNotFound)
         }
         
@@ -145,7 +145,7 @@ extension ProfileManagerCore {
                    state: String?,
                    language: String?,
                    testMode: Int?) -> Single<Void> {
-        guard let userToken = SessionManagerCore().getSession()?.userToken else {
+        guard let userToken = SessionManager().getSession()?.userToken else {
             return .error(SignError.tokenNotFound)
         }
         
@@ -171,7 +171,7 @@ extension ProfileManagerCore {
 // MARK: Test Mode
 extension ProfileManagerCore {
     func set(testMode: Int) -> Single<Void> {
-        guard let userToken = SessionManagerCore().getSession()?.userToken else {
+        guard let userToken = SessionManager().getSession()?.userToken else {
             return .error(SignError.tokenNotFound)
         }
 
@@ -191,7 +191,7 @@ extension ProfileManagerCore {
     }
     
     func obtainTestMode() -> Single<TestMode?> {
-        guard let userToken = SessionManagerCore().getSession()?.userToken else {
+        guard let userToken = SessionManager().getSession()?.userToken else {
             return .error(SignError.tokenNotFound)
         }
         
@@ -200,5 +200,19 @@ extension ProfileManagerCore {
         return defaultRequestWrapper
             .callServerApi(requestBody: request)
             .map(GetTestModeResponseMapper.map(from:))
+    }
+    
+    func syncTokens(oldToken: String, newToken: String) -> Single<Void> {
+        let request = SyncTokensRequest(oldToken: oldToken, newToken: newToken)
+        
+        return defaultRequestWrapper
+            .callServerApi(requestBody: request)
+            .mapToVoid()
+    }
+    
+    func login(userToken: String) -> Single<Void> {
+        defaultRequestWrapper
+            .callServerApi(requestBody: LoginRequest(userToken: userToken))
+            .mapToVoid()
     }
 }

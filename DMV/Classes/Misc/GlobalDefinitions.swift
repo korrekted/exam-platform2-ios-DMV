@@ -12,6 +12,9 @@ final class GlobalDefinitions {
     static let sdkDomainUrl = "https://analytics.mapo.la"
     static let sdkApiKey = "EwLblJqhoJ6twG7n"
     
+    static let otterScaleHost = "https://api.korrekted.com "
+    static let otterScaleApiKey = "C3KMaaSZsOxegedN"
+    
     static let applicationTag = "PREP_DMV"
     
     static let amplitudeApiKey = "b503251969f4b1d7901d2f7d1388d476"

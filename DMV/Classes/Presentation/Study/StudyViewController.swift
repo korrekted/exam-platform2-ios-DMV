@@ -47,8 +47,7 @@ final class StudyViewController: UIViewController {
             .course
             .map { $0.name }
             .drive(onNext: { name in
-                SDKStorage.shared
-                    .amplitudeManager
+                AmplitudeManager.shared
                     .logEvent(name: "Study Screen", parameters: ["exam": name])
             })
             .disposed(by: disposeBag)
@@ -84,8 +83,7 @@ final class StudyViewController: UIViewController {
             .bind(to: Binder(self) { base, course in
                 base.openTest(types: [.get(testId: nil)], course: course)
                 
-                SDKStorage.shared
-                    .amplitudeManager
+                AmplitudeManager.shared
                     .logEvent(name: "Study Tap", parameters: ["what": "take a free test"])
             })
             .disposed(by: disposeBag)
@@ -94,8 +92,7 @@ final class StudyViewController: UIViewController {
             .bind(to: Binder(self) { base, _ in
                 base.openPaygate()
                 
-                SDKStorage.shared
-                    .amplitudeManager
+                AmplitudeManager.shared
                     .logEvent(name: "Study Tap", parameters: ["what": "unlock all questions"])
             })
             .disposed(by: disposeBag)
@@ -114,14 +111,14 @@ final class StudyViewController: UIViewController {
             .asSignal(onErrorSignalWith: .never())
             .emit(onNext: { [weak self] course in
                 self?.navigationController?.pushViewController(FlashcardsTopicsViewController.make(courseId: course.id), animated: true)
-                SDKStorage.shared.amplitudeManager.logEvent(name: "Study tap", parameters: ["what": "flashcards"])
+                AmplitudeManager.shared.logEvent(name: "Study tap", parameters: ["what": "flashcards"])
             })
             .disposed(by: disposeBag)
         
         mainView.collectionView.didTapTrophy
             .asSignal()
             .emit(onNext: {
-                UIApplication.shared.keyWindow?.rootViewController?.present(PaygateViewController.make(), animated: true)
+                UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.rootViewController?.present(PaygateViewController.make(), animated: true)
             })
             .disposed(by: disposeBag)
         
@@ -152,8 +149,7 @@ private extension StudyViewController {
     func settingsTapped() {
         navigationController?.pushViewController(SettingsViewController.make(), animated: true)
         
-        SDKStorage.shared
-            .amplitudeManager
+        AmplitudeManager.shared
             .logEvent(name: "Study Tap", parameters: ["what": "settings"])
     }
     
@@ -162,26 +158,22 @@ private extension StudyViewController {
         case .ten:
             openTest(types: [.tenSet], course: course)
             
-            SDKStorage.shared
-                .amplitudeManager
+            AmplitudeManager.shared
                 .logEvent(name: "Study Tap", parameters: ["what": "10 questions"])
         case .random:
             openTest(types: [.randomSet], course: course)
             
-            SDKStorage.shared
-                .amplitudeManager
+            AmplitudeManager.shared
                 .logEvent(name: "Study Tap", parameters: ["what": "random set"])
         case .missed:
             openTest(types: [.failedSet], course: course)
             
-            SDKStorage.shared
-                .amplitudeManager
+            AmplitudeManager.shared
                 .logEvent(name: "Study Tap", parameters: ["what": "missed questions"])
         case .today:
             openTest(types: [.qotd], course: course)
             
-            SDKStorage.shared
-                .amplitudeManager
+            AmplitudeManager.shared
                 .logEvent(name: "Study Tap", parameters: ["what": "question of the day"])
         case .time:
             let controller = TimedExamViewController.make() { [weak self] minutes in
@@ -189,7 +181,7 @@ private extension StudyViewController {
             }
             controller.modalPresentationStyle = .custom
             controller.transitioningDelegate = self
-            UIApplication.shared.keyWindow?.rootViewController?.present(controller, animated: true)
+            UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.rootViewController?.present(controller, animated: true)
         }
     }
     
@@ -203,7 +195,7 @@ private extension StudyViewController {
     }
     
     func openPaygate() {
-        UIApplication.shared.keyWindow?.rootViewController?.present(PaygateViewController.make(), animated: true)
+        UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.rootViewController?.present(PaygateViewController.make(), animated: true)
     }
     
     func openError() -> Observable<Void> {
