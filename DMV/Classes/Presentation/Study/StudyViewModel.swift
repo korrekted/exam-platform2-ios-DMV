@@ -36,35 +36,55 @@ final class StudyViewModel {
 // MARK: Private
 private extension StudyViewModel {
     func makeCurrentCourse() -> Observable<Course> {
+        func set(course: Course) -> Observable<Course> {
+            func source() -> Single<Void> {
+                profileManager
+                    .set(selectedCourse: course)
+            }
+            
+            func trigger(error: Error) -> Observable<Void> {
+                guard let tryAgain = self.tryAgain?(error) else {
+                    return .empty()
+                }
+                
+                return tryAgain
+            }
+            
+            return observableRetrySingle
+                .retry(source: { source() },
+                       trigger: { trigger(error: $0) })
+                .map { course }
+        }
+        
         let initial = profileManager
             .obtainSelectedCourse(forceUpdate: false)
+            .asObservable()
+            .flatMap { [weak self] selectedCourse -> Observable<Course> in
+                guard let self = self else {
+                    return .never()
+                }
+                
+                if let selectedCourse = selectedCourse {
+                    return .just(selectedCourse)
+                }
+                
+                return self.makeCourses()
+                    .map { $0.first }
+                    .flatMapLatest { course -> Observable<Course> in
+                        guard let course = course else {
+                            return .never()
+                        }
+                        
+                        return set(course: course)
+                    }
+            }
             .compactMap { $0 }
             .asObservable()
         
         let updated = selectedCourse
             .compactMap { $0 }
-            .flatMapLatest { [weak self] course -> Observable<Course> in
-                guard let self = self else {
-                    return .never()
-                }
-                
-                func source() -> Single<Void> {
-                    self.profileManager
-                        .set(selectedCourse: course)
-                }
-                
-                func trigger(error: Error) -> Observable<Void> {
-                    guard let tryAgain = self.tryAgain?(error) else {
-                        return .empty()
-                    }
-                    
-                    return tryAgain
-                }
-                
-                return self.observableRetrySingle
-                    .retry(source: { source() },
-                           trigger: { trigger(error: $0) })
-                    .map { course }
+            .flatMapLatest { course -> Observable<Course> in
+                set(course: course)
             }
         
         return Observable.merge(initial, updated)
