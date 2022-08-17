@@ -10,8 +10,6 @@
 		865FEC5A26679C1C009D7A4E /* TimedExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865FEC5726679C1C009D7A4E /* TimedExamViewController.swift */; };
 		865FEC5B26679C1C009D7A4E /* TimedExamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865FEC5826679C1C009D7A4E /* TimedExamView.swift */; };
 		865FEC5F2667A4E3009D7A4E /* BottomSheetAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865FEC5E2667A4E3009D7A4E /* BottomSheetAnimation.swift */; };
-		96155B6C2689A8AD00228151 /* CoursesMediatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96155B6B2689A8AD00228151 /* CoursesMediatorDelegate.swift */; };
-		96155B6E2689A8E300228151 /* CoursesMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96155B6D2689A8E300228151 /* CoursesMediator.swift */; };
 		963090032692FBE7000D5A1F /* Onboarding.Chart.json in Resources */ = {isa = PBXBuildFile; fileRef = 963090022692FBE7000D5A1F /* Onboarding.Chart.json */; };
 		963090052692FE59000D5A1F /* OExperienceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963090042692FE59000D5A1F /* OExperienceCell.swift */; };
 		966FDFF02693141800B8FC20 /* StatsShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966FDFEF2693141800B8FC20 /* StatsShareManager.swift */; };
@@ -120,24 +118,6 @@
 		96781B96266664020033134D /* GetTestStatsResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A45266664000033134D /* GetTestStatsResponseMapper.swift */; };
 		96781B97266664020033134D /* TestStatsManagerCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A47266664000033134D /* TestStatsManagerCore.swift */; };
 		96781B98266664020033134D /* TestStatsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A48266664000033134D /* TestStatsManager.swift */; };
-		96781BB1266664020033134D /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A67266664000033134D /* Course.swift */; };
-		96781BB2266664020033134D /* GetCourcesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A69266664000033134D /* GetCourcesRequest.swift */; };
-		96781BB3266664020033134D /* GetCourcesResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A6A266664000033134D /* GetCourcesResponseMapper.swift */; };
-		96781BB4266664020033134D /* CoursesManagerCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A6C266664000033134D /* CoursesManagerCore.swift */; };
-		96781BB5266664020033134D /* CoursesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A6D266664000033134D /* CoursesManager.swift */; };
-		96781BB6266664020033134D /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A70266664000033134D /* Language.swift */; };
-		96781BB8266664020033134D /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A72266664000033134D /* State.swift */; };
-		96781BB9266664020033134D /* ProfileLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A73266664000033134D /* ProfileLocale.swift */; };
-		96781BBA266664020033134D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A74266664000033134D /* Country.swift */; };
-		96781BBB266664020033134D /* ProfileManagerCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A76266664000033134D /* ProfileManagerCore.swift */; };
-		96781BBC266664020033134D /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A77266664000033134D /* ProfileManager.swift */; };
-		96781BBF266664020033134D /* GetLocaleResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A7D266664000033134D /* GetLocaleResponseMapper.swift */; };
-		96781BC0266664020033134D /* GetLocaleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A7E266664000033134D /* GetLocaleRequest.swift */; };
-		96781BC1266664020033134D /* GetCountriesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A80266664000033134D /* GetCountriesRequest.swift */; };
-		96781BC2266664020033134D /* GetCountriesResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A81266664000033134D /* GetCountriesResponseMapper.swift */; };
-		96781BC3266664020033134D /* SetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A82266664000033134D /* SetRequest.swift */; };
-		96781BC4266664020033134D /* ProfileMediatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A84266664000033134D /* ProfileMediatorDelegate.swift */; };
-		96781BC5266664020033134D /* ProfileMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A85266664000033134D /* ProfileMediator.swift */; };
 		96781BC6266664020033134D /* Brief.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A88266664000033134D /* Brief.swift */; };
 		96781BC7266664020033134D /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A89266664000033134D /* Stats.swift */; };
 		96781BC8266664020033134D /* GetBriefRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96781A8B266664000033134D /* GetBriefRequest.swift */; };
@@ -254,17 +234,31 @@
 		96F92A772692086B006331D7 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F92A462692086B006331D7 /* OnboardingView.swift */; };
 		96F92A782692086B006331D7 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F92A472692086B006331D7 /* OnboardingViewModel.swift */; };
 		96F92A792692086B006331D7 /* OnboardingAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F92A492692086B006331D7 /* OnboardingAnalytics.swift */; };
-		96F92A7C26920D45006331D7 /* GetTestModeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F92A7B26920D45006331D7 /* GetTestModeRequest.swift */; };
-		96F92A7E26920D58006331D7 /* GetTestModeResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F92A7D26920D58006331D7 /* GetTestModeResponseMapper.swift */; };
-		96F92A8026920D82006331D7 /* TestMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F92A7F26920D82006331D7 /* TestMode.swift */; };
 		DE3449FA2771D96600632F72 /* STModeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3449F92771D96600632F72 /* STModeCell.swift */; };
 		DE3449FC2771DC1600632F72 /* STChangeModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3449FB2771DC1600632F72 /* STChangeModeView.swift */; };
+		DE4E837F28ACBCD4001BE774 /* CoursesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4E837828ACBCD4001BE774 /* CoursesManager.swift */; };
+		DE4E838028ACBCD4001BE774 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4E837A28ACBCD4001BE774 /* Course.swift */; };
+		DE4E838128ACBCD4001BE774 /* GetCourcesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4E837D28ACBCD4001BE774 /* GetCourcesRequest.swift */; };
+		DE4E838228ACBCD4001BE774 /* GetCourcesResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4E837E28ACBCD4001BE774 /* GetCourcesResponseMapper.swift */; };
+		DE4E839728ACBCD9001BE774 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4E838528ACBCD9001BE774 /* Language.swift */; };
+		DE4E839828ACBCD9001BE774 /* TestMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4E838628ACBCD9001BE774 /* TestMode.swift */; };
+		DE4E839928ACBCD9001BE774 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4E838728ACBCD9001BE774 /* Profile.swift */; };
+		DE4E839A28ACBCD9001BE774 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4E838828ACBCD9001BE774 /* State.swift */; };
+		DE4E839B28ACBCD9001BE774 /* ProfileLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4E838928ACBCD9001BE774 /* ProfileLocale.swift */; };
+		DE4E839C28ACBCD9001BE774 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4E838A28ACBCD9001BE774 /* Country.swift */; };
+		DE4E839D28ACBCD9001BE774 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4E838B28ACBCD9001BE774 /* ProfileManager.swift */; };
+		DE4E839E28ACBCD9001BE774 /* GetProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4E838E28ACBCD9001BE774 /* GetProfileRequest.swift */; };
+		DE4E839F28ACBCD9001BE774 /* GetProfileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4E838F28ACBCD9001BE774 /* GetProfileResponse.swift */; };
+		DE4E83A028ACBCD9001BE774 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4E839028ACBCD9001BE774 /* LoginRequest.swift */; };
+		DE4E83A128ACBCD9001BE774 /* SyncTokensRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4E839128ACBCD9001BE774 /* SyncTokensRequest.swift */; };
+		DE4E83A228ACBCD9001BE774 /* GetCountriesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4E839328ACBCD9001BE774 /* GetCountriesRequest.swift */; };
+		DE4E83A328ACBCD9001BE774 /* GetCountriesResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4E839428ACBCD9001BE774 /* GetCountriesResponseMapper.swift */; };
+		DE4E83A428ACBCD9001BE774 /* SetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4E839528ACBCD9001BE774 /* SetRequest.swift */; };
+		DE4E83A528ACBCD9001BE774 /* ProfileMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4E839628ACBCD9001BE774 /* ProfileMediator.swift */; };
 		DE6836B82892D1E500FAEF96 /* BranchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836B72892D1E500FAEF96 /* BranchManager.swift */; };
 		DE6836BA2892D1EE00FAEF96 /* AmplitudeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836B92892D1EE00FAEF96 /* AmplitudeManager.swift */; };
 		DE6836BC2892D1F700FAEF96 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836BB2892D1F700FAEF96 /* FirebaseManager.swift */; };
 		DE6836BE2892D20600FAEF96 /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836BD2892D20600FAEF96 /* FacebookManager.swift */; };
-		DE6836C02892D2A200FAEF96 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836BF2892D2A200FAEF96 /* LoginRequest.swift */; };
-		DE6836C22892D2B200FAEF96 /* SyncTokensRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836C12892D2B200FAEF96 /* SyncTokensRequest.swift */; };
 		DE6836C52892D2F200FAEF96 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836C42892D2F200FAEF96 /* IAPManager.swift */; };
 		DE6836C72892D2FB00FAEF96 /* PurchaseValidationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836C62892D2FB00FAEF96 /* PurchaseValidationObserver.swift */; };
 		DE6836CA2892D31500FAEF96 /* IAPActionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836C92892D31500FAEF96 /* IAPActionResult.swift */; };
@@ -407,8 +401,6 @@
 		865FEC5726679C1C009D7A4E /* TimedExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimedExamViewController.swift; sourceTree = "<group>"; };
 		865FEC5826679C1C009D7A4E /* TimedExamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimedExamView.swift; sourceTree = "<group>"; };
 		865FEC5E2667A4E3009D7A4E /* BottomSheetAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetAnimation.swift; sourceTree = "<group>"; };
-		96155B6B2689A8AD00228151 /* CoursesMediatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesMediatorDelegate.swift; sourceTree = "<group>"; };
-		96155B6D2689A8E300228151 /* CoursesMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesMediator.swift; sourceTree = "<group>"; };
 		96308FFF2692625E000D5A1F /* DMV.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DMV.entitlements; sourceTree = "<group>"; };
 		963090022692FBE7000D5A1F /* Onboarding.Chart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Onboarding.Chart.json; sourceTree = "<group>"; };
 		963090042692FE59000D5A1F /* OExperienceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OExperienceCell.swift; sourceTree = "<group>"; };
@@ -517,24 +509,6 @@
 		96781A45266664000033134D /* GetTestStatsResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTestStatsResponseMapper.swift; sourceTree = "<group>"; };
 		96781A47266664000033134D /* TestStatsManagerCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsManagerCore.swift; sourceTree = "<group>"; };
 		96781A48266664000033134D /* TestStatsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStatsManager.swift; sourceTree = "<group>"; };
-		96781A67266664000033134D /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
-		96781A69266664000033134D /* GetCourcesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCourcesRequest.swift; sourceTree = "<group>"; };
-		96781A6A266664000033134D /* GetCourcesResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCourcesResponseMapper.swift; sourceTree = "<group>"; };
-		96781A6C266664000033134D /* CoursesManagerCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesManagerCore.swift; sourceTree = "<group>"; };
-		96781A6D266664000033134D /* CoursesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesManager.swift; sourceTree = "<group>"; };
-		96781A70266664000033134D /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
-		96781A72266664000033134D /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
-		96781A73266664000033134D /* ProfileLocale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileLocale.swift; sourceTree = "<group>"; };
-		96781A74266664000033134D /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
-		96781A76266664000033134D /* ProfileManagerCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileManagerCore.swift; sourceTree = "<group>"; };
-		96781A77266664000033134D /* ProfileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
-		96781A7D266664000033134D /* GetLocaleResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetLocaleResponseMapper.swift; sourceTree = "<group>"; };
-		96781A7E266664000033134D /* GetLocaleRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetLocaleRequest.swift; sourceTree = "<group>"; };
-		96781A80266664000033134D /* GetCountriesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCountriesRequest.swift; sourceTree = "<group>"; };
-		96781A81266664000033134D /* GetCountriesResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCountriesResponseMapper.swift; sourceTree = "<group>"; };
-		96781A82266664000033134D /* SetRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetRequest.swift; sourceTree = "<group>"; };
-		96781A84266664000033134D /* ProfileMediatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileMediatorDelegate.swift; sourceTree = "<group>"; };
-		96781A85266664000033134D /* ProfileMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileMediator.swift; sourceTree = "<group>"; };
 		96781A88266664000033134D /* Brief.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brief.swift; sourceTree = "<group>"; };
 		96781A89266664000033134D /* Stats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 		96781A8B266664000033134D /* GetBriefRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetBriefRequest.swift; sourceTree = "<group>"; };
@@ -653,20 +627,34 @@
 		96F92A462692086B006331D7 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		96F92A472692086B006331D7 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		96F92A492692086B006331D7 /* OnboardingAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingAnalytics.swift; sourceTree = "<group>"; };
-		96F92A7B26920D45006331D7 /* GetTestModeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTestModeRequest.swift; sourceTree = "<group>"; };
-		96F92A7D26920D58006331D7 /* GetTestModeResponseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTestModeResponseMapper.swift; sourceTree = "<group>"; };
-		96F92A7F26920D82006331D7 /* TestMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMode.swift; sourceTree = "<group>"; };
 		C6B862032F73539581F73AEB /* Pods_DMV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DMV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DEFC12D47EC10AA48AB676 /* Pods-DMV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMV.release.xcconfig"; path = "Target Support Files/Pods-DMV/Pods-DMV.release.xcconfig"; sourceTree = "<group>"; };
 		DE3449F92771D96600632F72 /* STModeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STModeCell.swift; sourceTree = "<group>"; };
 		DE3449FB2771DC1600632F72 /* STChangeModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STChangeModeView.swift; sourceTree = "<group>"; };
 		DE344A022771F8B700632F72 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DE4E837828ACBCD4001BE774 /* CoursesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesManager.swift; sourceTree = "<group>"; };
+		DE4E837A28ACBCD4001BE774 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		DE4E837D28ACBCD4001BE774 /* GetCourcesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCourcesRequest.swift; sourceTree = "<group>"; };
+		DE4E837E28ACBCD4001BE774 /* GetCourcesResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCourcesResponseMapper.swift; sourceTree = "<group>"; };
+		DE4E838528ACBCD9001BE774 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		DE4E838628ACBCD9001BE774 /* TestMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMode.swift; sourceTree = "<group>"; };
+		DE4E838728ACBCD9001BE774 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		DE4E838828ACBCD9001BE774 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		DE4E838928ACBCD9001BE774 /* ProfileLocale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileLocale.swift; sourceTree = "<group>"; };
+		DE4E838A28ACBCD9001BE774 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		DE4E838B28ACBCD9001BE774 /* ProfileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		DE4E838E28ACBCD9001BE774 /* GetProfileRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetProfileRequest.swift; sourceTree = "<group>"; };
+		DE4E838F28ACBCD9001BE774 /* GetProfileResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetProfileResponse.swift; sourceTree = "<group>"; };
+		DE4E839028ACBCD9001BE774 /* LoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		DE4E839128ACBCD9001BE774 /* SyncTokensRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncTokensRequest.swift; sourceTree = "<group>"; };
+		DE4E839328ACBCD9001BE774 /* GetCountriesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCountriesRequest.swift; sourceTree = "<group>"; };
+		DE4E839428ACBCD9001BE774 /* GetCountriesResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCountriesResponseMapper.swift; sourceTree = "<group>"; };
+		DE4E839528ACBCD9001BE774 /* SetRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetRequest.swift; sourceTree = "<group>"; };
+		DE4E839628ACBCD9001BE774 /* ProfileMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileMediator.swift; sourceTree = "<group>"; };
 		DE6836B72892D1E500FAEF96 /* BranchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchManager.swift; sourceTree = "<group>"; };
 		DE6836B92892D1EE00FAEF96 /* AmplitudeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplitudeManager.swift; sourceTree = "<group>"; };
 		DE6836BB2892D1F700FAEF96 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		DE6836BD2892D20600FAEF96 /* FacebookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookManager.swift; sourceTree = "<group>"; };
-		DE6836BF2892D2A200FAEF96 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
-		DE6836C12892D2B200FAEF96 /* SyncTokensRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncTokensRequest.swift; sourceTree = "<group>"; };
 		DE6836C42892D2F200FAEF96 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
 		DE6836C62892D2FB00FAEF96 /* PurchaseValidationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseValidationObserver.swift; sourceTree = "<group>"; };
 		DE6836C92892D31500FAEF96 /* IAPActionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPActionResult.swift; sourceTree = "<group>"; };
@@ -825,15 +813,6 @@
 				865FEC5E2667A4E3009D7A4E /* BottomSheetAnimation.swift */,
 			);
 			path = Animation;
-			sourceTree = "<group>";
-		};
-		96155B6A2689A89000228151 /* Mediator */ = {
-			isa = PBXGroup;
-			children = (
-				96155B6B2689A8AD00228151 /* CoursesMediatorDelegate.swift */,
-				96155B6D2689A8E300228151 /* CoursesMediator.swift */,
-			);
-			path = Mediator;
 			sourceTree = "<group>";
 		};
 		966FDFEE2693141800B8FC20 /* Share */ = {
@@ -1242,14 +1221,14 @@
 		96781A2A266664000033134D /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				DE4E838328ACBCD9001BE774 /* Profile */,
+				DE4E837728ACBCD4001BE774 /* Courses */,
 				DE6836C32892D2DD00FAEF96 /* Purchase */,
 				DED1D01E2866EAD000E70292 /* Questions */,
 				967381CE26793BFC00230FB6 /* Paygate */,
 				9673809E2677973500230FB6 /* Flashcards */,
 				96781A2B266664000033134D /* Rate */,
 				96781A40266664000033134D /* TestStats */,
-				96781A65266664000033134D /* Courses */,
-				96781A6E266664000033134D /* Profile */,
 				96781A86266664000033134D /* Stats */,
 				96781A92266664000033134D /* Session */,
 			);
@@ -1299,115 +1278,6 @@
 				96781A48266664000033134D /* TestStatsManager.swift */,
 			);
 			path = Manager;
-			sourceTree = "<group>";
-		};
-		96781A65266664000033134D /* Courses */ = {
-			isa = PBXGroup;
-			children = (
-				96155B6A2689A89000228151 /* Mediator */,
-				96781A66266664000033134D /* Models */,
-				96781A68266664000033134D /* Requests */,
-				96781A6B266664000033134D /* Manager */,
-			);
-			path = Courses;
-			sourceTree = "<group>";
-		};
-		96781A66266664000033134D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				96781A67266664000033134D /* Course.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		96781A68266664000033134D /* Requests */ = {
-			isa = PBXGroup;
-			children = (
-				96781A69266664000033134D /* GetCourcesRequest.swift */,
-				96781A6A266664000033134D /* GetCourcesResponseMapper.swift */,
-			);
-			path = Requests;
-			sourceTree = "<group>";
-		};
-		96781A6B266664000033134D /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				96781A6C266664000033134D /* CoursesManagerCore.swift */,
-				96781A6D266664000033134D /* CoursesManager.swift */,
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
-		96781A6E266664000033134D /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				96781A6F266664000033134D /* Models */,
-				96781A75266664000033134D /* Manager */,
-				96781A78266664000033134D /* Request */,
-				96781A83266664000033134D /* Mediator */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		96781A6F266664000033134D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				96781A70266664000033134D /* Language.swift */,
-				96781A72266664000033134D /* State.swift */,
-				96781A73266664000033134D /* ProfileLocale.swift */,
-				96781A74266664000033134D /* Country.swift */,
-				96F92A7F26920D82006331D7 /* TestMode.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		96781A75266664000033134D /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				96781A76266664000033134D /* ProfileManagerCore.swift */,
-				96781A77266664000033134D /* ProfileManager.swift */,
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
-		96781A78266664000033134D /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				96F92A7A26920D30006331D7 /* GetTestMode */,
-				96781A7C266664000033134D /* GetLocale */,
-				96781A7F266664000033134D /* GetCountries */,
-				96781A82266664000033134D /* SetRequest.swift */,
-				DE6836BF2892D2A200FAEF96 /* LoginRequest.swift */,
-				DE6836C12892D2B200FAEF96 /* SyncTokensRequest.swift */,
-			);
-			path = Request;
-			sourceTree = "<group>";
-		};
-		96781A7C266664000033134D /* GetLocale */ = {
-			isa = PBXGroup;
-			children = (
-				96781A7D266664000033134D /* GetLocaleResponseMapper.swift */,
-				96781A7E266664000033134D /* GetLocaleRequest.swift */,
-			);
-			path = GetLocale;
-			sourceTree = "<group>";
-		};
-		96781A7F266664000033134D /* GetCountries */ = {
-			isa = PBXGroup;
-			children = (
-				96781A80266664000033134D /* GetCountriesRequest.swift */,
-				96781A81266664000033134D /* GetCountriesResponseMapper.swift */,
-			);
-			path = GetCountries;
-			sourceTree = "<group>";
-		};
-		96781A83266664000033134D /* Mediator */ = {
-			isa = PBXGroup;
-			children = (
-				96781A84266664000033134D /* ProfileMediatorDelegate.swift */,
-				96781A85266664000033134D /* ProfileMediator.swift */,
-			);
-			path = Mediator;
 			sourceTree = "<group>";
 		};
 		96781A86266664000033134D /* Stats */ = {
@@ -1928,13 +1798,93 @@
 			path = Analytics;
 			sourceTree = "<group>";
 		};
-		96F92A7A26920D30006331D7 /* GetTestMode */ = {
+		DE4E837728ACBCD4001BE774 /* Courses */ = {
 			isa = PBXGroup;
 			children = (
-				96F92A7B26920D45006331D7 /* GetTestModeRequest.swift */,
-				96F92A7D26920D58006331D7 /* GetTestModeResponseMapper.swift */,
+				DE4E837828ACBCD4001BE774 /* CoursesManager.swift */,
+				DE4E837928ACBCD4001BE774 /* Models */,
+				DE4E837B28ACBCD4001BE774 /* Requests */,
 			);
-			path = GetTestMode;
+			path = Courses;
+			sourceTree = "<group>";
+		};
+		DE4E837928ACBCD4001BE774 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE4E837A28ACBCD4001BE774 /* Course.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DE4E837B28ACBCD4001BE774 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				DE4E837C28ACBCD4001BE774 /* GetCourses */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		DE4E837C28ACBCD4001BE774 /* GetCourses */ = {
+			isa = PBXGroup;
+			children = (
+				DE4E837D28ACBCD4001BE774 /* GetCourcesRequest.swift */,
+				DE4E837E28ACBCD4001BE774 /* GetCourcesResponseMapper.swift */,
+			);
+			path = GetCourses;
+			sourceTree = "<group>";
+		};
+		DE4E838328ACBCD9001BE774 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DE4E838428ACBCD9001BE774 /* Models */,
+				DE4E838B28ACBCD9001BE774 /* ProfileManager.swift */,
+				DE4E838C28ACBCD9001BE774 /* Request */,
+				DE4E839628ACBCD9001BE774 /* ProfileMediator.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		DE4E838428ACBCD9001BE774 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE4E838528ACBCD9001BE774 /* Language.swift */,
+				DE4E838628ACBCD9001BE774 /* TestMode.swift */,
+				DE4E838728ACBCD9001BE774 /* Profile.swift */,
+				DE4E838828ACBCD9001BE774 /* State.swift */,
+				DE4E838928ACBCD9001BE774 /* ProfileLocale.swift */,
+				DE4E838A28ACBCD9001BE774 /* Country.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DE4E838C28ACBCD9001BE774 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				DE4E838D28ACBCD9001BE774 /* GetProfile */,
+				DE4E839028ACBCD9001BE774 /* LoginRequest.swift */,
+				DE4E839128ACBCD9001BE774 /* SyncTokensRequest.swift */,
+				DE4E839228ACBCD9001BE774 /* GetCountries */,
+				DE4E839528ACBCD9001BE774 /* SetRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		DE4E838D28ACBCD9001BE774 /* GetProfile */ = {
+			isa = PBXGroup;
+			children = (
+				DE4E838E28ACBCD9001BE774 /* GetProfileRequest.swift */,
+				DE4E838F28ACBCD9001BE774 /* GetProfileResponse.swift */,
+			);
+			path = GetProfile;
+			sourceTree = "<group>";
+		};
+		DE4E839228ACBCD9001BE774 /* GetCountries */ = {
+			isa = PBXGroup;
+			children = (
+				DE4E839328ACBCD9001BE774 /* GetCountriesRequest.swift */,
+				DE4E839428ACBCD9001BE774 /* GetCountriesResponseMapper.swift */,
+			);
+			path = GetCountries;
 			sourceTree = "<group>";
 		};
 		DE6836B62892D1D600FAEF96 /* Analytics */ = {
@@ -2548,18 +2498,17 @@
 				96781BF6266664020033134D /* TabView.swift in Sources */,
 				DED1D0412866EAD000E70292 /* Question.swift in Sources */,
 				DED1D0142866EA9000E70292 /* SITestType.swift in Sources */,
-				96155B6C2689A8AD00228151 /* CoursesMediatorDelegate.swift in Sources */,
 				96781BD8266664020033134D /* STSettingLinksCell.swift in Sources */,
+				DE4E83A128ACBCD9001BE774 /* SyncTokensRequest.swift in Sources */,
 				DED1CFEB2866EA9000E70292 /* TestView.swift in Sources */,
 				96781BC7266664020033134D /* Stats.swift in Sources */,
-				96781BB1266664020033134D /* Course.swift in Sources */,
-				96781BBC266664020033134D /* ProfileManager.swift in Sources */,
 				DED1CFF02866EA9000E70292 /* QuestionTableExplanationImageCell.swift in Sources */,
 				96781C45266664030033134D /* MainStatsDescriptionLineView.swift in Sources */,
 				96F92A682692086B006331D7 /* OSlidePlanCell.swift in Sources */,
 				96781B84266664010033134D /* RateManagerCore.swift in Sources */,
 				96781B6E266664010033134D /* ScreenSize.swift in Sources */,
 				9673809C2677972900230FB6 /* FlashCardContainerView.swift in Sources */,
+				DE4E837F28ACBCD4001BE774 /* CoursesManager.swift in Sources */,
 				96F92A722692086B006331D7 /* OSlideExperienceView.swift in Sources */,
 				96F92A6D2692086B006331D7 /* OSlideView.swift in Sources */,
 				96781BD4266664020033134D /* SettingsOpener.swift in Sources */,
@@ -2570,13 +2519,11 @@
 				96781B74266664010033134D /* Toast.swift in Sources */,
 				96781BDB266664020033134D /* SettingsTableView.swift in Sources */,
 				96781C3D266664030033134D /* StatsCellType.swift in Sources */,
-				96781BB4266664020033134D /* CoursesManagerCore.swift in Sources */,
 				96781B7F266664010033134D /* TrophyView.swift in Sources */,
 				96F92A4B2692086B006331D7 /* OSlideWelcomeView.swift in Sources */,
 				DED1D04D2866EAD000E70292 /* QuestionMapper.swift in Sources */,
 				96781C2A266664030033134D /* CourseDetailsViewModel.swift in Sources */,
 				967380982677972900230FB6 /* FlashcardsViewController.swift in Sources */,
-				96781BC0266664020033134D /* GetLocaleRequest.swift in Sources */,
 				DED1CFEF2866EA9000E70292 /* QuestionTableQuestionReferenceCell.swift in Sources */,
 				96781BD3266664020033134D /* RateUs.swift in Sources */,
 				967381E626793BFC00230FB6 /* ProductPrice.swift in Sources */,
@@ -2586,11 +2533,15 @@
 				DED1D0482866EAD000E70292 /* GetSavedRequest.swift in Sources */,
 				DED1D0092866EA9000E70292 /* TestStatsFilter.swift in Sources */,
 				96781B80266664010033134D /* AppDelegate.swift in Sources */,
+				DE4E839928ACBCD9001BE774 /* Profile.swift in Sources */,
 				96F92A592692086B006331D7 /* OModesCollectionView.swift in Sources */,
+				DE4E83A328ACBCD9001BE774 /* GetCountriesResponseMapper.swift in Sources */,
 				96781BDD266664020033134D /* SettingsViewController.swift in Sources */,
+				DE4E838128ACBCD4001BE774 /* GetCourcesRequest.swift in Sources */,
 				DE6836BA2892D1EE00FAEF96 /* AmplitudeManager.swift in Sources */,
 				96F92A752692086B006331D7 /* OSlideLocaleView.swift in Sources */,
 				DED1D0502866EAD000E70292 /* GetTestConfigRequest.swift in Sources */,
+				DE4E838228ACBCD4001BE774 /* GetCourcesResponseMapper.swift in Sources */,
 				96781C44266664030033134D /* StatsTableView.swift in Sources */,
 				DED1D0582866EB2F00E70292 /* Observable+Utils.swift in Sources */,
 				96F92A4A2692086B006331D7 /* OnboardingViewController.swift in Sources */,
@@ -2619,24 +2570,23 @@
 				967380B72677973500230FB6 /* MarkFlashcardRequest.swift in Sources */,
 				96781BCE266664020033134D /* Session.swift in Sources */,
 				96781B95266664020033134D /* GetTestStatsRequest.swift in Sources */,
-				96781BB6266664020033134D /* Language.swift in Sources */,
 				96781BE8266664020033134D /* SCBriefDaysView.swift in Sources */,
 				DEADEB10283648EF0057AA44 /* ObservableRetrySingle.swift in Sources */,
 				DED1D01D2866EA9000E70292 /* SITestViewModel.swift in Sources */,
 				DE6836D52892D7FF00FAEF96 /* PaygateInteractor.swift in Sources */,
 				96F92A5F2692086B006331D7 /* WelcomeSlide1View.swift in Sources */,
+				DE4E839E28ACBCD9001BE774 /* GetProfileRequest.swift in Sources */,
 				967380B62677973500230FB6 /* GetFlashcardsResponseMapper.swift in Sources */,
 				967381E526793BFC00230FB6 /* MonetizationConfig.swift in Sources */,
 				DED1D0102866EA9000E70292 /* TestStatsView.swift in Sources */,
 				96F92A532692086B006331D7 /* LocaleTableViewElement.swift in Sources */,
-				96781BBB266664020033134D /* ProfileManagerCore.swift in Sources */,
 				96781BE5266664020033134D /* SCTrophyCollectionCell.swift in Sources */,
-				96781BB3266664020033134D /* GetCourcesResponseMapper.swift in Sources */,
 				96781C43266664030033134D /* MainRateCell.swift in Sources */,
 				DE3449FA2771D96600632F72 /* STModeCell.swift in Sources */,
 				96F92A4F2692086B006331D7 /* OProgressView.swift in Sources */,
 				96F92A572692086B006331D7 /* OModesCollectionLayout.swift in Sources */,
 				DEADEB1828364A990057AA44 /* SplashActivity.swift in Sources */,
+				DE4E839728ACBCD9001BE774 /* Language.swift in Sources */,
 				9673807F26778AF200230FB6 /* SCFlashcardsCell.swift in Sources */,
 				DED1D0532866EAD000E70292 /* FinishTestRequest.swift in Sources */,
 				967381EC26793BFC00230FB6 /* MonetizationManagerCore.swift in Sources */,
@@ -2654,6 +2604,7 @@
 				DED1D00A2866EA9000E70292 /* TestStatsViewModel.swift in Sources */,
 				96781C47266664030033134D /* CourseProgressView.swift in Sources */,
 				96781C2D266664030033134D /* GradientProgressView.swift in Sources */,
+				DE4E839C28ACBCD9001BE774 /* Country.swift in Sources */,
 				DED1CFF12866EA9000E70292 /* QuestionTableQuestionCell.swift in Sources */,
 				DE6836C72892D2FB00FAEF96 /* PurchaseValidationObserver.swift in Sources */,
 				96781BC9266664020033134D /* GetBriefResponseMapper.swift in Sources */,
@@ -2669,7 +2620,6 @@
 				96781BD0266664020033134D /* SessionManager.swift in Sources */,
 				DE6836B82892D1E500FAEF96 /* BranchManager.swift in Sources */,
 				96781BED266664020033134D /* CourseCell.swift in Sources */,
-				DE6836C02892D2A200FAEF96 /* LoginRequest.swift in Sources */,
 				96F92A622692086B006331D7 /* WelcomeSlide2View.swift in Sources */,
 				967380972677972900230FB6 /* FlashcardsTopicsTableCell.swift in Sources */,
 				DED1D00C2866EA9000E70292 /* TestStatsProgressView.swift in Sources */,
@@ -2701,6 +2651,7 @@
 				967380932677972900230FB6 /* FlashcardsTopicsView.swift in Sources */,
 				DED1D0112866EA9000E70292 /* TestSequence.swift in Sources */,
 				DED1D0442866EAD000E70292 /* GetTestResponseMapper.swift in Sources */,
+				DE4E83A028ACBCD9001BE774 /* LoginRequest.swift in Sources */,
 				96F92A6C2692086B006331D7 /* OWhenStudyView.swift in Sources */,
 				96781B68266664010033134D /* UIDeviceExtension.swift in Sources */,
 				96781B7A266664010033134D /* PaddingLabel.swift in Sources */,
@@ -2713,12 +2664,9 @@
 				967381FB26793C0C00230FB6 /* PaygateViewController.swift in Sources */,
 				96F92A792692086B006331D7 /* OnboardingAnalytics.swift in Sources */,
 				96781BF1266664020033134D /* StudyView.swift in Sources */,
-				96F92A7E26920D58006331D7 /* GetTestModeResponseMapper.swift in Sources */,
 				DED1D00B2866EA9000E70292 /* TestComunityResultLineView.swift in Sources */,
-				96781BB9266664020033134D /* ProfileLocale.swift in Sources */,
 				96781B82266664010033134D /* RxActivityIndicator.swift in Sources */,
 				96781B79266664010033134D /* NavigationBar.swift in Sources */,
-				96781BB2266664020033134D /* GetCourcesRequest.swift in Sources */,
 				DED1CFF42866EA9000E70292 /* QuestionTableExplanationTextCell.swift in Sources */,
 				DED1D00D2866EA9000E70292 /* TestStatsTableView.swift in Sources */,
 				967381FF26793C0C00230FB6 /* PaygateSpecialOfferView.swift in Sources */,
@@ -2726,18 +2674,16 @@
 				96781B75266664010033134D /* NursingNavigationController.swift in Sources */,
 				DEADEB132836491A0057AA44 /* TryAgainViewController.swift in Sources */,
 				967380B32677973500230FB6 /* FlashcardsManager.swift in Sources */,
-				96781BB8266664020033134D /* State.swift in Sources */,
 				DED1D0172866EA9000E70292 /* SIAnswerCell.swift in Sources */,
-				96781BC3266664020033134D /* SetRequest.swift in Sources */,
 				96781C2B266664030033134D /* CourseDetailsTestCell.swift in Sources */,
 				967381FE26793C0C00230FB6 /* PaygateOptionView.swift in Sources */,
 				96F92A5C2692086B006331D7 /* OPreloaderCell.swift in Sources */,
+				DE4E83A228ACBCD9001BE774 /* GetCountriesRequest.swift in Sources */,
 				96781BF2266664020033134D /* CourseViewController.swift in Sources */,
 				DED1CFEC2866EA9000E70292 /* TestViewController.swift in Sources */,
 				96781B76266664010033134D /* NursingNavigationControllerSettings.swift in Sources */,
 				96F92A732692086B006331D7 /* OSlideWhenTakingView.swift in Sources */,
 				96F92A602692086B006331D7 /* WelcomeSlideIndicatorView.swift in Sources */,
-				96781BC4266664020033134D /* ProfileMediatorDelegate.swift in Sources */,
 				DE6836BE2892D20600FAEF96 /* FacebookManager.swift in Sources */,
 				96F92A782692086B006331D7 /* OnboardingViewModel.swift in Sources */,
 				96781BE0266664020033134D /* SplashView.swift in Sources */,
@@ -2746,29 +2692,27 @@
 				DEADEB05283634CA0057AA44 /* XORRequestWrapper.swift in Sources */,
 				DED1D05D2866EB8A00E70292 /* PhotoViewController.swift in Sources */,
 				DED1D0522866EAD000E70292 /* SendAnswerRequest.swift in Sources */,
+				DE4E838028ACBCD4001BE774 /* Course.swift in Sources */,
 				DEADEB0A283637A90057AA44 /* SSlideView.swift in Sources */,
 				DED1CFE52866EA9000E70292 /* TestViewModel.swift in Sources */,
 				966FDFF02693141800B8FC20 /* StatsShareManager.swift in Sources */,
-				96781BC5266664020033134D /* ProfileMediator.swift in Sources */,
 				96781BE1266664020033134D /* StudyViewModel.swift in Sources */,
 				96781BE7266664020033134D /* SCBriefDayView.swift in Sources */,
 				865FEC5A26679C1C009D7A4E /* TimedExamViewController.swift in Sources */,
 				96781BCA266664020033134D /* GetStatsResponseMapper.swift in Sources */,
 				96781BCD266664020033134D /* StatsManager.swift in Sources */,
 				DED1D0462866EAD000E70292 /* GetRandomSetRequest.swift in Sources */,
+				DE4E839A28ACBCD9001BE774 /* State.swift in Sources */,
 				DED1D0562866EAD000E70292 /* QuestionMediator.swift in Sources */,
 				DED1D00E2866EA9000E70292 /* TestStatsResultView.swift in Sources */,
 				DE6836BC2892D1F700FAEF96 /* FirebaseManager.swift in Sources */,
 				DED1D03F2866EAD000E70292 /* Test.swift in Sources */,
 				DED1D01C2866EA9000E70292 /* SITestBottomView.swift in Sources */,
 				DED1D04E2866EAD000E70292 /* AgainTestRequest.swift in Sources */,
-				96781BBA266664020033134D /* Country.swift in Sources */,
-				96781BC1266664020033134D /* GetCountriesRequest.swift in Sources */,
 				DED1D03E2866EAD000E70292 /* TestConfig.swift in Sources */,
 				DED1D0422866EAD000E70292 /* Answer.swift in Sources */,
 				96781C27266664030033134D /* CourseDetailsViewController.swift in Sources */,
 				DED1CFFA2866EA9000E70292 /* QuestionContentCollectionView.swift in Sources */,
-				96F92A7C26920D45006331D7 /* GetTestModeRequest.swift in Sources */,
 				96781B65266664010033134D /* UIColorExtension.swift in Sources */,
 				96781B6D266664010033134D /* TextAttributes.swift in Sources */,
 				DED1CFF82866EA9000E70292 /* QuestionContentCollectionType.swift in Sources */,
@@ -2797,6 +2741,7 @@
 				96F92A6B2692086B006331D7 /* OPushView.swift in Sources */,
 				967381E826793BFC00230FB6 /* PaygateMainOffer.swift in Sources */,
 				DED1D04C2866EAD000E70292 /* AnswerMapper.swift in Sources */,
+				DE4E83A428ACBCD9001BE774 /* SetRequest.swift in Sources */,
 				DED1D04F2866EAD000E70292 /* GetTestConfigResponseMapper.swift in Sources */,
 				96F92A632692086B006331D7 /* CountCircleView.swift in Sources */,
 				DED1D0552866EAD000E70292 /* QuestionManager.swift in Sources */,
@@ -2807,9 +2752,10 @@
 				96781BE4266664020033134D /* SCCoursesCell.swift in Sources */,
 				DED1D0152866EA9000E70292 /* SITestViewController.swift in Sources */,
 				96F92A522692086B006331D7 /* LocaleTableView.swift in Sources */,
+				DE4E839D28ACBCD9001BE774 /* ProfileManager.swift in Sources */,
+				DE4E839828ACBCD9001BE774 /* TestMode.swift in Sources */,
 				96781C41266664030033134D /* CourseProgressCell.swift in Sources */,
 				967381E926793BFC00230FB6 /* PaygateSpecialOffer.swift in Sources */,
-				96781BB5266664020033134D /* CoursesManager.swift in Sources */,
 				96781B7D266664010033134D /* CircleView.swift in Sources */,
 				DED1D01A2866EA9000E70292 /* SIProgressCollectionView.swift in Sources */,
 				DED1D04B2866EAD000E70292 /* GetIncorrectRequest.swift in Sources */,
@@ -2819,6 +2765,7 @@
 				DED1D0122866EA9000E70292 /* SITestView.swift in Sources */,
 				DE93781027BA74AC0073F27C /* XOREncryption.swift in Sources */,
 				DED1D0162866EA9000E70292 /* SITestTableView.swift in Sources */,
+				DE4E83A528ACBCD9001BE774 /* ProfileMediator.swift in Sources */,
 				96781B85266664010033134D /* RateManager.swift in Sources */,
 				DED1D0602866EB9700E70292 /* ImageScrollView.swift in Sources */,
 				96781BE6266664020033134D /* SCModesCell.swift in Sources */,
@@ -2835,7 +2782,9 @@
 				DEADEB03283634B60057AA44 /* DefaultRequestWrapper.swift in Sources */,
 				967381E226793BFC00230FB6 /* PaygateMapper.swift in Sources */,
 				DED1CFF32866EA9000E70292 /* QuestionTableContentCell.swift in Sources */,
+				DE4E839F28ACBCD9001BE774 /* GetProfileResponse.swift in Sources */,
 				967380952677972900230FB6 /* FlashcardsTopicsViewModel.swift in Sources */,
+				DE4E839B28ACBCD9001BE774 /* ProfileLocale.swift in Sources */,
 				96F92A582692086B006331D7 /* OModeCell.swift in Sources */,
 				96781C29266664030033134D /* CourseDetailsTableElement.swift in Sources */,
 				96F92A692692086B006331D7 /* OGoalCell.swift in Sources */,
@@ -2843,7 +2792,6 @@
 				DED1D00F2866EA9000E70292 /* TestStatsFilterView.swift in Sources */,
 				DED1D0012866EA9000E70292 /* TestStatsAnswerCell.swift in Sources */,
 				96781C28266664030033134D /* CourseDetailsView.swift in Sources */,
-				96781BC2266664020033134D /* GetCountriesResponseMapper.swift in Sources */,
 				967381E426793BFC00230FB6 /* PaygateOption.swift in Sources */,
 				967381EA26793BFC00230FB6 /* GetPaygateRequest.swift in Sources */,
 				96781C2C266664030033134D /* CourseDetailsTabelView.swift in Sources */,
@@ -2853,13 +2801,10 @@
 				DED1CFE42866EA9000E70292 /* TestCoordinator.swift in Sources */,
 				967381E026793BFC00230FB6 /* PaygateManager.swift in Sources */,
 				967380B82677973500230FB6 /* GetFlashcardsTopicsResponseMapper.swift in Sources */,
-				96155B6E2689A8E300228151 /* CoursesMediator.swift in Sources */,
 				96781B78266664010033134D /* ProgressView.swift in Sources */,
 				967381FD26793C0C00230FB6 /* PaygateMainInfoCell.swift in Sources */,
-				DE6836C22892D2B200FAEF96 /* SyncTokensRequest.swift in Sources */,
 				865FEC5B26679C1C009D7A4E /* TimedExamView.swift in Sources */,
 				96F92A702692086B006331D7 /* OSlidePlanView.swift in Sources */,
-				96781BBF266664020033134D /* GetLocaleResponseMapper.swift in Sources */,
 				DED1CFF22866EA9000E70292 /* QuestionTableExplanationTitleCell.swift in Sources */,
 				96781C48266664030033134D /* MainStatsDescriptionView.swift in Sources */,
 				967381F826793C0C00230FB6 /* PaygateViewModel.swift in Sources */,
@@ -2876,7 +2821,6 @@
 				96781B83266664010033134D /* UIViewRxExtension.swift in Sources */,
 				96781B6B266664010033134D /* GlobalDefinitions.swift in Sources */,
 				96781BF3266664020033134D /* CourseView.swift in Sources */,
-				96F92A8026920D82006331D7 /* TestMode.swift in Sources */,
 				96781B66266664010033134D /* Collection+Extension.swift in Sources */,
 				96F92A772692086B006331D7 /* OnboardingView.swift in Sources */,
 			);
@@ -2915,7 +2859,7 @@
 				CODE_SIGN_ENTITLEMENTS = StatsWidgetsExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 38;
+				CURRENT_PROJECT_VERSION = 39;
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = StatsWidgets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -2924,7 +2868,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.1.0;
+				MARKETING_VERSION = 2.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv.stats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV StatsWidgets AppStore Profile";
@@ -2942,7 +2886,7 @@
 				CODE_SIGN_ENTITLEMENTS = StatsWidgetsExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 38;
+				CURRENT_PROJECT_VERSION = 39;
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = StatsWidgets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -2951,7 +2895,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.1.0;
+				MARKETING_VERSION = 2.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv.stats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV StatsWidgets AppStore Profile";
@@ -3087,7 +3031,7 @@
 				CODE_SIGN_ENTITLEMENTS = DMV/DMV.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 38;
+				CURRENT_PROJECT_VERSION = 39;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = "$(SRCROOT)/DMV/Resource/Info.plist";
@@ -3096,7 +3040,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.0;
+				MARKETING_VERSION = 2.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV AppStore Profile";
@@ -3116,7 +3060,7 @@
 				CODE_SIGN_ENTITLEMENTS = DMV/DMV.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 38;
+				CURRENT_PROJECT_VERSION = 39;
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = "$(SRCROOT)/DMV/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
@@ -3124,7 +3068,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.0;
+				MARKETING_VERSION = 2.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV AppStore Profile";

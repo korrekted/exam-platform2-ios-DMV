@@ -11,9 +11,10 @@ import RxCocoa
 final class StatsViewModel {
     var tryAgain: ((Error) -> (Observable<Void>))?
     
+    private lazy var profileManager = ProfileManager()
     private lazy var statsManager = StatsManagerCore()
-    private lazy var courseManager = CoursesManagerCore()
     private lazy var sessionManager = SessionManager()
+    
     private lazy var progressRelay = BehaviorRelay<Int>(value: 0)
     private lazy var activeSubscription = makeActiveSubscription()
     
@@ -29,8 +30,8 @@ final class StatsViewModel {
 // MARK: Private
 private extension StatsViewModel {
     func makeCourseName() -> Driver<String> {
-        courseManager
-            .rxGetSelectedCourse()
+        profileManager
+            .obtainSelectedCourse(forceUpdate: false)
             .compactMap { $0?.name }
             .asDriver(onErrorDriveWith: .empty())
     }
@@ -40,7 +41,8 @@ private extension StatsViewModel {
             .merge(
                 QuestionMediator.shared.testPassed,
                 TestCloseMediator.shared.testClosed.map { _ in Void() },
-                CoursesMediator.shared.rxChangedSelectedCourse.map { _ in Void() }
+                SITestCloseMediator.shared.testClosed,
+                ProfileMediator.shared.changedSelectedCourse.map { _ in Void() }
             )
             .asObservable()
             .startWith(())
@@ -49,13 +51,17 @@ private extension StatsViewModel {
                     return .never()
                 }
                 
-                guard let courseId = self.courseManager.getSelectedCourse()?.id else {
-                    return .just([])
-                }
-                
                 func source() -> Single<[StatsCellType]> {
-                    self.statsManager
-                        .retrieveStats(courseId: courseId)
+                    self.profileManager
+                        .obtainSelectedCourse(forceUpdate: false)
+                        .flatMap { selectedCourse -> Single<Stats?> in
+                            guard let courseId = selectedCourse?.id else {
+                                return .just(nil)
+                            }
+                            
+                            return self.statsManager
+                                .retrieveStats(courseId: courseId)
+                        }
                         .map { [weak self] stats -> [StatsCellType] in
                             guard let stats = stats else { return [] }
                             self?.progressRelay.accept(stats.passRate)
