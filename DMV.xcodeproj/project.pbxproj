@@ -61,7 +61,6 @@
 		967381E026793BFC00230FB6 /* PaygateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967381CF26793BFC00230FB6 /* PaygateManager.swift */; };
 		967381E126793BFC00230FB6 /* MonetizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967381D026793BFC00230FB6 /* MonetizationManager.swift */; };
 		967381E226793BFC00230FB6 /* PaygateMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967381D226793BFC00230FB6 /* PaygateMapper.swift */; };
-		967381E326793BFC00230FB6 /* GetMonetizationResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967381D326793BFC00230FB6 /* GetMonetizationResponseMapper.swift */; };
 		967381E426793BFC00230FB6 /* PaygateOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967381D526793BFC00230FB6 /* PaygateOption.swift */; };
 		967381E526793BFC00230FB6 /* MonetizationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967381D626793BFC00230FB6 /* MonetizationConfig.swift */; };
 		967381E626793BFC00230FB6 /* ProductPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967381D726793BFC00230FB6 /* ProductPrice.swift */; };
@@ -69,7 +68,6 @@
 		967381E826793BFC00230FB6 /* PaygateMainOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967381D926793BFC00230FB6 /* PaygateMainOffer.swift */; };
 		967381E926793BFC00230FB6 /* PaygateSpecialOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967381DA26793BFC00230FB6 /* PaygateSpecialOffer.swift */; };
 		967381EA26793BFC00230FB6 /* GetPaygateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967381DC26793BFC00230FB6 /* GetPaygateRequest.swift */; };
-		967381EB26793BFC00230FB6 /* GetMonetizationConfigRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967381DD26793BFC00230FB6 /* GetMonetizationConfigRequest.swift */; };
 		967381EC26793BFC00230FB6 /* MonetizationManagerCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967381DE26793BFC00230FB6 /* MonetizationManagerCore.swift */; };
 		967381F826793C0C00230FB6 /* PaygateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967381EF26793C0C00230FB6 /* PaygateViewModel.swift */; };
 		967381F926793C0C00230FB6 /* PaygateViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967381F026793C0C00230FB6 /* PaygateViewControllerDelegate.swift */; };
@@ -255,6 +253,11 @@
 		DE4E83A328ACBCD9001BE774 /* GetCountriesResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4E839428ACBCD9001BE774 /* GetCountriesResponseMapper.swift */; };
 		DE4E83A428ACBCD9001BE774 /* SetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4E839528ACBCD9001BE774 /* SetRequest.swift */; };
 		DE4E83A528ACBCD9001BE774 /* ProfileMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4E839628ACBCD9001BE774 /* ProfileMediator.swift */; };
+		DE4FA10628D3757200085483 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4FA10528D3757200085483 /* NetworkError.swift */; };
+		DE4FA11728D375A300085483 /* DefaultRequestWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4FA11328D375A300085483 /* DefaultRequestWrapper.swift */; };
+		DE4FA11828D375A300085483 /* XORRequestWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4FA11428D375A300085483 /* XORRequestWrapper.swift */; };
+		DE4FA11928D375A300085483 /* APIRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4FA11528D375A300085483 /* APIRequestBody.swift */; };
+		DE4FA11A28D375A300085483 /* RestAPITransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4FA11628D375A300085483 /* RestAPITransport.swift */; };
 		DE6836B82892D1E500FAEF96 /* BranchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836B72892D1E500FAEF96 /* BranchManager.swift */; };
 		DE6836BA2892D1EE00FAEF96 /* AmplitudeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836B92892D1EE00FAEF96 /* AmplitudeManager.swift */; };
 		DE6836BC2892D1F700FAEF96 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836BB2892D1F700FAEF96 /* FirebaseManager.swift */; };
@@ -267,10 +270,7 @@
 		DE6836D12892D35D00FAEF96 /* IAPErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836D02892D35D00FAEF96 /* IAPErrorHelper.swift */; };
 		DE6836D32892D74400FAEF96 /* SplashReceiptValidationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836D22892D74400FAEF96 /* SplashReceiptValidationObserver.swift */; };
 		DE6836D52892D7FF00FAEF96 /* PaygateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836D42892D7FF00FAEF96 /* PaygateInteractor.swift */; };
-		DE93780E27BA74940073F27C /* RestApiTransportExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE93780D27BA74940073F27C /* RestApiTransportExtension.swift */; };
 		DE93781027BA74AC0073F27C /* XOREncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE93780F27BA74AC0073F27C /* XOREncryption.swift */; };
-		DEADEB03283634B60057AA44 /* DefaultRequestWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB02283634B60057AA44 /* DefaultRequestWrapper.swift */; };
-		DEADEB05283634CA0057AA44 /* XORRequestWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB04283634CA0057AA44 /* XORRequestWrapper.swift */; };
 		DEADEB08283636AA0057AA44 /* OnboardingScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB07283636AA0057AA44 /* OnboardingScope.swift */; };
 		DEADEB0A283637A90057AA44 /* SSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB09283637A90057AA44 /* SSlideView.swift */; };
 		DEADEB0C283648490057AA44 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADEB0B283648490057AA44 /* Spinner.swift */; };
@@ -450,7 +450,6 @@
 		967381CF26793BFC00230FB6 /* PaygateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateManager.swift; sourceTree = "<group>"; };
 		967381D026793BFC00230FB6 /* MonetizationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonetizationManager.swift; sourceTree = "<group>"; };
 		967381D226793BFC00230FB6 /* PaygateMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateMapper.swift; sourceTree = "<group>"; };
-		967381D326793BFC00230FB6 /* GetMonetizationResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMonetizationResponseMapper.swift; sourceTree = "<group>"; };
 		967381D526793BFC00230FB6 /* PaygateOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateOption.swift; sourceTree = "<group>"; };
 		967381D626793BFC00230FB6 /* MonetizationConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonetizationConfig.swift; sourceTree = "<group>"; };
 		967381D726793BFC00230FB6 /* ProductPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductPrice.swift; sourceTree = "<group>"; };
@@ -458,7 +457,6 @@
 		967381D926793BFC00230FB6 /* PaygateMainOffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateMainOffer.swift; sourceTree = "<group>"; };
 		967381DA26793BFC00230FB6 /* PaygateSpecialOffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateSpecialOffer.swift; sourceTree = "<group>"; };
 		967381DC26793BFC00230FB6 /* GetPaygateRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPaygateRequest.swift; sourceTree = "<group>"; };
-		967381DD26793BFC00230FB6 /* GetMonetizationConfigRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMonetizationConfigRequest.swift; sourceTree = "<group>"; };
 		967381DE26793BFC00230FB6 /* MonetizationManagerCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonetizationManagerCore.swift; sourceTree = "<group>"; };
 		967381EF26793C0C00230FB6 /* PaygateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateViewModel.swift; sourceTree = "<group>"; };
 		967381F026793C0C00230FB6 /* PaygateViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateViewControllerDelegate.swift; sourceTree = "<group>"; };
@@ -651,6 +649,11 @@
 		DE4E839428ACBCD9001BE774 /* GetCountriesResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCountriesResponseMapper.swift; sourceTree = "<group>"; };
 		DE4E839528ACBCD9001BE774 /* SetRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetRequest.swift; sourceTree = "<group>"; };
 		DE4E839628ACBCD9001BE774 /* ProfileMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileMediator.swift; sourceTree = "<group>"; };
+		DE4FA10528D3757200085483 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		DE4FA11328D375A300085483 /* DefaultRequestWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultRequestWrapper.swift; sourceTree = "<group>"; };
+		DE4FA11428D375A300085483 /* XORRequestWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XORRequestWrapper.swift; sourceTree = "<group>"; };
+		DE4FA11528D375A300085483 /* APIRequestBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestBody.swift; sourceTree = "<group>"; };
+		DE4FA11628D375A300085483 /* RestAPITransport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestAPITransport.swift; sourceTree = "<group>"; };
 		DE6836B72892D1E500FAEF96 /* BranchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchManager.swift; sourceTree = "<group>"; };
 		DE6836B92892D1EE00FAEF96 /* AmplitudeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplitudeManager.swift; sourceTree = "<group>"; };
 		DE6836BB2892D1F700FAEF96 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
@@ -663,10 +666,7 @@
 		DE6836D02892D35D00FAEF96 /* IAPErrorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPErrorHelper.swift; sourceTree = "<group>"; };
 		DE6836D22892D74400FAEF96 /* SplashReceiptValidationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashReceiptValidationObserver.swift; sourceTree = "<group>"; };
 		DE6836D42892D7FF00FAEF96 /* PaygateInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaygateInteractor.swift; sourceTree = "<group>"; };
-		DE93780D27BA74940073F27C /* RestApiTransportExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiTransportExtension.swift; sourceTree = "<group>"; };
 		DE93780F27BA74AC0073F27C /* XOREncryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XOREncryption.swift; sourceTree = "<group>"; };
-		DEADEB02283634B60057AA44 /* DefaultRequestWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRequestWrapper.swift; sourceTree = "<group>"; };
-		DEADEB04283634CA0057AA44 /* XORRequestWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XORRequestWrapper.swift; sourceTree = "<group>"; };
 		DEADEB07283636AA0057AA44 /* OnboardingScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScope.swift; sourceTree = "<group>"; };
 		DEADEB09283637A90057AA44 /* SSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSlideView.swift; sourceTree = "<group>"; };
 		DEADEB0B283648490057AA44 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
@@ -1009,7 +1009,6 @@
 			isa = PBXGroup;
 			children = (
 				967381D226793BFC00230FB6 /* PaygateMapper.swift */,
-				967381D326793BFC00230FB6 /* GetMonetizationResponseMapper.swift */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -1031,7 +1030,6 @@
 			isa = PBXGroup;
 			children = (
 				967381DC26793BFC00230FB6 /* GetPaygateRequest.swift */,
-				967381DD26793BFC00230FB6 /* GetMonetizationConfigRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -1118,6 +1116,7 @@
 		96781A03266663FF0033134D /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				DE4FA11128D375A300085483 /* Network */,
 				DE6836B62892D1D600FAEF96 /* Analytics */,
 				96781A27266664000033134D /* Rx */,
 				96781A04266663FF0033134D /* Extension */,
@@ -1140,7 +1139,6 @@
 				96781A08266663FF0033134D /* UIDeviceExtension.swift */,
 				96781A09266663FF0033134D /* UIEdgeInsets+Extension.swift */,
 				96781A0A266663FF0033134D /* StringExtension.swift */,
-				DE93780D27BA74940073F27C /* RestApiTransportExtension.swift */,
 				DED1D0572866EB2F00E70292 /* Observable+Utils.swift */,
 				DED1D0592866EB3B00E70292 /* Single+Utils.swift */,
 			);
@@ -1168,6 +1166,7 @@
 			children = (
 				96781A12266664000033134D /* SignError.swift */,
 				DEADEB1B28364C1F0057AA44 /* ContentError.swift */,
+				DE4FA10528D3757200085483 /* NetworkError.swift */,
 			);
 			path = Error;
 			sourceTree = "<group>";
@@ -1175,7 +1174,6 @@
 		96781A14266664000033134D /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				DEADEB01283634AC0057AA44 /* RequestWrapper */,
 				96781A15266664000033134D /* ImagePicker.swift */,
 				96781A17266664000033134D /* Toast.swift */,
 			);
@@ -1887,6 +1885,25 @@
 			path = GetCountries;
 			sourceTree = "<group>";
 		};
+		DE4FA11128D375A300085483 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DE4FA11228D375A300085483 /* Wrapper */,
+				DE4FA11528D375A300085483 /* APIRequestBody.swift */,
+				DE4FA11628D375A300085483 /* RestAPITransport.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DE4FA11228D375A300085483 /* Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				DE4FA11328D375A300085483 /* DefaultRequestWrapper.swift */,
+				DE4FA11428D375A300085483 /* XORRequestWrapper.swift */,
+			);
+			path = Wrapper;
+			sourceTree = "<group>";
+		};
 		DE6836B62892D1D600FAEF96 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
@@ -1925,15 +1942,6 @@
 				DE6836D02892D35D00FAEF96 /* IAPErrorHelper.swift */,
 			);
 			path = Error;
-			sourceTree = "<group>";
-		};
-		DEADEB01283634AC0057AA44 /* RequestWrapper */ = {
-			isa = PBXGroup;
-			children = (
-				DEADEB02283634B60057AA44 /* DefaultRequestWrapper.swift */,
-				DEADEB04283634CA0057AA44 /* XORRequestWrapper.swift */,
-			);
-			path = RequestWrapper;
 			sourceTree = "<group>";
 		};
 		DEADEB06283636A20057AA44 /* Utils */ = {
@@ -2528,6 +2536,7 @@
 				96781BD3266664020033134D /* RateUs.swift in Sources */,
 				967381E626793BFC00230FB6 /* ProductPrice.swift in Sources */,
 				967380B42677973500230FB6 /* FlashcardsManagerCore.swift in Sources */,
+				DE4FA10628D3757200085483 /* NetworkError.swift in Sources */,
 				96781B94266664020033134D /* TestStats.swift in Sources */,
 				96781BDE266664020033134D /* SplashViewController.swift in Sources */,
 				DED1D0482866EAD000E70292 /* GetSavedRequest.swift in Sources */,
@@ -2577,6 +2586,7 @@
 				96F92A5F2692086B006331D7 /* WelcomeSlide1View.swift in Sources */,
 				DE4E839E28ACBCD9001BE774 /* GetProfileRequest.swift in Sources */,
 				967380B62677973500230FB6 /* GetFlashcardsResponseMapper.swift in Sources */,
+				DE4FA11728D375A300085483 /* DefaultRequestWrapper.swift in Sources */,
 				967381E526793BFC00230FB6 /* MonetizationConfig.swift in Sources */,
 				DED1D0102866EA9000E70292 /* TestStatsView.swift in Sources */,
 				96F92A532692086B006331D7 /* LocaleTableViewElement.swift in Sources */,
@@ -2594,11 +2604,11 @@
 				96781BC8266664020033134D /* GetBriefRequest.swift in Sources */,
 				96781B71266664010033134D /* Weak.swift in Sources */,
 				DED1D0472866EAD000E70292 /* GetQotdRequest.swift in Sources */,
-				DE93780E27BA74940073F27C /* RestApiTransportExtension.swift in Sources */,
 				967381E726793BFC00230FB6 /* Paygate.swift in Sources */,
 				967380AF2677973500230FB6 /* Flashcard.swift in Sources */,
 				DEADEB08283636AA0057AA44 /* OnboardingScope.swift in Sources */,
 				967380B02677973500230FB6 /* FlashcardTopic.swift in Sources */,
+				DE4FA11828D375A300085483 /* XORRequestWrapper.swift in Sources */,
 				9673809D2677972900230FB6 /* FlashcardsView.swift in Sources */,
 				96F92A5A2692086B006331D7 /* OModeCollectionElement.swift in Sources */,
 				DED1D00A2866EA9000E70292 /* TestStatsViewModel.swift in Sources */,
@@ -2615,7 +2625,6 @@
 				963090052692FE59000D5A1F /* OExperienceCell.swift in Sources */,
 				96781BEF266664020033134D /* CourseCollectionView.swift in Sources */,
 				DE6836D32892D74400FAEF96 /* SplashReceiptValidationObserver.swift in Sources */,
-				967381EB26793BFC00230FB6 /* GetMonetizationConfigRequest.swift in Sources */,
 				DED1D0032866EA9000E70292 /* TestStatsFilterCell.swift in Sources */,
 				96781BD0266664020033134D /* SessionManager.swift in Sources */,
 				DE6836B82892D1E500FAEF96 /* BranchManager.swift in Sources */,
@@ -2643,7 +2652,6 @@
 				967380B52677973500230FB6 /* GetFlashcardsRequest.swift in Sources */,
 				967381F926793C0C00230FB6 /* PaygateViewControllerDelegate.swift in Sources */,
 				DED1CFFE2866EA9000E70292 /* TestStatsViewController.swift in Sources */,
-				967381E326793BFC00230FB6 /* GetMonetizationResponseMapper.swift in Sources */,
 				96781B7E266664010033134D /* GradientView.swift in Sources */,
 				DED1D0132866EA9000E70292 /* SITestCloseMediator.swift in Sources */,
 				96781BDC266664020033134D /* SettingsTableSection.swift in Sources */,
@@ -2673,6 +2681,7 @@
 				96F92A4C2692086B006331D7 /* OSlideModeView.swift in Sources */,
 				96781B75266664010033134D /* NursingNavigationController.swift in Sources */,
 				DEADEB132836491A0057AA44 /* TryAgainViewController.swift in Sources */,
+				DE4FA11928D375A300085483 /* APIRequestBody.swift in Sources */,
 				967380B32677973500230FB6 /* FlashcardsManager.swift in Sources */,
 				DED1D0172866EA9000E70292 /* SIAnswerCell.swift in Sources */,
 				96781C2B266664030033134D /* CourseDetailsTestCell.swift in Sources */,
@@ -2689,7 +2698,6 @@
 				96781BE0266664020033134D /* SplashView.swift in Sources */,
 				DE6836CC2892D33000FAEF96 /* IAPProduct.swift in Sources */,
 				967380942677972900230FB6 /* FlashcardsTopicsViewController.swift in Sources */,
-				DEADEB05283634CA0057AA44 /* XORRequestWrapper.swift in Sources */,
 				DED1D05D2866EB8A00E70292 /* PhotoViewController.swift in Sources */,
 				DED1D0522866EAD000E70292 /* SendAnswerRequest.swift in Sources */,
 				DE4E838028ACBCD4001BE774 /* Course.swift in Sources */,
@@ -2709,6 +2717,7 @@
 				DED1D03F2866EAD000E70292 /* Test.swift in Sources */,
 				DED1D01C2866EA9000E70292 /* SITestBottomView.swift in Sources */,
 				DED1D04E2866EAD000E70292 /* AgainTestRequest.swift in Sources */,
+				DE4FA11A28D375A300085483 /* RestAPITransport.swift in Sources */,
 				DED1D03E2866EAD000E70292 /* TestConfig.swift in Sources */,
 				DED1D0422866EAD000E70292 /* Answer.swift in Sources */,
 				96781C27266664030033134D /* CourseDetailsViewController.swift in Sources */,
@@ -2779,7 +2788,6 @@
 				96F92A712692086B006331D7 /* OSlideCountView.swift in Sources */,
 				967381E126793BFC00230FB6 /* MonetizationManager.swift in Sources */,
 				967380962677972900230FB6 /* FlashcardsTopicsTableView.swift in Sources */,
-				DEADEB03283634B60057AA44 /* DefaultRequestWrapper.swift in Sources */,
 				967381E226793BFC00230FB6 /* PaygateMapper.swift in Sources */,
 				DED1CFF32866EA9000E70292 /* QuestionTableContentCell.swift in Sources */,
 				DE4E839F28ACBCD9001BE774 /* GetProfileResponse.swift in Sources */,
@@ -2859,7 +2867,7 @@
 				CODE_SIGN_ENTITLEMENTS = StatsWidgetsExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 40;
+				CURRENT_PROJECT_VERSION = 41;
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = StatsWidgets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -2868,7 +2876,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.2.1;
+				MARKETING_VERSION = 2.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv.stats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV StatsWidgets AppStore Profile";
@@ -2886,7 +2894,7 @@
 				CODE_SIGN_ENTITLEMENTS = StatsWidgetsExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 40;
+				CURRENT_PROJECT_VERSION = 41;
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = StatsWidgets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -2895,7 +2903,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.2.1;
+				MARKETING_VERSION = 2.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv.stats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV StatsWidgets AppStore Profile";
@@ -3031,7 +3039,7 @@
 				CODE_SIGN_ENTITLEMENTS = DMV/DMV.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 40;
+				CURRENT_PROJECT_VERSION = 41;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = "$(SRCROOT)/DMV/Resource/Info.plist";
@@ -3040,7 +3048,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2.1;
+				MARKETING_VERSION = 2.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV AppStore Profile";
@@ -3060,7 +3068,7 @@
 				CODE_SIGN_ENTITLEMENTS = DMV/DMV.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 40;
+				CURRENT_PROJECT_VERSION = 41;
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = "$(SRCROOT)/DMV/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
@@ -3068,7 +3076,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2.1;
+				MARKETING_VERSION = 2.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV AppStore Profile";
