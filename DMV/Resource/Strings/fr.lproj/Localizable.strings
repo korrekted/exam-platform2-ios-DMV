@@ -25,12 +25,12 @@
 "Onboarding.Next" = "Suivant";
 "Onboarding.Yes" = "Oui";
 "Onboarding.No" = "Non";
-"Onboarding.Welcome.Title1" = "Plan d'étude personnel";
-"Onboarding.Welcome.Subtitle1" = "Votre plan d'étude est préparé par les algorithmes, qui s'appuient sur des milliers de cas similaires";
-"Onboarding.Welcome.Title2" = "98% de taux de réussite";
-"Onboarding.Welcome.Subtitle2" = "Préparez efficacement votre examen. Étudiez tous les sujets requis un par un.";
-"Onboarding.Welcome.Title3" = "Réussir du premier coup";
-"Onboarding.Welcome.Subtitle3" = "Un plan d'étude spécial soutenu par l'IA pour vous aider à réussir votre AUTO examen  du premier coup";
+"Onboarding.Welcome.Title1" = "Efficient study\nplan";
+"Onboarding.Welcome.Subtitle1" = "The question bank is divided into bite-sized sets to keep you motivated";
+"Onboarding.Welcome.Title2" = "Learn in 5\ndifferent ways";
+"Onboarding.Welcome.Subtitle2" = "Save time. Study efficiently with 5 different exam modes";
+"Onboarding.Welcome.Title3" = "Over 200,000\nstudents";
+"Onboarding.Welcome.Subtitle3" = "Students claim to feel more confident with the real exam after using our app";
 "Onboarding.Welcome.GetStarted" = "Commencez";
 "Onboarding.SlideCountry.Title" = "Choisissez\nvotre pays";
 "Onboarding.SlideState.Title" = "Sélectionnez votre état,\nvotre province ou votre district";
@@ -49,7 +49,7 @@
 "Onboarding.Preloader.Cell1" = "Analyser votre niveau de compétence %i%%";
 "Onboarding.Preloader.Cell2" = "Analyser vos objectifs %i%%";
 "Onboarding.Preloader.Cell3" = "Traitement des examens requis %i%%";
-"Onboarding.SlidePlan.Title" = "Votre plan d'étude\npersonnel avec un taux de réussite\nde 98% est terminé!";
+"Onboarding.SlidePlan.Title" = "Your personal study plan\nis ready!";
 "Onboarding.SlidePlan.CellsTitle" = "Votre plan individuel:";
 "Onboarding.SlidePlan.Cell1.Title" = "2000+ questions individuelles";
 "Onboarding.SlidePlan.Cell1.Subtitle" = "Des questions actualisées, qui reflètent les règles propres à votre territoire";
@@ -151,7 +151,7 @@
 "Paygate.Main.Title" = "CONNAÎTRE LES QUESTIONS\nAVANT-PROPOS";
 "Paygate.Main.Cell1" = "Ne pas passer des heures à apprendre";
 "Paygate.Main.Cell2" = "Entraînez-vous avec %i+ questions";
-"Paygate.Main.Cell3" = "98% de taux de réussite au premier essai!";
+"Paygate.Main.Cell3" = "Track your stats to motivate yourself";
 "Paygate.Main.Info" = "Sécurisé par iTunes. Annulez à tout moment.";
 "Paygate.Main.TermsOfUse" = "Conditions d'utilisation";
 "Paygate.Main.And" = " fin ";

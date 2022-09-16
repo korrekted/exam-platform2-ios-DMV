@@ -10,7 +10,6 @@
 		865FEC5A26679C1C009D7A4E /* TimedExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865FEC5726679C1C009D7A4E /* TimedExamViewController.swift */; };
 		865FEC5B26679C1C009D7A4E /* TimedExamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865FEC5826679C1C009D7A4E /* TimedExamView.swift */; };
 		865FEC5F2667A4E3009D7A4E /* BottomSheetAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865FEC5E2667A4E3009D7A4E /* BottomSheetAnimation.swift */; };
-		963090032692FBE7000D5A1F /* Onboarding.Chart.json in Resources */ = {isa = PBXBuildFile; fileRef = 963090022692FBE7000D5A1F /* Onboarding.Chart.json */; };
 		963090052692FE59000D5A1F /* OExperienceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963090042692FE59000D5A1F /* OExperienceCell.swift */; };
 		966FDFF02693141800B8FC20 /* StatsShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966FDFEF2693141800B8FC20 /* StatsShareManager.swift */; };
 		966FDFF7269314B800B8FC20 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966FDFF6269314B800B8FC20 /* WidgetKit.framework */; };
@@ -258,6 +257,7 @@
 		DE4FA11828D375A300085483 /* XORRequestWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4FA11428D375A300085483 /* XORRequestWrapper.swift */; };
 		DE4FA11928D375A300085483 /* APIRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4FA11528D375A300085483 /* APIRequestBody.swift */; };
 		DE4FA11A28D375A300085483 /* RestAPITransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4FA11628D375A300085483 /* RestAPITransport.swift */; };
+		DE4FA11E28D493FB00085483 /* Onboarding.Chart.json in Resources */ = {isa = PBXBuildFile; fileRef = DE4FA11D28D493FB00085483 /* Onboarding.Chart.json */; };
 		DE6836B82892D1E500FAEF96 /* BranchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836B72892D1E500FAEF96 /* BranchManager.swift */; };
 		DE6836BA2892D1EE00FAEF96 /* AmplitudeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836B92892D1EE00FAEF96 /* AmplitudeManager.swift */; };
 		DE6836BC2892D1F700FAEF96 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6836BB2892D1F700FAEF96 /* FirebaseManager.swift */; };
@@ -402,7 +402,6 @@
 		865FEC5826679C1C009D7A4E /* TimedExamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimedExamView.swift; sourceTree = "<group>"; };
 		865FEC5E2667A4E3009D7A4E /* BottomSheetAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetAnimation.swift; sourceTree = "<group>"; };
 		96308FFF2692625E000D5A1F /* DMV.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DMV.entitlements; sourceTree = "<group>"; };
-		963090022692FBE7000D5A1F /* Onboarding.Chart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Onboarding.Chart.json; sourceTree = "<group>"; };
 		963090042692FE59000D5A1F /* OExperienceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OExperienceCell.swift; sourceTree = "<group>"; };
 		966CB0692768DBE400B85A77 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		966FDFEF2693141800B8FC20 /* StatsShareManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsShareManager.swift; sourceTree = "<group>"; };
@@ -654,6 +653,7 @@
 		DE4FA11428D375A300085483 /* XORRequestWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XORRequestWrapper.swift; sourceTree = "<group>"; };
 		DE4FA11528D375A300085483 /* APIRequestBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestBody.swift; sourceTree = "<group>"; };
 		DE4FA11628D375A300085483 /* RestAPITransport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestAPITransport.swift; sourceTree = "<group>"; };
+		DE4FA11D28D493FB00085483 /* Onboarding.Chart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Onboarding.Chart.json; sourceTree = "<group>"; };
 		DE6836B72892D1E500FAEF96 /* BranchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchManager.swift; sourceTree = "<group>"; };
 		DE6836B92892D1EE00FAEF96 /* AmplitudeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplitudeManager.swift; sourceTree = "<group>"; };
 		DE6836BB2892D1F700FAEF96 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
@@ -1763,7 +1763,7 @@
 		96F92A262692086B006331D7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				963090022692FBE7000D5A1F /* Onboarding.Chart.json */,
+				DE4FA11D28D493FB00085483 /* Onboarding.Chart.json */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -2397,7 +2397,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				963090032692FBE7000D5A1F /* Onboarding.Chart.json in Resources */,
+				DE4FA11E28D493FB00085483 /* Onboarding.Chart.json in Resources */,
 				96738238267B3DC200230FB6 /* SF-Pro-Rounded-Medium.otf in Resources */,
 				96781C71266664600033134D /* LaunchScreen.storyboard in Resources */,
 				96781C9F266963CA0033134D /* Localizable.strings in Resources */,
@@ -2867,7 +2867,7 @@
 				CODE_SIGN_ENTITLEMENTS = StatsWidgetsExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 41;
+				CURRENT_PROJECT_VERSION = 42;
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = StatsWidgets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -2876,7 +2876,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.3.0;
+				MARKETING_VERSION = 2.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv.stats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV StatsWidgets AppStore Profile";
@@ -2894,7 +2894,7 @@
 				CODE_SIGN_ENTITLEMENTS = StatsWidgetsExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 41;
+				CURRENT_PROJECT_VERSION = 42;
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = StatsWidgets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -2903,7 +2903,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.3.0;
+				MARKETING_VERSION = 2.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv.stats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV StatsWidgets AppStore Profile";
@@ -3039,7 +3039,7 @@
 				CODE_SIGN_ENTITLEMENTS = DMV/DMV.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 41;
+				CURRENT_PROJECT_VERSION = 42;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = "$(SRCROOT)/DMV/Resource/Info.plist";
@@ -3048,7 +3048,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.3.0;
+				MARKETING_VERSION = 2.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV AppStore Profile";
@@ -3068,7 +3068,7 @@
 				CODE_SIGN_ENTITLEMENTS = DMV/DMV.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 41;
+				CURRENT_PROJECT_VERSION = 42;
 				DEVELOPMENT_TEAM = GL587QW8T3;
 				INFOPLIST_FILE = "$(SRCROOT)/DMV/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
@@ -3076,7 +3076,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.3.0;
+				MARKETING_VERSION = 2.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.dmv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "DMV AppStore Profile";
